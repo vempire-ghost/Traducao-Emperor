@@ -871,7 +871,7 @@ def mesclar_traducao_completa():
             if cell_id is not None and traducao and original_text_from_clipboard:
                 print(f"\nProcessando célula {cell_id}:")
                 print(f"  Original no clipboard: '{original_text_from_clipboard}'")
-                print(f"  Tradução: '{traducao[:50]}...'")
+                print(f"  Tradução: '{traducao}'")
                 
                 # VALIDAÇÃO: Verifica no arquivo BASE se o original bate
                 validation_passed = True
@@ -961,17 +961,58 @@ def mesclar_traducao_completa():
                     
                     # Verifica se é a célula certa
                     if f"CELULA: {cell_id}" in block and "TRADUÇÃO:" in block:
-                        # Substitui a linha após TRADUÇÃO:
+                        # Divide o bloco em linhas
                         lines = block.split('\n')
                         new_block_lines = []
+                        traducao_encontrada = False
+                        skip_next_line = False
+                        
                         for k, line in enumerate(lines):
-                            new_block_lines.append(line)
+                            # Se esta é a linha TRADUÇÃO:, a mantemos
                             if "TRADUÇÃO:" in line:
-                                # Adiciona a tradução na próxima linha
+                                new_block_lines.append(line)
+                                traducao_encontrada = True
+                                
+                                # Verifica se já existe uma tradução na próxima linha
                                 if k + 1 < len(lines):
-                                    new_block_lines.append(traducao)
+                                    next_line = lines[k + 1].strip()
+                                    # Se a próxima linha não é vazia e não começa com OFFSET:, CELULA: ou ORIGINAL
+                                    if (next_line and 
+                                        not next_line.startswith("OFFSET:") and 
+                                        not next_line.startswith("CELULA:") and 
+                                        not "ORIGINAL [" in next_line and
+                                        not "TRADUÇÃO:" in next_line):
+                                        # Esta linha já tem uma tradução existente, vamos substituí-la
+                                        print(f"  → Substituindo tradução existente: '{next_line}' por '{traducao}'")
+                                        # Não adicionamos a linha existente, apenas a nova tradução
+                                        new_block_lines.append(traducao)
+                                        skip_next_line = True  # Marca para pular a próxima linha
+                                    else:
+                                        # Não tem tradução existente, adiciona a nova
+                                        print(f"  → Adicionando nova tradução: '{traducao}'")
+                                        new_block_lines.append(traducao)
                                 else:
+                                    # Última linha, adiciona a tradução
+                                    print(f"  → Adicionando nova tradução: '{traducao}'")
                                     new_block_lines.append(traducao)
+                            elif skip_next_line:
+                                # Pula a linha que era a tradução antiga
+                                skip_next_line = False
+                                print(f"  → Removendo tradução antiga: '{line}'")
+                            else:
+                                # Mantém outras linhas
+                                new_block_lines.append(line)
+                        
+                        # Se não encontrou linha TRADUÇÃO: (caso raro), adiciona
+                        if not traducao_encontrada:
+                            print(f"  → Adicionando linha TRADUÇÃO: faltante")
+                            # Encontra onde adicionar (após ORIGINAL)
+                            for k, line in enumerate(new_block_lines):
+                                if "ORIGINAL [" in line:
+                                    # Adiciona TRADUÇÃO: e a tradução depois desta linha
+                                    new_block_lines.insert(k + 1, "TRADUÇÃO:")
+                                    new_block_lines.insert(k + 2, traducao)
+                                    break
                         
                         new_block = '\n'.join(new_block_lines)
                         
@@ -1044,53 +1085,6 @@ def mesclar_traducao_completa():
                               command=cancel_merge, bg="#f44336", fg="white")
         btn_cancel.pack(side=tk.LEFT, padx=5)
         
-        # Botão para ver detalhes no arquivo
-        def show_file_details():
-            try:
-                with open(BASE, "r", encoding="utf-8") as f:
-                    file_content = f.read()
-                
-                detail_window = tk.Toplevel(error_window)
-                detail_window.title("Detalhes do Arquivo")
-                detail_window.geometry("800x600")
-                
-                detail_text = scrolledtext.ScrolledText(detail_window, wrap=tk.WORD)
-                detail_text.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
-                
-                detail_content = f"Conteúdo do arquivo {BASE}:\n"
-                detail_content += "=" * 60 + "\n\n"
-                
-                # Encontra os blocos das células com erro
-                for error in validation_errors:
-                    # Extrai o cell_id do erro
-                    import re
-                    match = re.search(r'Célula (\d+):', error)
-                    if match:
-                        cell_id = int(match.group(1))
-                        # Encontra o bloco da célula
-                        cell_pattern = f"CELULA: {cell_id} "
-                        start_idx = file_content.find(cell_pattern)
-                        if start_idx != -1:
-                            # Volta para OFFSET:
-                            offset_start = file_content.rfind("OFFSET:", 0, start_idx)
-                            if offset_start != -1:
-                                block_end = file_content.find("\n\n", offset_start)
-                                if block_end == -1:
-                                    block_end = len(file_content)
-                                
-                                block = file_content[offset_start:block_end]
-                                detail_content += f"--- Célula {cell_id} ---\n"
-                                detail_content += block + "\n\n"
-                
-                detail_text.insert(tk.END, detail_content)
-                
-            except Exception as e:
-                messagebox.showerror("Erro", f"Não foi possível ler o arquivo: {str(e)}")
-        
-        btn_details = tk.Button(btn_frame, text="Ver Detalhes no Arquivo", 
-                               command=show_file_details, bg="#2196F3", fg="white")
-        btn_details.pack(side=tk.LEFT, padx=5)
-        
     else:
         # Nenhum erro, continua normalmente
         save_and_update(applied, content, updates_for_binary, validation_errors)
@@ -1106,6 +1100,29 @@ def save_and_update(applied, content, updates_for_binary, validation_errors):
             
             # Atualiza interface
             text_extrair.insert(tk.END, f"\n✓ {applied} traduções aplicadas no arquivo de texto\n")
+            
+            # Mostra exemplo de célula atualizada (para debug)
+            if updates_for_binary:
+                first_cell = next(iter(updates_for_binary))
+                # Encontra este bloco no conteúdo salvo
+                start_idx = content.find(f"CELULA: {first_cell} ")
+                if start_idx != -1:
+                    offset_start = content.rfind("OFFSET:", 0, start_idx)
+                    if offset_start != -1:
+                        block_end = content.find("\n\n", offset_start)
+                        if block_end != -1:
+                            block = content[offset_start:block_end]
+                            # Encontra a linha da tradução
+                            for line in block.split('\n'):
+                                if "TRADUÇÃO:" in line:
+                                    trad_idx = block.find(line)
+                                    if trad_idx != -1:
+                                        trad_line_start = trad_idx + len(line) + 1
+                                        trad_line_end = block.find('\n', trad_line_start)
+                                        if trad_line_end == -1:
+                                            trad_line_end = len(block)
+                                        trad_text = block[trad_line_start:trad_line_end].strip()
+                                        print(f"  Exemplo célula {first_cell}: TRADUÇÃO: '{trad_text}'")
             
         except Exception as e:
             messagebox.showerror("Erro", f"Erro ao salvar arquivo {BASE}: {str(e)}")

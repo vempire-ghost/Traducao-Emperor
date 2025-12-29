@@ -12,7 +12,6 @@ CELULA: 1  GRUPO: 358
 ORIGINAL [4 chars]: File
 TRADUÇÃO:
 Arquivo
-Arquivo
 
 OFFSET: 0x00001F61
 CELULA: 2  GRUPO: 358
