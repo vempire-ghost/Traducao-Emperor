@@ -794,7 +794,7 @@ def remover_acentos(texto):
     return texto_sem_acentos.upper()
 
 def mesclar_traducao_completa():
-    """Mescla traduções no arquivo de texto E atualiza o arquivo binário"""
+    """Mescla traduções no arquivo de texto E atualiza o arquivo binário COM VALIDAÇÃO"""
     # Garante que o arquivo BASE existe
     criar_arquivo_base_se_nao_existir()
     
@@ -814,7 +814,9 @@ def mesclar_traducao_completa():
     # Processa o texto colado linha por linha
     cola_lines = cola_text.splitlines()
     applied = 0
+    validation_errors = []  # Lista de erros de validação
     updates_for_binary = {}  # {cell_id: new_text}
+    validated_cells = []    # Células que passaram na validação
     
     i = 0
     while i < len(cola_lines):
@@ -826,17 +828,35 @@ def mesclar_traducao_completa():
             # Procura o cell_id neste bloco
             cell_id = None
             offset_line = cola_lines[i]
+            original_text_from_clipboard = None
+            original_length_from_clipboard = None
             
-            # Procura nas próximas linhas pelo cell_id
-            for j in range(start_idx, min(start_idx + 3, len(cola_lines))):
-                if "CELULA:" in cola_lines[j]:
-                    parts = cola_lines[j].split()
+            # Procura nas próximas linhas pelo cell_id e texto original
+            for j in range(start_idx, min(start_idx + 5, len(cola_lines))):
+                line = cola_lines[j]
+                
+                # Extrai cell_id
+                if "CELULA:" in line:
+                    parts = line.split()
                     for part in parts:
                         if part.isdigit():
                             cell_id = int(part)
                             break
-                    if cell_id:
-                        break
+                
+                # Extrai texto original
+                if "ORIGINAL [" in line and "chars]:" in line:
+                    # Extrai o texto original do clipboard
+                    try:
+                        # Formato: ORIGINAL [N chars]: texto
+                        match = ORIG_RE.match(line)
+                        if match:
+                            original_length_from_clipboard = int(match.group(1))
+                            original_text_from_clipboard = match.group(2)
+                    except:
+                        pass
+                    
+                if cell_id and original_text_from_clipboard:
+                    break
             
             # Procura pela tradução
             traducao = ""
@@ -847,16 +867,92 @@ def mesclar_traducao_completa():
                         traducao = cola_lines[j + 1].strip()
                     break
             
-            # Se encontrou cell_id e tradução, atualiza
-            if cell_id is not None and traducao:
-                print(f"Processando célula {cell_id}: '{traducao[:50]}...'")
+            # Se encontrou cell_id e tradução, VALIDA antes de atualizar
+            if cell_id is not None and traducao and original_text_from_clipboard:
+                print(f"\nProcessando célula {cell_id}:")
+                print(f"  Original no clipboard: '{original_text_from_clipboard}'")
+                print(f"  Tradução: '{traducao[:50]}...'")
                 
-                # Procura o bloco desta célula no conteúdo
-                pattern = f"(OFFSET:.*?CELULA: {cell_id}.*?TRADUÇÃO:)\n(.*?)\n\n"
+                # VALIDAÇÃO: Verifica no arquivo BASE se o original bate
+                validation_passed = True
+                error_msg = ""
                 
-                # Busca o bloco completo
+                # Encontra o bloco desta célula no conteúdo do arquivo BASE
+                block_start = content.find(f"CELULA: {cell_id} ")
+                if block_start != -1:
+                    # Volta para encontrar OFFSET:
+                    offset_start = content.rfind("OFFSET:", 0, block_start)
+                    if offset_start != -1:
+                        block_end = content.find("\n\n", offset_start)
+                        if block_end == -1:
+                            block_end = len(content)
+                        
+                        block = content[offset_start:block_end]
+                        
+                        # Extrai texto original do arquivo BASE
+                        file_original_text = None
+                        file_original_length = None
+                        
+                        lines = block.split('\n')
+                        for line in lines:
+                            if "ORIGINAL [" in line and "chars]:" in line:
+                                try:
+                                    match = ORIG_RE.match(line)
+                                    if match:
+                                        file_original_length = int(match.group(1))
+                                        file_original_text = match.group(2)
+                                        break
+                                except:
+                                    pass
+                        
+                        if file_original_text:
+                            print(f"  Original no arquivo: '{file_original_text}'")
+                            
+                            # Compara os textos originais
+                            if file_original_text != original_text_from_clipboard:
+                                validation_passed = False
+                                error_msg = f"Célula {cell_id}: Texto original não corresponde!\n" \
+                                          f"Arquivo: '{file_original_text}'\n" \
+                                          f"Clipboard: '{original_text_from_clipboard}'"
+                                
+                                # Verifica se a diferença é apenas em espaços ou formatação
+                                if file_original_text.strip() == original_text_from_clipboard.strip():
+                                    print(f"  Aviso: Diferença apenas em espaços, corrigindo...")
+                                    # Atualiza o texto no clipboard para bater com o arquivo
+                                    original_text_from_clipboard = file_original_text
+                                    validation_passed = True
+                                    error_msg = ""
+                                    print(f"  ✓ Corrigido: '{file_original_text}'")
+                        else:
+                            validation_passed = False
+                            error_msg = f"Célula {cell_id}: Não encontrou texto original no arquivo!"
+                else:
+                    validation_passed = False
+                    error_msg = f"Célula {cell_id}: Não encontrada no arquivo {BASE}!"
+                
+                # Se validação falhou
+                if not validation_passed:
+                    print(f"  ✗ VALIDAÇÃO FALHOU: {error_msg}")
+                    validation_errors.append(f"Célula {cell_id}: {error_msg}")
+                    
+                    # Adiciona marcador de erro na interface
+                    current_text = text_extrair.get("1.0", tk.END)
+                    if f"Célula {cell_id}:" not in current_text:
+                        error_marker = f"\n\n⚠️ ERRO VALIDAÇÃO CÉLULA {cell_id}:\n" \
+                                      f"Texto original não corresponde!\n"
+                        text_extrair.insert(tk.END, error_marker)
+                    
+                    i += 1
+                    continue
+                
+                print(f"  ✓ Validação OK")
+                validated_cells.append(cell_id)
+                
+                # Procura o bloco completo no conteúdo para atualização
                 block_start = content.find(f"OFFSET:")
-                while block_start != -1:
+                found_block = False
+                
+                while block_start != -1 and not found_block:
                     block_end = content.find("\n\n", block_start)
                     if block_end == -1:
                         block_end = len(content)
@@ -884,18 +980,133 @@ def mesclar_traducao_completa():
                         applied += 1
                         updates_for_binary[cell_id] = traducao
                         print(f"  → Célula {cell_id} atualizada no arquivo")
+                        found_block = True
                         break
                     
                     block_start = content.find("OFFSET:", block_end)
         
         i += 1
     
+    # Mostra resumo na interface
+    text_extrair.insert(tk.END, f"\n\n{'='*50}\n")
+    text_extrair.insert(tk.END, f"RESUMO DA MESCLAGEM:\n")
+    text_extrair.insert(tk.END, f"Células validadas: {len(validated_cells)}\n")
+    text_extrair.insert(tk.END, f"Células com erro: {len(validation_errors)}\n")
+    
+    # Mostra erros de validação se houver
+    if validation_errors:
+        error_window = tk.Toplevel(root)
+        error_window.title("Erros de Validação - Texto Original Não Corresponde")
+        error_window.geometry("700x500")
+        
+        # Frame principal
+        main_frame = tk.Frame(error_window)
+        main_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        
+        # Label explicativa
+        label = tk.Label(main_frame, text="As seguintes células NÃO serão mescladas:", 
+                        font=("Arial", 10, "bold"), fg="red")
+        label.pack(anchor=tk.W, pady=(0, 10))
+        
+        # Área de texto com scroll
+        error_text = scrolledtext.ScrolledText(main_frame, wrap=tk.WORD, height=15)
+        error_text.pack(fill=tk.BOTH, expand=True)
+        
+        error_content = f"ERROS DE VALIDAÇÃO ENCONTRADOS ({len(validation_errors)} células):\n"
+        error_content += "=" * 60 + "\n\n"
+        
+        for error in validation_errors:
+            error_content += error + "\n" + "-" * 40 + "\n"
+        
+        error_text.insert(tk.END, error_content)
+        error_text.config(state=tk.DISABLED)  # Somente leitura
+        
+        # Frame para botões
+        btn_frame = tk.Frame(main_frame)
+        btn_frame.pack(pady=10)
+        
+        # Botão para continuar apenas com células válidas
+        def continue_valid_only():
+            error_window.destroy()
+            save_and_update(applied, content, updates_for_binary, validation_errors)
+        
+        # Botão para cancelar
+        def cancel_merge():
+            error_window.destroy()
+            messagebox.showinfo("Cancelado", "Mesclagem cancelada devido a erros de validação.")
+            return
+        
+        btn_continue = tk.Button(btn_frame, text="Continuar (Apenas células válidas)", 
+                                command=continue_valid_only, bg="#4CAF50", fg="white")
+        btn_continue.pack(side=tk.LEFT, padx=5)
+        
+        btn_cancel = tk.Button(btn_frame, text="Cancelar Mesclagem", 
+                              command=cancel_merge, bg="#f44336", fg="white")
+        btn_cancel.pack(side=tk.LEFT, padx=5)
+        
+        # Botão para ver detalhes no arquivo
+        def show_file_details():
+            try:
+                with open(BASE, "r", encoding="utf-8") as f:
+                    file_content = f.read()
+                
+                detail_window = tk.Toplevel(error_window)
+                detail_window.title("Detalhes do Arquivo")
+                detail_window.geometry("800x600")
+                
+                detail_text = scrolledtext.ScrolledText(detail_window, wrap=tk.WORD)
+                detail_text.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+                
+                detail_content = f"Conteúdo do arquivo {BASE}:\n"
+                detail_content += "=" * 60 + "\n\n"
+                
+                # Encontra os blocos das células com erro
+                for error in validation_errors:
+                    # Extrai o cell_id do erro
+                    import re
+                    match = re.search(r'Célula (\d+):', error)
+                    if match:
+                        cell_id = int(match.group(1))
+                        # Encontra o bloco da célula
+                        cell_pattern = f"CELULA: {cell_id} "
+                        start_idx = file_content.find(cell_pattern)
+                        if start_idx != -1:
+                            # Volta para OFFSET:
+                            offset_start = file_content.rfind("OFFSET:", 0, start_idx)
+                            if offset_start != -1:
+                                block_end = file_content.find("\n\n", offset_start)
+                                if block_end == -1:
+                                    block_end = len(file_content)
+                                
+                                block = file_content[offset_start:block_end]
+                                detail_content += f"--- Célula {cell_id} ---\n"
+                                detail_content += block + "\n\n"
+                
+                detail_text.insert(tk.END, detail_content)
+                
+            except Exception as e:
+                messagebox.showerror("Erro", f"Não foi possível ler o arquivo: {str(e)}")
+        
+        btn_details = tk.Button(btn_frame, text="Ver Detalhes no Arquivo", 
+                               command=show_file_details, bg="#2196F3", fg="white")
+        btn_details.pack(side=tk.LEFT, padx=5)
+        
+    else:
+        # Nenhum erro, continua normalmente
+        save_and_update(applied, content, updates_for_binary, validation_errors)
+
+def save_and_update(applied, content, updates_for_binary, validation_errors):
+    """Salva arquivo e atualiza binário (função auxiliar)"""
     # Salva arquivo de texto se houve alterações
     if applied > 0:
         try:
             with open(BASE, "w", encoding="utf-8") as f:
                 f.write(content)
-            print(f"Arquivo {BASE} atualizado com {applied} traduções")
+            print(f"✓ Arquivo {BASE} atualizado com {applied} traduções")
+            
+            # Atualiza interface
+            text_extrair.insert(tk.END, f"\n✓ {applied} traduções aplicadas no arquivo de texto\n")
+            
         except Exception as e:
             messagebox.showerror("Erro", f"Erro ao salvar arquivo {BASE}: {str(e)}")
             return
@@ -903,27 +1114,47 @@ def mesclar_traducao_completa():
     # 2. Atualiza arquivo binário se houver alterações
     if updates_for_binary and os.path.exists(BIN_FILE):
         resposta = messagebox.askyesno("Atualizar Binário", 
-                                      f"{len(updates_for_binary)} células para atualizar.\n"
-                                      f"Deseja aplicar as alterações?\n\n"
-                                      f"Bytes originais serão preservados para células não modificadas.")
+                                      f"{len(updates_for_binary)} células validadas para atualizar.\n"
+                                      f"{len(validation_errors)} células ignoradas (erro de validação).\n\n"
+                                      f"Deseja aplicar as alterações válidas?")
         
         if resposta:
             try:
                 zeus_file = ZeusTextFile(BIN_FILE)
                 zeus_file.load()
                 
-                # Aplica as atualizações
+                # Aplica as atualizações apenas das células validadas
                 success_count = 0
+                error_count = 0
+                
                 for cell_id, new_text in updates_for_binary.items():
-                    if zeus_file.update_string(cell_id, new_text):
-                        success_count += 1
+                    try:
+                        if zeus_file.update_string(cell_id, new_text):
+                            success_count += 1
+                            print(f"✓ Célula {cell_id} atualizada no binário")
+                        else:
+                            error_count += 1
+                            print(f"✗ Erro ao atualizar célula {cell_id} no binário")
+                    except Exception as e:
+                        error_count += 1
+                        print(f"✗ Exceção ao atualizar célula {cell_id}: {e}")
                 
                 # Salva o arquivo binário
                 if zeus_file.save():
                     messagebox.showinfo("Sucesso", 
                                        f"{applied} traduções aplicadas no arquivo de texto.\n"
                                        f"{success_count} células atualizadas no arquivo binário.\n"
+                                       f"{error_count} erros ao atualizar binário.\n"
+                                       f"{len(validation_errors)} células ignoradas (validação).\n"
                                        f"Backup criado automaticamente.")
+                    
+                    # Atualiza interface
+                    text_extrair.insert(tk.END, f"✓ {success_count} células atualizadas no binário\n")
+                    if error_count > 0:
+                        text_extrair.insert(tk.END, f"⚠️ {error_count} erros ao atualizar binário\n")
+                    if len(validation_errors) > 0:
+                        text_extrair.insert(tk.END, f"✗ {len(validation_errors)} células ignoradas (validação)\n")
+                    
                 else:
                     messagebox.showwarning("Aviso", 
                                           "Traduções aplicadas no arquivo de texto, "
@@ -935,12 +1166,21 @@ def mesclar_traducao_completa():
         if updates_for_binary and not os.path.exists(BIN_FILE):
             messagebox.showwarning("Aviso", 
                                  f"Arquivo binário {BIN_FILE} não encontrado.")
+            text_extrair.insert(tk.END, f"⚠️ Arquivo binário {BIN_FILE} não encontrado\n")
         elif applied > 0:
-            messagebox.showinfo("Mesclagem concluída", 
-                               f"{applied} traduções aplicadas no arquivo de texto.")
+            if validation_errors:
+                messagebox.showinfo("Mesclagem Parcial", 
+                                   f"{applied} traduções aplicadas no arquivo de texto.\n"
+                                   f"{len(validation_errors)} células ignoradas (erro de validação).")
+                text_extrair.insert(tk.END, f"⚠️ {len(validation_errors)} células ignoradas (validação)\n")
+            else:
+                messagebox.showinfo("Mesclagem concluída", 
+                                   f"{applied} traduções aplicadas no arquivo de texto.")
+                text_extrair.insert(tk.END, f"✓ Mesclagem concluída com sucesso!\n")
         else:
             messagebox.showwarning("Aviso", 
                                  "Nenhuma tradução aplicada. Verifique o formato.")
+            text_extrair.insert(tk.END, f"✗ Nenhuma tradução aplicada\n")
     
     # Desabilita o botão de colar
     btn_colar_trad.config(state=tk.DISABLED)

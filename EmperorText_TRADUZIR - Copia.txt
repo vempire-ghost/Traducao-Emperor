@@ -1,0 +1,3003 @@
+# Arquivo de tradução Zeus Text
+# Criado em: 2025-12-29 16:02:09
+# Formato:
+# OFFSET: 0xXXXXXXX
+# CELULA: X  GRUPO: Y
+# ORIGINAL [N chars]: texto original
+# TRADUÇÃO:
+# texto traduzido
+
+OFFSET: 0x00003520
+CELULA: 256  GRUPO: 9
+ORIGINAL [6 chars]: Resets
+TRADUÇÃO:
+
+OFFSET: 0x00003527
+CELULA: 257  GRUPO: 9
+ORIGINAL [19 chars]: Clear Predator pts.
+TRADUÇÃO:
+
+OFFSET: 0x0000353B
+CELULA: 258  GRUPO: 9
+ORIGINAL [15 chars]: Clear Fish pts.
+TRADUÇÃO:
+
+OFFSET: 0x0000354B
+CELULA: 259  GRUPO: 9
+ORIGINAL [15 chars]: Clear Invasions
+TRADUÇÃO:
+
+OFFSET: 0x0000355B
+CELULA: 260  GRUPO: 9
+ORIGINAL [15 chars]: Clear Prey pts.
+TRADUÇÃO:
+
+OFFSET: 0x0000356B
+CELULA: 261  GRUPO: 9
+ORIGINAL [13 chars]: Load from BMP
+TRADUÇÃO:
+
+OFFSET: 0x00003579
+CELULA: 262  GRUPO: 9
+ORIGINAL [11 chars]: Save to BMP
+TRADUÇÃO:
+
+OFFSET: 0x00003585
+CELULA: 263  GRUPO: 9
+ORIGINAL [12 chars]: Edit Empire 
+TRADUÇÃO:
+
+OFFSET: 0x00003592
+CELULA: 264  GRUPO: 9
+ORIGINAL [11 chars]: Save Empire
+TRADUÇÃO:
+
+OFFSET: 0x0000359E
+CELULA: 265  GRUPO: 9
+ORIGINAL [7 chars]: Refresh
+TRADUÇÃO:
+
+OFFSET: 0x000035A6
+CELULA: 266  GRUPO: 9
+ORIGINAL [17 chars]: Flatten Elevation
+TRADUÇÃO:
+
+OFFSET: 0x000035B8
+CELULA: 267  GRUPO: 9
+ORIGINAL [11 chars]: Set Climate
+TRADUÇÃO:
+
+OFFSET: 0x000035C4
+CELULA: 268  GRUPO: 10
+ORIGINAL [13 chars]: Setting up...
+TRADUÇÃO:
+
+OFFSET: 0x000035D2
+CELULA: 269  GRUPO: 10
+ORIGINAL [140 chars]: test_string ˆ,Œ,œ,¡,°,¿,A,À,Á,Â,Ä, E,È,É,Ê,I,Ì,Í,Î,Ï,N,Ñ,O,Ò,Ó,Ô,Ö, U,Ù,Ú,Û,Ü,ß,a,à,á,â,ä,c,ç, e,è,é,ê,i,ì,í,î,ï,n,ñ,o,ò,ó,ô,ö,u,ù,ú,û,ü,...
+TRADUÇÃO:
+
+OFFSET: 0x0000365F
+CELULA: 270  GRUPO: 10
+ORIGINAL [10 chars]: Loading...
+TRADUÇÃO:
+
+OFFSET: 0x0000366A
+CELULA: 271  GRUPO: 10
+ORIGINAL [17 chars]: Preparing data...
+TRADUÇÃO:
+
+OFFSET: 0x0000367C
+CELULA: 272  GRUPO: 10
+ORIGINAL [17 chars]: Loading sounds...
+TRADUÇÃO:
+
+OFFSET: 0x0000368E
+CELULA: 273  GRUPO: 10
+ORIGINAL [16 chars]: Accelerated Time
+TRADUÇÃO:
+
+OFFSET: 0x0000369F
+CELULA: 274  GRUPO: 10
+ORIGINAL [23 chars]: Right-click to continue
+TRADUÇÃO:
+
+OFFSET: 0x000036B7
+CELULA: 275  GRUPO: 10
+ORIGINAL [23 chars]: Arranging the zodiac...
+TRADUÇÃO:
+
+OFFSET: 0x000036CF
+CELULA: 276  GRUPO: 10
+ORIGINAL [18 chars]: Pouring the tea...
+TRADUÇÃO:
+
+OFFSET: 0x000036E2
+CELULA: 277  GRUPO: 10
+ORIGINAL [25 chars]: Honoring the ancestors...
+TRADUÇÃO:
+
+OFFSET: 0x000036FC
+CELULA: 278  GRUPO: 10
+ORIGINAL [23 chars]: Defining the borders...
+TRADUÇÃO:
+
+OFFSET: 0x00003714
+CELULA: 279  GRUPO: 10
+ORIGINAL [24 chars]: Loading the crossbows...
+TRADUÇÃO:
+
+OFFSET: 0x0000372D
+CELULA: 280  GRUPO: 5
+ORIGINAL [28 chars]: Calculating the feng shui...
+TRADUÇÃO:
+
+OFFSET: 0x0000374A
+CELULA: 281  GRUPO: 5
+ORIGINAL [26 chars]: Studying the three Ways...
+TRADUÇÃO:
+
+OFFSET: 0x00003765
+CELULA: 282  GRUPO: 5
+ORIGINAL [27 chars]: Preparing the ceremonies...
+TRADUÇÃO:
+
+OFFSET: 0x00003781
+CELULA: 283  GRUPO: 5
+ORIGINAL [24 chars]: Respecting the heroes...
+TRADUÇÃO:
+
+OFFSET: 0x0000379A
+CELULA: 284  GRUPO: 5
+ORIGINAL [26 chars]: Tempting the barbarians...
+TRADUÇÃO:
+
+OFFSET: 0x000037B5
+CELULA: 285  GRUPO: 11
+ORIGINAL [4 chars]: Back
+TRADUÇÃO:
+
+OFFSET: 0x000037BA
+CELULA: 286  GRUPO: 11
+ORIGINAL [19 chars]: Go to site of event
+TRADUÇÃO:
+
+OFFSET: 0x000037CE
+CELULA: 287  GRUPO: 11
+ORIGINAL [9 chars]: to comply
+TRADUÇÃO:
+
+OFFSET: 0x000037D8
+CELULA: 288  GRUPO: 11
+ORIGINAL [28 chars]: Food stocks are running low.
+TRADUÇÃO:
+
+OFFSET: 0x000037F5
+CELULA: 289  GRUPO: 11
+ORIGINAL [25 chars]: Unemployment is too high.
+TRADUÇÃO:
+
+OFFSET: 0x0000380F
+CELULA: 290  GRUPO: 11
+ORIGINAL [29 chars]: High tax rates are a problem.
+TRADUÇÃO:
+
+OFFSET: 0x0000382D
+CELULA: 291  GRUPO: 11
+ORIGINAL [24 chars]: Low wages are a problem.
+TRADUÇÃO:
+
+OFFSET: 0x00003846
+CELULA: 292  GRUPO: 11
+ORIGINAL [28 chars]: The city is in massive debt.
+TRADUÇÃO:
+
+OFFSET: 0x00003863
+CELULA: 293  GRUPO: 11
+ORIGINAL [35 chars]: More New Year's festivals required.
+TRADUÇÃO:
+
+OFFSET: 0x00003887
+CELULA: 294  GRUPO: 11
+ORIGINAL [33 chars]: The Feng Shui of the city is bad.
+TRADUÇÃO:
+
+OFFSET: 0x000038A9
+CELULA: 295  GRUPO: 11
+ORIGINAL [33 chars]: Civic repression is overwhelming.
+TRADUÇÃO:
+
+OFFSET: 0x000038CB
+CELULA: 296  GRUPO: 12
+ORIGINAL [17 chars]: Click to Continue
+TRADUÇÃO:
+
+OFFSET: 0x000038DD
+CELULA: 297  GRUPO: 12
+ORIGINAL [23 chars]: Right-click to Continue
+TRADUÇÃO:
+
+OFFSET: 0x000038F5
+CELULA: 298  GRUPO: 12
+ORIGINAL [31 chars]: Game paused ('P' key continues)
+TRADUÇÃO:
+
+OFFSET: 0x00003915
+CELULA: 299  GRUPO: 12
+ORIGINAL [23 chars]: Right-click to Continue
+TRADUÇÃO:
+
+OFFSET: 0x0000392D
+CELULA: 300  GRUPO: 12
+ORIGINAL [6 chars]: Cancel
+TRADUÇÃO:
+
+OFFSET: 0x00003934
+CELULA: 301  GRUPO: 12
+ORIGINAL [8 chars]: Continue
+TRADUÇÃO:
+
+OFFSET: 0x0000393D
+CELULA: 302  GRUPO: 12
+ORIGINAL [26 chars]: Not available in the demo!
+TRADUÇÃO:
+
+OFFSET: 0x00003958
+CELULA: 303  GRUPO: 12
+ORIGINAL [14 chars]: Click to Start
+TRADUÇÃO:
+
+OFFSET: 0x00003967
+CELULA: 304  GRUPO: 12
+ORIGINAL [13 chars]: Select a Name
+TRADUÇÃO:
+
+OFFSET: 0x00003975
+CELULA: 305  GRUPO: 13
+ORIGINAL [6 chars]: Normal
+TRADUÇÃO:
+
+OFFSET: 0x0000397C
+CELULA: 306  GRUPO: 13
+ORIGINAL [12 chars]: See Supplies
+TRADUÇÃO:
+
+OFFSET: 0x00003989
+CELULA: 307  GRUPO: 13
+ORIGINAL [11 chars]: See Walkers
+TRADUÇÃO:
+
+OFFSET: 0x00003995
+CELULA: 308  GRUPO: 13
+ORIGINAL [15 chars]: See Agriculture
+TRADUÇÃO:
+
+OFFSET: 0x000039A5
+CELULA: 309  GRUPO: 13
+ORIGINAL [12 chars]: See Industry
+TRADUÇÃO:
+
+OFFSET: 0x000039B2
+CELULA: 310  GRUPO: 13
+ORIGINAL [16 chars]: See Distribution
+TRADUÇÃO:
+
+OFFSET: 0x000039C3
+CELULA: 311  GRUPO: 13
+ORIGINAL [9 chars]: See Water
+TRADUÇÃO:
+
+OFFSET: 0x000039CD
+CELULA: 312  GRUPO: 13
+ORIGINAL [12 chars]: See Medicine
+TRADUÇÃO:
+
+OFFSET: 0x000039DA
+CELULA: 313  GRUPO: 13
+ORIGINAL [11 chars]: See Hazards
+TRADUÇÃO:
+
+OFFSET: 0x000039E6
+CELULA: 314  GRUPO: 5
+ORIGINAL [10 chars]: See Unrest
+TRADUÇÃO:
+
+OFFSET: 0x000039F1
+CELULA: 315  GRUPO: 5
+ORIGINAL [14 chars]: See Tax Income
+TRADUÇÃO:
+
+OFFSET: 0x00003A00
+CELULA: 316  GRUPO: 5
+ORIGINAL [21 chars]: See All Entertainment
+TRADUÇÃO:
+
+OFFSET: 0x00003A16
+CELULA: 317  GRUPO: 5
+ORIGINAL [13 chars]: See Festivals
+TRADUÇÃO:
+
+OFFSET: 0x00003A24
+CELULA: 318  GRUPO: 5
+ORIGINAL [13 chars]: See Musicians
+TRADUÇÃO:
+
+OFFSET: 0x00003A32
+CELULA: 319  GRUPO: 5
+ORIGINAL [12 chars]: See Acrobats
+TRADUÇÃO:
+
+OFFSET: 0x00003A3F
+CELULA: 320  GRUPO: 5
+ORIGINAL [10 chars]: See Actors
+TRADUÇÃO:
+
+OFFSET: 0x00003A4A
+CELULA: 321  GRUPO: 5
+ORIGINAL [13 chars]: See Monuments
+TRADUÇÃO:
+
+OFFSET: 0x00003A58
+CELULA: 322  GRUPO: N/A
+ORIGINAL [12 chars]: See Security
+TRADUÇÃO:
+
+OFFSET: 0x00003A65
+CELULA: 323  GRUPO: N/A
+ORIGINAL [16 chars]: See Desirability
+TRADUÇÃO:
+
+OFFSET: 0x00003A76
+CELULA: 324  GRUPO: N/A
+ORIGINAL [13 chars]: See Feng Shui
+TRADUÇÃO:
+
+OFFSET: 0x00003A84
+CELULA: 325  GRUPO: N/A
+ORIGINAL [12 chars]: See Problems
+TRADUÇÃO:
+
+OFFSET: 0x00003A91
+CELULA: 326  GRUPO: N/A
+ORIGINAL [15 chars]: See Water Table
+TRADUÇÃO:
+
+OFFSET: 0x00003AA1
+CELULA: 327  GRUPO: N/A
+ORIGINAL [23 chars]: See Another Water Table
+TRADUÇÃO:
+
+OFFSET: 0x00003AB9
+CELULA: 328  GRUPO: 14
+ORIGINAL [12 chars]: Accept goods
+TRADUÇÃO:
+
+OFFSET: 0x00003AC6
+CELULA: 329  GRUPO: 14
+ORIGINAL [12 chars]: Refuse goods
+TRADUÇÃO:
+
+OFFSET: 0x00003AD3
+CELULA: 330  GRUPO: 14
+ORIGINAL [12 chars]: Go get goods
+TRADUÇÃO:
+
+OFFSET: 0x00003AE0
+CELULA: 331  GRUPO: 15
+ORIGINAL [8 chars]: Building
+TRADUÇÃO:
+
+OFFSET: 0x00003AE9
+CELULA: 332  GRUPO: 15
+ORIGINAL [6 chars]: Fabric
+TRADUÇÃO:
+
+OFFSET: 0x00003AF0
+CELULA: 333  GRUPO: 15
+ORIGINAL [7 chars]: Control
+TRADUÇÃO:
+
+OFFSET: 0x00003AF8
+CELULA: 334  GRUPO: 14
+ORIGINAL [3 chars]: Gfx
+TRADUÇÃO:
+
+OFFSET: 0x00003AFC
+CELULA: 335  GRUPO: 14
+ORIGINAL [9 chars]: Structure
+TRADUÇÃO:
+
+OFFSET: 0x00003B06
+CELULA: 336  GRUPO: 14
+ORIGINAL [3 chars]: Net
+TRADUÇÃO:
+
+OFFSET: 0x00003B0A
+CELULA: 337  GRUPO: 14
+ORIGINAL [6 chars]: Random
+TRADUÇÃO:
+
+OFFSET: 0x00003B11
+CELULA: 338  GRUPO: 14
+ORIGINAL [6 chars]: Figure
+TRADUÇÃO:
+
+OFFSET: 0x00003B18
+CELULA: 339  GRUPO: 14
+ORIGINAL [4 chars]: Anim
+TRADUÇÃO:
+
+OFFSET: 0x00003B1D
+CELULA: 340  GRUPO: 14
+ORIGINAL [6 chars]: Sticky
+TRADUÇÃO:
+
+OFFSET: 0x00003B24
+CELULA: 341  GRUPO: 14
+ORIGINAL [8 chars]: RM_build
+TRADUÇÃO:
+
+OFFSET: 0x00003B2D
+CELULA: 342  GRUPO: 14
+ORIGINAL [23 chars]: Building - water supply
+TRADUÇÃO:
+
+OFFSET: 0x00003B45
+CELULA: 343  GRUPO: 14
+ORIGINAL [17 chars]: Building - access
+TRADUÇÃO:
+
+OFFSET: 0x00003B57
+CELULA: 344  GRUPO: 14
+ORIGINAL [23 chars]: Building - from Capital
+TRADUÇÃO:
+
+OFFSET: 0x00003B6F
+CELULA: 345  GRUPO: 14
+ORIGINAL [17 chars]: Building - damage
+TRADUÇÃO:
+
+OFFSET: 0x00003B81
+CELULA: 346  GRUPO: 14
+ORIGINAL [21 chars]: Building - Population
+TRADUÇÃO:
+
+OFFSET: 0x00003B97
+CELULA: 347  GRUPO: 14
+ORIGINAL [6 chars]: Appeal
+TRADUÇÃO:
+
+OFFSET: 0x00003B9E
+CELULA: 348  GRUPO: 14
+ORIGINAL [6 chars]: Height
+TRADUÇÃO:
+
+OFFSET: 0x00003BA5
+CELULA: 349  GRUPO: 14
+ORIGINAL [12 chars]: River sticky
+TRADUÇÃO:
+
+OFFSET: 0x00003BB2
+CELULA: 350  GRUPO: 14
+ORIGINAL [11 chars]: Barb sticky
+TRADUÇÃO:
+
+OFFSET: 0x00003BBE
+CELULA: 351  GRUPO: N/A
+ORIGINAL [6 chars]: Damage
+TRADUÇÃO:
+
+OFFSET: 0x00003BC5
+CELULA: 352  GRUPO: N/A
+ORIGINAL [8 chars]: Nof figs
+TRADUÇÃO:
+
+OFFSET: 0x00003BCE
+CELULA: 353  GRUPO: N/A
+ORIGINAL [8 chars]: Old type
+TRADUÇÃO:
+
+OFFSET: 0x00003BD7
+CELULA: 354  GRUPO: N/A
+ORIGINAL [9 chars]: Influence
+TRADUÇÃO:
+
+OFFSET: 0x00003BE1
+CELULA: 355  GRUPO: N/A
+ORIGINAL [11 chars]: Wall sticky
+TRADUÇÃO:
+
+OFFSET: 0x00003BED
+CELULA: 356  GRUPO: N/A
+ORIGINAL [8 chars]: Road net
+TRADUÇÃO:
+
+OFFSET: 0x00003BF6
+CELULA: 357  GRUPO: N/A
+ORIGINAL [8 chars]: District
+TRADUÇÃO:
+
+OFFSET: 0x00003BFF
+CELULA: 358  GRUPO: 16
+ORIGINAL [5 chars]: North
+TRADUÇÃO:
+
+OFFSET: 0x00003C05
+CELULA: 359  GRUPO: 16
+ORIGINAL [9 chars]: Northeast
+TRADUÇÃO:
+
+OFFSET: 0x00003C0F
+CELULA: 360  GRUPO: 16
+ORIGINAL [4 chars]: East
+TRADUÇÃO:
+
+OFFSET: 0x00003C14
+CELULA: 361  GRUPO: 16
+ORIGINAL [9 chars]: Southeast
+TRADUÇÃO:
+
+OFFSET: 0x00003C1E
+CELULA: 362  GRUPO: 16
+ORIGINAL [5 chars]: South
+TRADUÇÃO:
+
+OFFSET: 0x00003C24
+CELULA: 363  GRUPO: 16
+ORIGINAL [9 chars]: Southwest
+TRADUÇÃO:
+
+OFFSET: 0x00003C2E
+CELULA: 364  GRUPO: 16
+ORIGINAL [4 chars]: West
+TRADUÇÃO:
+
+OFFSET: 0x00003C33
+CELULA: 365  GRUPO: 16
+ORIGINAL [9 chars]: Northwest
+TRADUÇÃO:
+
+OFFSET: 0x00003C3D
+CELULA: 366  GRUPO: 17
+ORIGINAL [2 chars]: No
+TRADUÇÃO:
+
+OFFSET: 0x00003C40
+CELULA: 367  GRUPO: 17
+ORIGINAL [3 chars]: Yes
+TRADUÇÃO:
+
+OFFSET: 0x00003C44
+CELULA: 368  GRUPO: 17
+ORIGINAL [6 chars]: Cancel
+TRADUÇÃO:
+
+OFFSET: 0x00003C4B
+CELULA: 369  GRUPO: 17
+ORIGINAL [2 chars]: OK
+TRADUÇÃO:
+
+OFFSET: 0x00003C4E
+CELULA: 370  GRUPO: 17
+ORIGINAL [2 chars]: ON
+TRADUÇÃO:
+
+OFFSET: 0x00003C51
+CELULA: 371  GRUPO: 17
+ORIGINAL [3 chars]: OFF
+TRADUÇÃO:
+
+OFFSET: 0x00003C55
+CELULA: 372  GRUPO: 17
+ORIGINAL [3 chars]: N/a
+TRADUÇÃO:
+
+OFFSET: 0x00003C59
+CELULA: 373  GRUPO: 17
+ORIGINAL [12 chars]: Tell me more
+TRADUÇÃO:
+
+OFFSET: 0x00003C66
+CELULA: 374  GRUPO: 16
+ORIGINAL [3 chars]: and
+TRADUÇÃO:
+
+OFFSET: 0x00003C6A
+CELULA: 375  GRUPO: 16
+ORIGINAL [5 chars]: Retry
+TRADUÇÃO:
+
+OFFSET: 0x00003C70
+CELULA: 376  GRUPO: 16
+ORIGINAL [5 chars]: Abort
+TRADUÇÃO:
+
+OFFSET: 0x00003C76
+CELULA: 377  GRUPO: 16
+ORIGINAL [6 chars]: Ignore
+TRADUÇÃO:
+
+OFFSET: 0x00003C7D
+CELULA: 378  GRUPO: 18
+ORIGINAL [11 chars]: Blank Entry
+TRADUÇÃO:
+
+OFFSET: 0x00003C89
+CELULA: 379  GRUPO: 18
+ORIGINAL [6 chars]: unused
+TRADUÇÃO:
+
+OFFSET: 0x00003C90
+CELULA: 380  GRUPO: 18
+ORIGINAL [7 chars]: unused 
+TRADUÇÃO:
+
+OFFSET: 0x00003C98
+CELULA: 381  GRUPO: 18
+ORIGINAL [6 chars]: unused
+TRADUÇÃO:
+
+OFFSET: 0x00003C9F
+CELULA: 382  GRUPO: 18
+ORIGINAL [6 chars]: unused
+TRADUÇÃO:
+
+OFFSET: 0x00003CA6
+CELULA: 383  GRUPO: 18
+ORIGINAL [28 chars]: Unable to set windowed mode!
+TRADUÇÃO:
+
+OFFSET: 0x00003CC3
+CELULA: 384  GRUPO: 18
+ORIGINAL [58 chars]: Maximum building capacity reached - see README for details
+TRADUÇÃO:
+
+OFFSET: 0x00003CFE
+CELULA: 385  GRUPO: 18
+ORIGINAL [10 chars]: Game saved
+TRADUÇÃO:
+
+OFFSET: 0x00003D09
+CELULA: 386  GRUPO: 18
+ORIGINAL [14 chars]: Cheats enabled
+TRADUÇÃO:
+
+OFFSET: 0x00003D18
+CELULA: 387  GRUPO: 18
+ORIGINAL [15 chars]: Cheats disabled
+TRADUÇÃO:
+
+OFFSET: 0x00003D28
+CELULA: 388  GRUPO: 18
+ORIGINAL [5 chars]: North
+TRADUÇÃO:
+
+OFFSET: 0x00003D2E
+CELULA: 389  GRUPO: 18
+ORIGINAL [4 chars]: East
+TRADUÇÃO:
+
+OFFSET: 0x00003D33
+CELULA: 390  GRUPO: N/A
+ORIGINAL [5 chars]: South
+TRADUÇÃO:
+
+OFFSET: 0x00003D39
+CELULA: 391  GRUPO: N/A
+ORIGINAL [4 chars]: West
+TRADUÇÃO:
+
+OFFSET: 0x00003D3E
+CELULA: 392  GRUPO: N/A
+ORIGINAL [21 chars]: Monument not allowed!
+TRADUÇÃO:
+
+OFFSET: 0x00003D54
+CELULA: 393  GRUPO: N/A
+ORIGINAL [41 chars]: The city cannot produce or import bronze.
+TRADUÇÃO:
+
+OFFSET: 0x00003D7E
+CELULA: 394  GRUPO: N/A
+ORIGINAL [39 chars]: The city cannot produce or import iron.
+TRADUÇÃO:
+
+OFFSET: 0x00003DA6
+CELULA: 395  GRUPO: N/A
+ORIGINAL [40 chars]: The city cannot produce or import steel.
+TRADUÇÃO:
+
+OFFSET: 0x00003DCF
+CELULA: 396  GRUPO: N/A
+ORIGINAL [39 chars]: The city cannot produce or import wood.
+TRADUÇÃO:
+
+OFFSET: 0x00003DF7
+CELULA: 397  GRUPO: N/A
+ORIGINAL [42 chars]: The city cannot produce or import weapons.
+TRADUÇÃO:
+
+OFFSET: 0x00003E22
+CELULA: 398  GRUPO: N/A
+ORIGINAL [31 chars]: You must build on cleared land.
+TRADUÇÃO:
+
+OFFSET: 0x00003E42
+CELULA: 399  GRUPO: N/A
+ORIGINAL [14 chars]: Out of credit!
+TRADUÇÃO:
+
+OFFSET: 0x00003E51
+CELULA: 400  GRUPO: N/A
+ORIGINAL [47 chars]: You may only have one of this type of building.
+TRADUÇÃO:
+
+OFFSET: 0x00003E81
+CELULA: 401  GRUPO: N/A
+ORIGINAL [37 chars]: This building needs access to a road.
+TRADUÇÃO:
+
+OFFSET: 0x00003EA7
+CELULA: 402  GRUPO: N/A
+ORIGINAL [34 chars]: Animal habitats can't be built on.
+TRADUÇÃO:
+
+OFFSET: 0x00003ECA
+CELULA: 403  GRUPO: N/A
+ORIGINAL [33 chars]: Find a good site along the water.
+TRADUÇÃO:
+
+OFFSET: 0x00003EEC
+CELULA: 404  GRUPO: N/A
+ORIGINAL [46 chars]: You can't demolish a bridge with people on it.
+TRADUÇÃO:
+
+OFFSET: 0x00003F1B
+CELULA: 405  GRUPO: N/A
+ORIGINAL [35 chars]: This lake has no access to the sea.
+TRADUÇÃO:
+
+OFFSET: 0x00003F3F
+CELULA: 406  GRUPO: N/A
+ORIGINAL [35 chars]: Some plots are too far from a road.
+TRADUÇÃO:
+
+OFFSET: 0x00003F63
+CELULA: 407  GRUPO: N/A
+ORIGINAL [52 chars]: Part of the city is isolated from the road to China.
+TRADUÇÃO:
+
+OFFSET: 0x00003F98
+CELULA: 408  GRUPO: N/A
+ORIGINAL [58 chars]: Until you restore access, that neighborhood will stagnate!
+TRADUÇÃO:
+
+OFFSET: 0x00003FD3
+CELULA: 409  GRUPO: N/A
+ORIGINAL [43 chars]: Your city has its full complement of forts.
+TRADUÇÃO:
+
+OFFSET: 0x00003FFF
+CELULA: 410  GRUPO: N/A
+ORIGINAL [42 chars]: You may only have 10 active trading quays.
+TRADUÇÃO:
+
+OFFSET: 0x0000402A
+CELULA: 411  GRUPO: N/A
+ORIGINAL [30 chars]: Not available in this mission!
+TRADUÇÃO:
+
+OFFSET: 0x00004049
+CELULA: 412  GRUPO: N/A
+ORIGINAL [26 chars]: Not available in the demo!
+TRADUÇÃO:
+
+OFFSET: 0x00004064
+CELULA: 413  GRUPO: N/A
+ORIGINAL [26 chars]: Too close to enemy troops!
+TRADUÇÃO:
+
+OFFSET: 0x0000407F
+CELULA: 414  GRUPO: N/A
+ORIGINAL [36 chars]: Company's morale too low to respond!
+TRADUÇÃO:
+
+OFFSET: 0x000040A4
+CELULA: 415  GRUPO: N/A
+ORIGINAL [36 chars]: Company can't reach its destination!
+TRADUÇÃO:
+
+OFFSET: 0x000040C9
+CELULA: 416  GRUPO: N/A
+ORIGINAL [41 chars]: A palace is required to build more forts.
+TRADUÇÃO:
+
+OFFSET: 0x000040F3
+CELULA: 417  GRUPO: N/A
+ORIGINAL [56 chars]: Towers must be next to a city wall to send out a sentry.
+TRADUÇÃO:
+
+OFFSET: 0x0000412C
+CELULA: 418  GRUPO: N/A
+ORIGINAL [43 chars]: Gates must be built on existing city walls.
+TRADUÇÃO:
+
+OFFSET: 0x00004158
+CELULA: 419  GRUPO: N/A
+ORIGINAL [40 chars]: Build market squares to distribute food.
+TRADUÇÃO:
+
+OFFSET: 0x00004181
+CELULA: 420  GRUPO: N/A
+ORIGINAL [29 chars]: Build a mill to process food.
+TRADUÇÃO:
+
+OFFSET: 0x0000419F
+CELULA: 421  GRUPO: N/A
+ORIGINAL [28 chars]: Build mills to process food.
+TRADUÇÃO:
+
+OFFSET: 0x000041BC
+CELULA: 422  GRUPO: N/A
+ORIGINAL [35 chars]: Build this shop on a market square.
+TRADUÇÃO:
+
+OFFSET: 0x000041E0
+CELULA: 423  GRUPO: N/A
+ORIGINAL [26 chars]: Build roadblocks on roads.
+TRADUÇÃO:
+
+OFFSET: 0x000041FB
+CELULA: 424  GRUPO: N/A
+ORIGINAL [6 chars]: unused
+TRADUÇÃO:
+
+OFFSET: 0x00004202
+CELULA: 425  GRUPO: N/A
+ORIGINAL [32 chars]: A miner was attacked and robbed.
+TRADUÇÃO:
+
+OFFSET: 0x00004223
+CELULA: 426  GRUPO: N/A
+ORIGINAL [42 chars]: You may only have one Administrative city.
+TRADUÇÃO:
+
+OFFSET: 0x0000424E
+CELULA: 427  GRUPO: N/A
+ORIGINAL [29 chars]: You may only have one palace.
+TRADUÇÃO:
+
+OFFSET: 0x0000426C
+CELULA: 428  GRUPO: N/A
+ORIGINAL [43 chars]: Build the market square on a straight road.
+TRADUÇÃO:
+
+OFFSET: 0x00004298
+CELULA: 429  GRUPO: N/A
+ORIGINAL [32 chars]: Hunger makes people despise you!
+TRADUÇÃO:
+
+OFFSET: 0x000042B9
+CELULA: 430  GRUPO: N/A
+ORIGINAL [32 chars]: The jobless pray for your exile!
+TRADUÇÃO:
+
+OFFSET: 0x000042DA
+CELULA: 431  GRUPO: N/A
+ORIGINAL [24 chars]: No one likes high taxes!
+TRADUÇÃO:
+
+OFFSET: 0x000042F3
+CELULA: 432  GRUPO: N/A
+ORIGINAL [28 chars]: Low wages brings low morale!
+TRADUÇÃO:
+
+OFFSET: 0x00004310
+CELULA: 433  GRUPO: N/A
+ORIGINAL [32 chars]: The ledgers are full of red ink!
+TRADUÇÃO:
+
+OFFSET: 0x00004331
+CELULA: 434  GRUPO: N/A
+ORIGINAL [26 chars]: People miss the festivals!
+TRADUÇÃO:
+
+OFFSET: 0x0000434C
+CELULA: 435  GRUPO: N/A
+ORIGINAL [37 chars]: Your sense of Feng Shui is laughable!
+TRADUÇÃO:
+
+OFFSET: 0x00004372
+CELULA: 436  GRUPO: N/A
+ORIGINAL [43 chars]: The people hate living in a despotic state!
+TRADUÇÃO:
+
+OFFSET: 0x0000439E
+CELULA: 437  GRUPO: N/A
+ORIGINAL [29 chars]: History of famine haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x000043BC
+CELULA: 438  GRUPO: N/A
+ORIGINAL [35 chars]: History of unemployment haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x000043E0
+CELULA: 439  GRUPO: N/A
+ORIGINAL [33 chars]: History of high taxes haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004402
+CELULA: 440  GRUPO: N/A
+ORIGINAL [32 chars]: History of poor wages hurts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004423
+CELULA: 441  GRUPO: N/A
+ORIGINAL [35 chars]: History of extreme debt haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004447
+CELULA: 442  GRUPO: N/A
+ORIGINAL [35 chars]: History of no festivals haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x0000446B
+CELULA: 443  GRUPO: N/A
+ORIGINAL [36 chars]: History of bad Feng Shui haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004490
+CELULA: 444  GRUPO: N/A
+ORIGINAL [32 chars]: History of despotism haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x000044B1
+CELULA: 445  GRUPO: N/A
+ORIGINAL [35 chars]: No food means no love lost for you.
+TRADUÇÃO:
+
+OFFSET: 0x000044D5
+CELULA: 446  GRUPO: N/A
+ORIGINAL [36 chars]: Lack of jobs causes dissatisfaction.
+TRADUÇÃO:
+
+OFFSET: 0x000044FA
+CELULA: 447  GRUPO: N/A
+ORIGINAL [36 chars]: High taxes lead to widespread scorn.
+TRADUÇÃO:
+
+OFFSET: 0x0000451F
+CELULA: 448  GRUPO: N/A
+ORIGINAL [32 chars]: Low wages equals low popularity.
+TRADUÇÃO:
+
+OFFSET: 0x00004540
+CELULA: 449  GRUPO: N/A
+ORIGINAL [40 chars]: Debt results in low consumer confidence.
+TRADUÇÃO:
+
+OFFSET: 0x00004569
+CELULA: 450  GRUPO: N/A
+ORIGINAL [30 chars]: No festivals angers residents.
+TRADUÇÃO:
+
+OFFSET: 0x00004588
+CELULA: 451  GRUPO: N/A
+ORIGINAL [34 chars]: Bad Feng Shui makes people uneasy.
+TRADUÇÃO:
+
+OFFSET: 0x000045AB
+CELULA: 452  GRUPO: N/A
+ORIGINAL [36 chars]: Despotism crushes the city's spirit.
+TRADUÇÃO:
+
+OFFSET: 0x000045D0
+CELULA: 453  GRUPO: N/A
+ORIGINAL [29 chars]: History of famine haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x000045EE
+CELULA: 454  GRUPO: N/A
+ORIGINAL [35 chars]: History of unemployment haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004612
+CELULA: 455  GRUPO: N/A
+ORIGINAL [33 chars]: History of high taxes haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004634
+CELULA: 456  GRUPO: N/A
+ORIGINAL [33 chars]: History of poor wages haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004656
+CELULA: 457  GRUPO: N/A
+ORIGINAL [35 chars]: History of extreme debt haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x0000467A
+CELULA: 458  GRUPO: N/A
+ORIGINAL [35 chars]: History of no festivals haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x0000469E
+CELULA: 459  GRUPO: N/A
+ORIGINAL [36 chars]: History of bad Feng Shui haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x000046C3
+CELULA: 460  GRUPO: N/A
+ORIGINAL [32 chars]: History of despotism haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x000046E4
+CELULA: 461  GRUPO: N/A
+ORIGINAL [33 chars]: The hungry harshly criticize you.
+TRADUÇÃO:
+
+OFFSET: 0x00004706
+CELULA: 462  GRUPO: N/A
+ORIGINAL [42 chars]: People are bitter after losing their jobs.
+TRADUÇÃO:
+
+OFFSET: 0x00004731
+CELULA: 463  GRUPO: N/A
+ORIGINAL [32 chars]: High taxes are met with disdain.
+TRADUÇÃO:
+
+OFFSET: 0x00004752
+CELULA: 464  GRUPO: N/A
+ORIGINAL [26 chars]: People hate a stingy boss!
+TRADUÇÃO:
+
+OFFSET: 0x0000476D
+CELULA: 465  GRUPO: N/A
+ORIGINAL [41 chars]: Workers are fed up with not getting paid.
+TRADUÇÃO:
+
+OFFSET: 0x00004797
+CELULA: 466  GRUPO: N/A
+ORIGINAL [34 chars]: Without festivals there is no joy.
+TRADUÇÃO:
+
+OFFSET: 0x000047BA
+CELULA: 467  GRUPO: N/A
+ORIGINAL [39 chars]: Bad Feng Shui is nothing to brag about.
+TRADUÇÃO:
+
+OFFSET: 0x000047E2
+CELULA: 468  GRUPO: N/A
+ORIGINAL [39 chars]: Despotism leads to rebellious thoughts.
+TRADUÇÃO:
+
+OFFSET: 0x0000480A
+CELULA: 469  GRUPO: N/A
+ORIGINAL [29 chars]: History of famine haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004828
+CELULA: 470  GRUPO: N/A
+ORIGINAL [35 chars]: History of unemployment haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x0000484C
+CELULA: 471  GRUPO: N/A
+ORIGINAL [33 chars]: History of high taxes haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x0000486E
+CELULA: 472  GRUPO: N/A
+ORIGINAL [33 chars]: History of poor wages haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004890
+CELULA: 473  GRUPO: N/A
+ORIGINAL [35 chars]: History of extreme debt haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x000048B4
+CELULA: 474  GRUPO: N/A
+ORIGINAL [35 chars]: History of no festivals haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x000048D8
+CELULA: 475  GRUPO: N/A
+ORIGINAL [36 chars]: History of bad Feng Shui haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x000048FD
+CELULA: 476  GRUPO: N/A
+ORIGINAL [32 chars]: History of despotism haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x0000491E
+CELULA: 477  GRUPO: N/A
+ORIGINAL [40 chars]: People displeased with the lack of food.
+TRADUÇÃO:
+
+OFFSET: 0x00004947
+CELULA: 478  GRUPO: N/A
+ORIGINAL [45 chars]: People demand jobs or your head on a platter.
+TRADUÇÃO:
+
+OFFSET: 0x00004975
+CELULA: 479  GRUPO: N/A
+ORIGINAL [28 chars]: High taxes pique homeowners.
+TRADUÇÃO:
+
+OFFSET: 0x00004992
+CELULA: 480  GRUPO: N/A
+ORIGINAL [22 chars]: Low wages vex workers.
+TRADUÇÃO:
+
+OFFSET: 0x000049A9
+CELULA: 481  GRUPO: N/A
+ORIGINAL [28 chars]: Money woes cause discontent.
+TRADUÇÃO:
+
+OFFSET: 0x000049C6
+CELULA: 482  GRUPO: N/A
+ORIGINAL [41 chars]: Residents upset by the lack of festivals.
+TRADUÇÃO:
+
+OFFSET: 0x000049F0
+CELULA: 483  GRUPO: N/A
+ORIGINAL [30 chars]: Bad Feng Shui angers residents
+TRADUÇÃO:
+
+OFFSET: 0x00004A0F
+CELULA: 484  GRUPO: N/A
+ORIGINAL [26 chars]: Despotism angers residents
+TRADUÇÃO:
+
+OFFSET: 0x00004A2A
+CELULA: 485  GRUPO: N/A
+ORIGINAL [29 chars]: History of famine haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004A48
+CELULA: 486  GRUPO: N/A
+ORIGINAL [35 chars]: History of unemployment haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004A6C
+CELULA: 487  GRUPO: N/A
+ORIGINAL [33 chars]: History of high taxes haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004A8E
+CELULA: 488  GRUPO: N/A
+ORIGINAL [33 chars]: History of poor wages haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004AB0
+CELULA: 489  GRUPO: N/A
+ORIGINAL [35 chars]: History of extreme debt haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004AD4
+CELULA: 490  GRUPO: N/A
+ORIGINAL [35 chars]: History of no festivals haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004AF8
+CELULA: 491  GRUPO: N/A
+ORIGINAL [36 chars]: History of bad Feng Shui haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004B1D
+CELULA: 492  GRUPO: N/A
+ORIGINAL [32 chars]: History of despotism haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004B3E
+CELULA: 493  GRUPO: N/A
+ORIGINAL [28 chars]: Hunger aggravates residents.
+TRADUÇÃO:
+
+OFFSET: 0x00004B5B
+CELULA: 494  GRUPO: N/A
+ORIGINAL [29 chars]: Joblessness met with outrage.
+TRADUÇÃO:
+
+OFFSET: 0x00004B79
+CELULA: 495  GRUPO: N/A
+ORIGINAL [28 chars]: People object to high taxes.
+TRADUÇÃO:
+
+OFFSET: 0x00004B96
+CELULA: 496  GRUPO: N/A
+ORIGINAL [31 chars]: People are galled by low wages.
+TRADUÇÃO:
+
+OFFSET: 0x00004BB6
+CELULA: 497  GRUPO: N/A
+ORIGINAL [31 chars]: Deficit spending is never wise.
+TRADUÇÃO:
+
+OFFSET: 0x00004BD6
+CELULA: 498  GRUPO: N/A
+ORIGINAL [35 chars]: People are bored without festivals.
+TRADUÇÃO:
+
+OFFSET: 0x00004BFA
+CELULA: 499  GRUPO: N/A
+ORIGINAL [37 chars]: Bad Feng Shui is the topic of gossip.
+TRADUÇÃO:
+
+OFFSET: 0x00004C20
+CELULA: 500  GRUPO: N/A
+ORIGINAL [30 chars]: Despotism is alarming to some.
+TRADUÇÃO:
+
+OFFSET: 0x00004C3F
+CELULA: 501  GRUPO: N/A
+ORIGINAL [29 chars]: History of famine haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004C5D
+CELULA: 502  GRUPO: N/A
+ORIGINAL [35 chars]: History of unemployment haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004C81
+CELULA: 503  GRUPO: N/A
+ORIGINAL [33 chars]: History of high taxes haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004CA3
+CELULA: 504  GRUPO: N/A
+ORIGINAL [33 chars]: History of poor wages haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004CC5
+CELULA: 505  GRUPO: N/A
+ORIGINAL [36 chars]: History of extreme debts haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004CEA
+CELULA: 506  GRUPO: N/A
+ORIGINAL [35 chars]: History of no festivals haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004D0E
+CELULA: 507  GRUPO: N/A
+ORIGINAL [45 chars]: History of inauspicious Feng Shui haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004D3C
+CELULA: 508  GRUPO: N/A
+ORIGINAL [32 chars]: History of despotism haunts you.
+TRADUÇÃO:
+
+OFFSET: 0x00004D5D
+CELULA: 509  GRUPO: N/A
+ORIGINAL [38 chars]: Popularity has dwindled to low levels.
+TRADUÇÃO:
+
+OFFSET: 0x00004D84
+CELULA: 510  GRUPO: N/A
+ORIGINAL [29 chars]: Opinion of you has plummeted.
+TRADUÇÃO:
+
+OFFSET: 0x00004DA2
+CELULA: 511  GRUPO: N/A
+ORIGINAL [21 chars]: Popularity has waned.
+TRADUÇÃO:
+
+OFFSET: 0x00004DB8
+CELULA: 512  GRUPO: N/A
+ORIGINAL [32 chars]: Popularity is beginning to sink.
+TRADUÇÃO:
+
+OFFSET: 0x00004DD9
+CELULA: 513  GRUPO: N/A
+ORIGINAL [35 chars]: You are not as popular as you were.
+TRADUÇÃO:
+
+OFFSET: 0x00004DFD
+CELULA: 514  GRUPO: N/A
+ORIGINAL [32 chars]: Maybe you're not scum after all?
+TRADUÇÃO:
+
+OFFSET: 0x00004E1E
+CELULA: 515  GRUPO: N/A
+ORIGINAL [29 chars]: You no longer disgust people.
+TRADUÇÃO:
+
+OFFSET: 0x00004E3C
+CELULA: 516  GRUPO: N/A
+ORIGINAL [33 chars]: You are not as hated as you were.
+TRADUÇÃO:
+
+OFFSET: 0x00004E5E
+CELULA: 517  GRUPO: N/A
+ORIGINAL [19 chars]: You could be worse.
+TRADUÇÃO:
+
+OFFSET: 0x00004E72
+CELULA: 518  GRUPO: N/A
+ORIGINAL [29 chars]: People are warming up to you.
+TRADUÇÃO:
+
+OFFSET: 0x00004E90
+CELULA: 519  GRUPO: N/A
+ORIGINAL [34 chars]: People feel apathetic towards you.
+TRADUÇÃO:
+
+OFFSET: 0x00004EB3
+CELULA: 520  GRUPO: N/A
+ORIGINAL [34 chars]: You are well liked by most people.
+TRADUÇÃO:
+
+OFFSET: 0x00004ED6
+CELULA: 521  GRUPO: N/A
+ORIGINAL [37 chars]: You are invited to every celebration.
+TRADUÇÃO:
+
+OFFSET: 0x00004EFC
+CELULA: 522  GRUPO: N/A
+ORIGINAL [33 chars]: People think you are enlightened.
+TRADUÇÃO:
+
+OFFSET: 0x00004F1E
+CELULA: 523  GRUPO: N/A
+ORIGINAL [34 chars]: You are more popular than dim sum.
+TRADUÇÃO:
+
+OFFSET: 0x00004F41
+CELULA: 524  GRUPO: N/A
+ORIGINAL [46 chars]: People call you the greatest ruler in history!
+TRADUÇÃO:
+
+OFFSET: 0x00004F70
+CELULA: 525  GRUPO: N/A
+ORIGINAL [36 chars]: The threat of war scares immigrants.
+TRADUÇÃO:
+
+OFFSET: 0x00004F95
+CELULA: 526  GRUPO: N/A
+ORIGINAL [36 chars]: Lack of housing hinders immigration.
+TRADUÇÃO:
+
+OFFSET: 0x00004FBA
+CELULA: 527  GRUPO: N/A
+ORIGINAL [35 chars]: Lack of food keeps immigrants away.
+TRADUÇÃO:
+
+OFFSET: 0x00004FDE
+CELULA: 528  GRUPO: N/A
+ORIGINAL [34 chars]: Unemployment prevents immigration.
+TRADUÇÃO:
+
+OFFSET: 0x00005001
+CELULA: 529  GRUPO: N/A
+ORIGINAL [31 chars]: High taxes prevent immigration.
+TRADUÇÃO:
+
+OFFSET: 0x00005021
+CELULA: 530  GRUPO: N/A
+ORIGINAL [30 chars]: Low wages prevent immigration.
+TRADUÇÃO:
+
+OFFSET: 0x00005040
+CELULA: 531  GRUPO: N/A
+ORIGINAL [26 chars]: Debt prevents immigration.
+TRADUÇÃO:
+
+OFFSET: 0x0000505B
+CELULA: 532  GRUPO: N/A
+ORIGINAL [33 chars]: No festivals hinders immigration.
+TRADUÇÃO:
+
+OFFSET: 0x0000507D
+CELULA: 533  GRUPO: N/A
+ORIGINAL [34 chars]: Bad Feng Shui hinders immigration.
+TRADUÇÃO:
+
+OFFSET: 0x000050A0
+CELULA: 534  GRUPO: N/A
+ORIGINAL [30 chars]: Despotism hinders immigration.
+TRADUÇÃO:
+
+OFFSET: 0x000050BF
+CELULA: 535  GRUPO: N/A
+ORIGINAL [34 chars]: Past high taxes keeps people away.
+TRADUÇÃO:
+
+OFFSET: 0x000050E2
+CELULA: 536  GRUPO: N/A
+ORIGINAL [33 chars]: Past low wages keeps people away.
+TRADUÇÃO:
+
+OFFSET: 0x00005104
+CELULA: 537  GRUPO: N/A
+ORIGINAL [28 chars]: Past debt keeps people away.
+TRADUÇÃO:
+
+OFFSET: 0x00005121
+CELULA: 538  GRUPO: N/A
+ORIGINAL [41 chars]: Past lack of festivals keeps people away.
+TRADUÇÃO:
+
+OFFSET: 0x0000514B
+CELULA: 539  GRUPO: N/A
+ORIGINAL [46 chars]: Past inauspicious feng shui keeps people away.
+TRADUÇÃO:
+
+OFFSET: 0x0000517A
+CELULA: 540  GRUPO: N/A
+ORIGINAL [39 chars]: Past civic repression keeps people away
+TRADUÇÃO:
+
+OFFSET: 0x000051A2
+CELULA: 541  GRUPO: N/A
+ORIGINAL [30 chars]: Past hunger keeps people away.
+TRADUÇÃO:
+
+OFFSET: 0x000051C1
+CELULA: 542  GRUPO: N/A
+ORIGINAL [36 chars]: Past unemployment keeps people away.
+TRADUÇÃO:
+
+OFFSET: 0x000051E6
+CELULA: 543  GRUPO: N/A
+ORIGINAL [27 chars]: New residents are arriving.
+TRADUÇÃO:
+
+OFFSET: 0x00005202
+CELULA: 544  GRUPO: N/A
+ORIGINAL [36 chars]: Your unpopularity stops immigration.
+TRADUÇÃO:
+
+OFFSET: 0x00005227
+CELULA: 545  GRUPO: N/A
+ORIGINAL [35 chars]: Lack of housing prompts departures.
+TRADUÇÃO:
+
+OFFSET: 0x0000524B
+CELULA: 546  GRUPO: N/A
+ORIGINAL [31 chars]: Lack of food forces people out.
+TRADUÇÃO:
+
+OFFSET: 0x0000526B
+CELULA: 547  GRUPO: N/A
+ORIGINAL [36 chars]: Unemployment causes people to leave.
+TRADUÇÃO:
+
+OFFSET: 0x00005290
+CELULA: 548  GRUPO: N/A
+ORIGINAL [29 chars]: High taxes drive people away.
+TRADUÇÃO:
+
+OFFSET: 0x000052AE
+CELULA: 549  GRUPO: N/A
+ORIGINAL [31 chars]: Paltry wages force people away.
+TRADUÇÃO:
+
+OFFSET: 0x000052CE
+CELULA: 550  GRUPO: N/A
+ORIGINAL [32 chars]: Emigration caused by money woes.
+TRADUÇÃO:
+
+OFFSET: 0x000052EF
+CELULA: 551  GRUPO: N/A
+ORIGINAL [31 chars]: People leave over no festivals.
+TRADUÇÃO:
+
+OFFSET: 0x0000530F
+CELULA: 552  GRUPO: N/A
+ORIGINAL [32 chars]: People leave over bad feng shui.
+TRADUÇÃO:
+
+OFFSET: 0x00005330
+CELULA: 553  GRUPO: N/A
+ORIGINAL [35 chars]: People leave over civic repression.
+TRADUÇÃO:
+
+OFFSET: 0x00005354
+CELULA: 554  GRUPO: N/A
+ORIGINAL [34 chars]: People leave over past high taxes.
+TRADUÇÃO:
+
+OFFSET: 0x00005377
+CELULA: 555  GRUPO: N/A
+ORIGINAL [35 chars]: People leave due to past low wages.
+TRADUÇÃO:
+
+OFFSET: 0x0000539B
+CELULA: 556  GRUPO: N/A
+ORIGINAL [28 chars]: People leave over past debt.
+TRADUÇÃO:
+
+OFFSET: 0x000053B8
+CELULA: 557  GRUPO: N/A
+ORIGINAL [45 chars]: People leave due to no festivals in the past.
+TRADUÇÃO:
+
+OFFSET: 0x000053E6
+CELULA: 558  GRUPO: N/A
+ORIGINAL [55 chars]: People leave due to inauspicious feng shui in the past.
+TRADUÇÃO:
+
+OFFSET: 0x0000541E
+CELULA: 559  GRUPO: N/A
+ORIGINAL [42 chars]: People leave due to despotism in the past.
+TRADUÇÃO:
+
+OFFSET: 0x00005449
+CELULA: 560  GRUPO: N/A
+ORIGINAL [30 chars]: People leave over past hunger.
+TRADUÇÃO:
+
+OFFSET: 0x00005468
+CELULA: 561  GRUPO: N/A
+ORIGINAL [38 chars]: People leave due to past unemployment.
+TRADUÇÃO:
+
+OFFSET: 0x0000548F
+CELULA: 562  GRUPO: N/A
+ORIGINAL [36 chars]: Your unpopularity causes emigration.
+TRADUÇÃO:
+
+OFFSET: 0x000054B4
+CELULA: 563  GRUPO: N/A
+ORIGINAL [29 chars]: Your city needs more workers.
+TRADUÇÃO:
+
+OFFSET: 0x000054D2
+CELULA: 564  GRUPO: N/A
+ORIGINAL [29 chars]: Your city needs more workers.
+TRADUÇÃO:
+
+OFFSET: 0x000054F0
+CELULA: 565  GRUPO: N/A
+ORIGINAL [34 chars]: You already have too many workers!
+TRADUÇÃO:
+
+OFFSET: 0x00005513
+CELULA: 566  GRUPO: N/A
+ORIGINAL [31 chars]: High unemployment is a problem.
+TRADUÇÃO:
+
+OFFSET: 0x00005533
+CELULA: 567  GRUPO: N/A
+ORIGINAL [33 chars]: You can't feed everyone as it is!
+TRADUÇÃO:
+
+OFFSET: 0x00005555
+CELULA: 568  GRUPO: N/A
+ORIGINAL [34 chars]: The city doesn't have enough food.
+TRADUÇÃO:
+
+OFFSET: 0x00005578
+CELULA: 569  GRUPO: N/A
+ORIGINAL [28 chars]: People already eat too much!
+TRADUÇÃO:
+
+OFFSET: 0x00005595
+CELULA: 570  GRUPO: N/A
+ORIGINAL [36 chars]: Hygiene appalling, disease imminent!
+TRADUÇÃO:
+
+OFFSET: 0x000055BA
+CELULA: 571  GRUPO: N/A
+ORIGINAL [33 chars]: Hygiene terrible, disease likely.
+TRADUÇÃO:
+
+OFFSET: 0x000055DC
+CELULA: 572  GRUPO: N/A
+ORIGINAL [37 chars]: Hygiene bad, serious risk of disease.
+TRADUÇÃO:
+
+OFFSET: 0x00005602
+CELULA: 573  GRUPO: N/A
+ORIGINAL [35 chars]: Hygiene poor; disease could strike.
+TRADUÇÃO:
+
+OFFSET: 0x00005626
+CELULA: 574  GRUPO: N/A
+ORIGINAL [35 chars]: Hygiene is falling dangerously low.
+TRADUÇÃO:
+
+OFFSET: 0x0000564A
+CELULA: 575  GRUPO: N/A
+ORIGINAL [32 chars]: Hygiene is ok but getting worse.
+TRADUÇÃO:
+
+OFFSET: 0x0000566B
+CELULA: 576  GRUPO: N/A
+ORIGINAL [30 chars]: Hygiene is good but worsening.
+TRADUÇÃO:
+
+OFFSET: 0x0000568A
+CELULA: 577  GRUPO: N/A
+ORIGINAL [36 chars]: Hygiene is very good, but weakening.
+TRADUÇÃO:
+
+OFFSET: 0x000056AF
+CELULA: 578  GRUPO: N/A
+ORIGINAL [29 chars]: Hygiene is no longer perfect.
+TRADUÇÃO:
+
+OFFSET: 0x000056CD
+CELULA: 579  GRUPO: N/A
+ORIGINAL [25 chars]: Hygiene is deteriorating.
+TRADUÇÃO:
+
+OFFSET: 0x000056E7
+CELULA: 580  GRUPO: N/A
+ORIGINAL [40 chars]: Hygiene is better, disease still likely.
+TRADUÇÃO:
+
+OFFSET: 0x00005710
+CELULA: 581  GRUPO: N/A
+ORIGINAL [41 chars]: Hygiene is better, still risk of disease.
+TRADUÇÃO:
+
+OFFSET: 0x0000573A
+CELULA: 582  GRUPO: N/A
+ORIGINAL [39 chars]: Hygiene better, disease still possible.
+TRADUÇÃO:
+
+OFFSET: 0x00005762
+CELULA: 583  GRUPO: N/A
+ORIGINAL [34 chars]: Hygiene isn't as dismal as it was.
+TRADUÇÃO:
+
+OFFSET: 0x00005785
+CELULA: 584  GRUPO: N/A
+ORIGINAL [21 chars]: Hygiene is improving.
+TRADUÇÃO:
+
+OFFSET: 0x0000579B
+CELULA: 585  GRUPO: N/A
+ORIGINAL [35 chars]: Hygiene is good and getting better.
+TRADUÇÃO:
+
+OFFSET: 0x000057BF
+CELULA: 586  GRUPO: N/A
+ORIGINAL [35 chars]: Hygiene is very good and improving.
+TRADUÇÃO:
+
+OFFSET: 0x000057E3
+CELULA: 587  GRUPO: N/A
+ORIGINAL [34 chars]: Hygiene is excellent and climbing.
+TRADUÇÃO:
+
+OFFSET: 0x00005806
+CELULA: 588  GRUPO: N/A
+ORIGINAL [35 chars]: Hygiene is near perfect and rising.
+TRADUÇÃO:
+
+OFFSET: 0x0000582A
+CELULA: 589  GRUPO: N/A
+ORIGINAL [19 chars]: Hygiene is perfect!
+TRADUÇÃO:
+
+OFFSET: 0x0000583E
+CELULA: 590  GRUPO: N/A
+ORIGINAL [34 chars]: Thieves have robbed an elite home!
+TRADUÇÃO:
+
+OFFSET: 0x00005861
+CELULA: 591  GRUPO: N/A
+ORIGINAL [37 chars]: Bandits have destroyed an elite home!
+TRADUÇÃO:
+
+OFFSET: 0x00005887
+CELULA: 592  GRUPO: N/A
+ORIGINAL [37 chars]: There is a lot of unrest in the city.
+TRADUÇÃO:
+
+OFFSET: 0x000058AD
+CELULA: 593  GRUPO: N/A
+ORIGINAL [37 chars]: There is a lot of unrest in the city.
+TRADUÇÃO:
+
+OFFSET: 0x000058D3
+CELULA: 594  GRUPO: N/A
+ORIGINAL [33 chars]: There is some unrest in the city.
+TRADUÇÃO:
+
+OFFSET: 0x000058F5
+CELULA: 595  GRUPO: N/A
+ORIGINAL [33 chars]: There is some unrest in the city.
+TRADUÇÃO:
+
+OFFSET: 0x00005917
+CELULA: 596  GRUPO: N/A
+ORIGINAL [42 chars]: There are stirrings of unrest in the city.
+TRADUÇÃO:
+
+OFFSET: 0x00005942
+CELULA: 597  GRUPO: N/A
+ORIGINAL [31 chars]: There is no unrest in the city!
+TRADUÇÃO:
+
+OFFSET: 0x00005962
+CELULA: 598  GRUPO: N/A
+ORIGINAL [37 chars]: Build a trading station to import it.
+TRADUÇÃO:
+
+OFFSET: 0x00005988
+CELULA: 599  GRUPO: N/A
+ORIGINAL [34 chars]: Build a trading quay to import it.
+TRADUÇÃO:
+
+OFFSET: 0x000059AB
+CELULA: 600  GRUPO: N/A
+ORIGINAL [36 chars]: Build a trade building to import it.
+TRADUÇÃO:
+
+OFFSET: 0x000059D0
+CELULA: 601  GRUPO: N/A
+ORIGINAL [33 chars]: Import it from a trading station.
+TRADUÇÃO:
+
+OFFSET: 0x000059F2
+CELULA: 602  GRUPO: N/A
+ORIGINAL [30 chars]: Import it from a trading quay.
+TRADUÇÃO:
+
+OFFSET: 0x00005A11
+CELULA: 603  GRUPO: N/A
+ORIGINAL [34 chars]: Import it from a trading building.
+TRADUÇÃO:
+
+OFFSET: 0x00005A34
+CELULA: 604  GRUPO: N/A
+ORIGINAL [39 chars]: Build a trading station to import them.
+TRADUÇÃO:
+
+OFFSET: 0x00005A5C
+CELULA: 605  GRUPO: N/A
+ORIGINAL [36 chars]: Build a trading quay to import them.
+TRADUÇÃO:
+
+OFFSET: 0x00005A81
+CELULA: 606  GRUPO: N/A
+ORIGINAL [40 chars]: Build a trading building to import them.
+TRADUÇÃO:
+
+OFFSET: 0x00005AAA
+CELULA: 607  GRUPO: N/A
+ORIGINAL [35 chars]: Import them from a trading station.
+TRADUÇÃO:
+
+OFFSET: 0x00005ACE
+CELULA: 608  GRUPO: N/A
+ORIGINAL [32 chars]: Import them from a trading quay.
+TRADUÇÃO:
+
+OFFSET: 0x00005AEF
+CELULA: 609  GRUPO: N/A
+ORIGINAL [34 chars]: Import them from a trade building.
+TRADUÇÃO:
+
+OFFSET: 0x00005B12
+CELULA: 610  GRUPO: N/A
+ORIGINAL [28 chars]: Forts need wood and weapons.
+TRADUÇÃO:
+
+OFFSET: 0x00005B2F
+CELULA: 611  GRUPO: N/A
+ORIGINAL [25 chars]: This building needs wood.
+TRADUÇÃO:
+
+OFFSET: 0x00005B49
+CELULA: 612  GRUPO: N/A
+ORIGINAL [28 chars]: This building needs weapons.
+TRADUÇÃO:
+
+OFFSET: 0x00005B66
+CELULA: 613  GRUPO: N/A
+ORIGINAL [21 chars]: Build a logging shed.
+TRADUÇÃO:
+
+OFFSET: 0x00005B7C
+CELULA: 614  GRUPO: N/A
+ORIGINAL [20 chars]: Build a Weaponsmith.
+TRADUÇÃO:
+
+OFFSET: 0x00005B91
+CELULA: 615  GRUPO: N/A
+ORIGINAL [41 chars]: Weaponsmiths need bronze to make weapons.
+TRADUÇÃO:
+
+OFFSET: 0x00005BBB
+CELULA: 616  GRUPO: N/A
+ORIGINAL [39 chars]: Weaponsmiths need iron to make weapons.
+TRADUÇÃO:
+
+OFFSET: 0x00005BE3
+CELULA: 617  GRUPO: N/A
+ORIGINAL [40 chars]: Weaponsmiths need steel to make weapons.
+TRADUÇÃO:
+
+OFFSET: 0x00005C0C
+CELULA: 618  GRUPO: N/A
+ORIGINAL [23 chars]: Build a bronze smelter.
+TRADUÇÃO:
+
+OFFSET: 0x00005C24
+CELULA: 619  GRUPO: N/A
+ORIGINAL [22 chars]: Build an iron smelter.
+TRADUÇÃO:
+
+OFFSET: 0x00005C3B
+CELULA: 620  GRUPO: N/A
+ORIGINAL [22 chars]: Build a steel furnace.
+TRADUÇÃO:
+
+OFFSET: 0x00005C52
+CELULA: 621  GRUPO: N/A
+ORIGINAL [47 chars]: Bronzeware makers need bronze to produce wares.
+TRADUÇÃO:
+
+OFFSET: 0x00005C82
+CELULA: 622  GRUPO: N/A
+ORIGINAL [50 chars]: Weavers can't produce silk cloth without raw silk.
+TRADUÇÃO:
+
+OFFSET: 0x00005CB5
+CELULA: 623  GRUPO: N/A
+ORIGINAL [26 chars]: Plant some mulberry trees.
+TRADUÇÃO:
+
+OFFSET: 0x00005CD0
+CELULA: 624  GRUPO: N/A
+ORIGINAL [55 chars]: Lacquerware makers can't produce wares without lacquer.
+TRADUÇÃO:
+
+OFFSET: 0x00005D08
+CELULA: 625  GRUPO: N/A
+ORIGINAL [25 chars]: Plant some lacquer trees.
+TRADUÇÃO:
+
+OFFSET: 0x00005D22
+CELULA: 626  GRUPO: N/A
+ORIGINAL [41 chars]: You need [warning_amount] slabs of stone.
+TRADUÇÃO:
+
+OFFSET: 0x00005D4C
+CELULA: 627  GRUPO: N/A
+ORIGINAL [29 chars]: Build a stoneworks to hew it.
+TRADUÇÃO:
+
+OFFSET: 0x00005D6A
+CELULA: 628  GRUPO: N/A
+ORIGINAL [58 chars]: This home needs [warning_amount] crate of appetizing food.
+TRADUÇÃO:
+
+OFFSET: 0x00005DA5
+CELULA: 629  GRUPO: N/A
+ORIGINAL [46 chars]: This home needs [warning_amount] bale of hemp.
+TRADUÇÃO:
+
+OFFSET: 0x00005DD4
+CELULA: 630  GRUPO: N/A
+ORIGINAL [51 chars]: This home needs [warning_amount] crate of ceramics.
+TRADUÇÃO:
+
+OFFSET: 0x00005E08
+CELULA: 631  GRUPO: N/A
+ORIGINAL [43 chars]: Build this home in a highly desirable area.
+TRADUÇÃO:
+
+OFFSET: 0x00005E34
+CELULA: 632  GRUPO: N/A
+ORIGINAL [24 chars]: Must be placed on grass.
+TRADUÇÃO:
+
+OFFSET: 0x00005E4D
+CELULA: 633  GRUPO: N/A
+ORIGINAL [36 chars]: Tea bushes need people to tend them.
+TRADUÇÃO:
+
+OFFSET: 0x00005E72
+CELULA: 634  GRUPO: N/A
+ORIGINAL [24 chars]: Build a tea curing shed.
+TRADUÇÃO:
+
+OFFSET: 0x00005E8B
+CELULA: 635  GRUPO: N/A
+ORIGINAL [41 chars]: Tea can't be produced without tea bushes.
+TRADUÇÃO:
+
+OFFSET: 0x00005EB5
+CELULA: 636  GRUPO: N/A
+ORIGINAL [29 chars]: Place some tea bushes nearby.
+TRADUÇÃO:
+
+OFFSET: 0x00005ED3
+CELULA: 637  GRUPO: N/A
+ORIGINAL [39 chars]: Lacquer trees need people to tend them.
+TRADUÇÃO:
+
+OFFSET: 0x00005EFB
+CELULA: 638  GRUPO: N/A
+ORIGINAL [25 chars]: Build a lacquer refinery.
+TRADUÇÃO:
+
+OFFSET: 0x00005F15
+CELULA: 639  GRUPO: N/A
+ORIGINAL [48 chars]: Lacquer can't be produced without lacquer trees.
+TRADUÇÃO:
+
+OFFSET: 0x00005F46
+CELULA: 640  GRUPO: N/A
+ORIGINAL [32 chars]: Place some lacquer trees nearby.
+TRADUÇÃO:
+
+OFFSET: 0x00005F67
+CELULA: 641  GRUPO: N/A
+ORIGINAL [40 chars]: Mulberry trees need people to tend them.
+TRADUÇÃO:
+
+OFFSET: 0x00005F90
+CELULA: 642  GRUPO: N/A
+ORIGINAL [22 chars]: Build a silkworm shed.
+TRADUÇÃO:
+
+OFFSET: 0x00005FA7
+CELULA: 643  GRUPO: N/A
+ORIGINAL [51 chars]: Silkworms can't produce silk without leaves to eat.
+TRADUÇÃO:
+
+OFFSET: 0x00005FDB
+CELULA: 644  GRUPO: N/A
+ORIGINAL [33 chars]: Place some mulberry trees nearby.
+TRADUÇÃO:
+
+OFFSET: 0x00005FFD
+CELULA: 645  GRUPO: N/A
+ORIGINAL [46 chars]: Build an Administrative city to collect taxes.
+TRADUÇÃO:
+
+OFFSET: 0x0000602C
+CELULA: 646  GRUPO: N/A
+ORIGINAL [68 chars]: Build a market square for your musicians and acrobats to perform at.
+TRADUÇÃO:
+
+OFFSET: 0x00006071
+CELULA: 647  GRUPO: N/A
+ORIGINAL [40 chars]: Build a music school to train musicians.
+TRADUÇÃO:
+
+OFFSET: 0x0000609A
+CELULA: 648  GRUPO: N/A
+ORIGINAL [6 chars]: Unused
+TRADUÇÃO:
+
+OFFSET: 0x000060A1
+CELULA: 649  GRUPO: N/A
+ORIGINAL [41 chars]: Build a theatre pavilion for your actors.
+TRADUÇÃO:
+
+OFFSET: 0x000060CB
+CELULA: 650  GRUPO: N/A
+ORIGINAL [37 chars]: Build a drama school to train actors.
+TRADUÇÃO:
+
+OFFSET: 0x000060F1
+CELULA: 651  GRUPO: N/A
+ORIGINAL [42 chars]: Build an acrobat school to train acrobats.
+TRADUÇÃO:
+
+OFFSET: 0x0000611C
+CELULA: 652  GRUPO: N/A
+ORIGINAL [30 chars]: Add shops to distribute goods.
+TRADUÇÃO:
+
+OFFSET: 0x0000613B
+CELULA: 653  GRUPO: N/A
+ORIGINAL [41 chars]: Can't demolish bridge during an invasion!
+TRADUÇÃO:
+
+OFFSET: 0x00006165
+CELULA: 654  GRUPO: N/A
+ORIGINAL [45 chars]: Your city is now worthy of an ancestral hero!
+TRADUÇÃO:
+
+OFFSET: 0x00006193
+CELULA: 655  GRUPO: N/A
+ORIGINAL [41 chars]: Your city is now worthy of a Daoist hero!
+TRADUÇÃO:
+
+OFFSET: 0x000061BD
+CELULA: 656  GRUPO: N/A
+ORIGINAL [43 chars]: Your city is now worthy of a Buddhist hero!
+TRADUÇÃO:
+
+OFFSET: 0x000061E9
+CELULA: 657  GRUPO: N/A
+ORIGINAL [44 chars]: Your city is now worthy of a Confucian hero!
+TRADUÇÃO:
+
+OFFSET: 0x00006216
+CELULA: 658  GRUPO: N/A
+ORIGINAL [55 chars]: Pay homage to an ancestral hero before they grow angry!
+TRADUÇÃO:
+
+OFFSET: 0x0000624E
+CELULA: 659  GRUPO: N/A
+ORIGINAL [30 chars]: Must build clay pits on grass.
+TRADUÇÃO:
+
+OFFSET: 0x0000626D
+CELULA: 660  GRUPO: N/A
+ORIGINAL [36 chars]: Must build salt mines on salt marsh.
+TRADUÇÃO:
+
+OFFSET: 0x00006292
+CELULA: 661  GRUPO: N/A
+ORIGINAL [42 chars]: A staffed Administrative city is required.
+TRADUÇÃO:
+
+OFFSET: 0x000062BD
+CELULA: 662  GRUPO: N/A
+ORIGINAL [45 chars]: The maximum amount of forts has been reached.
+TRADUÇÃO:
+
+OFFSET: 0x000062EB
+CELULA: 663  GRUPO: N/A
+ORIGINAL [32 chars]: Needs access to fishing grounds.
+TRADUÇÃO:
+
+OFFSET: 0x0000630C
+CELULA: 664  GRUPO: N/A
+ORIGINAL [47 chars]: Place the other ferry landing across the river.
+TRADUÇÃO:
+
+OFFSET: 0x0000633C
+CELULA: 665  GRUPO: N/A
+ORIGINAL [47 chars]: This is not a valid area for the ferry landing.
+TRADUÇÃO:
+
+OFFSET: 0x0000636C
+CELULA: 666  GRUPO: N/A
+ORIGINAL [46 chars]: Population level has reached the desired goal!
+TRADUÇÃO:
+
+OFFSET: 0x0000639B
+CELULA: 667  GRUPO: N/A
+ORIGINAL [45 chars]: Population has fallen below the desired goal.
+TRADUÇÃO:
+
+OFFSET: 0x000063C9
+CELULA: 668  GRUPO: N/A
+ORIGINAL [47 chars]: Treasury savings have reached the desired goal!
+TRADUÇÃO:
+
+OFFSET: 0x000063F9
+CELULA: 669  GRUPO: N/A
+ORIGINAL [52 chars]: Treasury savings have fallen below the desired goal.
+TRADUÇÃO:
+
+OFFSET: 0x0000642E
+CELULA: 670  GRUPO: N/A
+ORIGINAL [27 chars]: Monument goal has been met!
+TRADUÇÃO:
+
+OFFSET: 0x0000644A
+CELULA: 671  GRUPO: N/A
+ORIGINAL [28 chars]: Monument goal has been lost.
+TRADUÇÃO:
+
+OFFSET: 0x00006467
+CELULA: 672  GRUPO: N/A
+ORIGINAL [50 chars]: Entertainment rating has reached the desired goal!
+TRADUÇÃO:
+
+OFFSET: 0x0000649A
+CELULA: 673  GRUPO: N/A
+ORIGINAL [55 chars]: Entertainment rating has fallen below the desired goal.
+TRADUÇÃO:
+
+OFFSET: 0x000064D2
+CELULA: 674  GRUPO: N/A
+ORIGINAL [46 chars]: Feng Shui rating has reached the desired goal!
+TRADUÇÃO:
+
+OFFSET: 0x00006501
+CELULA: 675  GRUPO: N/A
+ORIGINAL [51 chars]: Feng Shui rating has fallen below the desired goal.
+TRADUÇÃO:
+
+OFFSET: 0x00006535
+CELULA: 676  GRUPO: N/A
+ORIGINAL [34 chars]: Trading partner goal has been met!
+TRADUÇÃO:
+
+OFFSET: 0x00006558
+CELULA: 677  GRUPO: N/A
+ORIGINAL [51 chars]: Number of trading partners is too low to meet goal.
+TRADUÇÃO:
+
+OFFSET: 0x0000658C
+CELULA: 678  GRUPO: N/A
+ORIGINAL [25 chars]: Empire goal has been met!
+TRADUÇÃO:
+
+OFFSET: 0x000065A6
+CELULA: 679  GRUPO: N/A
+ORIGINAL [29 chars]: Empire goal has not been met.
+TRADUÇÃO:
+
+OFFSET: 0x000065C4
+CELULA: 680  GRUPO: N/A
+ORIGINAL [17 chars]: Housing goal met!
+TRADUÇÃO:
+
+OFFSET: 0x000065D6
+CELULA: 681  GRUPO: N/A
+ORIGINAL [30 chars]: Housing has fallen below goal.
+TRADUÇÃO:
+
+OFFSET: 0x000065F5
+CELULA: 682  GRUPO: N/A
+ORIGINAL [27 chars]: Annual production goal met!
+TRADUÇÃO:
+
+OFFSET: 0x00006611
+CELULA: 683  GRUPO: N/A
+ORIGINAL [31 chars]: Annual production goal not met.
+TRADUÇÃO:
+
+OFFSET: 0x00006631
+CELULA: 684  GRUPO: N/A
+ORIGINAL [22 chars]: Homage level goal met!
+TRADUÇÃO:
+
+OFFSET: 0x00006648
+CELULA: 685  GRUPO: N/A
+ORIGINAL [35 chars]: Homage level has fallen below goal.
+TRADUÇÃO:
+
+OFFSET: 0x0000666C
+CELULA: 686  GRUPO: N/A
+ORIGINAL [33 chars]: You have the greatest population!
+TRADUÇÃO:
+
+OFFSET: 0x0000668E
+CELULA: 687  GRUPO: N/A
+ORIGINAL [43 chars]: You no longer have the greatest population.
+TRADUÇÃO:
+
+OFFSET: 0x000066BA
+CELULA: 688  GRUPO: N/A
+ORIGINAL [31 chars]: You have the greatest treasury!
+TRADUÇÃO:
+
+OFFSET: 0x000066DA
+CELULA: 689  GRUPO: N/A
+ORIGINAL [41 chars]: You no longer have the greatest treasury.
+TRADUÇÃO:
+
+OFFSET: 0x00006704
+CELULA: 690  GRUPO: N/A
+ORIGINAL [38 chars]: You have completed the monument goals.
+TRADUÇÃO:
+
+OFFSET: 0x0000672B
+CELULA: 691  GRUPO: N/A
+ORIGINAL [48 chars]: You have no longer completed the monument goals.
+TRADUÇÃO:
+
+OFFSET: 0x0000675C
+CELULA: 692  GRUPO: N/A
+ORIGINAL [43 chars]: You have the greatest entertainment rating!
+TRADUÇÃO:
+
+OFFSET: 0x00006788
+CELULA: 693  GRUPO: N/A
+ORIGINAL [53 chars]: You no longer have the greatest entertainment rating.
+TRADUÇÃO:
+
+OFFSET: 0x000067BE
+CELULA: 694  GRUPO: N/A
+ORIGINAL [34 chars]: Your city's Feng Shui is the best!
+TRADUÇÃO:
+
+OFFSET: 0x000067E1
+CELULA: 695  GRUPO: N/A
+ORIGINAL [38 chars]: You no longer have the best Feng Shui.
+TRADUÇÃO:
+
+OFFSET: 0x00006808
+CELULA: 696  GRUPO: N/A
+ORIGINAL [32 chars]: You have the most vassal cities!
+TRADUÇÃO:
+
+OFFSET: 0x00006829
+CELULA: 697  GRUPO: N/A
+ORIGINAL [42 chars]: You no longer have the most vassal cities.
+TRADUÇÃO:
+
+OFFSET: 0x00006854
+CELULA: 698  GRUPO: N/A
+ORIGINAL [30 chars]: Your homage level is the best!
+TRADUÇÃO:
+
+OFFSET: 0x00006873
+CELULA: 699  GRUPO: N/A
+ORIGINAL [40 chars]: Your homage level is no longer the best.
+TRADUÇÃO:
+
+OFFSET: 0x0000689C
+CELULA: 700  GRUPO: N/A
+ORIGINAL [40 chars]: Your trading partners are most numerous!
+TRADUÇÃO:
+
+OFFSET: 0x000068C5
+CELULA: 701  GRUPO: N/A
+ORIGINAL [47 chars]: Your trading partners are no longer impressive.
+TRADUÇÃO:
+
+OFFSET: 0x000068F5
+CELULA: 702  GRUPO: N/A
+ORIGINAL [53 chars]: Your city has been brought down by economic disaster!
+TRADUÇÃO:
+
+OFFSET: 0x0000692B
+CELULA: 703  GRUPO: N/A
+ORIGINAL [52 chars]: Your rival has removed you from governing your city!
+TRADUÇÃO:
+
+OFFSET: 0x00006960
+CELULA: 704  GRUPO: N/A
+ORIGINAL [30 chars]: Your city has run out of time!
+TRADUÇÃO:
+
+OFFSET: 0x0000697F
+CELULA: 705  GRUPO: N/A
+ORIGINAL [65 chars]: You need [warning_amount] blocks of stone to build this monument.
+TRADUÇÃO:
+
+OFFSET: 0x000069C1
+CELULA: 706  GRUPO: N/A
+ORIGINAL [35 chars]: Build a stoneworks to obtain stone.
+TRADUÇÃO:
+
+OFFSET: 0x000069E5
+CELULA: 707  GRUPO: N/A
+ORIGINAL [47 chars]: Ceramists are needed to construct the monument.
+TRADUÇÃO:
+
+OFFSET: 0x00006A15
+CELULA: 708  GRUPO: N/A
+ORIGINAL [44 chars]: Masons are needed to construct the monument.
+TRADUÇÃO:
+
+OFFSET: 0x00006A42
+CELULA: 709  GRUPO: N/A
+ORIGINAL [48 chars]: Carpenters are needed to construct the monument.
+TRADUÇÃO:
+
+OFFSET: 0x00006A73
+CELULA: 710  GRUPO: N/A
+ORIGINAL [46 chars]: Laborers are needed to construct the monument.
+TRADUÇÃO:
+
+OFFSET: 0x00006AA2
+CELULA: 711  GRUPO: N/A
+ORIGINAL [40 chars]: You may only have one mint in your city.
+TRADUÇÃO:
+
+OFFSET: 0x00006ACB
+CELULA: 712  GRUPO: N/A
+ORIGINAL [49 chars]: You may only have one money printer in your city.
+TRADUÇÃO:
+
+OFFSET: 0x00006AFD
+CELULA: 713  GRUPO: N/A
+ORIGINAL [36 chars]: Must be built over an existing road.
+TRADUÇÃO:
+
+OFFSET: 0x00006B22
+CELULA: 714  GRUPO: N/A
+ORIGINAL [34 chars]: Your hero cannot reach this point.
+TRADUÇÃO:
+
+OFFSET: 0x00006B45
+CELULA: 715  GRUPO: N/A
+ORIGINAL [57 chars]: Material failed to reach monument; source is too distant.
+TRADUÇÃO:
+
+OFFSET: 0x00006B7F
+CELULA: 716  GRUPO: N/A
+ORIGINAL [54 chars]: Laborer failed to reach monument; camp is too distant.
+TRADUÇÃO:
+
+OFFSET: 0x00006BB6
+CELULA: 717  GRUPO: N/A
+ORIGINAL [53 chars]: Mason failed to reach monument; guild is too distant.
+TRADUÇÃO:
+
+OFFSET: 0x00006BEC
+CELULA: 718  GRUPO: N/A
+ORIGINAL [56 chars]: Ceramist failed to reach monument; guild is too distant.
+TRADUÇÃO:
+
+OFFSET: 0x00006C25
+CELULA: 719  GRUPO: N/A
+ORIGINAL [57 chars]: Carpenter failed to reach monument; guild is too distant.
+TRADUÇÃO:
+
+OFFSET: 0x00006C5F
+CELULA: 720  GRUPO: N/A
+ORIGINAL [47 chars]: Build the gatehouse over a road between 2 walls
+TRADUÇÃO:
+
+OFFSET: 0x00006C8F
+CELULA: 721  GRUPO: 19
+ORIGINAL [3 chars]: BCE
+TRADUÇÃO:
+
+OFFSET: 0x00006C93
+CELULA: 722  GRUPO: 19
+ORIGINAL [2 chars]: CE
+TRADUÇÃO:
+
+OFFSET: 0x00006C96
+CELULA: 723  GRUPO: 20
+ORIGINAL [4 chars]: Anxi
+TRADUÇÃO:
+
+OFFSET: 0x00006C9B
+CELULA: 724  GRUPO: 20
+ORIGINAL [6 chars]: Anyang
+TRADUÇÃO:
+
+OFFSET: 0x00006CA2
+CELULA: 725  GRUPO: 19
+ORIGINAL [4 chars]: Anyi
+TRADUÇÃO:
+
+OFFSET: 0x00006CA7
+CELULA: 726  GRUPO: 19
+ORIGINAL [8 chars]: Badaling
+TRADUÇÃO:
+
+OFFSET: 0x00006CB0
+CELULA: 727  GRUPO: 19
+ORIGINAL [5 chars]: Banpo
+TRADUÇÃO:
+
+OFFSET: 0x00006CB6
+CELULA: 728  GRUPO: 19
+ORIGINAL [6 chars]: Banzhu
+TRADUÇÃO:
+
+OFFSET: 0x00006CBD
+CELULA: 729  GRUPO: 19
+ORIGINAL [5 chars]: Baoji
+TRADUÇÃO:
+
+OFFSET: 0x00006CC3
+CELULA: 730  GRUPO: 19
+ORIGINAL [8 chars]: Barygaza
+TRADUÇÃO:
+
+OFFSET: 0x00006CCC
+CELULA: 731  GRUPO: 19
+ORIGINAL [4 chars]: Bing
+TRADUÇÃO:
+
+OFFSET: 0x00006CD1
+CELULA: 732  GRUPO: 19
+ORIGINAL [2 chars]: Bo
+TRADUÇÃO:
+
+OFFSET: 0x00006CD4
+CELULA: 733  GRUPO: 19
+ORIGINAL [6 chars]: Canton
+TRADUÇÃO:
+
+OFFSET: 0x00006CDB
+CELULA: 734  GRUPO: 19
+ORIGINAL [8 chars]: Chang-an
+TRADUÇÃO:
+
+OFFSET: 0x00006CE4
+CELULA: 735  GRUPO: 19
+ORIGINAL [9 chars]: Changzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006CEE
+CELULA: 736  GRUPO: 19
+ORIGINAL [4 chars]: Chao
+TRADUÇÃO:
+
+OFFSET: 0x00006CF3
+CELULA: 737  GRUPO: 19
+ORIGINAL [7 chars]: Chengdu
+TRADUÇÃO:
+
+OFFSET: 0x00006CFB
+CELULA: 738  GRUPO: 19
+ORIGINAL [10 chars]: Chiao-chih
+TRADUÇÃO:
+
+OFFSET: 0x00006D06
+CELULA: 739  GRUPO: 19
+ORIGINAL [7 chars]: Chifeng
+TRADUÇÃO:
+
+OFFSET: 0x00006D0E
+CELULA: 740  GRUPO: 19
+ORIGINAL [7 chars]: Chizhou
+TRADUÇÃO:
+
+OFFSET: 0x00006D16
+CELULA: 741  GRUPO: 19
+ORIGINAL [3 chars]: Chu
+TRADUÇÃO:
+
+OFFSET: 0x00006D1A
+CELULA: 742  GRUPO: 19
+ORIGINAL [8 chars]: Dawenkou
+TRADUÇÃO:
+
+OFFSET: 0x00006D23
+CELULA: 743  GRUPO: 19
+ORIGINAL [11 chars]: Daxingcheng
+TRADUÇÃO:
+
+OFFSET: 0x00006D2F
+CELULA: 744  GRUPO: 19
+ORIGINAL [10 chars]: Dayi Shang
+TRADUÇÃO:
+
+OFFSET: 0x00006D3A
+CELULA: 745  GRUPO: 19
+ORIGINAL [3 chars]: Dun
+TRADUÇÃO:
+
+OFFSET: 0x00006D3E
+CELULA: 746  GRUPO: 19
+ORIGINAL [8 chars]: Dunhuang
+TRADUÇÃO:
+
+OFFSET: 0x00006D47
+CELULA: 747  GRUPO: 19
+ORIGINAL [7 chars]: Erlitou
+TRADUÇÃO:
+
+OFFSET: 0x00006D4F
+CELULA: 748  GRUPO: 19
+ORIGINAL [4 chars]: Feng
+TRADUÇÃO:
+
+OFFSET: 0x00006D54
+CELULA: 749  GRUPO: 19
+ORIGINAL [6 chars]: Fuzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006D5B
+CELULA: 750  GRUPO: 19
+ORIGINAL [2 chars]: Fu
+TRADUÇÃO:
+
+OFFSET: 0x00006D5E
+CELULA: 751  GRUPO: 19
+ORIGINAL [9 chars]: Guangzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006D68
+CELULA: 752  GRUPO: 19
+ORIGINAL [6 chars]: Handan
+TRADUÇÃO:
+
+OFFSET: 0x00006D6F
+CELULA: 753  GRUPO: 19
+ORIGINAL [9 chars]: Hang-chou
+TRADUÇÃO:
+
+OFFSET: 0x00006D79
+CELULA: 754  GRUPO: 19
+ORIGINAL [8 chars]: Hangzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006D82
+CELULA: 755  GRUPO: 19
+ORIGINAL [3 chars]: Hao
+TRADUÇÃO:
+
+OFFSET: 0x00006D86
+CELULA: 756  GRUPO: 19
+ORIGINAL [6 chars]: Hemudu
+TRADUÇÃO:
+
+OFFSET: 0x00006D8D
+CELULA: 757  GRUPO: 19
+ORIGINAL [6 chars]: Hsiang
+TRADUÇÃO:
+
+OFFSET: 0x00006D94
+CELULA: 758  GRUPO: 19
+ORIGINAL [8 chars]: Huanxian
+TRADUÇÃO:
+
+OFFSET: 0x00006D9D
+CELULA: 759  GRUPO: 19
+ORIGINAL [2 chars]: Ji
+TRADUÇÃO:
+
+OFFSET: 0x00006DA0
+CELULA: 760  GRUPO: 19
+ORIGINAL [5 chars]: Jiang
+TRADUÇÃO:
+
+OFFSET: 0x00006DA6
+CELULA: 761  GRUPO: 19
+ORIGINAL [9 chars]: Jiangling
+TRADUÇÃO:
+
+OFFSET: 0x00006DB0
+CELULA: 762  GRUPO: 19
+ORIGINAL [7 chars]: Jiangxi
+TRADUÇÃO:
+
+OFFSET: 0x00006DB8
+CELULA: 763  GRUPO: 19
+ORIGINAL [8 chars]: Jiankang
+TRADUÇÃO:
+
+OFFSET: 0x00006DC1
+CELULA: 764  GRUPO: 19
+ORIGINAL [8 chars]: Jiaozhou
+TRADUÇÃO:
+
+OFFSET: 0x00006DCA
+CELULA: 765  GRUPO: 19
+ORIGINAL [9 chars]: Jiayuguan
+TRADUÇÃO:
+
+OFFSET: 0x00006DD4
+CELULA: 766  GRUPO: 19
+ORIGINAL [7 chars]: Jinyang
+TRADUÇÃO:
+
+OFFSET: 0x00006DDC
+CELULA: 767  GRUPO: 19
+ORIGINAL [10 chars]: Juyongguan
+TRADUÇÃO:
+
+OFFSET: 0x00006DE7
+CELULA: 768  GRUPO: 19
+ORIGINAL [8 chars]: Kaicheng
+TRADUÇÃO:
+
+OFFSET: 0x00006DF0
+CELULA: 769  GRUPO: 19
+ORIGINAL [7 chars]: Kaifeng
+TRADUÇÃO:
+
+OFFSET: 0x00006DF8
+CELULA: 770  GRUPO: 19
+ORIGINAL [7 chars]: Kashgar
+TRADUÇÃO:
+
+OFFSET: 0x00006E00
+CELULA: 771  GRUPO: 19
+ORIGINAL [6 chars]: Khotan
+TRADUÇÃO:
+
+OFFSET: 0x00006E07
+CELULA: 772  GRUPO: 19
+ORIGINAL [5 chars]: Kuang
+TRADUÇÃO:
+
+OFFSET: 0x00006E0D
+CELULA: 773  GRUPO: 19
+ORIGINAL [5 chars]: Kucha
+TRADUÇÃO:
+
+OFFSET: 0x00006E13
+CELULA: 774  GRUPO: 19
+ORIGINAL [5 chars]: Lhasa
+TRADUÇÃO:
+
+OFFSET: 0x00006E19
+CELULA: 775  GRUPO: 19
+ORIGINAL [7 chars]: Lanzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006E21
+CELULA: 776  GRUPO: 19
+ORIGINAL [9 chars]: Liangzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006E2B
+CELULA: 777  GRUPO: 19
+ORIGINAL [3 chars]: Lai
+TRADUÇÃO:
+
+OFFSET: 0x00006E2F
+CELULA: 778  GRUPO: 19
+ORIGINAL [8 chars]: Liaoyang
+TRADUÇÃO:
+
+OFFSET: 0x00006E38
+CELULA: 779  GRUPO: 19
+ORIGINAL [6 chars]: Lin'an
+TRADUÇÃO:
+
+OFFSET: 0x00006E3F
+CELULA: 780  GRUPO: 19
+ORIGINAL [8 chars]: Lingshou
+TRADUÇÃO:
+
+OFFSET: 0x00006E48
+CELULA: 781  GRUPO: 19
+ORIGINAL [6 chars]: Lintao
+TRADUÇÃO:
+
+OFFSET: 0x00006E4F
+CELULA: 782  GRUPO: 19
+ORIGINAL [5 chars]: Linzi
+TRADUÇÃO:
+
+OFFSET: 0x00006E55
+CELULA: 783  GRUPO: 19
+ORIGINAL [7 chars]: Lo-lang
+TRADUÇÃO:
+
+OFFSET: 0x00006E5D
+CELULA: 784  GRUPO: 19
+ORIGINAL [7 chars]: Lop Nor
+TRADUÇÃO:
+
+OFFSET: 0x00006E65
+CELULA: 785  GRUPO: 19
+ORIGINAL [3 chars]: Luo
+TRADUÇÃO:
+
+OFFSET: 0x00006E69
+CELULA: 786  GRUPO: 19
+ORIGINAL [6 chars]: Loulan
+TRADUÇÃO:
+
+OFFSET: 0x00006E70
+CELULA: 787  GRUPO: 19
+ORIGINAL [4 chars]: Loyi
+TRADUÇÃO:
+
+OFFSET: 0x00006E75
+CELULA: 788  GRUPO: 19
+ORIGINAL [2 chars]: Lu
+TRADUÇÃO:
+
+OFFSET: 0x00006E78
+CELULA: 789  GRUPO: 19
+ORIGINAL [7 chars]: Luoyang
+TRADUÇÃO:
+
+OFFSET: 0x00006E80
+CELULA: 790  GRUPO: 19
+ORIGINAL [9 chars]: Maijiayao
+TRADUÇÃO:
+
+OFFSET: 0x00006E8A
+CELULA: 791  GRUPO: 19
+ORIGINAL [4 chars]: Merv
+TRADUÇÃO:
+
+OFFSET: 0x00006E8F
+CELULA: 792  GRUPO: 19
+ORIGINAL [9 chars]: Miaodigou
+TRADUÇÃO:
+
+OFFSET: 0x00006E99
+CELULA: 793  GRUPO: 19
+ORIGINAL [6 chars]: Ningbo
+TRADUÇÃO:
+
+OFFSET: 0x00006EA0
+CELULA: 794  GRUPO: 19
+ORIGINAL [7 chars]: Ningxia
+TRADUÇÃO:
+
+OFFSET: 0x00006EA8
+CELULA: 795  GRUPO: 19
+ORIGINAL [4 chars]: Niya
+TRADUÇÃO:
+
+OFFSET: 0x00006EAD
+CELULA: 796  GRUPO: 19
+ORIGINAL [2 chars]: Pa
+TRADUÇÃO:
+
+OFFSET: 0x00006EB0
+CELULA: 797  GRUPO: 19
+ORIGINAL [12 chars]: Panlongcheng
+TRADUÇÃO:
+
+OFFSET: 0x00006EBD
+CELULA: 798  GRUPO: 19
+ORIGINAL [8 chars]: Pingyang
+TRADUÇÃO:
+
+OFFSET: 0x00006EC6
+CELULA: 799  GRUPO: 19
+ORIGINAL [7 chars]: Pingyao
+TRADUÇÃO:
+
+OFFSET: 0x00006ECE
+CELULA: 800  GRUPO: 19
+ORIGINAL [3 chars]: Qin
+TRADUÇÃO:
+
+OFFSET: 0x00006ED2
+CELULA: 801  GRUPO: 19
+ORIGINAL [4 chars]: Qufu
+TRADUÇÃO:
+
+OFFSET: 0x00006ED7
+CELULA: 802  GRUPO: 19
+ORIGINAL [9 chars]: Samarkand
+TRADUÇÃO:
+
+OFFSET: 0x00006EE1
+CELULA: 803  GRUPO: 19
+ORIGINAL [7 chars]: Shanqui
+TRADUÇÃO:
+
+OFFSET: 0x00006EE9
+CELULA: 804  GRUPO: 19
+ORIGINAL [8 chars]: Shanyang
+TRADUÇÃO:
+
+OFFSET: 0x00006EF2
+CELULA: 805  GRUPO: 19
+ORIGINAL [8 chars]: Shanzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006EFB
+CELULA: 806  GRUPO: 19
+ORIGINAL [9 chars]: Shenglong
+TRADUÇÃO:
+
+OFFSET: 0x00006F05
+CELULA: 807  GRUPO: 19
+ORIGINAL [6 chars]: Shenmu
+TRADUÇÃO:
+
+OFFSET: 0x00006F0C
+CELULA: 808  GRUPO: 19
+ORIGINAL [3 chars]: Shu
+TRADUÇÃO:
+
+OFFSET: 0x00006F10
+CELULA: 809  GRUPO: 19
+ORIGINAL [5 chars]: Suide
+TRADUÇÃO:
+
+OFFSET: 0x00006F16
+CELULA: 810  GRUPO: 19
+ORIGINAL [8 chars]: Songzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006F1F
+CELULA: 811  GRUPO: 19
+ORIGINAL [6 chars]: Suzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006F26
+CELULA: 812  GRUPO: 19
+ORIGINAL [10 chars]: Tamralipti
+TRADUÇÃO:
+
+OFFSET: 0x00006F31
+CELULA: 813  GRUPO: 19
+ORIGINAL [7 chars]: Tanzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006F39
+CELULA: 814  GRUPO: 19
+ORIGINAL [8 chars]: Tashkent
+TRADUÇÃO:
+
+OFFSET: 0x00006F42
+CELULA: 815  GRUPO: 19
+ORIGINAL [6 chars]: Togtoh
+TRADUÇÃO:
+
+OFFSET: 0x00006F49
+CELULA: 816  GRUPO: 19
+ORIGINAL [7 chars]: Wiezhou
+TRADUÇÃO:
+
+OFFSET: 0x00006F51
+CELULA: 817  GRUPO: 19
+ORIGINAL [6 chars]: Wuzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006F58
+CELULA: 818  GRUPO: 19
+ORIGINAL [2 chars]: Wu
+TRADUÇÃO:
+
+OFFSET: 0x00006F5B
+CELULA: 819  GRUPO: 19
+ORIGINAL [8 chars]: Xiangjun
+TRADUÇÃO:
+
+OFFSET: 0x00006F64
+CELULA: 820  GRUPO: 19
+ORIGINAL [8 chars]: Xianyang
+TRADUÇÃO:
+
+OFFSET: 0x00006F6D
+CELULA: 821  GRUPO: 19
+ORIGINAL [5 chars]: Xiang
+TRADUÇÃO:
+
+OFFSET: 0x00006F73
+CELULA: 822  GRUPO: 19
+ORIGINAL [8 chars]: Xinzheng
+TRADUÇÃO:
+
+OFFSET: 0x00006F7C
+CELULA: 823  GRUPO: 19
+ORIGINAL [7 chars]: Xuanhua
+TRADUÇÃO:
+
+OFFSET: 0x00006F84
+CELULA: 824  GRUPO: 19
+ORIGINAL [9 chars]: Yangcheng
+TRADUÇÃO:
+
+OFFSET: 0x00006F8E
+CELULA: 825  GRUPO: 19
+ORIGINAL [8 chars]: Yangshao
+TRADUÇÃO:
+
+OFFSET: 0x00006F97
+CELULA: 826  GRUPO: 19
+ORIGINAL [8 chars]: Yangzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006FA0
+CELULA: 827  GRUPO: 19
+ORIGINAL [7 chars]: Yanjing
+TRADUÇÃO:
+
+OFFSET: 0x00006FA8
+CELULA: 828  GRUPO: 19
+ORIGINAL [7 chars]: Yanying
+TRADUÇÃO:
+
+OFFSET: 0x00006FB0
+CELULA: 829  GRUPO: 19
+ORIGINAL [3 chars]: Yen
+TRADUÇÃO:
+
+OFFSET: 0x00006FB4
+CELULA: 830  GRUPO: 19
+ORIGINAL [3 chars]: Yin
+TRADUÇÃO:
+
+OFFSET: 0x00006FB8
+CELULA: 831  GRUPO: 19
+ORIGINAL [4 chars]: Ying
+TRADUÇÃO:
+
+OFFSET: 0x00006FBD
+CELULA: 832  GRUPO: 19
+ORIGINAL [4 chars]: Yong
+TRADUÇÃO:
+
+OFFSET: 0x00006FC2
+CELULA: 833  GRUPO: 19
+ORIGINAL [2 chars]: Yu
+TRADUÇÃO:
+
+OFFSET: 0x00006FC5
+CELULA: 834  GRUPO: 19
+ORIGINAL [7 chars]: Yuzhang
+TRADUÇÃO:
+
+OFFSET: 0x00006FCD
+CELULA: 835  GRUPO: 19
+ORIGINAL [5 chars]: Yulin
+TRADUÇÃO:
+
+OFFSET: 0x00006FD3
+CELULA: 836  GRUPO: 19
+ORIGINAL [9 chars]: Zhengzhou
+TRADUÇÃO:
+
+OFFSET: 0x00006FDD
+CELULA: 837  GRUPO: 19
+ORIGINAL [7 chars]: Zhongdu
+TRADUÇÃO:
+
+OFFSET: 0x00006FE5
+CELULA: 838  GRUPO: 19
+ORIGINAL [17 chars]: the Mongol Empire
+TRADUÇÃO:
+
+OFFSET: 0x00006FF7
+CELULA: 839  GRUPO: 19
+ORIGINAL [15 chars]: the Nomad Camps
+TRADUÇÃO:
+
+OFFSET: 0x00007007
+CELULA: 840  GRUPO: 19
+ORIGINAL [18 chars]: the Xiongnu Empire
+TRADUÇÃO:
+
+OFFSET: 0x0000701A
+CELULA: 841  GRUPO: 19
+ORIGINAL [18 chars]: the Xia-Xia Empire
+TRADUÇÃO:
+
+OFFSET: 0x0000702D
+CELULA: 842  GRUPO: 19
+ORIGINAL [5 chars]: Asdal
+TRADUÇÃO:
+
+OFFSET: 0x00007033
+CELULA: 843  GRUPO: 19
+ORIGINAL [5 chars]: Hanan
+TRADUÇÃO:
+
+OFFSET: 0x00007039
+CELULA: 844  GRUPO: 19
+ORIGINAL [4 chars]: Sabi
+TRADUÇÃO:
+
+OFFSET: 0x0000703E
+CELULA: 845  GRUPO: 19
+ORIGINAL [15 chars]: the Liao Empire
+TRADUÇÃO:
+
+OFFSET: 0x0000704E
+CELULA: 846  GRUPO: 19
+ORIGINAL [9 chars]: Siem Reap
+TRADUÇÃO:
+
+OFFSET: 0x00007058
+CELULA: 847  GRUPO: 19
+ORIGINAL [10 chars]: Karakhorum
+TRADUÇÃO:
+
+OFFSET: 0x00007063
+CELULA: 848  GRUPO: 19
+ORIGINAL [21 chars]: the Kingdom of Nanyue
+TRADUÇÃO:
+
+OFFSET: 0x00007079
+CELULA: 849  GRUPO: 19
+ORIGINAL [10 chars]: Khan-Baliq
+TRADUÇÃO:
+
+OFFSET: 0x00007084
+CELULA: 850  GRUPO: 21
+ORIGINAL [39 chars]: I could grow lazy living in the Palace.
+TRADUÇÃO:
+
+OFFSET: 0x000070AC
+CELULA: 851  GRUPO: 21
+ORIGINAL [45 chars]: What?! We'll be locked up with the predators!
+TRADUÇÃO:
+
+OFFSET: 0x000070DA
+CELULA: 852  GRUPO: 22
+ORIGINAL [7 chars]: Nothing
+TRADUÇÃO:
+
+OFFSET: 0x000070E2
+CELULA: 853  GRUPO: 22
+ORIGINAL [9 chars]: Bean curd
+TRADUÇÃO:
+
+OFFSET: 0x000070EC
+CELULA: 854  GRUPO: 21
+ORIGINAL [4 chars]: Fish
+TRADUÇÃO:

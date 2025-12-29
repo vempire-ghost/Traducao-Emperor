@@ -1542,2021 +1542,2830 @@ OFFSET: 0x00003520
 CELULA: 256  GRUPO: 9
 ORIGINAL [6 chars]: Resets
 TRADUÇÃO:
+Reiniciar
+Reiniciar
 
 OFFSET: 0x00003527
 CELULA: 257  GRUPO: 9
 ORIGINAL [19 chars]: Clear Predator pts.
 TRADUÇÃO:
+Limpar pontos de predadores
+Limpar pontos de predadores
 
 OFFSET: 0x0000353B
 CELULA: 258  GRUPO: 9
 ORIGINAL [15 chars]: Clear Fish pts.
 TRADUÇÃO:
+Limpar pontos de pesca
+Limpar pontos de pesca
 
 OFFSET: 0x0000354B
 CELULA: 259  GRUPO: 9
 ORIGINAL [15 chars]: Clear Invasions
 TRADUÇÃO:
+Limpar invasões
+Limpar invasões
 
 OFFSET: 0x0000355B
 CELULA: 260  GRUPO: 9
 ORIGINAL [15 chars]: Clear Prey pts.
 TRADUÇÃO:
+Limpar pontos de caça
+Limpar pontos de caça
 
 OFFSET: 0x0000356B
 CELULA: 261  GRUPO: 9
 ORIGINAL [13 chars]: Load from BMP
 TRADUÇÃO:
+Carregar de BMP
+Carregar de BMP
 
 OFFSET: 0x00003579
 CELULA: 262  GRUPO: 9
 ORIGINAL [11 chars]: Save to BMP
 TRADUÇÃO:
+Salvar em BMP
+Salvar em BMP
 
 OFFSET: 0x00003585
 CELULA: 263  GRUPO: 9
 ORIGINAL [12 chars]: Edit Empire 
 TRADUÇÃO:
+Editar Império
+Editar Império
 
 OFFSET: 0x00003592
 CELULA: 264  GRUPO: 9
 ORIGINAL [11 chars]: Save Empire
 TRADUÇÃO:
+Salvar Império
+Salvar Império
 
 OFFSET: 0x0000359E
 CELULA: 265  GRUPO: 9
 ORIGINAL [7 chars]: Refresh
 TRADUÇÃO:
+Atualizar
+Atualizar
 
 OFFSET: 0x000035A6
 CELULA: 266  GRUPO: 9
 ORIGINAL [17 chars]: Flatten Elevation
 TRADUÇÃO:
+Nivelar terreno
+Nivelar terreno
 
 OFFSET: 0x000035B8
 CELULA: 267  GRUPO: 9
 ORIGINAL [11 chars]: Set Climate
 TRADUÇÃO:
+Definir clima
+Definir clima
 
 OFFSET: 0x000035C4
 CELULA: 268  GRUPO: 10
 ORIGINAL [13 chars]: Setting up...
 TRADUÇÃO:
+Preparando...
+Preparando...
 
 OFFSET: 0x000035D2
 CELULA: 269  GRUPO: 10
 ORIGINAL [140 chars]: test_string ˆ,Œ,œ,¡,°,¿,A,À,Á,Â,Ä, E,È,É,Ê,I,Ì,Í,Î,Ï,N,Ñ,O,Ò,Ó,Ô,Ö, U,Ù,Ú,Û,Ü,ß,a,à,á,â,ä,c,ç, e,è,é,ê,i,ì,í,î,ï,n,ñ,o,ò,ó,ô,ö,u,ù,ú,û,ü,...
 TRADUÇÃO:
+test_string ˆ,Œ,œ,¡,°,¿,A,À,Á,Â,Ä, E,È,É,Ê,I,Ì,Í,Î,Ï,N,Ñ,O,Ò,Ó,Ô,Ö, U,Ù,Ú,Û,Ü,ß,a,à,á,â,ä,c,ç, e,è,é,ê,i,ì,í,î,ï,n,ñ,o,ò,ó,ô,ö,u,ù,ú,û,ü,...
+test_string ˆ,Œ,œ,¡,°,¿,A,À,Á,Â,Ä, E,È,É,Ê,I,Ì,Í,Î,Ï,N,Ñ,O,Ò,Ó,Ô,Ö, U,Ù,Ú,Û,Ü,ß,a,à,á,â,ä,c,ç, e,è,é,ê,i,ì,í,î,ï,n,ñ,o,ò,ó,ô,ö,u,ù,ú,û,ü,...
 
 OFFSET: 0x0000365F
 CELULA: 270  GRUPO: 10
 ORIGINAL [10 chars]: Loading...
 TRADUÇÃO:
+Carregando...
+Carregando...
+Carregando...
 
 OFFSET: 0x0000366A
 CELULA: 271  GRUPO: 10
 ORIGINAL [17 chars]: Preparing data...
 TRADUÇÃO:
+Preparando dados...
+Preparando dados...
 
 OFFSET: 0x0000367C
 CELULA: 272  GRUPO: 10
 ORIGINAL [17 chars]: Loading sounds...
 TRADUÇÃO:
+Carregando sons...
+Carregando sons...
 
 OFFSET: 0x0000368E
 CELULA: 273  GRUPO: 10
 ORIGINAL [16 chars]: Accelerated Time
 TRADUÇÃO:
+Tempo acelerado
+Tempo acelerado
 
 OFFSET: 0x0000369F
 CELULA: 274  GRUPO: 10
 ORIGINAL [23 chars]: Right-click to continue
 TRADUÇÃO:
+Clique com o botão direito para continuar
+Clique com o botão direito para continuar
 
 OFFSET: 0x000036B7
 CELULA: 275  GRUPO: 10
 ORIGINAL [23 chars]: Arranging the zodiac...
 TRADUÇÃO:
+Organizando o zodíaco...
+Organizando o zodíaco...
 
 OFFSET: 0x000036CF
 CELULA: 276  GRUPO: 10
 ORIGINAL [18 chars]: Pouring the tea...
 TRADUÇÃO:
+Servindo o chá...
+Servindo o chá...
 
 OFFSET: 0x000036E2
 CELULA: 277  GRUPO: 10
 ORIGINAL [25 chars]: Honoring the ancestors...
 TRADUÇÃO:
+Honrando os ancestrais...
+Honrando os ancestrais...
 
 OFFSET: 0x000036FC
 CELULA: 278  GRUPO: 10
 ORIGINAL [23 chars]: Defining the borders...
 TRADUÇÃO:
+Definindo as fronteiras...
+Definindo as fronteiras...
 
 OFFSET: 0x00003714
 CELULA: 279  GRUPO: 10
 ORIGINAL [24 chars]: Loading the crossbows...
 TRADUÇÃO:
+Preparando as bestas...
+Preparando as bestas...
 
 OFFSET: 0x0000372D
 CELULA: 280  GRUPO: 5
 ORIGINAL [28 chars]: Calculating the feng shui...
 TRADUÇÃO:
+Calculando o Feng Shui...
+Calculando o Feng Shui...
 
 OFFSET: 0x0000374A
 CELULA: 281  GRUPO: 5
 ORIGINAL [26 chars]: Studying the three Ways...
 TRADUÇÃO:
+Estudando os Três Caminhos...
+Estudando os Três Caminhos...
 
 OFFSET: 0x00003765
 CELULA: 282  GRUPO: 5
 ORIGINAL [27 chars]: Preparing the ceremonies...
 TRADUÇÃO:
+Preparando as cerimônias...
+Preparando as cerimônias...
 
 OFFSET: 0x00003781
 CELULA: 283  GRUPO: 5
 ORIGINAL [24 chars]: Respecting the heroes...
 TRADUÇÃO:
+Prestando respeito aos heróis...
+Prestando respeito aos heróis...
 
 OFFSET: 0x0000379A
 CELULA: 284  GRUPO: 5
 ORIGINAL [26 chars]: Tempting the barbarians...
 TRADUÇÃO:
+Tentando apaziguar os bárbaros...
+Tentando apaziguar os bárbaros...
 
 OFFSET: 0x000037B5
 CELULA: 285  GRUPO: 11
 ORIGINAL [4 chars]: Back
 TRADUÇÃO:
+Voltar
+Voltar
 
 OFFSET: 0x000037BA
 CELULA: 286  GRUPO: 11
 ORIGINAL [19 chars]: Go to site of event
 TRADUÇÃO:
+Ir ao local do evento
+Ir ao local do evento
 
 OFFSET: 0x000037CE
 CELULA: 287  GRUPO: 11
 ORIGINAL [9 chars]: to comply
 TRADUÇÃO:
+para obedecer
+para obedecer
 
 OFFSET: 0x000037D8
 CELULA: 288  GRUPO: 11
 ORIGINAL [28 chars]: Food stocks are running low.
 TRADUÇÃO:
+Os estoques de alimentos estão diminuindo.
+Os estoques de alimentos estão diminuindo.
 
 OFFSET: 0x000037F5
 CELULA: 289  GRUPO: 11
 ORIGINAL [25 chars]: Unemployment is too high.
 TRADUÇÃO:
+O desemprego está alto demais.
+O desemprego está alto demais.
 
 OFFSET: 0x0000380F
 CELULA: 290  GRUPO: 11
 ORIGINAL [29 chars]: High tax rates are a problem.
 TRADUÇÃO:
+Impostos elevados são um problema.
+Impostos elevados são um problema.
 
 OFFSET: 0x0000382D
 CELULA: 291  GRUPO: 11
 ORIGINAL [24 chars]: Low wages are a problem.
 TRADUÇÃO:
+Salários baixos são um problema.
+Salários baixos são um problema.
 
 OFFSET: 0x00003846
 CELULA: 292  GRUPO: 11
 ORIGINAL [28 chars]: The city is in massive debt.
 TRADUÇÃO:
+A cidade está profundamente endividada.
+A cidade está profundamente endividada.
 
 OFFSET: 0x00003863
 CELULA: 293  GRUPO: 11
 ORIGINAL [35 chars]: More New Year's festivals required.
 TRADUÇÃO:
+Mais festivais de Ano Novo são necessários.
+Mais festivais de Ano Novo são necessários.
 
 OFFSET: 0x00003887
 CELULA: 294  GRUPO: 11
 ORIGINAL [33 chars]: The Feng Shui of the city is bad.
 TRADUÇÃO:
+O Feng Shui da cidade é ruim.
+O Feng Shui da cidade é ruim.
 
 OFFSET: 0x000038A9
 CELULA: 295  GRUPO: 11
 ORIGINAL [33 chars]: Civic repression is overwhelming.
 TRADUÇÃO:
+A repressão cívica é opressiva.
+A repressão cívica é opressiva.
 
 OFFSET: 0x000038CB
 CELULA: 296  GRUPO: 12
 ORIGINAL [17 chars]: Click to Continue
 TRADUÇÃO:
+Clique para continuar
+Clique para continuar
 
 OFFSET: 0x000038DD
 CELULA: 297  GRUPO: 12
 ORIGINAL [23 chars]: Right-click to Continue
 TRADUÇÃO:
+Clique com o botão direito para continuar
+Clique com o botão direito para continuar
 
 OFFSET: 0x000038F5
 CELULA: 298  GRUPO: 12
 ORIGINAL [31 chars]: Game paused ('P' key continues)
 TRADUÇÃO:
+Jogo pausado (tecla 'P' para continuar)
+Jogo pausado (tecla 'P' para continuar)
 
 OFFSET: 0x00003915
 CELULA: 299  GRUPO: 12
 ORIGINAL [23 chars]: Right-click to Continue
 TRADUÇÃO:
+Clique com o botão direito para continuar
+Clique com o botão direito para continuar
 
 OFFSET: 0x0000392D
 CELULA: 300  GRUPO: 12
 ORIGINAL [6 chars]: Cancel
 TRADUÇÃO:
+Cancelar
+Cancelar
 
 OFFSET: 0x00003934
 CELULA: 301  GRUPO: 12
 ORIGINAL [8 chars]: Continue
 TRADUÇÃO:
+Continuar
+Continuar
 
 OFFSET: 0x0000393D
 CELULA: 302  GRUPO: 12
 ORIGINAL [26 chars]: Not available in the demo!
 TRADUÇÃO:
+Não disponível na demonstração!
+Não disponível na demonstração!
 
 OFFSET: 0x00003958
 CELULA: 303  GRUPO: 12
 ORIGINAL [14 chars]: Click to Start
 TRADUÇÃO:
+Clique para iniciar
+Clique para iniciar
 
 OFFSET: 0x00003967
 CELULA: 304  GRUPO: 12
 ORIGINAL [13 chars]: Select a Name
 TRADUÇÃO:
+Selecionar um nome
+Selecionar um nome
 
 OFFSET: 0x00003975
 CELULA: 305  GRUPO: 13
 ORIGINAL [6 chars]: Normal
 TRADUÇÃO:
+Normal
+Normal
 
 OFFSET: 0x0000397C
 CELULA: 306  GRUPO: 13
 ORIGINAL [12 chars]: See Supplies
 TRADUÇÃO:
+Ver suprimentos
+Ver suprimentos
 
 OFFSET: 0x00003989
 CELULA: 307  GRUPO: 13
 ORIGINAL [11 chars]: See Walkers
 TRADUÇÃO:
+Ver transeuntes
+Ver transeuntes
 
 OFFSET: 0x00003995
 CELULA: 308  GRUPO: 13
 ORIGINAL [15 chars]: See Agriculture
 TRADUÇÃO:
+Ver agricultura
+Ver agricultura
 
 OFFSET: 0x000039A5
 CELULA: 309  GRUPO: 13
 ORIGINAL [12 chars]: See Industry
 TRADUÇÃO:
+Ver indústria
+Ver indústria
 
 OFFSET: 0x000039B2
 CELULA: 310  GRUPO: 13
 ORIGINAL [16 chars]: See Distribution
 TRADUÇÃO:
+Ver distribuição
+Ver distribuição
 
 OFFSET: 0x000039C3
 CELULA: 311  GRUPO: 13
 ORIGINAL [9 chars]: See Water
 TRADUÇÃO:
+Ver água
+Ver água
 
 OFFSET: 0x000039CD
 CELULA: 312  GRUPO: 13
 ORIGINAL [12 chars]: See Medicine
 TRADUÇÃO:
+Ver saúde
+Ver saúde
 
 OFFSET: 0x000039DA
 CELULA: 313  GRUPO: 13
 ORIGINAL [11 chars]: See Hazards
 TRADUÇÃO:
+Ver perigos
+Ver perigos
 
 OFFSET: 0x000039E6
 CELULA: 314  GRUPO: 5
 ORIGINAL [10 chars]: See Unrest
 TRADUÇÃO:
+Ver agitação
+Ver agitação
 
 OFFSET: 0x000039F1
 CELULA: 315  GRUPO: 5
 ORIGINAL [14 chars]: See Tax Income
 TRADUÇÃO:
+Ver arrecadação de impostos
+Ver arrecadação de impostos
 
 OFFSET: 0x00003A00
 CELULA: 316  GRUPO: 5
 ORIGINAL [21 chars]: See All Entertainment
 TRADUÇÃO:
+Ver todo o entretenimento
+Ver todo o entretenimento
 
 OFFSET: 0x00003A16
 CELULA: 317  GRUPO: 5
 ORIGINAL [13 chars]: See Festivals
 TRADUÇÃO:
+Ver festivais
+Ver festivais
 
 OFFSET: 0x00003A24
 CELULA: 318  GRUPO: 5
 ORIGINAL [13 chars]: See Musicians
 TRADUÇÃO:
+Ver músicos
+Ver músicos
 
 OFFSET: 0x00003A32
 CELULA: 319  GRUPO: 5
 ORIGINAL [12 chars]: See Acrobats
 TRADUÇÃO:
+Ver acrobatas
+Ver acrobatas
 
 OFFSET: 0x00003A3F
 CELULA: 320  GRUPO: 5
 ORIGINAL [10 chars]: See Actors
 TRADUÇÃO:
+Ver atores
+Ver atores
 
 OFFSET: 0x00003A4A
 CELULA: 321  GRUPO: 5
 ORIGINAL [13 chars]: See Monuments
 TRADUÇÃO:
+Ver monumentos
+Ver monumentos
 
 OFFSET: 0x00003A58
 CELULA: 322  GRUPO: N/A
 ORIGINAL [12 chars]: See Security
 TRADUÇÃO:
+Ver segurança
+Ver segurança
 
 OFFSET: 0x00003A65
 CELULA: 323  GRUPO: N/A
 ORIGINAL [16 chars]: See Desirability
 TRADUÇÃO:
+Ver atratividade
+Ver atratividade
 
 OFFSET: 0x00003A76
 CELULA: 324  GRUPO: N/A
 ORIGINAL [13 chars]: See Feng Shui
 TRADUÇÃO:
+Ver Feng Shui
+Ver Feng Shui
 
 OFFSET: 0x00003A84
 CELULA: 325  GRUPO: N/A
 ORIGINAL [12 chars]: See Problems
 TRADUÇÃO:
+Ver problemas
+Ver problemas
 
 OFFSET: 0x00003A91
 CELULA: 326  GRUPO: N/A
 ORIGINAL [15 chars]: See Water Table
 TRADUÇÃO:
+Ver lençol freático
+Ver lençol freático
 
 OFFSET: 0x00003AA1
 CELULA: 327  GRUPO: N/A
 ORIGINAL [23 chars]: See Another Water Table
 TRADUÇÃO:
+Ver outro lençol freático
+Ver outro lençol freático
 
 OFFSET: 0x00003AB9
 CELULA: 328  GRUPO: 14
 ORIGINAL [12 chars]: Accept goods
 TRADUÇÃO:
+Aceitar mercadorias
+Aceitar mercadorias
 
 OFFSET: 0x00003AC6
 CELULA: 329  GRUPO: 14
 ORIGINAL [12 chars]: Refuse goods
 TRADUÇÃO:
+Recusar mercadorias
+Recusar mercadorias
 
 OFFSET: 0x00003AD3
 CELULA: 330  GRUPO: 14
 ORIGINAL [12 chars]: Go get goods
 TRADUÇÃO:
+Buscar mercadorias
+Buscar mercadorias
 
 OFFSET: 0x00003AE0
 CELULA: 331  GRUPO: 15
 ORIGINAL [8 chars]: Building
 TRADUÇÃO:
+Construção
+Construção
 
 OFFSET: 0x00003AE9
 CELULA: 332  GRUPO: 15
 ORIGINAL [6 chars]: Fabric
 TRADUÇÃO:
+Material
+Material
 
 OFFSET: 0x00003AF0
 CELULA: 333  GRUPO: 15
 ORIGINAL [7 chars]: Control
 TRADUÇÃO:
+Controle
+Controle
 
 OFFSET: 0x00003AF8
 CELULA: 334  GRUPO: 14
 ORIGINAL [3 chars]: Gfx
 TRADUÇÃO:
+Gfx
+Gfx
 
 OFFSET: 0x00003AFC
 CELULA: 335  GRUPO: 14
 ORIGINAL [9 chars]: Structure
 TRADUÇÃO:
+Estrutura
+Estrutura
 
 OFFSET: 0x00003B06
 CELULA: 336  GRUPO: 14
 ORIGINAL [3 chars]: Net
 TRADUÇÃO:
+Rede
+Rede
 
 OFFSET: 0x00003B0A
 CELULA: 337  GRUPO: 14
 ORIGINAL [6 chars]: Random
 TRADUÇÃO:
+Aleatório
+Aleatório
 
 OFFSET: 0x00003B11
 CELULA: 338  GRUPO: 14
 ORIGINAL [6 chars]: Figure
 TRADUÇÃO:
+Figura
+Figura
 
 OFFSET: 0x00003B18
 CELULA: 339  GRUPO: 14
 ORIGINAL [4 chars]: Anim
 TRADUÇÃO:
+Animação
+Animação
 
 OFFSET: 0x00003B1D
 CELULA: 340  GRUPO: 14
 ORIGINAL [6 chars]: Sticky
 TRADUÇÃO:
+Aderente
+Aderente
 
 OFFSET: 0x00003B24
 CELULA: 341  GRUPO: 14
 ORIGINAL [8 chars]: RM_build
 TRADUÇÃO:
+RM_build
+RM_build
 
 OFFSET: 0x00003B2D
 CELULA: 342  GRUPO: 14
 ORIGINAL [23 chars]: Building - water supply
 TRADUÇÃO:
+Construção - abastecimento de água
+Construção - abastecimento de água
 
 OFFSET: 0x00003B45
 CELULA: 343  GRUPO: 14
 ORIGINAL [17 chars]: Building - access
 TRADUÇÃO:
+Construção - acesso
+Construção - acesso
 
 OFFSET: 0x00003B57
 CELULA: 344  GRUPO: 14
 ORIGINAL [23 chars]: Building - from Capital
 TRADUÇÃO:
+Construção - da Capital
+Construção - da Capital
 
 OFFSET: 0x00003B6F
 CELULA: 345  GRUPO: 14
 ORIGINAL [17 chars]: Building - damage
 TRADUÇÃO:
+Construção - danos
+Construção - danos
 
 OFFSET: 0x00003B81
 CELULA: 346  GRUPO: 14
 ORIGINAL [21 chars]: Building - Population
 TRADUÇÃO:
+Construção - população
+Construção - população
 
 OFFSET: 0x00003B97
 CELULA: 347  GRUPO: 14
 ORIGINAL [6 chars]: Appeal
 TRADUÇÃO:
+Atratividade
+Atratividade
 
 OFFSET: 0x00003B9E
 CELULA: 348  GRUPO: 14
 ORIGINAL [6 chars]: Height
 TRADUÇÃO:
+Altura
+Altura
 
 OFFSET: 0x00003BA5
 CELULA: 349  GRUPO: 14
 ORIGINAL [12 chars]: River sticky
 TRADUÇÃO:
+Aderente ao rio
+Aderente ao rio
 
 OFFSET: 0x00003BB2
 CELULA: 350  GRUPO: 14
 ORIGINAL [11 chars]: Barb sticky
 TRADUÇÃO:
+Aderente a bárbaros
+Aderente a bárbaros
 
 OFFSET: 0x00003BBE
 CELULA: 351  GRUPO: N/A
 ORIGINAL [6 chars]: Damage
 TRADUÇÃO:
+Danos
+Danos
 
 OFFSET: 0x00003BC5
 CELULA: 352  GRUPO: N/A
 ORIGINAL [8 chars]: Nof figs
 TRADUÇÃO:
+Nº de figuras
+Nº de figuras
 
 OFFSET: 0x00003BCE
 CELULA: 353  GRUPO: N/A
 ORIGINAL [8 chars]: Old type
 TRADUÇÃO:
+Tipo antigo
+Tipo antigo
 
 OFFSET: 0x00003BD7
 CELULA: 354  GRUPO: N/A
 ORIGINAL [9 chars]: Influence
 TRADUÇÃO:
+Influência
+Influência
 
 OFFSET: 0x00003BE1
 CELULA: 355  GRUPO: N/A
 ORIGINAL [11 chars]: Wall sticky
 TRADUÇÃO:
+Aderente à muralha
+Aderente à muralha
 
 OFFSET: 0x00003BED
 CELULA: 356  GRUPO: N/A
 ORIGINAL [8 chars]: Road net
 TRADUÇÃO:
+Rede viária
+Rede viária
 
 OFFSET: 0x00003BF6
 CELULA: 357  GRUPO: N/A
 ORIGINAL [8 chars]: District
 TRADUÇÃO:
+Distrito
+Distrito
 
 OFFSET: 0x00003BFF
 CELULA: 358  GRUPO: 16
 ORIGINAL [5 chars]: North
 TRADUÇÃO:
+Norte
+Norte
 
 OFFSET: 0x00003C05
 CELULA: 359  GRUPO: 16
 ORIGINAL [9 chars]: Northeast
 TRADUÇÃO:
+Nordeste
+Nordeste
 
 OFFSET: 0x00003C0F
 CELULA: 360  GRUPO: 16
 ORIGINAL [4 chars]: East
 TRADUÇÃO:
+Leste
+Leste
 
 OFFSET: 0x00003C14
 CELULA: 361  GRUPO: 16
 ORIGINAL [9 chars]: Southeast
 TRADUÇÃO:
+Sudeste
+Sudeste
 
 OFFSET: 0x00003C1E
 CELULA: 362  GRUPO: 16
 ORIGINAL [5 chars]: South
 TRADUÇÃO:
+Sul
+Sul
 
 OFFSET: 0x00003C24
 CELULA: 363  GRUPO: 16
 ORIGINAL [9 chars]: Southwest
 TRADUÇÃO:
+Sudoeste
+Sudoeste
 
 OFFSET: 0x00003C2E
 CELULA: 364  GRUPO: 16
 ORIGINAL [4 chars]: West
 TRADUÇÃO:
+Oeste
+Oeste
 
 OFFSET: 0x00003C33
 CELULA: 365  GRUPO: 16
 ORIGINAL [9 chars]: Northwest
 TRADUÇÃO:
+Noroeste
+Noroeste
 
 OFFSET: 0x00003C3D
 CELULA: 366  GRUPO: 17
 ORIGINAL [2 chars]: No
 TRADUÇÃO:
+Não
+Não
 
 OFFSET: 0x00003C40
 CELULA: 367  GRUPO: 17
 ORIGINAL [3 chars]: Yes
 TRADUÇÃO:
+Sim
+Sim
 
 OFFSET: 0x00003C44
 CELULA: 368  GRUPO: 17
 ORIGINAL [6 chars]: Cancel
 TRADUÇÃO:
+Cancelar
+Cancelar
 
 OFFSET: 0x00003C4B
 CELULA: 369  GRUPO: 17
 ORIGINAL [2 chars]: OK
 TRADUÇÃO:
+OK
+OK
 
 OFFSET: 0x00003C4E
 CELULA: 370  GRUPO: 17
 ORIGINAL [2 chars]: ON
 TRADUÇÃO:
+Ligado
+Ligado
 
 OFFSET: 0x00003C51
 CELULA: 371  GRUPO: 17
 ORIGINAL [3 chars]: OFF
 TRADUÇÃO:
+Desligado
+Desligado
 
 OFFSET: 0x00003C55
 CELULA: 372  GRUPO: 17
 ORIGINAL [3 chars]: N/a
 TRADUÇÃO:
+N/D
+N/D
 
 OFFSET: 0x00003C59
 CELULA: 373  GRUPO: 17
 ORIGINAL [12 chars]: Tell me more
 TRADUÇÃO:
+Quero saber mais
+Quero saber mais
 
 OFFSET: 0x00003C66
 CELULA: 374  GRUPO: 16
 ORIGINAL [3 chars]: and
 TRADUÇÃO:
+e
+e
 
 OFFSET: 0x00003C6A
 CELULA: 375  GRUPO: 16
 ORIGINAL [5 chars]: Retry
 TRADUÇÃO:
+Tentar novamente
+Tentar novamente
 
 OFFSET: 0x00003C70
 CELULA: 376  GRUPO: 16
 ORIGINAL [5 chars]: Abort
 TRADUÇÃO:
+Abortar
+Abortar
 
 OFFSET: 0x00003C76
 CELULA: 377  GRUPO: 16
 ORIGINAL [6 chars]: Ignore
 TRADUÇÃO:
+Ignorar
+Ignorar
 
 OFFSET: 0x00003C7D
 CELULA: 378  GRUPO: 18
 ORIGINAL [11 chars]: Blank Entry
 TRADUÇÃO:
+Entrada vazia
+Entrada vazia
 
 OFFSET: 0x00003C89
 CELULA: 379  GRUPO: 18
 ORIGINAL [6 chars]: unused
 TRADUÇÃO:
+não utilizado
+não utilizado
 
 OFFSET: 0x00003C90
 CELULA: 380  GRUPO: 18
 ORIGINAL [7 chars]: unused 
 TRADUÇÃO:
+não utilizado
+não utilizado
 
 OFFSET: 0x00003C98
 CELULA: 381  GRUPO: 18
 ORIGINAL [6 chars]: unused
 TRADUÇÃO:
+não utilizado
+não utilizado
 
 OFFSET: 0x00003C9F
 CELULA: 382  GRUPO: 18
 ORIGINAL [6 chars]: unused
 TRADUÇÃO:
+não utilizado
+não utilizado
 
 OFFSET: 0x00003CA6
 CELULA: 383  GRUPO: 18
 ORIGINAL [28 chars]: Unable to set windowed mode!
 TRADUÇÃO:
+Não foi possível ativar o modo janela!
+Não foi possível ativar o modo janela!
 
 OFFSET: 0x00003CC3
 CELULA: 384  GRUPO: 18
 ORIGINAL [58 chars]: Maximum building capacity reached - see README for details
 TRADUÇÃO:
+Capacidade máxima de construções atingida – veja o README para detalhes
+Capacidade máxima de construções atingida – veja o README para detalhes
 
 OFFSET: 0x00003CFE
 CELULA: 385  GRUPO: 18
 ORIGINAL [10 chars]: Game saved
 TRADUÇÃO:
+Jogo salvo
+Jogo salvo
 
 OFFSET: 0x00003D09
 CELULA: 386  GRUPO: 18
 ORIGINAL [14 chars]: Cheats enabled
 TRADUÇÃO:
+Trapaças ativadas
+Trapaças ativadas
 
 OFFSET: 0x00003D18
 CELULA: 387  GRUPO: 18
 ORIGINAL [15 chars]: Cheats disabled
 TRADUÇÃO:
+Trapaças desativadas
+Trapaças desativadas
 
 OFFSET: 0x00003D28
 CELULA: 388  GRUPO: 18
 ORIGINAL [5 chars]: North
 TRADUÇÃO:
+Norte
+Norte
 
 OFFSET: 0x00003D2E
 CELULA: 389  GRUPO: 18
 ORIGINAL [4 chars]: East
 TRADUÇÃO:
+Leste
+Leste
 
 OFFSET: 0x00003D33
 CELULA: 390  GRUPO: N/A
 ORIGINAL [5 chars]: South
 TRADUÇÃO:
+Sul
+Sul
 
 OFFSET: 0x00003D39
 CELULA: 391  GRUPO: N/A
 ORIGINAL [4 chars]: West
 TRADUÇÃO:
+Oeste
+Oeste
 
 OFFSET: 0x00003D3E
 CELULA: 392  GRUPO: N/A
 ORIGINAL [21 chars]: Monument not allowed!
 TRADUÇÃO:
+Monumento não permitido!
+Monumento não permitido!
 
 OFFSET: 0x00003D54
 CELULA: 393  GRUPO: N/A
 ORIGINAL [41 chars]: The city cannot produce or import bronze.
 TRADUÇÃO:
+A cidade não pode produzir nem importar bronze.
+A cidade não pode produzir nem importar bronze.
 
 OFFSET: 0x00003D7E
 CELULA: 394  GRUPO: N/A
 ORIGINAL [39 chars]: The city cannot produce or import iron.
 TRADUÇÃO:
+A cidade não pode produzir nem importar ferro.
+A cidade não pode produzir nem importar ferro.
 
 OFFSET: 0x00003DA6
 CELULA: 395  GRUPO: N/A
 ORIGINAL [40 chars]: The city cannot produce or import steel.
 TRADUÇÃO:
+A cidade não pode produzir nem importar aço.
+A cidade não pode produzir nem importar aço.
 
 OFFSET: 0x00003DCF
 CELULA: 396  GRUPO: N/A
 ORIGINAL [39 chars]: The city cannot produce or import wood.
 TRADUÇÃO:
+A cidade não pode produzir nem importar madeira.
+A cidade não pode produzir nem importar madeira.
 
 OFFSET: 0x00003DF7
 CELULA: 397  GRUPO: N/A
 ORIGINAL [42 chars]: The city cannot produce or import weapons.
 TRADUÇÃO:
+A cidade não pode produzir nem importar armas.
+A cidade não pode produzir nem importar armas.
 
 OFFSET: 0x00003E22
 CELULA: 398  GRUPO: N/A
 ORIGINAL [31 chars]: You must build on cleared land.
 TRADUÇÃO:
+Você deve construir em terreno limpo.
+Você deve construir em terreno limpo.
 
 OFFSET: 0x00003E42
 CELULA: 399  GRUPO: N/A
 ORIGINAL [14 chars]: Out of credit!
 TRADUÇÃO:
+Sem crédito!
+Sem crédito!
 
 OFFSET: 0x00003E51
 CELULA: 400  GRUPO: N/A
 ORIGINAL [47 chars]: You may only have one of this type of building.
 TRADUÇÃO:
+Você só pode ter um edifício deste tipo.
+Você só pode ter um edifício deste tipo.
 
 OFFSET: 0x00003E81
 CELULA: 401  GRUPO: N/A
 ORIGINAL [37 chars]: This building needs access to a road.
 TRADUÇÃO:
+Esta construção precisa de acesso a uma estrada.
+Esta construção precisa de acesso a uma estrada.
 
 OFFSET: 0x00003EA7
 CELULA: 402  GRUPO: N/A
 ORIGINAL [34 chars]: Animal habitats can't be built on.
 TRADUÇÃO:
+Não é possível construir em habitats de animais.
+Não é possível construir em habitats de animais.
 
 OFFSET: 0x00003ECA
 CELULA: 403  GRUPO: N/A
 ORIGINAL [33 chars]: Find a good site along the water.
 TRADUÇÃO:
+Encontre um bom local próximo à água.
+Encontre um bom local próximo à água.
 
 OFFSET: 0x00003EEC
 CELULA: 404  GRUPO: N/A
 ORIGINAL [46 chars]: You can't demolish a bridge with people on it.
 TRADUÇÃO:
+Você não pode demolir uma ponte com pessoas sobre ela.
+Você não pode demolir uma ponte com pessoas sobre ela.
 
 OFFSET: 0x00003F1B
 CELULA: 405  GRUPO: N/A
 ORIGINAL [35 chars]: This lake has no access to the sea.
 TRADUÇÃO:
+Este lago não tem acesso ao mar.
+Este lago não tem acesso ao mar.
 
 OFFSET: 0x00003F3F
 CELULA: 406  GRUPO: N/A
 ORIGINAL [35 chars]: Some plots are too far from a road.
 TRADUÇÃO:
+Alguns lotes estão longe demais de uma estrada.
+Alguns lotes estão longe demais de uma estrada.
 
 OFFSET: 0x00003F63
 CELULA: 407  GRUPO: N/A
 ORIGINAL [52 chars]: Part of the city is isolated from the road to China.
 TRADUÇÃO:
+Parte da cidade está isolada da estrada para a China.
+Parte da cidade está isolada da estrada para a China.
 
 OFFSET: 0x00003F98
 CELULA: 408  GRUPO: N/A
 ORIGINAL [58 chars]: Until you restore access, that neighborhood will stagnate!
 TRADUÇÃO:
+Até que o acesso seja restaurado, esse bairro irá estagnar!
+Até que o acesso seja restaurado, esse bairro irá estagnar!
 
 OFFSET: 0x00003FD3
 CELULA: 409  GRUPO: N/A
 ORIGINAL [43 chars]: Your city has its full complement of forts.
 TRADUÇÃO:
+Sua cidade já possui o número máximo de fortes.
+Sua cidade já possui o número máximo de fortes.
 
 OFFSET: 0x00003FFF
 CELULA: 410  GRUPO: N/A
 ORIGINAL [42 chars]: You may only have 10 active trading quays.
 TRADUÇÃO:
+Você só pode ter 10 cais comerciais ativos.
+Você só pode ter 10 cais comerciais ativos.
 
 OFFSET: 0x0000402A
 CELULA: 411  GRUPO: N/A
 ORIGINAL [30 chars]: Not available in this mission!
 TRADUÇÃO:
+Não disponível nesta missão!
+Não disponível nesta missão!
 
 OFFSET: 0x00004049
 CELULA: 412  GRUPO: N/A
 ORIGINAL [26 chars]: Not available in the demo!
 TRADUÇÃO:
+Não disponível na demonstração!
+Não disponível na demonstração!
 
 OFFSET: 0x00004064
 CELULA: 413  GRUPO: N/A
 ORIGINAL [26 chars]: Too close to enemy troops!
 TRADUÇÃO:
+Muito perto das tropas inimigas!
+Muito perto das tropas inimigas!
 
 OFFSET: 0x0000407F
 CELULA: 414  GRUPO: N/A
 ORIGINAL [36 chars]: Company's morale too low to respond!
 TRADUÇÃO:
+O moral da companhia está baixo demais para reagir!
+O moral da companhia está baixo demais para reagir!
 
 OFFSET: 0x000040A4
 CELULA: 415  GRUPO: N/A
 ORIGINAL [36 chars]: Company can't reach its destination!
 TRADUÇÃO:
+A companhia não consegue alcançar seu destino!
+A companhia não consegue alcançar seu destino!
 
 OFFSET: 0x000040C9
 CELULA: 416  GRUPO: N/A
 ORIGINAL [41 chars]: A palace is required to build more forts.
 TRADUÇÃO:
+É necessário um palácio para construir mais fortes.
+É necessário um palácio para construir mais fortes.
 
 OFFSET: 0x000040F3
 CELULA: 417  GRUPO: N/A
 ORIGINAL [56 chars]: Towers must be next to a city wall to send out a sentry.
 TRADUÇÃO:
+As torres devem ficar junto à muralha para enviar sentinelas.
+As torres devem ficar junto à muralha para enviar sentinelas.
 
 OFFSET: 0x0000412C
 CELULA: 418  GRUPO: N/A
 ORIGINAL [43 chars]: Gates must be built on existing city walls.
 TRADUÇÃO:
+Os portões devem ser construídos sobre muralhas existentes.
+Os portões devem ser construídos sobre muralhas existentes.
 
 OFFSET: 0x00004158
 CELULA: 419  GRUPO: N/A
 ORIGINAL [40 chars]: Build market squares to distribute food.
 TRADUÇÃO:
+Construa praças de mercado para distribuir alimentos.
+Construa praças de mercado para distribuir alimentos.
 
 OFFSET: 0x00004181
 CELULA: 420  GRUPO: N/A
 ORIGINAL [29 chars]: Build a mill to process food.
 TRADUÇÃO:
+Construa um moinho para processar alimentos.
+Construa um moinho para processar alimentos.
 
 OFFSET: 0x0000419F
 CELULA: 421  GRUPO: N/A
 ORIGINAL [28 chars]: Build mills to process food.
 TRADUÇÃO:
+Construa moinhos para processar alimentos.
+Construa moinhos para processar alimentos.
 
 OFFSET: 0x000041BC
 CELULA: 422  GRUPO: N/A
 ORIGINAL [35 chars]: Build this shop on a market square.
 TRADUÇÃO:
+Construa esta loja em uma praça de mercado.
+Construa esta loja em uma praça de mercado.
 
 OFFSET: 0x000041E0
 CELULA: 423  GRUPO: N/A
 ORIGINAL [26 chars]: Build roadblocks on roads.
 TRADUÇÃO:
+Construa bloqueios de estrada nas vias.
+Construa bloqueios de estrada nas vias.
 
 OFFSET: 0x000041FB
 CELULA: 424  GRUPO: N/A
 ORIGINAL [6 chars]: unused
 TRADUÇÃO:
+não utilizado
+não utilizado
 
 OFFSET: 0x00004202
 CELULA: 425  GRUPO: N/A
 ORIGINAL [32 chars]: A miner was attacked and robbed.
 TRADUÇÃO:
+Um mineiro foi atacado e roubado.
+Um mineiro foi atacado e roubado.
 
 OFFSET: 0x00004223
 CELULA: 426  GRUPO: N/A
 ORIGINAL [42 chars]: You may only have one Administrative city.
 TRADUÇÃO:
+Você só pode ter uma cidade administrativa.
+Você só pode ter uma cidade administrativa.
 
 OFFSET: 0x0000424E
 CELULA: 427  GRUPO: N/A
 ORIGINAL [29 chars]: You may only have one palace.
 TRADUÇÃO:
+Você só pode ter um palácio.
+Você só pode ter um palácio.
 
 OFFSET: 0x0000426C
 CELULA: 428  GRUPO: N/A
 ORIGINAL [43 chars]: Build the market square on a straight road.
 TRADUÇÃO:
+Construa a praça de mercado em uma estrada reta.
+Construa a praça de mercado em uma estrada reta.
 
 OFFSET: 0x00004298
 CELULA: 429  GRUPO: N/A
 ORIGINAL [32 chars]: Hunger makes people despise you!
 TRADUÇÃO:
+A fome faz o povo desprezá-lo!
+A fome faz o povo desprezá-lo!
 
 OFFSET: 0x000042B9
 CELULA: 430  GRUPO: N/A
 ORIGINAL [32 chars]: The jobless pray for your exile!
 TRADUÇÃO:
+Os desempregados clamam por seu exílio!
+Os desempregados clamam por seu exílio!
 
 OFFSET: 0x000042DA
 CELULA: 431  GRUPO: N/A
 ORIGINAL [24 chars]: No one likes high taxes!
 TRADUÇÃO:
+Ninguém gosta de impostos altos!
+Ninguém gosta de impostos altos!
 
 OFFSET: 0x000042F3
 CELULA: 432  GRUPO: N/A
 ORIGINAL [28 chars]: Low wages brings low morale!
 TRADUÇÃO:
+Salários baixos reduzem o moral!
+Salários baixos reduzem o moral!
 
 OFFSET: 0x00004310
 CELULA: 433  GRUPO: N/A
 ORIGINAL [32 chars]: The ledgers are full of red ink!
 TRADUÇÃO:
+Os livros contábeis estão cheios de prejuízo!
+Os livros contábeis estão cheios de prejuízo!
 
 OFFSET: 0x00004331
 CELULA: 434  GRUPO: N/A
 ORIGINAL [26 chars]: People miss the festivals!
 TRADUÇÃO:
+O povo sente falta dos festivais!
+O povo sente falta dos festivais!
 
 OFFSET: 0x0000434C
 CELULA: 435  GRUPO: N/A
 ORIGINAL [37 chars]: Your sense of Feng Shui is laughable!
 TRADUÇÃO:
+Seu senso de Feng Shui é risível!
+Seu senso de Feng Shui é risível!
 
 OFFSET: 0x00004372
 CELULA: 436  GRUPO: N/A
 ORIGINAL [43 chars]: The people hate living in a despotic state!
 TRADUÇÃO:
+O povo odeia viver sob um regime despótico!
+O povo odeia viver sob um regime despótico!
 
 OFFSET: 0x0000439E
 CELULA: 437  GRUPO: N/A
 ORIGINAL [29 chars]: History of famine haunts you.
 TRADUÇÃO:
+O histórico de fome o persegue.
+O histórico de fome o persegue.
 
 OFFSET: 0x000043BC
 CELULA: 438  GRUPO: N/A
 ORIGINAL [35 chars]: History of unemployment haunts you.
 TRADUÇÃO:
+O histórico de desemprego o persegue.
+O histórico de desemprego o persegue.
 
 OFFSET: 0x000043E0
 CELULA: 439  GRUPO: N/A
 ORIGINAL [33 chars]: History of high taxes haunts you.
 TRADUÇÃO:
+O histórico de impostos altos o persegue.
+O histórico de impostos altos o persegue.
 
 OFFSET: 0x00004402
 CELULA: 440  GRUPO: N/A
 ORIGINAL [32 chars]: History of poor wages hurts you.
 TRADUÇÃO:
+O histórico de baixos salários o prejudica.
+O histórico de baixos salários o prejudica.
 
 OFFSET: 0x00004423
 CELULA: 441  GRUPO: N/A
 ORIGINAL [35 chars]: History of extreme debt haunts you.
 TRADUÇÃO:
+O histórico de endividamento extremo o persegue.
+O histórico de endividamento extremo o persegue.
 
 OFFSET: 0x00004447
 CELULA: 442  GRUPO: N/A
 ORIGINAL [35 chars]: History of no festivals haunts you.
 TRADUÇÃO:
+O histórico de ausência de festivais o persegue.
+O histórico de ausência de festivais o persegue.
 
 OFFSET: 0x0000446B
 CELULA: 443  GRUPO: N/A
 ORIGINAL [36 chars]: History of bad Feng Shui haunts you.
 TRADUÇÃO:
+O histórico de Feng Shui ruim o persegue.
+O histórico de Feng Shui ruim o persegue.
 
 OFFSET: 0x00004490
 CELULA: 444  GRUPO: N/A
 ORIGINAL [32 chars]: History of despotism haunts you.
 TRADUÇÃO:
+O histórico de despotismo o persegue.
+O histórico de despotismo o persegue.
 
 OFFSET: 0x000044B1
 CELULA: 445  GRUPO: N/A
 ORIGINAL [35 chars]: No food means no love lost for you.
 TRADUÇÃO:
+Sem comida, o povo não lhe tem apreço.
+Sem comida, o povo não lhe tem apreço.
 
 OFFSET: 0x000044D5
 CELULA: 446  GRUPO: N/A
 ORIGINAL [36 chars]: Lack of jobs causes dissatisfaction.
 TRADUÇÃO:
+A falta de trabalho causa descontentamento.
+A falta de trabalho causa descontentamento.
 
 OFFSET: 0x000044FA
 CELULA: 447  GRUPO: N/A
 ORIGINAL [36 chars]: High taxes lead to widespread scorn.
 TRADUÇÃO:
+Impostos altos geram desprezo generalizado.
+Impostos altos geram desprezo generalizado.
 
 OFFSET: 0x0000451F
 CELULA: 448  GRUPO: N/A
 ORIGINAL [32 chars]: Low wages equals low popularity.
 TRADUÇÃO:
+Salários baixos resultam em baixa popularidade.
+Salários baixos resultam em baixa popularidade.
 
 OFFSET: 0x00004540
 CELULA: 449  GRUPO: N/A
 ORIGINAL [40 chars]: Debt results in low consumer confidence.
 TRADUÇÃO:
+As dívidas reduzem a confiança do povo.
+As dívidas reduzem a confiança do povo.
 
 OFFSET: 0x00004569
 CELULA: 450  GRUPO: N/A
 ORIGINAL [30 chars]: No festivals angers residents.
 TRADUÇÃO:
+A ausência de festivais enfurece os moradores.
+A ausência de festivais enfurece os moradores.
 
 OFFSET: 0x00004588
 CELULA: 451  GRUPO: N/A
 ORIGINAL [34 chars]: Bad Feng Shui makes people uneasy.
 TRADUÇÃO:
+O mau Feng Shui deixa o povo inquieto.
+O mau Feng Shui deixa o povo inquieto.
 
 OFFSET: 0x000045AB
 CELULA: 452  GRUPO: N/A
 ORIGINAL [36 chars]: Despotism crushes the city's spirit.
 TRADUÇÃO:
+O despotismo esmaga o espírito da cidade.
+O despotismo esmaga o espírito da cidade.
 
 OFFSET: 0x000045D0
 CELULA: 453  GRUPO: N/A
 ORIGINAL [29 chars]: History of famine haunts you.
 TRADUÇÃO:
+O histórico de fome o persegue.
+O histórico de fome o persegue.
 
 OFFSET: 0x000045EE
 CELULA: 454  GRUPO: N/A
 ORIGINAL [35 chars]: History of unemployment haunts you.
 TRADUÇÃO:
+O histórico de desemprego o persegue.
+O histórico de desemprego o persegue.
 
 OFFSET: 0x00004612
 CELULA: 455  GRUPO: N/A
 ORIGINAL [33 chars]: History of high taxes haunts you.
 TRADUÇÃO:
+O histórico de impostos altos o persegue.
+O histórico de impostos altos o persegue.
 
 OFFSET: 0x00004634
 CELULA: 456  GRUPO: N/A
 ORIGINAL [33 chars]: History of poor wages haunts you.
 TRADUÇÃO:
+O histórico de baixos salários o persegue.
+O histórico de baixos salários o persegue.
 
 OFFSET: 0x00004656
 CELULA: 457  GRUPO: N/A
 ORIGINAL [35 chars]: History of extreme debt haunts you.
 TRADUÇÃO:
+O histórico de endividamento extremo o persegue.
+O histórico de endividamento extremo o persegue.
 
 OFFSET: 0x0000467A
 CELULA: 458  GRUPO: N/A
 ORIGINAL [35 chars]: History of no festivals haunts you.
 TRADUÇÃO:
+O histórico de ausência de festivais o persegue.
+O histórico de ausência de festivais o persegue.
 
 OFFSET: 0x0000469E
 CELULA: 459  GRUPO: N/A
 ORIGINAL [36 chars]: History of bad Feng Shui haunts you.
 TRADUÇÃO:
+O histórico de Feng Shui ruim o persegue.
+O histórico de Feng Shui ruim o persegue.
 
 OFFSET: 0x000046C3
 CELULA: 460  GRUPO: N/A
 ORIGINAL [32 chars]: History of despotism haunts you.
 TRADUÇÃO:
+O histórico de despotismo o persegue.
+O histórico de despotismo o persegue.
 
 OFFSET: 0x000046E4
 CELULA: 461  GRUPO: N/A
 ORIGINAL [33 chars]: The hungry harshly criticize you.
 TRADUÇÃO:
+Os famintos o criticam duramente.
+Os famintos o criticam duramente.
 
 OFFSET: 0x00004706
 CELULA: 462  GRUPO: N/A
 ORIGINAL [42 chars]: People are bitter after losing their jobs.
 TRADUÇÃO:
+O povo está amargurado após perder seus empregos.
+O povo está amargurado após perder seus empregos.
 
 OFFSET: 0x00004731
 CELULA: 463  GRUPO: N/A
 ORIGINAL [32 chars]: High taxes are met with disdain.
 TRADUÇÃO:
+Impostos altos são recebidos com desdém.
+Impostos altos são recebidos com desdém.
 
 OFFSET: 0x00004752
 CELULA: 464  GRUPO: N/A
 ORIGINAL [26 chars]: People hate a stingy boss!
 TRADUÇÃO:
+O povo odeia um governante mesquinho!
+O povo odeia um governante mesquinho!
 
 OFFSET: 0x0000476D
 CELULA: 465  GRUPO: N/A
 ORIGINAL [41 chars]: Workers are fed up with not getting paid.
 TRADUÇÃO:
+Os trabalhadores estão fartos de não receber pagamento.
+Os trabalhadores estão fartos de não receber pagamento.
 
 OFFSET: 0x00004797
 CELULA: 466  GRUPO: N/A
 ORIGINAL [34 chars]: Without festivals there is no joy.
 TRADUÇÃO:
+Sem festivais, não há alegria.
+Sem festivais, não há alegria.
 
 OFFSET: 0x000047BA
 CELULA: 467  GRUPO: N/A
 ORIGINAL [39 chars]: Bad Feng Shui is nothing to brag about.
 TRADUÇÃO:
+Mau Feng Shui não é motivo de orgulho.
+Mau Feng Shui não é motivo de orgulho.
 
 OFFSET: 0x000047E2
 CELULA: 468  GRUPO: N/A
 ORIGINAL [39 chars]: Despotism leads to rebellious thoughts.
 TRADUÇÃO:
+O despotismo gera pensamentos rebeldes.
+O despotismo gera pensamentos rebeldes.
 
 OFFSET: 0x0000480A
 CELULA: 469  GRUPO: N/A
 ORIGINAL [29 chars]: History of famine haunts you.
 TRADUÇÃO:
+O histórico de fome o persegue.
+O histórico de fome o persegue.
 
 OFFSET: 0x00004828
 CELULA: 470  GRUPO: N/A
 ORIGINAL [35 chars]: History of unemployment haunts you.
 TRADUÇÃO:
+O histórico de desemprego o persegue.
+O histórico de desemprego o persegue.
 
 OFFSET: 0x0000484C
 CELULA: 471  GRUPO: N/A
 ORIGINAL [33 chars]: History of high taxes haunts you.
 TRADUÇÃO:
+O histórico de impostos altos o persegue.
+O histórico de impostos altos o persegue.
 
 OFFSET: 0x0000486E
 CELULA: 472  GRUPO: N/A
 ORIGINAL [33 chars]: History of poor wages haunts you.
 TRADUÇÃO:
+O histórico de baixos salários o persegue.
+O histórico de baixos salários o persegue.
 
 OFFSET: 0x00004890
 CELULA: 473  GRUPO: N/A
 ORIGINAL [35 chars]: History of extreme debt haunts you.
 TRADUÇÃO:
+O histórico de endividamento extremo o persegue.
+O histórico de endividamento extremo o persegue.
 
 OFFSET: 0x000048B4
 CELULA: 474  GRUPO: N/A
 ORIGINAL [35 chars]: History of no festivals haunts you.
 TRADUÇÃO:
+O histórico de ausência de festivais o persegue.
+O histórico de ausência de festivais o persegue.
 
 OFFSET: 0x000048D8
 CELULA: 475  GRUPO: N/A
 ORIGINAL [36 chars]: History of bad Feng Shui haunts you.
 TRADUÇÃO:
+O histórico de Feng Shui ruim o persegue.
+O histórico de Feng Shui ruim o persegue.
 
 OFFSET: 0x000048FD
 CELULA: 476  GRUPO: N/A
 ORIGINAL [32 chars]: History of despotism haunts you.
 TRADUÇÃO:
+O histórico de despotismo o persegue.
+O histórico de despotismo o persegue.
 
 OFFSET: 0x0000491E
 CELULA: 477  GRUPO: N/A
 ORIGINAL [40 chars]: People displeased with the lack of food.
 TRADUÇÃO:
+O povo está descontente com a falta de comida.
+O povo está descontente com a falta de comida.
 
 OFFSET: 0x00004947
 CELULA: 478  GRUPO: N/A
 ORIGINAL [45 chars]: People demand jobs or your head on a platter.
 TRADUÇÃO:
+O povo exige empregos ou a sua cabeça numa bandeja.
+O povo exige empregos ou a sua cabeça numa bandeja.
 
 OFFSET: 0x00004975
 CELULA: 479  GRUPO: N/A
 ORIGINAL [28 chars]: High taxes pique homeowners.
 TRADUÇÃO:
+Impostos altos irritam os proprietários.
+Impostos altos irritam os proprietários.
 
 OFFSET: 0x00004992
 CELULA: 480  GRUPO: N/A
 ORIGINAL [22 chars]: Low wages vex workers.
 TRADUÇÃO:
+Salários baixos irritam os trabalhadores.
+Salários baixos irritam os trabalhadores.
 
 OFFSET: 0x000049A9
 CELULA: 481  GRUPO: N/A
 ORIGINAL [28 chars]: Money woes cause discontent.
 TRADUÇÃO:
+Problemas financeiros causam descontentamento.
+Problemas financeiros causam descontentamento.
 
 OFFSET: 0x000049C6
 CELULA: 482  GRUPO: N/A
 ORIGINAL [41 chars]: Residents upset by the lack of festivals.
 TRADUÇÃO:
+Moradores estão irritados com a falta de festivais.
+Moradores estão irritados com a falta de festivais.
 
 OFFSET: 0x000049F0
 CELULA: 483  GRUPO: N/A
 ORIGINAL [30 chars]: Bad Feng Shui angers residents
 TRADUÇÃO:
+O mau Feng Shui enfurece os moradores.
+O mau Feng Shui enfurece os moradores.
 
 OFFSET: 0x00004A0F
 CELULA: 484  GRUPO: N/A
 ORIGINAL [26 chars]: Despotism angers residents
 TRADUÇÃO:
+O despotismo enfurece os moradores.
+O despotismo enfurece os moradores.
 
 OFFSET: 0x00004A2A
 CELULA: 485  GRUPO: N/A
 ORIGINAL [29 chars]: History of famine haunts you.
 TRADUÇÃO:
+O histórico de fome o persegue.
+O histórico de fome o persegue.
 
 OFFSET: 0x00004A48
 CELULA: 486  GRUPO: N/A
 ORIGINAL [35 chars]: History of unemployment haunts you.
 TRADUÇÃO:
+O histórico de desemprego o persegue.
+O histórico de desemprego o persegue.
 
 OFFSET: 0x00004A6C
 CELULA: 487  GRUPO: N/A
 ORIGINAL [33 chars]: History of high taxes haunts you.
 TRADUÇÃO:
+O histórico de impostos altos o persegue.
+O histórico de impostos altos o persegue.
 
 OFFSET: 0x00004A8E
 CELULA: 488  GRUPO: N/A
 ORIGINAL [33 chars]: History of poor wages haunts you.
 TRADUÇÃO:
+O histórico de baixos salários o persegue.
+O histórico de baixos salários o persegue.
 
 OFFSET: 0x00004AB0
 CELULA: 489  GRUPO: N/A
 ORIGINAL [35 chars]: History of extreme debt haunts you.
 TRADUÇÃO:
+O histórico de endividamento extremo o persegue.
+O histórico de endividamento extremo o persegue.
 
 OFFSET: 0x00004AD4
 CELULA: 490  GRUPO: N/A
 ORIGINAL [35 chars]: History of no festivals haunts you.
 TRADUÇÃO:
+O histórico de ausência de festivais o persegue.
+O histórico de ausência de festivais o persegue.
 
 OFFSET: 0x00004AF8
 CELULA: 491  GRUPO: N/A
 ORIGINAL [36 chars]: History of bad Feng Shui haunts you.
 TRADUÇÃO:
+O histórico de Feng Shui ruim o persegue.
+O histórico de Feng Shui ruim o persegue.
 
 OFFSET: 0x00004B1D
 CELULA: 492  GRUPO: N/A
 ORIGINAL [32 chars]: History of despotism haunts you.
 TRADUÇÃO:
+O histórico de despotismo o persegue.
+O histórico de despotismo o persegue.
 
 OFFSET: 0x00004B3E
 CELULA: 493  GRUPO: N/A
 ORIGINAL [28 chars]: Hunger aggravates residents.
 TRADUÇÃO:
+A fome agrava o descontentamento dos moradores.
+A fome agrava o descontentamento dos moradores.
 
 OFFSET: 0x00004B5B
 CELULA: 494  GRUPO: N/A
 ORIGINAL [29 chars]: Joblessness met with outrage.
 TRADUÇÃO:
+O desemprego é recebido com indignação.
+O desemprego é recebido com indignação.
 
 OFFSET: 0x00004B79
 CELULA: 495  GRUPO: N/A
 ORIGINAL [28 chars]: People object to high taxes.
 TRADUÇÃO:
+O povo se opõe a impostos elevados.
+O povo se opõe a impostos elevados.
 
 OFFSET: 0x00004B96
 CELULA: 496  GRUPO: N/A
 ORIGINAL [31 chars]: People are galled by low wages.
 TRADUÇÃO:
+O povo se ressente dos baixos salários.
+O povo se ressente dos baixos salários.
 
 OFFSET: 0x00004BB6
 CELULA: 497  GRUPO: N/A
 ORIGINAL [31 chars]: Deficit spending is never wise.
 TRADUÇÃO:
+Gastar mais do que se arrecada nunca é prudente.
+Gastar mais do que se arrecada nunca é prudente.
 
 OFFSET: 0x00004BD6
 CELULA: 498  GRUPO: N/A
 ORIGINAL [35 chars]: People are bored without festivals.
 TRADUÇÃO:
+Sem festivais, o povo fica entediado.
+Sem festivais, o povo fica entediado.
 
 OFFSET: 0x00004BFA
 CELULA: 499  GRUPO: N/A
 ORIGINAL [37 chars]: Bad Feng Shui is the topic of gossip.
 TRADUÇÃO:
+O mau Feng Shui vira assunto de fofoca.
+O mau Feng Shui vira assunto de fofoca.
 
 OFFSET: 0x00004C20
 CELULA: 500  GRUPO: N/A
 ORIGINAL [30 chars]: Despotism is alarming to some.
 TRADUÇÃO:
+O despotismo é alarmante para alguns.
+O despotismo é alarmante para alguns.
 
 OFFSET: 0x00004C3F
 CELULA: 501  GRUPO: N/A
 ORIGINAL [29 chars]: History of famine haunts you.
 TRADUÇÃO:
+O histórico de fome o persegue.
+O histórico de fome o persegue.
 
 OFFSET: 0x00004C5D
 CELULA: 502  GRUPO: N/A
 ORIGINAL [35 chars]: History of unemployment haunts you.
 TRADUÇÃO:
+O histórico de desemprego o persegue.
+O histórico de desemprego o persegue.
 
 OFFSET: 0x00004C81
 CELULA: 503  GRUPO: N/A
 ORIGINAL [33 chars]: History of high taxes haunts you.
 TRADUÇÃO:
+O histórico de impostos altos o persegue.
+O histórico de impostos altos o persegue.
 
 OFFSET: 0x00004CA3
 CELULA: 504  GRUPO: N/A
 ORIGINAL [33 chars]: History of poor wages haunts you.
 TRADUÇÃO:
+O histórico de baixos salários o persegue.
+O histórico de baixos salários o persegue.
 
 OFFSET: 0x00004CC5
 CELULA: 505  GRUPO: N/A
 ORIGINAL [36 chars]: History of extreme debts haunts you.
 TRADUÇÃO:
+O histórico de dívidas extremas o persegue.
+O histórico de dívidas extremas o persegue.
 
 OFFSET: 0x00004CEA
 CELULA: 506  GRUPO: N/A
 ORIGINAL [35 chars]: History of no festivals haunts you.
 TRADUÇÃO:
+O histórico de ausência de festivais o persegue.
+O histórico de ausência de festivais o persegue.
 
 OFFSET: 0x00004D0E
 CELULA: 507  GRUPO: N/A
 ORIGINAL [45 chars]: History of inauspicious Feng Shui haunts you.
 TRADUÇÃO:
+O histórico de Feng Shui desfavorável o persegue.
+O histórico de Feng Shui desfavorável o persegue.
 
 OFFSET: 0x00004D3C
 CELULA: 508  GRUPO: N/A
 ORIGINAL [32 chars]: History of despotism haunts you.
 TRADUÇÃO:
+O histórico de despotismo o persegue.
+O histórico de despotismo o persegue.
 
 OFFSET: 0x00004D5D
 CELULA: 509  GRUPO: N/A
 ORIGINAL [38 chars]: Popularity has dwindled to low levels.
 TRADUÇÃO:
+Sua popularidade caiu para níveis baixos.
+Sua popularidade caiu para níveis baixos.
 
 OFFSET: 0x00004D84
 CELULA: 510  GRUPO: N/A
 ORIGINAL [29 chars]: Opinion of you has plummeted.
 TRADUÇÃO:
+A opinião sobre você despencou.
+A opinião sobre você despencou.
 
 OFFSET: 0x00004DA2
 CELULA: 511  GRUPO: N/A
 ORIGINAL [21 chars]: Popularity has waned.
 TRADUÇÃO:
+Sua popularidade diminuiu.
+Sua popularidade diminuiu.
 
 OFFSET: 0x00004DB8
 CELULA: 512  GRUPO: N/A
 ORIGINAL [32 chars]: Popularity is beginning to sink.
 TRADUÇÃO:
+A popularidade está começando a cair.
+A popularidade está começando a cair.
 
 OFFSET: 0x00004DD9
 CELULA: 513  GRUPO: N/A
 ORIGINAL [35 chars]: You are not as popular as you were.
 TRADUÇÃO:
+Você não é tão popular quanto antes.
+Você não é tão popular quanto antes.
 
 OFFSET: 0x00004DFD
 CELULA: 514  GRUPO: N/A
 ORIGINAL [32 chars]: Maybe you're not scum after all?
 TRADUÇÃO:
+Talvez você não seja um canalha afinal?
+Talvez você não seja um canalha afinal?
 
 OFFSET: 0x00004E1E
 CELULA: 515  GRUPO: N/A
 ORIGINAL [29 chars]: You no longer disgust people.
 TRADUÇÃO:
+Você já não causa repulsa no povo.
+Você já não causa repulsa no povo.
 
 OFFSET: 0x00004E3C
 CELULA: 516  GRUPO: N/A
 ORIGINAL [33 chars]: You are not as hated as you were.
 TRADUÇÃO:
+Você não é tão odiado quanto antes.
+Você não é tão odiado quanto antes.
 
 OFFSET: 0x00004E5E
 CELULA: 517  GRUPO: N/A
 ORIGINAL [19 chars]: You could be worse.
 TRADUÇÃO:
+Poderia ser pior.
+Poderia ser pior.
 
 OFFSET: 0x00004E72
 CELULA: 518  GRUPO: N/A
 ORIGINAL [29 chars]: People are warming up to you.
 TRADUÇÃO:
+O povo começa a simpatizar com você.
+O povo começa a simpatizar com você.
 
 OFFSET: 0x00004E90
 CELULA: 519  GRUPO: N/A
 ORIGINAL [34 chars]: People feel apathetic towards you.
 TRADUÇÃO:
+O povo se sente apático em relação a você.
+O povo se sente apático em relação a você.
 
 OFFSET: 0x00004EB3
 CELULA: 520  GRUPO: N/A
 ORIGINAL [34 chars]: You are well liked by most people.
 TRADUÇÃO:
+Você é bem-quisto pela maioria do povo.
+Você é bem-quisto pela maioria do povo.
 
 OFFSET: 0x00004ED6
 CELULA: 521  GRUPO: N/A
 ORIGINAL [37 chars]: You are invited to every celebration.
 TRADUÇÃO:
+Você é convidado para todas as celebrações.
+Você é convidado para todas as celebrações.
 
 OFFSET: 0x00004EFC
 CELULA: 522  GRUPO: N/A
 ORIGINAL [33 chars]: People think you are enlightened.
 TRADUÇÃO:
+O povo o considera esclarecido.
+O povo o considera esclarecido.
 
 OFFSET: 0x00004F1E
 CELULA: 523  GRUPO: N/A
 ORIGINAL [34 chars]: You are more popular than dim sum.
 TRADUÇÃO:
+Você é mais popular que o dim sum.
+Você é mais popular que o dim sum.
 
 OFFSET: 0x00004F41
 CELULA: 524  GRUPO: N/A
 ORIGINAL [46 chars]: People call you the greatest ruler in history!
 TRADUÇÃO:
+O povo o chama de o maior governante da história!
+O povo o chama de o maior governante da história!
 
 OFFSET: 0x00004F70
 CELULA: 525  GRUPO: N/A
 ORIGINAL [36 chars]: The threat of war scares immigrants.
 TRADUÇÃO:
+A ameaça de guerra afugenta os imigrantes.
+A ameaça de guerra afugenta os imigrantes.
 
 OFFSET: 0x00004F95
 CELULA: 526  GRUPO: N/A
 ORIGINAL [36 chars]: Lack of housing hinders immigration.
 TRADUÇÃO:
+A falta de moradias dificulta a imigração.
+A falta de moradias dificulta a imigração.
 
 OFFSET: 0x00004FBA
 CELULA: 527  GRUPO: N/A
 ORIGINAL [35 chars]: Lack of food keeps immigrants away.
 TRADUÇÃO:
+A falta de alimentos afasta os imigrantes.
+A falta de alimentos afasta os imigrantes.
 
 OFFSET: 0x00004FDE
 CELULA: 528  GRUPO: N/A
 ORIGINAL [34 chars]: Unemployment prevents immigration.
 TRADUÇÃO:
+O desemprego impede a imigração.
+O desemprego impede a imigração.
 
 OFFSET: 0x00005001
 CELULA: 529  GRUPO: N/A
 ORIGINAL [31 chars]: High taxes prevent immigration.
 TRADUÇÃO:
+Impostos altos impedem a imigração.
+Impostos altos impedem a imigração.
 
 OFFSET: 0x00005021
 CELULA: 530  GRUPO: N/A
 ORIGINAL [30 chars]: Low wages prevent immigration.
 TRADUÇÃO:
+Salários baixos impedem a imigração.
+Salários baixos impedem a imigração.
 
 OFFSET: 0x00005040
 CELULA: 531  GRUPO: N/A
 ORIGINAL [26 chars]: Debt prevents immigration.
 TRADUÇÃO:
+As dívidas impedem a imigração.
+As dívidas impedem a imigração.
 
 OFFSET: 0x0000505B
 CELULA: 532  GRUPO: N/A
 ORIGINAL [33 chars]: No festivals hinders immigration.
 TRADUÇÃO:
+A ausência de festivais dificulta a imigração.
+A ausência de festivais dificulta a imigração.
 
 OFFSET: 0x0000507D
 CELULA: 533  GRUPO: N/A
 ORIGINAL [34 chars]: Bad Feng Shui hinders immigration.
 TRADUÇÃO:
+O mau Feng Shui dificulta a imigração.
+O mau Feng Shui dificulta a imigração.
 
 OFFSET: 0x000050A0
 CELULA: 534  GRUPO: N/A
 ORIGINAL [30 chars]: Despotism hinders immigration.
 TRADUÇÃO:
+O despotismo dificulta a imigração.
+O despotismo dificulta a imigração.
 
 OFFSET: 0x000050BF
 CELULA: 535  GRUPO: N/A
 ORIGINAL [34 chars]: Past high taxes keeps people away.
 TRADUÇÃO:
+Impostos altos no passado afastam o povo.
+Impostos altos no passado afastam o povo.
 
 OFFSET: 0x000050E2
 CELULA: 536  GRUPO: N/A
 ORIGINAL [33 chars]: Past low wages keeps people away.
 TRADUÇÃO:
+Baixos salários no passado afastam o povo.
+Baixos salários no passado afastam o povo.
 
 OFFSET: 0x00005104
 CELULA: 537  GRUPO: N/A
 ORIGINAL [28 chars]: Past debt keeps people away.
 TRADUÇÃO:
+Dívidas passadas afastam o povo.
+Dívidas passadas afastam o povo.
 
 OFFSET: 0x00005121
 CELULA: 538  GRUPO: N/A
 ORIGINAL [41 chars]: Past lack of festivals keeps people away.
 TRADUÇÃO:
+A falta de festivais no passado afasta o povo.
+A falta de festivais no passado afasta o povo.
 
 OFFSET: 0x0000514B
 CELULA: 539  GRUPO: N/A
 ORIGINAL [46 chars]: Past inauspicious feng shui keeps people away.
 TRADUÇÃO:
+O Feng Shui desfavorável no passado afasta o povo.
+O Feng Shui desfavorável no passado afasta o povo.
 
 OFFSET: 0x0000517A
 CELULA: 540  GRUPO: N/A
 ORIGINAL [39 chars]: Past civic repression keeps people away
 TRADUÇÃO:
+A repressão cívica passada afasta o povo.
+A repressão cívica passada afasta o povo.
 
 OFFSET: 0x000051A2
 CELULA: 541  GRUPO: N/A
 ORIGINAL [30 chars]: Past hunger keeps people away.
 TRADUÇÃO:
+A fome passada afasta o povo.
+A fome passada afasta o povo.
 
 OFFSET: 0x000051C1
 CELULA: 542  GRUPO: N/A
 ORIGINAL [36 chars]: Past unemployment keeps people away.
 TRADUÇÃO:
+O desemprego passado afasta o povo.
+O desemprego passado afasta o povo.
 
 OFFSET: 0x000051E6
 CELULA: 543  GRUPO: N/A
 ORIGINAL [27 chars]: New residents are arriving.
 TRADUÇÃO:
+Novos moradores estão chegando.
+Novos moradores estão chegando.
 
 OFFSET: 0x00005202
 CELULA: 544  GRUPO: N/A
 ORIGINAL [36 chars]: Your unpopularity stops immigration.
 TRADUÇÃO:
+Sua impopularidade impede a imigração.
+Sua impopularidade impede a imigração.
 
 OFFSET: 0x00005227
 CELULA: 545  GRUPO: N/A
 ORIGINAL [35 chars]: Lack of housing prompts departures.
 TRADUÇÃO:
+A falta de moradias provoca partidas.
+A falta de moradias provoca partidas.
 
 OFFSET: 0x0000524B
 CELULA: 546  GRUPO: N/A
 ORIGINAL [31 chars]: Lack of food forces people out.
 TRADUÇÃO:
+A falta de alimentos expulsa moradores.
+A falta de alimentos expulsa moradores.
 
 OFFSET: 0x0000526B
 CELULA: 547  GRUPO: N/A
 ORIGINAL [36 chars]: Unemployment causes people to leave.
 TRADUÇÃO:
+O desemprego faz o povo partir.
+O desemprego faz o povo partir.
 
 OFFSET: 0x00005290
 CELULA: 548  GRUPO: N/A
 ORIGINAL [29 chars]: High taxes drive people away.
 TRADUÇÃO:
+Impostos altos afastam o povo.
+Impostos altos afastam o povo.
 
 OFFSET: 0x000052AE
 CELULA: 549  GRUPO: N/A
 ORIGINAL [31 chars]: Paltry wages force people away.
 TRADUÇÃO:
+Salários miseráveis fazem o povo partir.
+Salários miseráveis fazem o povo partir.
 
 OFFSET: 0x000052CE
 CELULA: 550  GRUPO: N/A
 ORIGINAL [32 chars]: Emigration caused by money woes.
 TRADUÇÃO:
+A emigração é causada por dificuldades financeiras.
+A emigração é causada por dificuldades financeiras.
 
 OFFSET: 0x000052EF
 CELULA: 551  GRUPO: N/A
 ORIGINAL [31 chars]: People leave over no festivals.
 TRADUÇÃO:
+O povo parte por falta de festivais.
+O povo parte por falta de festivais.
 
 OFFSET: 0x0000530F
 CELULA: 552  GRUPO: N/A
 ORIGINAL [32 chars]: People leave over bad feng shui.
 TRADUÇÃO:
+O povo parte devido ao mau Feng Shui.
+O povo parte devido ao mau Feng Shui.
 
 OFFSET: 0x00005330
 CELULA: 553  GRUPO: N/A
 ORIGINAL [35 chars]: People leave over civic repression.
 TRADUÇÃO:
+O povo parte por causa da repressão cívica.
+O povo parte por causa da repressão cívica.
 
 OFFSET: 0x00005354
 CELULA: 554  GRUPO: N/A
 ORIGINAL [34 chars]: People leave over past high taxes.
 TRADUÇÃO:
+O povo parte por causa de impostos altos no passado.
+O povo parte por causa de impostos altos no passado.
 
 OFFSET: 0x00005377
 CELULA: 555  GRUPO: N/A
 ORIGINAL [35 chars]: People leave due to past low wages.
 TRADUÇÃO:
+O povo parte devido a baixos salários no passado.
+O povo parte devido a baixos salários no passado.
 
 OFFSET: 0x0000539B
 CELULA: 556  GRUPO: N/A
 ORIGINAL [28 chars]: People leave over past debt.
 TRADUÇÃO:
+O povo parte por causa de dívidas passadas.
+O povo parte por causa de dívidas passadas.
 
 OFFSET: 0x000053B8
 CELULA: 557  GRUPO: N/A
 ORIGINAL [45 chars]: People leave due to no festivals in the past.
 TRADUÇÃO:
+O povo parte devido à ausência de festivais no passado.
+O povo parte devido à ausência de festivais no passado.
 
 OFFSET: 0x000053E6
 CELULA: 558  GRUPO: N/A
 ORIGINAL [55 chars]: People leave due to inauspicious feng shui in the past.
 TRADUÇÃO:
+O povo parte devido ao Feng Shui desfavorável no passado.
+O povo parte devido ao Feng Shui desfavorável no passado.
 
 OFFSET: 0x0000541E
 CELULA: 559  GRUPO: N/A
 ORIGINAL [42 chars]: People leave due to despotism in the past.
 TRADUÇÃO:
+O povo parte devido ao despotismo no passado.
+O povo parte devido ao despotismo no passado.
 
 OFFSET: 0x00005449
 CELULA: 560  GRUPO: N/A
 ORIGINAL [30 chars]: People leave over past hunger.
 TRADUÇÃO:
+O povo parte por causa da fome passada.
+O povo parte por causa da fome passada.
 
 OFFSET: 0x00005468
 CELULA: 561  GRUPO: N/A
 ORIGINAL [38 chars]: People leave due to past unemployment.
 TRADUÇÃO:
+O povo parte devido ao desemprego passado.
+O povo parte devido ao desemprego passado.
 
 OFFSET: 0x0000548F
 CELULA: 562  GRUPO: N/A
 ORIGINAL [36 chars]: Your unpopularity causes emigration.
 TRADUÇÃO:
+Sua impopularidade causa emigração.
+Sua impopularidade causa emigração.
 
 OFFSET: 0x000054B4
 CELULA: 563  GRUPO: N/A
 ORIGINAL [29 chars]: Your city needs more workers.
 TRADUÇÃO:
+Sua cidade precisa de mais trabalhadores.
+Sua cidade precisa de mais trabalhadores.
 
 OFFSET: 0x000054D2
 CELULA: 564  GRUPO: N/A
 ORIGINAL [29 chars]: Your city needs more workers.
 TRADUÇÃO:
+Sua cidade precisa de mais trabalhadores.
+Sua cidade precisa de mais trabalhadores.
 
 OFFSET: 0x000054F0
 CELULA: 565  GRUPO: N/A
 ORIGINAL [34 chars]: You already have too many workers!
 TRADUÇÃO:
+Você já tem trabalhadores demais!
+Você já tem trabalhadores demais!
 
 OFFSET: 0x00005513
 CELULA: 566  GRUPO: N/A
 ORIGINAL [31 chars]: High unemployment is a problem.
 TRADUÇÃO:
+O alto desemprego é um problema.
+O alto desemprego é um problema.
 
 OFFSET: 0x00005533
 CELULA: 567  GRUPO: N/A
 ORIGINAL [33 chars]: You can't feed everyone as it is!
 TRADUÇÃO:
+Você não consegue alimentar a todos assim!
+Você não consegue alimentar a todos assim!
 
 OFFSET: 0x00005555
 CELULA: 568  GRUPO: N/A
 ORIGINAL [34 chars]: The city doesn't have enough food.
 TRADUÇÃO:
+A cidade não tem comida suficiente.
+A cidade não tem comida suficiente.
 
 OFFSET: 0x00005578
 CELULA: 569  GRUPO: N/A
 ORIGINAL [28 chars]: People already eat too much!
 TRADUÇÃO:
+O povo já come demais!
+O povo já come demais!
 
 OFFSET: 0x00005595
 CELULA: 570  GRUPO: N/A
 ORIGINAL [36 chars]: Hygiene appalling, disease imminent!
 TRADUÇÃO:
+Higiene deplorável, doença iminente!
+Higiene deplorável, doença iminente!
 
 OFFSET: 0x000055BA
 CELULA: 571  GRUPO: N/A
 ORIGINAL [33 chars]: Hygiene terrible, disease likely.
 TRADUÇÃO:
+Higiene terrível, doença provável.
+Higiene terrível, doença provável.
 
 OFFSET: 0x000055DC
 CELULA: 572  GRUPO: N/A
 ORIGINAL [37 chars]: Hygiene bad, serious risk of disease.
 TRADUÇÃO:
+Higiene ruim, sério risco de doença.
+Higiene ruim, sério risco de doença.
 
 OFFSET: 0x00005602
 CELULA: 573  GRUPO: N/A
 ORIGINAL [35 chars]: Hygiene poor; disease could strike.
 TRADUÇÃO:
+Higiene precária; a doença pode surgir.
+Higiene precária; a doença pode surgir.
 
 OFFSET: 0x00005626
 CELULA: 574  GRUPO: N/A
 ORIGINAL [35 chars]: Hygiene is falling dangerously low.
 TRADUÇÃO:
+A higiene está caindo a níveis perigosos.
+A higiene está caindo a níveis perigosos.
 
 OFFSET: 0x0000564A
 CELULA: 575  GRUPO: N/A
 ORIGINAL [32 chars]: Hygiene is ok but getting worse.
 TRADUÇÃO:
+A higiene está aceitável, mas piorando.
+A higiene está aceitável, mas piorando.
 
 OFFSET: 0x0000566B
 CELULA: 576  GRUPO: N/A
 ORIGINAL [30 chars]: Hygiene is good but worsening.
 TRADUÇÃO:
+A higiene é boa, mas está piorando.
+A higiene é boa, mas está piorando.
 
 OFFSET: 0x0000568A
 CELULA: 577  GRUPO: N/A
 ORIGINAL [36 chars]: Hygiene is very good, but weakening.
 TRADUÇÃO:
+A higiene é muito boa, mas está enfraquecendo.
+A higiene é muito boa, mas está enfraquecendo.
 
 OFFSET: 0x000056AF
 CELULA: 578  GRUPO: N/A
 ORIGINAL [29 chars]: Hygiene is no longer perfect.
 TRADUÇÃO:
+A higiene já não é perfeita.
+A higiene já não é perfeita.
 
 OFFSET: 0x000056CD
 CELULA: 579  GRUPO: N/A
 ORIGINAL [25 chars]: Hygiene is deteriorating.
 TRADUÇÃO:
+A higiene está se deteriorando.
+A higiene está se deteriorando.
 
 OFFSET: 0x000056E7
 CELULA: 580  GRUPO: N/A
 ORIGINAL [40 chars]: Hygiene is better, disease still likely.
 TRADUÇÃO:
+A higiene melhorou, mas a doença ainda é provável.
+A higiene melhorou, mas a doença ainda é provável.
 
 OFFSET: 0x00005710
 CELULA: 581  GRUPO: N/A
 ORIGINAL [41 chars]: Hygiene is better, still risk of disease.
 TRADUÇÃO:
+A higiene melhorou, mas ainda há risco de doença.
+A higiene melhorou, mas ainda há risco de doença.
 
 OFFSET: 0x0000573A
 CELULA: 582  GRUPO: N/A
 ORIGINAL [39 chars]: Hygiene better, disease still possible.
 TRADUÇÃO:
+A higiene melhorou, a doença ainda é possível.
+A higiene melhorou, a doença ainda é possível.
 
 OFFSET: 0x00005762
 CELULA: 583  GRUPO: N/A
 ORIGINAL [34 chars]: Hygiene isn't as dismal as it was.
 TRADUÇÃO:
+A higiene não está tão ruim quanto antes.
+A higiene não está tão ruim quanto antes.
 
 OFFSET: 0x00005785
 CELULA: 584  GRUPO: N/A
 ORIGINAL [21 chars]: Hygiene is improving.
 TRADUÇÃO:
+A higiene está melhorando.
+A higiene está melhorando.
 
 OFFSET: 0x0000579B
 CELULA: 585  GRUPO: N/A
 ORIGINAL [35 chars]: Hygiene is good and getting better.
 TRADUÇÃO:
+A higiene é boa e está melhorando.
+A higiene é boa e está melhorando.
 
 OFFSET: 0x000057BF
 CELULA: 586  GRUPO: N/A
 ORIGINAL [35 chars]: Hygiene is very good and improving.
 TRADUÇÃO:
+A higiene é muito boa e está melhorando.
+A higiene é muito boa e está melhorando.
 
 OFFSET: 0x000057E3
 CELULA: 587  GRUPO: N/A
 ORIGINAL [34 chars]: Hygiene is excellent and climbing.
 TRADUÇÃO:
+A higiene é excelente e continua aumentando.
+A higiene é excelente e continua aumentando.
 
 OFFSET: 0x00005806
 CELULA: 588  GRUPO: N/A
 ORIGINAL [35 chars]: Hygiene is near perfect and rising.
 TRADUÇÃO:
+A higiene está quase perfeita e melhorando.
+A higiene está quase perfeita e melhorando.
 
 OFFSET: 0x0000582A
 CELULA: 589  GRUPO: N/A
 ORIGINAL [19 chars]: Hygiene is perfect!
 TRADUÇÃO:
+A higiene está perfeita!
+A higiene está perfeita!
 
 OFFSET: 0x0000583E
 CELULA: 590  GRUPO: N/A
 ORIGINAL [34 chars]: Thieves have robbed an elite home!
 TRADUÇÃO:
+Ladrões roubaram uma residência de elite!
+Ladrões roubaram uma residência de elite!
 
 OFFSET: 0x00005861
 CELULA: 591  GRUPO: N/A
 ORIGINAL [37 chars]: Bandits have destroyed an elite home!
 TRADUÇÃO:
+Bandidos destruíram uma residência de elite!
+Bandidos destruíram uma residência de elite!
 
 OFFSET: 0x00005887
 CELULA: 592  GRUPO: N/A
 ORIGINAL [37 chars]: There is a lot of unrest in the city.
 TRADUÇÃO:
+Há muita agitação na cidade.
+Há muita agitação na cidade.
 
 OFFSET: 0x000058AD
 CELULA: 593  GRUPO: N/A
 ORIGINAL [37 chars]: There is a lot of unrest in the city.
 TRADUÇÃO:
+Há muita agitação na cidade.
+Há muita agitação na cidade.
 
 OFFSET: 0x000058D3
 CELULA: 594  GRUPO: N/A
 ORIGINAL [33 chars]: There is some unrest in the city.
 TRADUÇÃO:
+Há alguma agitação na cidade.
+Há alguma agitação na cidade.
 
 OFFSET: 0x000058F5
 CELULA: 595  GRUPO: N/A
 ORIGINAL [33 chars]: There is some unrest in the city.
 TRADUÇÃO:
+Há alguma agitação na cidade.
+Há alguma agitação na cidade.
 
 OFFSET: 0x00005917
 CELULA: 596  GRUPO: N/A
 ORIGINAL [42 chars]: There are stirrings of unrest in the city.
 TRADUÇÃO:
+Há sinais de agitação surgindo na cidade.
+Há sinais de agitação surgindo na cidade.
 
 OFFSET: 0x00005942
 CELULA: 597  GRUPO: N/A
 ORIGINAL [31 chars]: There is no unrest in the city!
 TRADUÇÃO:
+Não há nenhuma agitação na cidade!
+Não há nenhuma agitação na cidade!
 
 OFFSET: 0x00005962
 CELULA: 598  GRUPO: N/A
 ORIGINAL [37 chars]: Build a trading station to import it.
 TRADUÇÃO:
+Construa um posto comercial para importá-lo.
+Construa um posto comercial para importá-lo.
 
 OFFSET: 0x00005988
 CELULA: 599  GRUPO: N/A
 ORIGINAL [34 chars]: Build a trading quay to import it.
 TRADUÇÃO:
+Construa um cais comercial para importá-lo.
+Construa um cais comercial para importá-lo.
 
 OFFSET: 0x000059AB
 CELULA: 600  GRUPO: N/A
 ORIGINAL [36 chars]: Build a trade building to import it.
 TRADUÇÃO:
+Construa um edifício comercial para importá-lo.
+Construa um edifício comercial para importá-lo.
 
 OFFSET: 0x000059D0
 CELULA: 601  GRUPO: N/A
 ORIGINAL [33 chars]: Import it from a trading station.
 TRADUÇÃO:
+Importe-o por meio de um posto comercial.
+Importe-o por meio de um posto comercial.
 
 OFFSET: 0x000059F2
 CELULA: 602  GRUPO: N/A
 ORIGINAL [30 chars]: Import it from a trading quay.
 TRADUÇÃO:
+Importe-o por meio de um cais comercial.
+Importe-o por meio de um cais comercial.
 
 OFFSET: 0x00005A11
 CELULA: 603  GRUPO: N/A
 ORIGINAL [34 chars]: Import it from a trading building.
 TRADUÇÃO:
+Importe-o por meio de um edifício comercial.
+Importe-o por meio de um edifício comercial.
 
 OFFSET: 0x00005A34
 CELULA: 604  GRUPO: N/A
 ORIGINAL [39 chars]: Build a trading station to import them.
 TRADUÇÃO:
+Construa um posto comercial para importá-los.
+Construa um posto comercial para importá-los.
 
 OFFSET: 0x00005A5C
 CELULA: 605  GRUPO: N/A
 ORIGINAL [36 chars]: Build a trading quay to import them.
 TRADUÇÃO:
+Construa um cais comercial para importá-los.
+Construa um cais comercial para importá-los.
 
 OFFSET: 0x00005A81
 CELULA: 606  GRUPO: N/A
 ORIGINAL [40 chars]: Build a trading building to import them.
 TRADUÇÃO:
+Construa um edifício comercial para importá-los.
+Construa um edifício comercial para importá-los.
 
 OFFSET: 0x00005AAA
 CELULA: 607  GRUPO: N/A
 ORIGINAL [35 chars]: Import them from a trading station.
 TRADUÇÃO:
+Importe-os por meio de um posto comercial.
+Importe-os por meio de um posto comercial.
 
 OFFSET: 0x00005ACE
 CELULA: 608  GRUPO: N/A
 ORIGINAL [32 chars]: Import them from a trading quay.
 TRADUÇÃO:
+Importe-os por meio de um cais comercial.
+Importe-os por meio de um cais comercial.
 
 OFFSET: 0x00005AEF
 CELULA: 609  GRUPO: N/A
 ORIGINAL [34 chars]: Import them from a trade building.
 TRADUÇÃO:
+Importe-os por meio de um edifício comercial.
+Importe-os por meio de um edifício comercial.
 
 OFFSET: 0x00005B12
 CELULA: 610  GRUPO: N/A
 ORIGINAL [28 chars]: Forts need wood and weapons.
 TRADUÇÃO:
+Fortes precisam de madeira e armas.
+Fortes precisam de madeira e armas.
 
 OFFSET: 0x00005B2F
 CELULA: 611  GRUPO: N/A
 ORIGINAL [25 chars]: This building needs wood.
 TRADUÇÃO:
+Esta construção precisa de madeira.
+Esta construção precisa de madeira.
 
 OFFSET: 0x00005B49
 CELULA: 612  GRUPO: N/A
 ORIGINAL [28 chars]: This building needs weapons.
 TRADUÇÃO:
+Esta construção precisa de armas.
+Esta construção precisa de armas.
 
 OFFSET: 0x00005B66
 CELULA: 613  GRUPO: N/A
 ORIGINAL [21 chars]: Build a logging shed.
 TRADUÇÃO:
+Construa um galpão de lenhadores.
+Construa um galpão de lenhadores.
 
 OFFSET: 0x00005B7C
 CELULA: 614  GRUPO: N/A
 ORIGINAL [20 chars]: Build a Weaponsmith.
 TRADUÇÃO:
+Construa uma forja de armas.
+Construa uma forja de armas.
 
 OFFSET: 0x00005B91
 CELULA: 615  GRUPO: N/A
 ORIGINAL [41 chars]: Weaponsmiths need bronze to make weapons.
 TRADUÇÃO:
+Forjadores de armas precisam de bronze para fabricar armas.
+Forjadores de armas precisam de bronze para fabricar armas.
 
 OFFSET: 0x00005BBB
 CELULA: 616  GRUPO: N/A
 ORIGINAL [39 chars]: Weaponsmiths need iron to make weapons.
 TRADUÇÃO:
+Forjadores de armas precisam de ferro para fabricar armas.
+Forjadores de armas precisam de ferro para fabricar armas.
 
 OFFSET: 0x00005BE3
 CELULA: 617  GRUPO: N/A
 ORIGINAL [40 chars]: Weaponsmiths need steel to make weapons.
 TRADUÇÃO:
+Forjadores de armas precisam de aço para fabricar armas.
+Forjadores de armas precisam de aço para fabricar armas.
 
 OFFSET: 0x00005C0C
 CELULA: 618  GRUPO: N/A
 ORIGINAL [23 chars]: Build a bronze smelter.
 TRADUÇÃO:
+Construa uma fundição de bronze.
+Construa uma fundição de bronze.
 
 OFFSET: 0x00005C24
 CELULA: 619  GRUPO: N/A
 ORIGINAL [22 chars]: Build an iron smelter.
 TRADUÇÃO:
+Construa uma fundição de ferro.
+Construa uma fundição de ferro.
 
 OFFSET: 0x00005C3B
 CELULA: 620  GRUPO: N/A
 ORIGINAL [22 chars]: Build a steel furnace.
 TRADUÇÃO:
+Construa um forno de aço.
+Construa um forno de aço.
 
 OFFSET: 0x00005C52
 CELULA: 621  GRUPO: N/A
 ORIGINAL [47 chars]: Bronzeware makers need bronze to produce wares.
 TRADUÇÃO:
+Artesãos de bronze precisam de bronze para produzir bens.
+Artesãos de bronze precisam de bronze para produzir bens.
 
 OFFSET: 0x00005C82
 CELULA: 622  GRUPO: N/A
 ORIGINAL [50 chars]: Weavers can't produce silk cloth without raw silk.
 TRADUÇÃO:
+Tecelões não podem produzir seda sem seda bruta.
+Tecelões não podem produzir seda sem seda bruta.
 
 OFFSET: 0x00005CB5
 CELULA: 623  GRUPO: N/A
 ORIGINAL [26 chars]: Plant some mulberry trees.
 TRADUÇÃO:
+Plante algumas amoreiras.
+Plante algumas amoreiras.
 
 OFFSET: 0x00005CD0
 CELULA: 624  GRUPO: N/A
 ORIGINAL [55 chars]: Lacquerware makers can't produce wares without lacquer.
 TRADUÇÃO:
+Artesãos de laca não podem produzir bens sem laca.
+Artesãos de laca não podem produzir bens sem laca.
 
 OFFSET: 0x00005D08
 CELULA: 625  GRUPO: N/A
 ORIGINAL [25 chars]: Plant some lacquer trees.
 TRADUÇÃO:
+Plante algumas árvores de laca.
+Plante algumas árvores de laca.
 
 OFFSET: 0x00005D22
 CELULA: 626  GRUPO: N/A
 ORIGINAL [41 chars]: You need [warning_amount] slabs of stone.
 TRADUÇÃO:
+Você precisa de [warning_amount] blocos de pedra.
+Você precisa de [warning_amount] blocos de pedra.
 
 OFFSET: 0x00005D4C
 CELULA: 627  GRUPO: N/A
 ORIGINAL [29 chars]: Build a stoneworks to hew it.
 TRADUÇÃO:
+Construa uma pedreira para extraí-la.
+Construa uma pedreira para extraí-la.
 
 OFFSET: 0x00005D6A
 CELULA: 628  GRUPO: N/A
 ORIGINAL [58 chars]: This home needs [warning_amount] crate of appetizing food.
 TRADUÇÃO:
+Esta residência precisa de [warning_amount] caixa de alimentos apetitosos.
+Esta residência precisa de [warning_amount] caixa de alimentos apetitosos.
 
 OFFSET: 0x00005DA5
 CELULA: 629  GRUPO: N/A
 ORIGINAL [46 chars]: This home needs [warning_amount] bale of hemp.
 TRADUÇÃO:
+Esta residência precisa de [warning_amount] fardo de cânhamo.
+Esta residência precisa de [warning_amount] fardo de cânhamo.
 
 OFFSET: 0x00005DD4
 CELULA: 630  GRUPO: N/A
 ORIGINAL [51 chars]: This home needs [warning_amount] crate of ceramics.
 TRADUÇÃO:
+Esta residência precisa de [warning_amount] caixa de cerâmica.
+Esta residência precisa de [warning_amount] caixa de cerâmica.
 
 OFFSET: 0x00005E08
 CELULA: 631  GRUPO: N/A
 ORIGINAL [43 chars]: Build this home in a highly desirable area.
 TRADUÇÃO:
+Construa esta residência em uma área altamente desejável.
+Construa esta residência em uma área altamente desejável.
 
 OFFSET: 0x00005E34
 CELULA: 632  GRUPO: N/A
 ORIGINAL [24 chars]: Must be placed on grass.
 TRADUÇÃO:
+Deve ser colocado sobre a grama.
+Deve ser colocado sobre a grama.
 
 OFFSET: 0x00005E4D
 CELULA: 633  GRUPO: N/A
 ORIGINAL [36 chars]: Tea bushes need people to tend them.
 TRADUÇÃO:
+Os arbustos de chá precisam de pessoas para cuidá-los.
+Os arbustos de chá precisam de pessoas para cuidá-los.
 
 OFFSET: 0x00005E72
 CELULA: 634  GRUPO: N/A
 ORIGINAL [24 chars]: Build a tea curing shed.
 TRADUÇÃO:
+Construa um galpão de secagem de chá.
+Construa um galpão de secagem de chá.
 
 OFFSET: 0x00005E8B
 CELULA: 635  GRUPO: N/A
 ORIGINAL [41 chars]: Tea can't be produced without tea bushes.
 TRADUÇÃO:
+O chá não pode ser produzido sem arbustos de chá.
+O chá não pode ser produzido sem arbustos de chá.
 
 OFFSET: 0x00005EB5
 CELULA: 636  GRUPO: N/A
 ORIGINAL [29 chars]: Place some tea bushes nearby.
 TRADUÇÃO:
+Coloque alguns arbustos de chá nas proximidades.
+Coloque alguns arbustos de chá nas proximidades.
 
 OFFSET: 0x00005ED3
 CELULA: 637  GRUPO: N/A
 ORIGINAL [39 chars]: Lacquer trees need people to tend them.
 TRADUÇÃO:
+As árvores de laca precisam de pessoas para cuidá-las.
+As árvores de laca precisam de pessoas para cuidá-las.
 
 OFFSET: 0x00005EFB
 CELULA: 638  GRUPO: N/A
 ORIGINAL [25 chars]: Build a lacquer refinery.
 TRADUÇÃO:
+Construa uma refinaria de laca.
+Construa uma refinaria de laca.
 
 OFFSET: 0x00005F15
 CELULA: 639  GRUPO: N/A
 ORIGINAL [48 chars]: Lacquer can't be produced without lacquer trees.
 TRADUÇÃO:
+A laca não pode ser produzida sem árvores de laca.
+A laca não pode ser produzida sem árvores de laca.
 
 OFFSET: 0x00005F46
 CELULA: 640  GRUPO: N/A
 ORIGINAL [32 chars]: Place some lacquer trees nearby.
 TRADUÇÃO:
+Coloque algumas árvores de laca nas proximidades.
+Coloque algumas árvores de laca nas proximidades.
 
 OFFSET: 0x00005F67
 CELULA: 641  GRUPO: N/A
 ORIGINAL [40 chars]: Mulberry trees need people to tend them.
 TRADUÇÃO:
+As amoreiras precisam de pessoas para cuidá-las.
+As amoreiras precisam de pessoas para cuidá-las.
 
 OFFSET: 0x00005F90
 CELULA: 642  GRUPO: N/A
 ORIGINAL [22 chars]: Build a silkworm shed.
 TRADUÇÃO:
+Construa um galpão de bichos-da-seda.
+Construa um galpão de bichos-da-seda.
 
 OFFSET: 0x00005FA7
 CELULA: 643  GRUPO: N/A
 ORIGINAL [51 chars]: Silkworms can't produce silk without leaves to eat.
 TRADUÇÃO:
+Os bichos-da-seda não podem produzir seda sem folhas para se alimentar.
+Os bichos-da-seda não podem produzir seda sem folhas para se alimentar.
 
 OFFSET: 0x00005FDB
 CELULA: 644  GRUPO: N/A
 ORIGINAL [33 chars]: Place some mulberry trees nearby.
 TRADUÇÃO:
+Coloque algumas amoreiras nas proximidades.
+Coloque algumas amoreiras nas proximidades.
 
 OFFSET: 0x00005FFD
 CELULA: 645  GRUPO: N/A
 ORIGINAL [46 chars]: Build an Administrative city to collect taxes.
 TRADUÇÃO:
+Construa uma cidade administrativa para arrecadar impostos.
+Construa uma cidade administrativa para arrecadar impostos.
 
 OFFSET: 0x0000602C
 CELULA: 646  GRUPO: N/A
 ORIGINAL [68 chars]: Build a market square for your musicians and acrobats to perform at.
 TRADUÇÃO:
+Construa uma praça de mercado para que músicos e acrobatas se apresentem.
+Construa uma praça de mercado para que músicos e acrobatas se apresentem.
 
 OFFSET: 0x00006071
 CELULA: 647  GRUPO: N/A
 ORIGINAL [40 chars]: Build a music school to train musicians.
 TRADUÇÃO:
+Construa uma escola de música para treinar músicos.
+Construa uma escola de música para treinar músicos.
 
 OFFSET: 0x0000609A
 CELULA: 648  GRUPO: N/A
 ORIGINAL [6 chars]: Unused
 TRADUÇÃO:
+Não utilizado
+Não utilizado
 
 OFFSET: 0x000060A1
 CELULA: 649  GRUPO: N/A
 ORIGINAL [41 chars]: Build a theatre pavilion for your actors.
 TRADUÇÃO:
+Construa um pavilhão teatral para seus atores.
+Construa um pavilhão teatral para seus atores.
 
 OFFSET: 0x000060CB
 CELULA: 650  GRUPO: N/A
 ORIGINAL [37 chars]: Build a drama school to train actors.
 TRADUÇÃO:
+Construa uma escola de teatro para treinar atores.
+Construa uma escola de teatro para treinar atores.
 
 OFFSET: 0x000060F1
 CELULA: 651  GRUPO: N/A
 ORIGINAL [42 chars]: Build an acrobat school to train acrobats.
 TRADUÇÃO:
+Construa uma escola de acrobatas para treinar acrobatas.
+Construa uma escola de acrobatas para treinar acrobatas.
 
 OFFSET: 0x0000611C
 CELULA: 652  GRUPO: N/A
 ORIGINAL [30 chars]: Add shops to distribute goods.
 TRADUÇÃO:
+Adicione lojas para distribuir mercadorias.
+Adicione lojas para distribuir mercadorias.
 
 OFFSET: 0x0000613B
 CELULA: 653  GRUPO: N/A
 ORIGINAL [41 chars]: Can't demolish bridge during an invasion!
 TRADUÇÃO:
+Não é possível demolir pontes durante uma invasão!
+Não é possível demolir pontes durante uma invasão!
 
 OFFSET: 0x00006165
 CELULA: 654  GRUPO: N/A
 ORIGINAL [45 chars]: Your city is now worthy of an ancestral hero!
 TRADUÇÃO:
+Sua cidade agora é digna de um herói ancestral!
+Sua cidade agora é digna de um herói ancestral!
 
 OFFSET: 0x00006193
 CELULA: 655  GRUPO: N/A
 ORIGINAL [41 chars]: Your city is now worthy of a Daoist hero!
 TRADUÇÃO:
+Sua cidade agora é digna de um herói taoísta!
+Sua cidade agora é digna de um herói taoísta!
 
 OFFSET: 0x000061BD
 CELULA: 656  GRUPO: N/A
 ORIGINAL [43 chars]: Your city is now worthy of a Buddhist hero!
 TRADUÇÃO:
+Sua cidade agora é digna de um herói budista!
+Sua cidade agora é digna de um herói budista!
 
 OFFSET: 0x000061E9
 CELULA: 657  GRUPO: N/A
 ORIGINAL [44 chars]: Your city is now worthy of a Confucian hero!
 TRADUÇÃO:
+Sua cidade agora é digna de um herói confucionista!
+Sua cidade agora é digna de um herói confucionista!
 
 OFFSET: 0x00006216
 CELULA: 658  GRUPO: N/A
 ORIGINAL [55 chars]: Pay homage to an ancestral hero before they grow angry!
 TRADUÇÃO:
+Preste homenagem a um herói ancestral antes que ele se enfureça!
+Preste homenagem a um herói ancestral antes que ele se enfureça!
 
 OFFSET: 0x0000624E
 CELULA: 659  GRUPO: N/A
 ORIGINAL [30 chars]: Must build clay pits on grass.
 TRADUÇÃO:
+As jazidas de argila devem ser construídas sobre a grama.
+As jazidas de argila devem ser construídas sobre a grama.
 
 OFFSET: 0x0000626D
 CELULA: 660  GRUPO: N/A
