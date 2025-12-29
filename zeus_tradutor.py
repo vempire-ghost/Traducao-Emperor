@@ -570,21 +570,9 @@ def extrair_todas_as_celulas():
         existing_cell_ids.add(int(match.group(1)))
     
     total_cells = len(zeus_file.strings)
-    total_translated = 0
-    new_blocks = []
-    
-    # Analisa células já traduzidas
-    for match in re.finditer(r"CELULA:\s*(\d+).*?TRADUÇÃO:\s*\n(.*?)\n\n", 
-                           existing_content, re.DOTALL):
-        cell_id = int(match.group(1))
-        # Verifica se tem texto de tradução
-        translation = match.group(2).strip()
-        if translation and translation != "":
-            total_translated += 1
     
     print(f"Células no arquivo binário: {total_cells}")
     print(f"Células já no arquivo .txt: {len(existing_cell_ids)}")
-    print(f"Células já traduzidas: {total_translated}")
     
     # Prepara para extrair células que faltam
     cells_to_extract = []
@@ -605,7 +593,7 @@ def extrair_todas_as_celulas():
         text = string_info['text']
         group_id = string_info['group_id']
         
-        # Formata o bloco
+        # Formata o bloco COMPLETO
         block = (
             f"OFFSET: 0x{string_info['absolute_offset']:08X}\n"
             f"CELULA: {cell_id}  GRUPO: {group_id if group_id is not None else 'N/A'}\n"
@@ -632,7 +620,6 @@ def extrair_todas_as_celulas():
                 f"Arquivo: {BIN_FILE}\n"
                 f"Total de células no binário: {total_cells}\n"
                 f"Células já no arquivo .txt: {len(existing_cell_ids)}\n"
-                f"Células traduzidas: {total_translated}\n"
                 f"Células adicionadas agora: {len(blocks)}\n"
                 f"\nO arquivo {BASE} agora contém TODAS as células.\n"
                 f"Você pode traduzir em qualquer ordem.\n\n"
@@ -644,7 +631,6 @@ def extrair_todas_as_celulas():
                               f"Extraição concluída!\n\n"
                               f"Total de células no binário: {total_cells}\n"
                               f"Células já no arquivo: {len(existing_cell_ids)}\n"
-                              f"Células traduzidas: {total_translated}\n"
                               f"Células adicionadas: {len(blocks)}\n\n"
                               f"O arquivo {BASE} agora contém TODAS as células.")
             
@@ -659,7 +645,6 @@ def extrair_todas_as_celulas():
             f"Arquivo: {BIN_FILE}\n"
             f"Total de células no binário: {total_cells}\n"
             f"Células já no arquivo .txt: {len(existing_cell_ids)}\n"
-            f"Células traduzidas: {total_translated}\n"
             f"\nTodas as células já estão no arquivo {BASE}\n"
             f"Continue traduzindo e use 'Mesclar' para atualizar.\n\n"
             f"Status: Nenhuma célula nova adicionada\n"
@@ -668,86 +653,119 @@ def extrair_todas_as_celulas():
         
         messagebox.showinfo("Extração Completa", 
                           f"Todas as {total_cells} células já estão no arquivo.\n"
-                          f"Células traduzidas: {total_translated}\n"
-                          f"Continue traduzindo as células restantes.")
+                          f"Use 'Extrair para traduzir' para pegar células não traduzidas.")
     
     return zeus_file
 
 def extrair_celulas_para_traducao():
     """Extrai um lote de células para tradução (apenas as não traduzidas)"""
     if not os.path.exists(BASE):
-        extrair_todas_as_celulas()
-        return
+        messagebox.showinfo("Info", "Execute 'Extrair TODAS as células' primeiro.")
+        return None
     
     try:
         with open(BASE, "r", encoding="utf-8") as f:
             content = f.read()
     except FileNotFoundError:
-        extrair_todas_as_celulas()
-        return
+        messagebox.showinfo("Info", "Execute 'Extrair TODAS as células' primeiro.")
+        return None
     
-    # Encontra células não traduzidas
-    pattern = r"CELULA:\s*(\d+).*?TRADUÇÃO:\s*\n(.*?)\n\n"
-    translated_cells = {}
+    print("\n" + "="*60)
+    print("ANALISANDO CÉLULAS PARA TRADUÇÃO")
+    print("="*60)
     
-    for match in re.finditer(pattern, content, re.DOTALL):
-        cell_id = int(match.group(1))
-        translation = match.group(2).strip()
-        if translation and translation != "":
-            translated_cells[cell_id] = translation
+    # Divide o conteúdo em blocos por célula
+    blocks = content.split("\n\n")
     
-    # Encontra TODAS as células no arquivo
-    all_cell_ids = set()
-    for match in re.finditer(r"CELULA:\s*(\d+)", content):
-        all_cell_ids.add(int(match.group(1)))
+    # Encontra todos os blocos que começam com OFFSET:
+    cell_blocks = []
+    for block in blocks:
+        if block.strip().startswith("OFFSET:"):
+            cell_blocks.append(block.strip())
     
-    # Encontra células não traduzidas
-    untranslated_cells = []
-    for cell_id in all_cell_ids:
-        if cell_id not in translated_cells:
-            untranslated_cells.append(cell_id)
+    print(f"Total de blocos encontrados: {len(cell_blocks)}")
     
-    # Ordena as células
-    untranslated_cells.sort()
+    # Analisa cada bloco para verificar se tem tradução
+    untranslated_blocks = []
+    translated_count = 0
+    
+    for block in cell_blocks:
+        lines = block.split('\n')
+        if len(lines) < 4:
+            continue
+        
+        # Extrai cell_id
+        cell_id = None
+        for line in lines:
+            if line.startswith("CELULA:"):
+                parts = line.split()
+                for part in parts:
+                    if part.isdigit():
+                        cell_id = int(part)
+                        break
+                break
+        
+        if cell_id is None:
+            continue
+        
+        # Verifica se tem tradução
+        has_translation = False
+        found_traducao_line = False
+        
+        for i, line in enumerate(lines):
+            if "TRADUÇÃO:" in line:
+                found_traducao_line = True
+                # Verifica se a próxima linha tem conteúdo
+                if i + 1 < len(lines):
+                    next_line = lines[i + 1].strip()
+                    if next_line and next_line != "" and not next_line.startswith("OFFSET:"):
+                        has_translation = True
+                        translated_count += 1
+                break
+        
+        if not has_translation:
+            untranslated_blocks.append((cell_id, block))
+    
+    print(f"Total de células: {len(cell_blocks)}")
+    print(f"Células traduzidas: {translated_count}")
+    print(f"Células não traduzidas: {len(untranslated_blocks)}")
+    
+    # Ordena por cell_id
+    untranslated_blocks.sort(key=lambda x: x[0])
     
     # Limita ao máximo
-    cells_to_translate = untranslated_cells[:MAX]
+    selected_blocks = untranslated_blocks[:MAX]
     
     # Prepara texto para tradução
-    blocks = []
-    for cell_id in cells_to_translate:
-        # Encontra o bloco desta célula
-        cell_pattern = f"CELULA: {cell_id}.*?(?=\n\n|\nCELULA:|\Z)"
-        match = re.search(cell_pattern, content, re.DOTALL)
-        if match:
-            blocks.append(match.group(0) + "\n\n")
+    output_text = ""
+    for cell_id, block in selected_blocks:
+        output_text += block + "\n\n"
     
     # Atualiza a interface
     text_extrair.delete("1.0", tk.END)
     text_extrair.insert(tk.END,
         "ZEUS TRANSLATOR - CÉLULAS PARA TRADUZIR\n"
         "=======================================\n"
-        f"Total de células no arquivo: {len(all_cell_ids)}\n"
-        f"Células traduzidas: {len(translated_cells)}\n"
-        f"Células não traduzidas: {len(untranslated_cells)}\n"
-        f"Extraindo {len(blocks)} células para tradução...\n\n"
+        f"Total de células no arquivo: {len(cell_blocks)}\n"
+        f"Células traduzidas: {translated_count}\n"
+        f"Células não traduzidas: {len(untranslated_blocks)}\n"
+        f"Extraindo {len(selected_blocks)} células para tradução...\n\n"
     )
     
-    for b in blocks:
-        text_extrair.insert(tk.END, b + "\n")
+    text_extrair.insert(tk.END, output_text)
     
-    if blocks:
+    if selected_blocks:
         messagebox.showinfo("Extração concluída", 
-                          f"{len(blocks)} células não traduzidas extraídas.\n"
-                          f"Total de células: {len(all_cell_ids)}\n"
-                          f"Traduzidas: {len(translated_cells)}\n"
-                          f"Restantes: {len(untranslated_cells)}")
+                          f"{len(selected_blocks)} células não traduzidas extraídas.\n"
+                          f"Total de células: {len(cell_blocks)}\n"
+                          f"Traduzidas: {translated_count}\n"
+                          f"Restantes: {len(untranslated_blocks)}")
     else:
         messagebox.showinfo("Tradução Concluída", 
                           "Todas as células já foram traduzidas!\n"
-                          f"Total: {len(all_cell_ids)} células")
+                          f"Total: {len(cell_blocks)} células")
     
-    return blocks
+    return selected_blocks
 
 def focus_browser():
     """Tenta dar foco ao navegador aberto"""
@@ -793,29 +811,24 @@ def mesclar_traducao_completa():
         messagebox.showerror("Erro", f"Arquivo {BASE} não encontrado. Execute a extração primeiro.")
         return
     
-    # Processa o texto colado
+    # Processa o texto colado linha por linha
     cola_lines = cola_text.splitlines()
     applied = 0
     updates_for_binary = {}  # {cell_id: new_text}
     
     i = 0
     while i < len(cola_lines):
-        m_offset = OFFSET_RE.search(cola_lines[i])
-        if not m_offset:
-            i += 1
-            continue
-        
-        # Tenta encontrar ID da célula
-        cell_id = None
-        for j in range(i, min(i + 3, len(cola_lines))):
-            m_cell = CELL_ID_RE.search(cola_lines[j])
-            if m_cell:
-                cell_id = int(m_cell.group(1))
-                break
-        
-        # 🔥 Se não encontrou com regex normal, tenta encontrar manualmente
-        if cell_id is None:
-            for j in range(i, min(i + 3, len(cola_lines))):
+        # Procura por linha OFFSET:
+        if cola_lines[i].startswith("OFFSET:"):
+            # Encontra o início do bloco
+            start_idx = i
+            
+            # Procura o cell_id neste bloco
+            cell_id = None
+            offset_line = cola_lines[i]
+            
+            # Procura nas próximas linhas pelo cell_id
+            for j in range(start_idx, min(start_idx + 3, len(cola_lines))):
                 if "CELULA:" in cola_lines[j]:
                     parts = cola_lines[j].split()
                     for part in parts:
@@ -824,35 +837,60 @@ def mesclar_traducao_completa():
                             break
                     if cell_id:
                         break
-        
-        # Procura "TRADUÇÃO:"
-        traducao = ""
-        for j in range(i + 1, min(i + 10, len(cola_lines))):
-            linha_normalizada = remover_acentos(cola_lines[j].upper())
-            if "TRADUCAO" in linha_normalizada or "TRADUÇÃO" in cola_lines[j].upper():
-                if j + 1 < len(cola_lines):
-                    traducao = cola_lines[j + 1].strip()
-                break
-        
-        # Atualiza o conteúdo do arquivo
-        if cell_id is not None and traducao:
-            # Procura o bloco desta célula
-            pattern = f"(CELULA: {cell_id}.*?TRADUÇÃO:)\n(.*?)\n\n"
-            replacement = f"\\1\n{traducao}\n\n"
             
-            new_content, count = re.subn(pattern, replacement, content, flags=re.DOTALL)
+            # Procura pela tradução
+            traducao = ""
+            for j in range(start_idx, min(start_idx + 10, len(cola_lines))):
+                if "TRADUÇÃO:" in cola_lines[j]:
+                    # A tradução deve estar na próxima linha
+                    if j + 1 < len(cola_lines):
+                        traducao = cola_lines[j + 1].strip()
+                    break
             
-            if count > 0:
-                content = new_content
-                applied += 1
-                updates_for_binary[cell_id] = traducao
-                print(f"Célula {cell_id} atualizada com tradução: '{traducao[:50]}...'")
+            # Se encontrou cell_id e tradução, atualiza
+            if cell_id is not None and traducao:
+                print(f"Processando célula {cell_id}: '{traducao[:50]}...'")
+                
+                # Procura o bloco desta célula no conteúdo
+                pattern = f"(OFFSET:.*?CELULA: {cell_id}.*?TRADUÇÃO:)\n(.*?)\n\n"
+                
+                # Busca o bloco completo
+                block_start = content.find(f"OFFSET:")
+                while block_start != -1:
+                    block_end = content.find("\n\n", block_start)
+                    if block_end == -1:
+                        block_end = len(content)
+                    
+                    block = content[block_start:block_end]
+                    
+                    # Verifica se é a célula certa
+                    if f"CELULA: {cell_id}" in block and "TRADUÇÃO:" in block:
+                        # Substitui a linha após TRADUÇÃO:
+                        lines = block.split('\n')
+                        new_block_lines = []
+                        for k, line in enumerate(lines):
+                            new_block_lines.append(line)
+                            if "TRADUÇÃO:" in line:
+                                # Adiciona a tradução na próxima linha
+                                if k + 1 < len(lines):
+                                    new_block_lines.append(traducao)
+                                else:
+                                    new_block_lines.append(traducao)
+                        
+                        new_block = '\n'.join(new_block_lines)
+                        
+                        # Substitui no conteúdo
+                        content = content[:block_start] + new_block + content[block_end:]
+                        applied += 1
+                        updates_for_binary[cell_id] = traducao
+                        print(f"  → Célula {cell_id} atualizada no arquivo")
+                        break
+                    
+                    block_start = content.find("OFFSET:", block_end)
         
         i += 1
-        while i < len(cola_lines) and not OFFSET_RE.search(cola_lines[i]):
-            i += 1
     
-    # Salva arquivo de texto
+    # Salva arquivo de texto se houve alterações
     if applied > 0:
         try:
             with open(BASE, "w", encoding="utf-8") as f:
@@ -912,7 +950,6 @@ def copiar_e_focar_navegador():
     blocks = extrair_celulas_para_traducao()
     
     if not blocks:
-        messagebox.showinfo("Info", "Nenhuma célula não traduzida encontrada.")
         return
     
     texto_para_traduzir = text_extrair.get("1.0", tk.END).strip()
@@ -972,7 +1009,7 @@ btn_extrair_todas = tk.Button(btn_frame, text="Extrair TODAS as células",
                             command=extrair_todas_as_celulas, bg="#4CAF50", fg="white", width=20)
 btn_extrair_todas.pack(side=tk.LEFT, padx=5)
 
-btn_extrair_lote = tk.Button(btn_frame, text="Extrair lote para traduzir", 
+btn_extrair_lote = tk.Button(btn_frame, text="Extrair para traduzir", 
                            command=extrair_celulas_para_traducao, width=20)
 btn_extrair_lote.pack(side=tk.LEFT, padx=5)
 
@@ -985,12 +1022,12 @@ btn_colar_trad = tk.Button(btn_frame, text="Colar Tradução", command=colar_tra
 btn_colar_trad.pack(side=tk.LEFT, padx=5)
 
 # Labels informativas
-label_info = tk.Label(frame_top, text="Extrair TODAS → Traduzir em qualquer ordem → Colar → Mesclar", 
+label_info = tk.Label(frame_top, text="Extrair TODAS → Extrair para traduzir → Copiar → Traduzir → Colar → Mesclar", 
                      font=("Arial", 10), fg="blue")
 label_info.pack(pady=5)
 
 # Área de texto da esquerda (extração)
-label_extrair = tk.Label(frame_left, text="CÉLULAS PARA TRADUZIR (1 a N):")
+label_extrair = tk.Label(frame_left, text="CÉLULAS PARA TRADUZIR:")
 label_extrair.pack(anchor=tk.W)
 
 text_extrair = scrolledtext.ScrolledText(frame_left, wrap=tk.WORD, height=28)
@@ -1013,7 +1050,7 @@ btn_mesclar.pack(fill=tk.X)
 
 # Status bar
 status_var = tk.StringVar()
-status_var.set("MODO: Extração completa | Traduza células em qualquer ordem | Arquivo atualizado incrementalmente")
+status_var.set("MODO: Extração completa | Detecção inteligente de células traduzidas")
 status_bar = tk.Label(root, textvariable=status_var, bd=1, relief=tk.SUNKEN, anchor=tk.W, fg="green")
 status_bar.pack(side=tk.BOTTOM, fill=tk.X)
 
