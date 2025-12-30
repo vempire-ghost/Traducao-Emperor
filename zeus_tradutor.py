@@ -79,7 +79,7 @@ class ZeusTextFile:
             
             # DEBUG: Primeiros pares
             if pair_id < 5:
-                print(f"  Par {pair_id}: count={count}, offset=0x{group_offset:04X} ({group_offset})")
+                print(f"  Par {pair_id}: OFFSET=0x{group_offset:04X} ({group_offset}), COUNT={count}")
             
             offset += 8
         
@@ -88,8 +88,8 @@ class ZeusTextFile:
         # Verificação crítica - AGORA COM VALORES CORRETOS
         if len(self.groups) > 1:
             print(f"\nVERIFICAÇÃO CRÍTICA:")
-            print(f"Par 0: count={self.groups[0]['count']}, offset={self.groups[0]['offset']} (deve ser 0, 0)")
-            print(f"Par 1: count={self.groups[1]['count']}, offset={self.groups[1]['offset']} (deve ser 7, 103)")
+            print(f"Par 0: offset={self.groups[0]['offset']}, count={self.groups[0]['count']} (deve ser 0, 0)")
+            print(f"Par 1: offset={self.groups[1]['offset']}, count={self.groups[1]['count']} (deve ser 275, 7)")
             print(f"Par 2: count={self.groups[2]['count']}, offset={self.groups[2]['offset']} (deve ser 14, 323)")
             
             if self.groups[0]['count'] == 0 and self.groups[0]['offset'] == 0:
@@ -404,6 +404,19 @@ class ZeusTextFile:
         
         # 2. Reconstrói List block COM ORDEM (COUNT, OFFSET)
         list_block = bytearray()
+        # Após construir list_block (linha 376):
+        print(f"\nDEBUG list_block - primeiros 32 bytes:")
+        hex_str = ' '.join(f'{b:02X}' for b in list_block[:32])
+        print(hex_str)
+
+        # Interpreta os primeiros 3 pares
+        print("\nInterpretação dos primeiros 3 pares (COUNT, OFFSET):")
+        for i in range(0, 24, 8):  # 3 pares * 8 bytes
+            if i + 8 <= len(list_block):
+                count = struct.unpack('<I', list_block[i:i+4])[0]
+                offset = struct.unpack('<I', list_block[i+4:i+8])[0]
+                print(f"  Par {i//8}: count={count}, offset=0x{offset:04X}")
+
         
         for group in self.groups:
             count = group['count']
@@ -432,7 +445,7 @@ class ZeusTextFile:
         new_data = bytearray()
         
         # Signature
-        signature = b'Zeus textfile.\x00\x00'
+        signature = b'Emperor textfile'
         new_data.extend(signature.ljust(16, b'\x00'))
         
         # Header
@@ -464,6 +477,9 @@ class ZeusTextFile:
             print(f"Arquivo salvo: {self.filename}")
             print(f"Tamanho original: {len(self.data)} bytes")
             print(f"Tamanho novo: {len(new_data)} bytes")
+
+            # 🔥🔥🔥 ADICIONE ESTA LINHA:
+            self.verify_saved_file(new_data)  # Verifica se salvou corretamente!
             
             return True
                 
@@ -472,16 +488,16 @@ class ZeusTextFile:
             return False
     
     def verify_saved_file(self, new_data):
-        """Verificação completa - CORRIGIDA para ordem (OFFSET, COUNT)"""
+        """Verificação completa - CORRIGIDA para ordem (COUNT, OFFSET)"""  # 🔥 MUDOU!
         print("\n" + "="*60)
         print("VERIFICAÇÃO DO ARQUIVO SALVO")
-        print("ORDEM: (OFFSET, COUNT)")  # 🔥 CORRIGIDO!
+        print("ORDEM: (COUNT, OFFSET)")  # 🔥 CORRIGIDO PARA COUNT, OFFSET!
         print("="*60)
         
         try:
             # 1. Signature
             sig = new_data[0:16].decode('ascii', errors='ignore').rstrip('\x00')
-            if sig != "Zeus textfile.":
+            if sig != "Emperor textfile":
                 print(f"✗ Signature inválida: {sig}")
                 return False
             print(f"✓ Signature: {sig}")
@@ -493,22 +509,24 @@ class ZeusTextFile:
                 return False
             print(f"✓ num_count_values: {num_count}")
             
-            # 3. Primeiros pares - ORDEM CORRETA: OFFSET, COUNT
-            print("\nVerificando primeiros pares (OFFSET, COUNT):")  # 🔥 CORRIGIDO!
+            # 3. Primeiros pares - ORDEM CORRETA: COUNT, OFFSET
+            print("\nVerificando primeiros pares (COUNT, OFFSET):")  # 🔥 CORRIGIDO!
             
             # Par 0: deve ser (0, 0)
-            offset0 = struct.unpack('<I', new_data[32:36])[0]  # OFFSET primeiro
-            count0 = struct.unpack('<I', new_data[36:40])[0]   # COUNT depois
-            if offset0 == 0 and count0 == 0:
-                print(f"✓ Par 0: offset={offset0}, count={count0}")
+            count0 = struct.unpack('<I', new_data[32:36])[0]  # COUNT primeiro
+            offset0 = struct.unpack('<I', new_data[36:40])[0]  # OFFSET depois
+            
+            if count0 == 0 and offset0 == 0:
+                print(f"✓ Par 0: count={count0}, offset={offset0}")
             else:
-                print(f"✗ Par 0 ERRADO: offset={offset0}, count={count0} (deveria ser 0, 0)")
+                print(f"✗ Par 0 ERRADO: count={count0}, offset={offset0} (deveria ser 0, 0)")
                 return False
             
-            # Par 1: deve ser (0x67 (103), 7)
-            offset1 = struct.unpack('<I', new_data[40:44])[0]  # OFFSET
-            count1 = struct.unpack('<I', new_data[44:48])[0]   # COUNT
-            print(f"  Par 1: offset=0x{offset1:04X} ({offset1}), count={count1}")
+            # Par 1: deve ser (7, 0x67)
+            count1 = struct.unpack('<I', new_data[40:44])[0]  # COUNT
+            offset1 = struct.unpack('<I', new_data[44:48])[0]  # OFFSET
+            
+            print(f"  Par 1: count={count1}, offset=0x{offset1:04X} ({offset1})")
             
             # Par 2: deve ser (0x143 (323), 14)
             offset2 = struct.unpack('<I', new_data[48:52])[0]  # OFFSET
