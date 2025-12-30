@@ -49,7 +49,7 @@ class ZeusTextFile:
         
         print(f"Cabeçalho: {self.header}")
         
-        # 3. List block (367 pares) - 🔥🔥🔥 ORDEM INVERTIDA: COUNT primeiro, OFFSET depois 🔥🔥🔥
+        # 3. List block (359 pares) - 🔥🔥🔥 ORDEM INVERTIDA: COUNT primeiro, OFFSET depois 🔥🔥🔥
         list_start = 32
         data_start = 0x1F5C
         
@@ -59,8 +59,8 @@ class ZeusTextFile:
         print(f"Lendo lista de 0x{list_start:08X} a 0x{data_start-1:08X}...")
         print("🔥🔥🔥 ORDEM: (COUNT, OFFSET) - ARQUIVO ESTÁ INVERTIDO! 🔥🔥🔥")
         
-        # Lê EXATAMENTE 367 pares
-        for pair_id in range(367):
+        # Lê EXATAMENTE 359 pares
+        for pair_id in range(359):
             if offset + 8 > data_start:
                 print(f"AVISO: Fora do limite da lista no par {pair_id}")
                 break
@@ -83,7 +83,7 @@ class ZeusTextFile:
             
             offset += 8
         
-        print(f"Pares lidos: {len(self.groups)}/367")
+        print(f"Pares lidos: {len(self.groups)}/359")
         
         # Verificação crítica - AGORA COM VALORES CORRETOS
         if len(self.groups) > 1:
@@ -504,7 +504,7 @@ class ZeusTextFile:
             
             # 2. Header
             num_count = struct.unpack('<I', new_data[16:20])[0]
-            if num_count != 367:
+            if num_count != 359:
                 print(f"✗ num_count_values inválido: {num_count}")
                 return False
             print(f"✓ num_count_values: {num_count}")
