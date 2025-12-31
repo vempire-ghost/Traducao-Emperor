@@ -1,0 +1,11 @@
+ANÁLISE DO ARQUIVO: Zeus_Text - Copia.eng
+============================================================
+
+INFORMAÇÕES GERAIS:
+Tamanho do arquivo: 263,156 bytes
+Número de grupos: 998
+Número total de células: 8248
+
+LISTA DE GRUPOS:
+ID     Células  Ponteiro     Offset       Endereço
+------------------------------------------------------------

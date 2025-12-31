@@ -9,9 +9,9 @@ import struct
 import os
 import datetime
 
-BASE = "EmperorText_TRADUZIR.txt"
+BASE = "ZeusText_TRADUZIR.txt"
 MAX = 50
-BIN_FILE = "EmperorText.eng"
+BIN_FILE = "Zeus_Text.eng"
 
 OFFSET_RE = re.compile(r"OFFSET:\s*(0x[0-9A-Fa-f]+)")
 ORIG_RE = re.compile(r"ORIGINAL\s*\[(\d+)\s*chars\]:\s*(.*)")
@@ -49,7 +49,7 @@ class ZeusTextFile:
         
         print(f"Cabeçalho: {self.header}")
         
-        # 3. List block (359 pares) 
+        # 3. List block (367 pares) 
         list_start = 32
         data_start = 0x1F5C
         
@@ -58,8 +58,8 @@ class ZeusTextFile:
         
         print(f"Lendo lista de 0x{list_start:08X} a 0x{data_start-1:08X}...")
         
-        # Lê EXATAMENTE 359 pares
-        for pair_id in range(359):
+        # Lê EXATAMENTE 367 pares
+        for pair_id in range(367):
             if offset + 8 > data_start:
                 print(f"AVISO: Fora do limite da lista no par {pair_id}")
                 break
@@ -82,7 +82,7 @@ class ZeusTextFile:
             
             offset += 8
         
-        print(f"Pares lidos: {len(self.groups)}/359")
+        print(f"Pares lidos: {len(self.groups)}/367")
         
         # Verificação crítica - AGORA COM VALORES CORRETOS
         if len(self.groups) > 1:
@@ -453,7 +453,7 @@ class ZeusTextFile:
         new_data = bytearray()
         
         # Signature
-        signature = b'Emperor textfile'
+        signature = b'Zeus textfile.\x00\x00'
         new_data.extend(signature.ljust(16, b'\x00'))
         
         # Header
@@ -520,7 +520,7 @@ class ZeusTextFile:
             
             # 2. Header
             num_count = struct.unpack('<I', new_data[16:20])[0]
-            if num_count != 359:
+            if num_count != 367:
                 print(f"✗ num_count_values inválido: {num_count}")
                 return False
             print(f"✓ num_count_values: {num_count}")

@@ -20280,6 +20280,7 @@ OFFSET: 0x000143E4
 CELULA: 3634  GRUPO: 89
 ORIGINAL [7 chars]: an ally
 TRADUÇÃO:
+um aliado
 
 OFFSET: 0x000143EC
 CELULA: 3635  GRUPO: 89
@@ -23660,7 +23661,7 @@ OFFSET: 0x0001CEB0
 CELULA: 4310  GRUPO: 130
 ORIGINAL [18 chars]: Improved Buildings
 TRADUÇÃO:
-Edifícios aprimorados
+Predios aprimorados
 
 OFFSET: 0x0001CEC3
 CELULA: 4311  GRUPO: 130
