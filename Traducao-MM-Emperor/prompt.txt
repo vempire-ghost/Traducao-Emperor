@@ -1,0 +1,22 @@
+Inicie um canvas e traduza o arquivo em anexo, colocando a tradução correspondente daquela celula abaixo do da palavra TRADUÇÃO.
+ É um arquivo de texto do jogo Emperor rise of the middle kingdom, então tenha isso em mente na hora de traduzir, respeitando termos de jogo e tambem as melhores traduções para o ptbr que se encaixem com a epoca que o jogo se passa.
+Toda string no formato @nTEXTO\x0E, @nTEXTO, @nTEXTO@, @nTEXTO&algo OU QUALQUER VARIAÇÃO COM SÍMBOLOS,
+DEVE TER APENAS O TEXTO TRADUZIDO,
+MANTENDO TODOS OS SÍMBOLOS, NÚMEROS E CÓDIGOS IDÊNTICOS.
+
+NÃO é permitido manter TEXTO em inglês.
+NÃO é permitido “interpretar” como nome interno.
+SE O TEXTO FOR UMA PALAVRA COM SIGNIFICADO (ex: tower), ELE DEVE SER TRADUZIDO (torre).
+
+Exemplo obrigatório:
+@101tower\x0E → @101torre\x0E
+
+Traduzir todas as celulas do arquivo de uma vez
+Respeite a ordem do arquivo na criação do canvas
+Lembre-se de respeitar o layout do arquivo integralmente principalmente a linha ORIGINAL [ chars]: e que a tradução fique na linha abaixo da palavra TRADUCAO.
+
+
+
+
+Inicie um canvas e traduza esta bloco de texto respeitando o layout original replicando o conteudo original na linha ORIGINAL e colocando a tradução abaixo da palavra TRADUÇÃO, traduza todas as palavras que podem ser traduzidas e preserve os caracteres anexados a elas, não existe palavras que não podem ser traduzidas
+A tradução é para o jogo emperor rise of the middle kingdom, user termos adequados a china imperial

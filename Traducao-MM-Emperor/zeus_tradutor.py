@@ -126,17 +126,10 @@ class ZeusTextFile:
             }
             
             self.groups.append(line_info)
-            
-            # Debug: primeiras linhas
-            if line_num < 5:
-                print(f"\nLinha {line_num}:")
-                print(f"  S1: 0x{s1_value:08X} -> {'0x' + hex(s1_value - 0x10)[2:].upper() if s1_value != 0 else 'NULL'}")
-                print(f"  S2: 0x{s2_value:08X} -> {'0x' + hex(s2_value - 0x10)[2:].upper() if s2_value != 0 else 'NULL'}")
-                print(f"  S3: 0x{s3_value:08X} -> {'0x' + hex(s3_value - 0x10)[2:].upper() if s3_value != 0 else 'NULL'}")
         
-        # 4. Extrai strings do Data block
+        # 4. Extrai strings do Data block PRESERVANDO CARACTERES ESPECIAIS
         print(f"\n{'='*60}")
-        print("EXTRAINDO STRINGS DO DATA BLOCK")
+        print("EXTRAINDO STRINGS DO DATA BLOCK (PRESERVANDO ESPECIAIS)")
         print(f"{'='*60}")
         
         self.strings = []
@@ -165,21 +158,65 @@ class ZeusTextFile:
             if len(string_bytes) == 0:
                 continue
             
-            # Decodifica
-            try:
-                text = string_bytes.decode('cp1252')
-            except:
-                try:
-                    text = string_bytes.decode('latin-1', errors='ignore')
-                except:
-                    text = str(string_bytes)
+            # **CORREÇÃO AQUI**: Preserva bytes exatamente como estão
+            # Mas cria uma versão "segura" para exibição
+            
+            # 1. Salva os bytes originais exatamente
+            original_bytes = string_bytes
+            
+            # 2. Cria uma versão de texto para exibição (substituindo caracteres problemáticos)
+            safe_text = ""
+            for byte in original_bytes:
+                char_code = byte
+                # Trata caracteres de controle especiais
+                if char_code < 32 and char_code != 9 and char_code != 10 and char_code != 13:  # Não TAB, LF, CR
+                    # Caractere de controle - representa como hex
+                    safe_text += f"\\x{char_code:02X}"
+                elif char_code == 92:  # Backslash
+                    safe_text += "\\\\"  # Escapa o backslash
+                elif char_code == 10:  # Line feed
+                    safe_text += "\\n"
+                elif char_code == 13:  # Carriage return
+                    safe_text += "\\r"
+                elif char_code == 9:   # Tab
+                    safe_text += "\\t"
+                elif 32 <= char_code <= 126:  # ASCII imprimível
+                    safe_text += chr(char_code)
+                else:
+                    # Tenta decodificar como CP1252, se falhar usa hex
+                    try:
+                        char = bytes([char_code]).decode('cp1252')
+                        safe_text += char
+                    except:
+                        safe_text += f"\\x{char_code:02X}"
+            
+            # 3. Para uso interno, mantemos uma versão que pode ser reescrita
+            #    Substituindo as sequências \xXX de volta para bytes
+            def restore_special_chars(text):
+                import re
+                # Substitui \xHH por bytes
+                def replace_hex(match):
+                    hex_str = match.group(1)
+                    return chr(int(hex_str, 16))
+                
+                result = re.sub(r'\\x([0-9A-Fa-f]{2})', replace_hex, text)
+                # Substitui escapes comuns
+                result = result.replace('\\\\', '\\')
+                result = result.replace('\\n', '\n')
+                result = result.replace('\\r', '\r')
+                result = result.replace('\\t', '\t')
+                return result
+            
+            # Texto restaurado (para quando for salvar)
+            restored_text = restore_special_chars(safe_text)
             
             string_info = {
                 'cell_id': cell_id,
                 'data_offset': current_offset - len(string_bytes) - 1,  # Offset dentro do Data block
                 'file_offset': data_start + (current_offset - len(string_bytes) - 1),  # Offset no arquivo
-                'original_bytes': string_bytes,
-                'text': text,
+                'original_bytes': original_bytes,
+                'safe_text': safe_text,        # Texto com escapes para exibição
+                'restored_text': restored_text, # Texto restaurado para salvar
                 'modified': False,
                 'new_text': None,
                 'referenced_by': []  # Quais linhas da table apontam para esta string
@@ -187,8 +224,17 @@ class ZeusTextFile:
             
             self.strings.append(string_info)
             cell_id += 1
+            
+            # Debug: mostra strings com caracteres especiais
+            if cell_id <= 10:
+                hex_repr = ' '.join(f'{b:02X}' for b in original_bytes[:20])
+                if len(original_bytes) > 20:
+                    hex_repr += '...'
+                print(f"  Célula {cell_id-1}: offset=0x{string_info['file_offset']:08X}")
+                print(f"    Hex: {hex_repr}")
+                print(f"    Safe: '{safe_text[:50]}{'...' if len(safe_text) > 50 else ''}'")
         
-        print(f"Strings extraídas: {len(self.strings)}")
+        print(f"\nStrings extraídas: {len(self.strings)}")
         
         # 5. Mapeia strings para linhas da table
         print(f"\n{'='*60}")
@@ -235,15 +281,6 @@ class ZeusTextFile:
             print("✓ CONTAGEM BATE!")
         else:
             print(f"✗ CONTAGEM NÃO BATE! Diferença: {abs(unique_referenced - self.header['total_cells'])}")
-        
-        # Mostra primeiras strings
-        print(f"\nPrimeiras 5 strings:")
-        for i, s in enumerate(self.strings[:5]):
-            refs = ', '.join([f"L{line}[{typ}]" for line, typ in s['referenced_by']])
-            refs = refs if refs else "Nenhuma"
-            print(f"  Célula {s['cell_id']}: offset=0x{s['file_offset']:08X}, "
-                  f"referências=[{refs}], "
-                  f"texto='{s['text'][:40]}{'...' if len(s['text']) > 40 else ''}'")
         
         return True
 
@@ -339,28 +376,56 @@ class ZeusTextFile:
     
     # 🔥🔥🔥 ADICIONE ESTE MÉTODO SE NÃO EXISTIR 🔥🔥🔥
     def update_string(self, cell_id, new_text):
-        """Atualiza uma string pelo ID da célula (1-based)"""
+        """Atualiza uma string pelo ID da célula (1-based) - TRATANDO ESPECIAIS"""
         if 1 <= cell_id <= len(self.strings):
             string_info = self.strings[cell_id - 1]
             string_info['modified'] = True
-            string_info['new_text'] = new_text
+            
+            # **IMPORTANTE**: Precisamos processar sequências especiais como \x0E
+            processed_text = self._process_special_sequences(new_text)
+            string_info['new_text'] = processed_text
             
             # Log da modificação
             old_len = len(string_info['original_bytes'])
             try:
-                new_len = len(new_text.encode('cp1252'))
+                new_len = len(processed_text.encode('cp1252'))
             except:
-                new_len = len(new_text.encode('latin-1', errors='replace'))
+                new_len = len(processed_text.encode('latin-1', errors='replace'))
             
             delta = new_len - old_len
             
-            print(f"Célula {cell_id} atualizada: '{string_info['text'][:20]}...' → '{new_text[:20]}...'")
+            print(f"Célula {cell_id} atualizada:")
+            print(f"  Original: '{string_info['safe_text'][:30]}...'")
+            print(f"  Novo: '{processed_text[:30]}...'")
             print(f"  Tamanho: {old_len} → {new_len} bytes (Δ={delta})")
             
             return True
         else:
             print(f"ERRO: Célula {cell_id} não encontrada (total: {len(self.strings)} células)")
             return False
+
+    def _process_special_sequences(self, text):
+        import re
+        
+        # Primeiro, escapa barras invertidas duplicadas
+        text = text.replace('\\\\', '\\')
+        
+        # Substitui sequências hexadecimais \xHH
+        def replace_hex(match):
+            hex_str = match.group(1)
+            try:
+                return chr(int(hex_str, 16))
+            except:
+                return match.group(0)  # Mantém como está se inválido
+        
+        text = re.sub(r'\\x([0-9A-Fa-f]{2})', replace_hex, text)
+        
+        # Substitui escapes comuns
+        text = text.replace('\\n', '\n')
+        text = text.replace('\\r', '\r')
+        text = text.replace('\\t', '\t')
+        
+        return text
     
     def get_string_by_cell_id(self, cell_id):
         """Retorna string pelo ID (1-based)"""
@@ -883,7 +948,7 @@ def extrair_todas_as_celulas():
     blocks = []
     for string_info in cells_to_extract:
         cell_id = string_info['cell_id']
-        text = string_info['text']
+        text = string_info['safe_text']
         
         # CORREÇÃO: Usa as chaves corretas da nova estrutura
         # offset = string_info.get('file_offset', string_info.get('absolute_offset', 0))
