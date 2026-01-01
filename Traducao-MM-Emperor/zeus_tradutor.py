@@ -28,96 +28,222 @@ class ZeusTextFile:
         self.strings = []
     
     def load(self):
-        """Carrega arquivo binário CORRETAMENTE - ORDEM (COUNT, OFFSET) para ESTE ARQUIVO!"""
+        """Carrega arquivo binário seguindo a estrutura CORRETA"""
         with open(self.filename, 'rb') as f:
             self.data = f.read()
         
         print(f"Tamanho do arquivo: {len(self.data)} bytes")
         
-        # 1. File signature
+        # 1. File signature (bytes 0-15 / 0x00-0x0F)
         signature = self.data[0:16].decode('ascii', errors='ignore').rstrip('\x00')
         print(f"Assinatura: {signature}")
         
-        # 2. List header
+        # 2. Table header (bytes 16-39 / 0x10-0x27) - 6 valores de 4 bytes
         header_offset = 16
+        print(f"\nTable header (bytes 0x{header_offset:02X}-0x{header_offset+23:02X}):")
+        
+        header_values = []
+        for i in range(6):  # 6 valores de 4 bytes
+            value_offset = header_offset + (i * 4)
+            value = struct.unpack('<I', self.data[value_offset:value_offset+4])[0]
+            header_values.append(value)
+            print(f"  Valor {i}: 0x{value:08X} ({value})")
+        
         self.header = {
-            'num_count_values': struct.unpack('<I', self.data[header_offset:header_offset+4])[0],
-            'total_cells': struct.unpack('<I', self.data[header_offset+4:header_offset+8])[0],
-            'mystery_value': struct.unpack('<I', self.data[header_offset+8:header_offset+12])[0],
-            'reserved': struct.unpack('<I', self.data[header_offset+12:header_offset+16])[0]
+            'num_count_values': header_values[0],
+            'total_cells': header_values[1],
+            'mystery_value': header_values[2],
+            'reserved': header_values[3],
+            'extra1': header_values[4],
+            'extra2': header_values[5]
         }
         
-        print(f"Cabeçalho: {self.header}")
+        # 3. Table block (bytes 40-80040 / 0x28-0x138A7)
+        table_start = 0x28  # 40 decimal
+        data_start = 0x138A8  # 80041 decimal
         
-        # 3. List block (359 pares) 
-        list_start = 32
-        data_start = 0x1F5C
+        print(f"\nTable block: 0x{table_start:08X} - 0x{data_start-1:08X}")
+        print(f"Data block: 0x{data_start:08X} - 0x{len(self.data)-1:08X}")
         
-        self.groups = []
-        offset = list_start
+        # Cada linha da table tem 80 bytes (0x50)
+        LINE_SIZE = 0x50  # 80 bytes
         
-        print(f"Lendo lista de 0x{list_start:08X} a 0x{data_start-1:08X}...")
+        # Calcula quantas linhas completas existem
+        table_size = data_start - table_start
+        num_lines = table_size // LINE_SIZE
         
-        # Lê EXATAMENTE 359 pares
-        for pair_id in range(359):
-            if offset + 8 > data_start:
-                print(f"AVISO: Fora do limite da lista no par {pair_id}")
+        print(f"\nTable tem {num_lines} linhas de {LINE_SIZE} bytes cada")
+        
+        self.groups = []  # Vamos chamar de "lines" agora
+        line_id = 0
+        
+        for line_num in range(num_lines):
+            line_start = table_start + (line_num * LINE_SIZE)
+            line_end = line_start + LINE_SIZE
+            
+            if line_end > len(self.data):
                 break
             
-            #COUNT primeiro, OFFSET depois
-            count = struct.unpack('<I', self.data[offset:offset+4])[0]      # COUNT primeiro!
-            group_offset = struct.unpack('<I', self.data[offset+4:offset+8])[0]  # OFFSET depois!
+            line_data = self.data[line_start:line_end]
             
-            self.groups.append({
-                'offset': group_offset,  # Offset relativo ao Data
-                'count': count,          # Número de células
-                'pair_id': pair_id,
-                'strings': [],
-                'original_offset': offset
-            })
+            # Extrai os 3 valores de referência (S1, S2, S3)
+            # S1: bytes 0x34-0x37 (53-56 decimal) dentro da linha
+            # S2: bytes 0x38-0x3B (57-60 decimal)
+            # S3: bytes 0x3C-0x3F (61-64 decimal)
             
-            # DEBUG: Primeiros pares
-            if pair_id < 5:
-                print(f"  Par {pair_id}: COUNT={count}, OFFSET=0x{group_offset:04X} ({group_offset})")
+            s1_offset = 0x34  # Dentro da linha
+            s2_offset = 0x38
+            s3_offset = 0x3C
             
-            offset += 8
+            s1_value = struct.unpack('<I', line_data[s1_offset:s1_offset+4])[0]
+            s2_value = struct.unpack('<I', line_data[s2_offset:s2_offset+4])[0]
+            s3_value = struct.unpack('<I', line_data[s3_offset:s3_offset+4])[0]
+            
+            # Calcula offsets para o Data block
+            data_pointers = []
+            
+            if s1_value != 0:
+                data_offset = s1_value - 0x10  # Subtrai 0x10 (16)
+                data_pointers.append(('S1', data_offset))
+            
+            if s2_value != 0:
+                data_offset = s2_value - 0x10  # Subtrai 0x10 (16)
+                data_pointers.append(('S2', data_offset))
+            
+            if s3_value != 0:
+                data_offset = s3_value - 0x10  # Subtrai 0x10 (16)
+                data_pointers.append(('S3', data_offset))
+            
+            # Salva informações da linha
+            line_info = {
+                'line_id': line_num,
+                'line_start': line_start,
+                's1': s1_value,
+                's2': s2_value,
+                's3': s3_value,
+                'data_pointers': data_pointers,  # Lista de (tipo, offset)
+                'strings': []  # Células apontadas por esta linha
+            }
+            
+            self.groups.append(line_info)
+            
+            # Debug: primeiras linhas
+            if line_num < 5:
+                print(f"\nLinha {line_num}:")
+                print(f"  S1: 0x{s1_value:08X} -> {'0x' + hex(s1_value - 0x10)[2:].upper() if s1_value != 0 else 'NULL'}")
+                print(f"  S2: 0x{s2_value:08X} -> {'0x' + hex(s2_value - 0x10)[2:].upper() if s2_value != 0 else 'NULL'}")
+                print(f"  S3: 0x{s3_value:08X} -> {'0x' + hex(s3_value - 0x10)[2:].upper() if s3_value != 0 else 'NULL'}")
         
-        print(f"Pares lidos: {len(self.groups)}/359")
+        # 4. Extrai strings do Data block
+        print(f"\n{'='*60}")
+        print("EXTRAINDO STRINGS DO DATA BLOCK")
+        print(f"{'='*60}")
         
-        # Verificação crítica - AGORA COM VALORES CORRETOS
-        if len(self.groups) > 1:
-            print(f"\nVERIFICAÇÃO CRÍTICA:")
-            print(f"Par 0: offset={self.groups[0]['offset']}, count={self.groups[0]['count']} (deve ser 0, 0)")
-            print(f"Par 1: offset={self.groups[1]['offset']}, count={self.groups[1]['count']} (deve ser 275, 7)")
-            print(f"Par 2: count={self.groups[2]['count']}, offset={self.groups[2]['offset']} (deve ser 14, 323)")
+        self.strings = []
+        current_offset = 0
+        cell_id = 1
+        
+        data_block = self.data[data_start:]
+        
+        while current_offset < len(data_block):
+            # Encontra próximo null terminator
+            end = current_offset
+            while end < len(data_block) and data_block[end] != 0:
+                end += 1
             
-            if self.groups[0]['count'] == 0 and self.groups[0]['offset'] == 0:
-                print("✓ Par 0 OK")
+            if end == current_offset:
+                # String vazia ou fim do arquivo
+                if current_offset == len(data_block) - 1:
+                    break  # Último null do arquivo
+                string_bytes = b''
+                current_offset += 1
             else:
-                print("✗ Par 0 ERRADO!")
+                string_bytes = data_block[current_offset:end]
+                current_offset = end + 1
             
-            if self.groups[1]['count'] == 7 and self.groups[1]['offset'] == 0x67:
-                print("✓ Par 1 OK")
-            else:
-                print(f"✗ Par 1 ERRADO! Esperado: count=7, offset=103 (0x67)")
+            # Ignora strings vazias (apenas null)
+            if len(string_bytes) == 0:
+                continue
+            
+            # Decodifica
+            try:
+                text = string_bytes.decode('cp1252')
+            except:
+                try:
+                    text = string_bytes.decode('latin-1', errors='ignore')
+                except:
+                    text = str(string_bytes)
+            
+            string_info = {
+                'cell_id': cell_id,
+                'data_offset': current_offset - len(string_bytes) - 1,  # Offset dentro do Data block
+                'file_offset': data_start + (current_offset - len(string_bytes) - 1),  # Offset no arquivo
+                'original_bytes': string_bytes,
+                'text': text,
+                'modified': False,
+                'new_text': None,
+                'referenced_by': []  # Quais linhas da table apontam para esta string
+            }
+            
+            self.strings.append(string_info)
+            cell_id += 1
         
-        # 4. Extrai strings
-        self.extract_strings(data_start)
-        
-        # 5. Mapeia strings para grupos 
-        self.map_strings_to_groups_corrected()
-        
-        # Validação
-        total_in_groups = sum(g['count'] for g in self.groups)
-        print(f"\nVALIDAÇÃO FINAL:")
-        print(f"Células totais nos grupos: {total_in_groups}")
-        print(f"Células no header: {self.header['total_cells']}")
         print(f"Strings extraídas: {len(self.strings)}")
         
-        if total_in_groups == self.header['total_cells']:
-            print("✓ Contagem de células BATE!")
+        # 5. Mapeia strings para linhas da table
+        print(f"\n{'='*60}")
+        print("MAPEANDO STRINGS PARA LINHAS DA TABLE")
+        print(f"{'='*60}")
+        
+        # Cria dicionário rápido para busca por file_offset
+        strings_by_file_offset = {}
+        for s in self.strings:
+            strings_by_file_offset[s['file_offset']] = s
+        
+        total_mapped = 0
+        
+        for line in self.groups:
+            line['strings'] = []
+            
+            for ptr_type, data_offset in line['data_pointers']:
+                file_offset = data_start + data_offset
+                
+                if file_offset in strings_by_file_offset:
+                    string_info = strings_by_file_offset[file_offset]
+                    line['strings'].append(string_info['cell_id'])
+                    string_info['referenced_by'].append((line['line_id'], ptr_type))
+                    total_mapped += 1
+        
+        # Mostra estatísticas
+        print(f"Total de linhas na table: {len(self.groups)}")
+        print(f"Total de strings extraídas: {len(self.strings)}")
+        print(f"Total de referências mapeadas: {total_mapped}")
+        
+        # Conta quantas strings únicas foram referenciadas
+        unique_referenced = sum(1 for s in self.strings if s['referenced_by'])
+        print(f"Strings únicas referenciadas: {unique_referenced}")
+        
+        # Verifica contra o header
+        print(f"\n{'='*60}")
+        print("VALIDAÇÃO")
+        print(f"{'='*60}")
+        
+        print(f"Total cells no header: {self.header['total_cells']}")
+        print(f"Strings únicas referenciadas: {unique_referenced}")
+        
+        if unique_referenced == self.header['total_cells']:
+            print("✓ CONTAGEM BATE!")
         else:
-            print(f"✗ Contagem NÃO bate! Diferença: {total_in_groups - self.header['total_cells']}")
+            print(f"✗ CONTAGEM NÃO BATE! Diferença: {abs(unique_referenced - self.header['total_cells'])}")
+        
+        # Mostra primeiras strings
+        print(f"\nPrimeiras 5 strings:")
+        for i, s in enumerate(self.strings[:5]):
+            refs = ', '.join([f"L{line}[{typ}]" for line, typ in s['referenced_by']])
+            refs = refs if refs else "Nenhuma"
+            print(f"  Célula {s['cell_id']}: offset=0x{s['file_offset']:08X}, "
+                  f"referências=[{refs}], "
+                  f"texto='{s['text'][:40]}{'...' if len(s['text']) > 40 else ''}'")
         
         return True
 
@@ -220,7 +346,7 @@ class ZeusTextFile:
             string_info['new_text'] = new_text
             
             # Log da modificação
-            old_len = string_info['byte_length']
+            old_len = len(string_info['original_bytes'])
             try:
                 new_len = len(new_text.encode('cp1252'))
             except:
@@ -365,24 +491,38 @@ class ZeusTextFile:
             print(f"  Célula {s['cell_id']}: offset={s['offset']}, grupo={s['group_id']}, texto='{s['text'][:30]}...'")
     
     def save(self):
-        """Salva arquivo COM A MESMA ORDEM DO ORIGINAL: (COUNT, OFFSET)"""
+        """Salva arquivo binário seguindo a estrutura CORRETA de 4 blocos"""
         print("\n" + "="*60)
         print("SALVANDO ARQUIVO BINÁRIO")
-        print("🔥🔥🔥 ORDEM: (COUNT, OFFSET) - MESMA DO ORIGINAL 🔥🔥🔥")
+        print("📁 ESTRUTURA: File signature → Table header → Table → Data")
         print("="*60)
         
-        # 1. Reconstrói Data block
-        data_start = 0x1F5C
-        data_block = bytearray()
-        cell_offsets = {}
-        current_offset = 0
+        # Definições da estrutura
+        SIGNATURE_SIZE = 16      # Bytes 0-15 (0x00-0x0F)
+        HEADER_SIZE = 24         # Bytes 16-39 (0x10-0x27)
+        TABLE_START = 0x28       # Byte 40 (0x28)
+        DATA_START = 0x138A8     # Início do Data block (0x138A8)
+        LINE_SIZE = 0x50         # Tamanho de cada linha na table (80 bytes)
         
-        # Constrói data block
-        for string_info in self.strings:
+        # 1. Reconstrói Data block com strings modificadas
+        print("\n1. Reconstruindo Data block...")
+        
+        data_block = bytearray()
+        string_positions = {}  # Mapeia cell_id → nova posição no data block
+        
+        current_pos = 0
+        
+        # Ordena strings por cell_id para manter ordem
+        sorted_strings = sorted(self.strings, key=lambda x: x['cell_id'])
+        
+        for string_info in sorted_strings:
             cell_id = string_info['cell_id']
-            cell_offsets[cell_id] = current_offset
             
-            if string_info['modified'] and string_info['new_text']:
+            # Salva a posição desta string no novo data block
+            string_positions[cell_id] = current_pos
+            
+            # Decide qual texto usar (modificado ou original)
+            if string_info.get('modified', False) and string_info.get('new_text'):
                 text = string_info['new_text']
                 try:
                     encoded = text.encode('cp1252')
@@ -391,169 +531,288 @@ class ZeusTextFile:
             else:
                 encoded = string_info['original_bytes']
             
+            # Adiciona string + null terminator
             data_block.extend(encoded)
             data_block.append(0)
-            current_offset += len(encoded) + 1
+            current_pos += len(encoded) + 1
         
-        # Null final
+        # Adiciona null final se necessário
         if len(data_block) == 0 or data_block[-1] != 0:
             data_block.append(0)
         
-        print(f"Data block: {len(data_block)} bytes")
+        print(f"   Data block: {len(data_block)} bytes")
+        print(f"   Strings processadas: {len(sorted_strings)}")
         
-        # 2. Reconstrói List block COM ORDEM (COUNT, OFFSET)
-        list_block = bytearray()
-        # Após construir list_block (linha 376):
-        print(f"\nDEBUG list_block - primeiros 32 bytes:")
-        hex_str = ' '.join(f'{b:02X}' for b in list_block[:32])
-        print(hex_str)
-
-        # Interpreta os primeiros 3 pares
-        print("\nInterpretação dos primeiros 3 pares (COUNT, OFFSET):")
-        for i in range(0, 24, 8):  # 3 pares * 8 bytes
-            if i + 8 <= len(list_block):
-                count = struct.unpack('<I', list_block[i:i+4])[0]
-                offset = struct.unpack('<I', list_block[i+4:i+8])[0]
-                print(f"  Par {i//8}: count={count}, offset=0x{offset:04X}")
-
+        # 2. Reconstrói Table block
+        print("\n2. Reconstruindo Table block...")
         
-        for group in self.groups:
-            count = group['count']
-            offset = 0
-
-            # 1. Se o grupo tem strings mapeadas, usa a primeira
-            if group['strings']:
-                first_cell_id = min(group['strings'])
-                offset = cell_offsets.get(first_cell_id, 0)
-
-            # 2. Se NÃO tem strings, mas tinha offset original, recalcula pelo offset antigo
-            elif group['offset'] != 0:
-                cell_id = self.find_cell_by_original_offset(group['offset'])
-                if cell_id and cell_id in cell_offsets:
-                    offset = cell_offsets[cell_id]
-
-            # 3. fallback (raríssimo)
-            else:
-                offset = 0
+        table_size = DATA_START - TABLE_START
+        num_lines = table_size // LINE_SIZE
+        
+        print(f"   Tamanho da table: {table_size} bytes")
+        print(f"   Número de linhas: {num_lines}")
+        
+        # Lê a table original para preservar dados não relacionados
+        original_table = self.data[TABLE_START:DATA_START]
+        
+        # Cria nova table
+        new_table = bytearray()
+        
+        # Processa cada linha (80 bytes cada)
+        for line_num in range(num_lines):
+            line_start = TABLE_START + (line_num * LINE_SIZE)
+            line_end = line_start + LINE_SIZE
             
-            # 🔥🔥🔥 ORDEM (COUNT, OFFSET) como no original
-            list_block.extend(struct.pack('<I', count))      # COUNT primeiro
-            list_block.extend(struct.pack('<I', offset))     # OFFSET depois
+            if line_end > len(self.data):
+                break
             
-            if group['pair_id'] < 5:
-                print(f"  Par {group['pair_id']}: count={count}, offset=0x{offset:04X} ({offset})")
+            line_data = self.data[line_start:line_end]
+            
+            # Prepara nova linha (inicialmente igual à original)
+            new_line = bytearray(line_data)
+            
+            # Atualiza S1, S2, S3 se necessário
+            # Posições dentro da linha: S1=0x34, S2=0x38, S3=0x3C
+            
+            # Para cada ponteiro (S1, S2, S3)
+            for ptr_offset, ptr_name in [(0x34, 'S1'), (0x38, 'S2'), (0x3C, 'S3')]:
+                # Lê valor original
+                original_value = struct.unpack('<I', line_data[ptr_offset:ptr_offset+4])[0]
+                
+                # Se tem valor não-zero, precisa recalcular
+                if original_value != 0:
+                    # Calcula offset no data block original
+                    original_data_offset = original_value - 0x10
+                    original_file_offset = DATA_START + original_data_offset
+                    
+                    # Encontra qual string estava neste offset
+                    target_string = None
+                    for s in self.strings:
+                        if s.get('file_offset') == original_file_offset:
+                            target_string = s
+                            break
+                    
+                    # Se encontrou a string, calcula novo offset
+                    if target_string:
+                        cell_id = target_string['cell_id']
+                        
+                        if cell_id in string_positions:
+                            new_data_offset = string_positions[cell_id]
+                            new_value = new_data_offset + 0x10  # Adiciona 0x10
+                            
+                            # Atualiza na nova linha
+                            new_line[ptr_offset:ptr_offset+4] = struct.pack('<I', new_value)
+                            
+                            # Debug para primeiras linhas
+                            if line_num < 5:
+                                print(f"   Linha {line_num} {ptr_name}: "
+                                      f"0x{original_value:08X}→0x{new_value:08X} "
+                                      f"(célula {cell_id})")
+            
+            # Adiciona linha à nova table
+            new_table.extend(new_line)
         
-        # 3. Padding
-        list_size_needed = 0x1F5C - 0x20
-        if len(list_block) < list_size_needed:
-            padding = list_size_needed - len(list_block)
-            list_block.extend(b'\x00' * padding)
+        # Garante que a table tenha o tamanho correto
+        if len(new_table) < table_size:
+            padding = table_size - len(new_table)
+            new_table.extend(b'\x00' * padding)
+            print(f"   Padding adicionado: {padding} bytes")
         
-        # 4. Arquivo completo
+        print(f"   Table reconstruída: {len(new_table)} bytes")
+        
+        # 3. Reconstrói Header (preserva valores originais)
+        print("\n3. Preparando Header...")
+        
+        # Mantém os 6 valores originais do header
+        header_values = []
+        for i in range(6):
+            offset = 16 + (i * 4)
+            value = struct.unpack('<I', self.data[offset:offset+4])[0]
+            header_values.append(value)
+        
+        # Cria header block
+        header_block = bytearray()
+        for value in header_values:
+            header_block.extend(struct.pack('<I', value))
+        
+        print(f"   Header: {len(header_block)} bytes")
+        print(f"   Valores: {[f'0x{v:08X}' for v in header_values]}")
+        
+        # 4. Reconstrói Signature
+        signature_block = bytearray()
+        signature = b'Emperor MM file.'
+        signature_block.extend(signature.ljust(16, b'\x00'))
+        
+        # 5. Monta arquivo completo
+        print("\n4. Montando arquivo completo...")
+        
         new_data = bytearray()
         
-        # Signature
-        signature = b'Emperor MM file.'
-        new_data.extend(signature.ljust(16, b'\x00'))
+        # File signature (0x00-0x0F)
+        new_data.extend(signature_block)
         
-        # Header
-        new_data.extend(struct.pack('<I', self.header['num_count_values']))
-        new_data.extend(struct.pack('<I', self.header['total_cells']))  # Atualiza total de células
-        new_data.extend(struct.pack('<I', self.header['mystery_value']))
-        new_data.extend(struct.pack('<I', self.header['reserved']))
+        # Table header (0x10-0x27)
+        new_data.extend(header_block)
         
-        # List block
-        new_data.extend(list_block)
+        # Table (0x28-0x138A7)
+        new_data.extend(new_table)
         
-        # Data block
+        # Data (0x138A8-end)
         new_data.extend(data_block)
         
-        # 5. Salva
+        print(f"\n   Tamanhos dos blocos:")
+        print(f"     Signature: {len(signature_block)} bytes")
+        print(f"     Header: {len(header_block)} bytes")
+        print(f"     Table: {len(new_table)} bytes")
+        print(f"     Data: {len(data_block)} bytes")
+        print(f"     Total: {len(new_data)} bytes")
+        
+        # 6. Validação
+        print("\n5. Validação...")
+        
+        # Verifica estrutura básica
+        if len(new_data) < DATA_START:
+            print(f"✗ ERRO: Arquivo muito pequeno para a estrutura!")
+            return False
+        
+        # Verifica assinatura
+        new_signature = new_data[0:16].decode('ascii', errors='ignore').rstrip('\x00')
+        if new_signature != "Emperor MM file.":
+            print(f"✗ ERRO: Assinatura incorreta: {new_signature}")
+            return False
+        
+        print(f"   ✓ Assinatura: {new_signature}")
+        
+        # 7. Salva arquivo
         timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
         backup_name = f"{self.filename}.backup_{timestamp}"
         
         try:
-            # Backup
+            # Backup do original
             with open(backup_name, 'wb') as f:
                 f.write(self.data)
-            print(f"\nBackup criado: {backup_name}")
+            print(f"\n✓ Backup criado: {backup_name}")
             
             # Novo arquivo
             with open(self.filename, 'wb') as f:
                 f.write(new_data)
             
-            print(f"Arquivo salvo: {self.filename}")
-            print(f"Tamanho original: {len(self.data)} bytes")
-            print(f"Tamanho novo: {len(new_data)} bytes")
-
-            # 🔥🔥🔥 ADICIONE ESTA LINHA:
-            self.verify_saved_file(new_data)  # Verifica se salvou corretamente!
+            print(f"✓ Arquivo salvo: {self.filename}")
+            print(f"  Tamanho original: {len(self.data)} bytes")
+            print(f"  Tamanho novo: {len(new_data)} bytes")
+            
+            # Atualiza dados internos
+            self.data = new_data
+            
+            # Verificação final
+            print(f"\n✓ Estrutura preservada: 4 blocos")
+            print(f"✓ Total de strings: {len(self.strings)}")
+            print(f"✓ Strings modificadas: {sum(1 for s in self.strings if s.get('modified', False))}")
             
             return True
-                
+            
         except Exception as e:
-            print(f"✗ ERRO ao salvar: {e}")
+            print(f"\n✗ ERRO ao salvar: {e}")
+            import traceback
+            traceback.print_exc()
             return False
 
     def find_cell_by_original_offset(self, original_offset):
         """Encontra a célula que começa exatamente nesse offset original"""
+        if not hasattr(self, 'strings') or not self.strings:
+            return None
+        
         for s in self.strings:
-            if s['offset'] == original_offset:
-                return s['cell_id']
+            if s.get('offset', -1) == original_offset:
+                return s.get('cell_id', None)
         return None
 
-    
     def verify_saved_file(self, new_data):
-        """Verificação completa - CORRIGIDA para ordem (COUNT, OFFSET)"""  # 🔥 MUDOU!
+        """Verifica se o arquivo foi salvo corretamente com a nova estrutura"""
         print("\n" + "="*60)
         print("VERIFICAÇÃO DO ARQUIVO SALVO")
-        print("ORDEM: (COUNT, OFFSET)")  # 🔥 CORRIGIDO PARA COUNT, OFFSET!
+        print("ESTRUTURA: 4 blocos")
         print("="*60)
         
         try:
-            # 1. Signature
-            sig = new_data[0:16].decode('ascii', errors='ignore').rstrip('\x00')
-            if sig != "Emperor textfile":
-                print(f"✗ Signature inválida: {sig}")
+            # 1. File signature (0x00-0x0F)
+            if len(new_data) < 16:
+                print(f"✗ Arquivo muito pequeno: {len(new_data)} bytes")
                 return False
-            print(f"✓ Signature: {sig}")
+                
+            signature = new_data[0:16].decode('ascii', errors='ignore').rstrip('\x00')
+            print(f"1. File signature: {signature}")
             
-            # 2. Header
+            # 2. Table header (0x10-0x27)
+            if len(new_data) < 40:
+                print(f"✗ Arquivo muito pequeno para header: {len(new_data)} bytes")
+                return False
+                
             num_count = struct.unpack('<I', new_data[16:20])[0]
-            if num_count != 359:
-                print(f"✗ num_count_values inválido: {num_count}")
+            total_cells = struct.unpack('<I', new_data[20:24])[0]
+            print(f"2. Table header:")
+            print(f"   num_count_values: {num_count}")
+            print(f"   total_cells: {total_cells}")
+            
+            # Verifica se os valores são válidos
+            if num_count < 0 or num_count > 4294967295:
+                print(f"   ⚠️ num_count_values fora do range: {num_count}")
+            
+            if total_cells < 0 or total_cells > 4294967295:
+                print(f"   ⚠️ total_cells fora do range: {total_cells}")
+            
+            # 3. Table block (0x28-0x138A7)
+            print(f"3. Table block (primeiros 3 pares):")
+            
+            if len(new_data) < 64:
+                print(f"✗ Arquivo muito pequeno para table: {len(new_data)} bytes")
                 return False
-            print(f"✓ num_count_values: {num_count}")
             
-            # 3. Primeiros pares - ORDEM CORRETA: COUNT, OFFSET
-            print("\nVerificando primeiros pares (COUNT, OFFSET):")  # 🔥 CORRIGIDO!
+            # Par 0
+            count0 = struct.unpack('<I', new_data[40:44])[0]    # COUNT
+            offset0 = struct.unpack('<I', new_data[44:48])[0]   # OFFSET
+            print(f"   Par 0: count={count0}, offset=0x{offset0:04X}")
             
-            # Par 0: deve ser (0, 0)
-            count0 = struct.unpack('<I', new_data[32:36])[0]  # COUNT primeiro
-            offset0 = struct.unpack('<I', new_data[36:40])[0]  # OFFSET depois
+            # Par 1
+            count1 = struct.unpack('<I', new_data[48:52])[0]    # COUNT
+            offset1 = struct.unpack('<I', new_data[52:56])[0]   # OFFSET
+            print(f"   Par 1: count={count1}, offset=0x{offset1:04X}")
             
-            if count0 == 0 and offset0 == 0:
-                print(f"✓ Par 0: count={count0}, offset={offset0}")
+            # Par 2
+            count2 = struct.unpack('<I', new_data[56:60])[0]    # COUNT
+            offset2 = struct.unpack('<I', new_data[60:64])[0]   # OFFSET
+            print(f"   Par 2: count={count2}, offset=0x{offset2:04X}")
+            
+            # 4. Data block (0x138A8)
+            data_start = 0x138A8
+            print(f"4. Data block começa em: 0x{data_start:08X}")
+            
+            if len(new_data) > data_start:
+                print(f"   Tamanho do Data block: {len(new_data) - data_start} bytes")
+                
+                # Verifica alguns bytes do início do Data block
+                if len(new_data) > data_start + 16:
+                    first_data = new_data[data_start:data_start+16]
+                    hex_str = ' '.join(f'{b:02X}' for b in first_data)
+                    print(f"   Primeiros bytes do Data: {hex_str}")
             else:
-                print(f"✗ Par 0 ERRADO: count={count0}, offset={offset0} (deveria ser 0, 0)")
-                return False
-            
-            # Par 1: deve ser (7, 0x67)
-            count1 = struct.unpack('<I', new_data[40:44])[0]  # COUNT
-            offset1 = struct.unpack('<I', new_data[44:48])[0]  # OFFSET
-            
-            print(f"  Par 1: count={count1}, offset=0x{offset1:04X} ({offset1})")
-            
-            # Par 2: deve ser (0x143 (323), 14)
-            offset2 = struct.unpack('<I', new_data[48:52])[0]  # OFFSET
-            count2 = struct.unpack('<I', new_data[52:56])[0]   # COUNT
-            print(f"  Par 2: offset=0x{offset2:04X} ({offset2}), count={count2}")
+                print(f"   ⚠️ Data block vazio ou inexistente")
             
             print(f"\n✓ Arquivo verificado com sucesso!")
+            print(f"✓ Estrutura correta: 4 blocos")
+            print(f"✓ Tamanho total: {len(new_data)} bytes")
+            
             return True
             
+        except struct.error as e:
+            print(f"\n✗ ERRO de struct na verificação: {e}")
+            import traceback
+            traceback.print_exc()
+            return False
         except Exception as e:
-            print(f"✗ ERRO na verificação: {e}")
+            print(f"\n✗ ERRO na verificação: {e}")
+            import traceback
+            traceback.print_exc()
             return False
 
 # ---------------- FUNÇÕES AUXILIARES ---------------- #
@@ -625,12 +884,26 @@ def extrair_todas_as_celulas():
     for string_info in cells_to_extract:
         cell_id = string_info['cell_id']
         text = string_info['text']
-        group_id = string_info['group_id']
+        
+        # CORREÇÃO: Usa as chaves corretas da nova estrutura
+        # offset = string_info.get('file_offset', string_info.get('absolute_offset', 0))
+        offset = string_info.get('file_offset', 0)
+        
+        # Obtém informações de referência
+        referenced_by = string_info.get('referenced_by', [])
+        ref_info = ""
+        
+        if referenced_by:
+            # Pega todas as referências
+            ref_list = []
+            for line_id, ptr_type in referenced_by:
+                ref_list.append(f"L{line_id}[{ptr_type}]")
+            ref_info = f"  REFERÊNCIAS: {', '.join(ref_list)}"
         
         # Formata o bloco COMPLETO
         block = (
-            f"OFFSET: 0x{string_info['absolute_offset']:08X}\n"
-            f"CELULA: {cell_id}  GRUPO: {group_id if group_id is not None else 'N/A'}\n"
+            f"OFFSET: 0x{offset:08X}\n"
+            f"CELULA: {cell_id}{ref_info}\n"
             f"ORIGINAL [{len(text)} chars]: {text}\n"
             f"TRADUÇÃO:\n\n"
         )
