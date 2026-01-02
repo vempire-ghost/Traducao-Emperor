@@ -17,6 +17,5 @@ Lembre-se de respeitar o layout do arquivo integralmente principalmente a linha 
 
 
 
-
-Inicie um canvas e traduza esta bloco de texto respeitando o layout original replicando o conteudo original na linha ORIGINAL e colocando a tradução abaixo da palavra TRADUÇÃO, traduza todas as palavras que podem ser traduzidas e preserve os caracteres anexados a elas, não existe palavras que não podem ser traduzidas
-A tradução é para o jogo emperor rise of the middle kingdom, user termos adequados a china imperial
+Inicie um canvas e traduza esta bloco de texto respeitando o layout original replicando o conteudo original na linha ORIGINAL e colocando a tradução na linha abaixo da palavra TRADUÇÃO, traduza todas as palavras que podem ser traduzidas e preserve os caracteres anexados a elas, não existe palavras que não podem ser traduzidas
+É um texto do jogo Emperor rise of the middle kingdom, então tenha isso em mente na hora de traduzir, respeitando termos de jogo e tambem as melhores traduções para o ptbr que se encaixem com a epoca que o jogo se passa.
