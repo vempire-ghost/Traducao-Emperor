@@ -105,7 +105,7 @@ class ZeusTextFile:
         self.extract_strings(data_start)
         
         # 5. Mapeia strings para grupos 
-        self.map_strings_to_groups_corrected()
+        #self.map_strings_to_groups_corrected()
         
         # Validação
         total_in_groups = sum(g['count'] for g in self.groups)
@@ -241,128 +241,6 @@ class ZeusTextFile:
         if 1 <= cell_id <= len(self.strings):
             return self.strings[cell_id - 1]
         return None
-
-    def map_strings_to_groups_simple(self):
-        """Mapeia strings para grupos - versão corrigida"""
-        current_string_idx = 0
-        
-        print(f"\nMapeando strings para grupos...")
-        print(f"Total de grupos: {len(self.groups)}")
-        print(f"Total de strings: {len(self.strings)}")
-        
-        # Reset strings dos grupos
-        for group in self.groups:
-            group['strings'] = []
-        
-        # Grupo 0 é vazio (count=0)
-        # Começa do grupo 1
-        for group_id in range(1, len(self.groups)):
-            group = self.groups[group_id]
-            count = group['count']
-            
-            print(f"  Grupo {group_id}: precisa de {count} strings")
-            
-            if count > 0:
-                for i in range(count):
-                    if current_string_idx < len(self.strings):
-                        # Atribui string ao grupo
-                        string_cell_id = self.strings[current_string_idx]['cell_id']
-                        self.strings[current_string_idx]['group_id'] = group_id
-                        group['strings'].append(string_cell_id)  # Guarda o cell_id
-                        
-                        if group_id < 5 and i == 0:
-                            print(f"    → Primeira string: célula {string_cell_id} (índice {current_string_idx})")
-                        
-                        current_string_idx += 1
-                    else:
-                        print(f"  AVISO: Sem strings suficientes para grupo {group_id}")
-                        break
-        
-        print(f"\nStrings mapeadas: {current_string_idx}/{len(self.strings)}")
-        
-        # Debug detalhado dos primeiros grupos
-        print("\nDEBUG DETALHADO DOS PRIMEIROS GRUPOS:")
-        for i in range(min(5, len(self.groups))):
-            g = self.groups[i]
-            if g['count'] > 0:
-                if g['strings']:
-                    first_cell_id = min(g['strings'])
-                    # Encontra o índice da string
-                    string_idx = None
-                    for idx, s in enumerate(self.strings):
-                        if s['cell_id'] == first_cell_id:
-                            string_idx = idx
-                            break
-                    print(f"  Grupo {i}: count={g['count']}, primeira célula={first_cell_id}, string_idx={string_idx}")
-                else:
-                    print(f"  Grupo {i}: count={g['count']}, SEM STRINGS MAPEADAS!")
-
-    def debug_original_file(self):
-        """Debug do arquivo original"""
-        print("\n" + "="*60)
-        print("DEBUG DO ARQUIVO ORIGINAL")
-        print("="*60)
-        
-        # Lê offsets originais dos primeiros grupos
-        list_start = 32
-        print("Primeiros 5 pares do arquivo original:")
-        for pair_id in range(5):
-            offset = list_start + (pair_id * 8)
-            group_offset = struct.unpack('<I', self.data[offset:offset+4])[0]
-            count = struct.unpack('<I', self.data[offset+4:offset+8])[0]
-            print(f"  Par {pair_id}: offset=0x{group_offset:04X} ({group_offset}), count={count}")
-        
-        # Mostra as primeiras strings
-        data_start = 0x1F5C
-        print(f"\nPrimeiras 5 strings (começando em 0x{data_start:08X}):")
-        
-        pos = data_start
-        string_count = 0
-        while pos < len(self.data) and string_count < 5:
-            end_pos = self.data.find(b'\x00', pos)
-            if end_pos == -1:
-                break
-            
-            string_bytes = self.data[pos:end_pos]
-            try:
-                text = string_bytes.decode('cp1252')
-            except:
-                try:
-                    text = string_bytes.decode('latin-1')
-                except:
-                    text = f"[BIN:{string_bytes.hex()[:20]}...]"
-            
-            actual_offset = pos - data_start
-            print(f"  String {string_count+1}: offset={actual_offset}, tamanho={len(string_bytes)}, texto='{text[:50]}...'")
-            pos = end_pos + 1
-            string_count += 1
-        
-        # Mostra qual string está no offset 0x67 (103)
-        print(f"\nVerificando offset 0x67 (103) no arquivo original:")
-        target_offset = data_start + 0x67
-        if target_offset < len(self.data):
-            end_pos = self.data.find(b'\x00', target_offset)
-            if end_pos != -1:
-                string_bytes = self.data[target_offset:end_pos]
-                try:
-                    text = string_bytes.decode('cp1252')
-                except:
-                    text = string_bytes.decode('latin-1', errors='ignore')
-                print(f"  No offset 0x67 (absoluto 0x{target_offset:08X}): '{text}'")
-                
-                # Verifica qual célula é esta
-                for i, string_info in enumerate(self.strings):
-                    if string_info['absolute_offset'] == target_offset:
-                        print(f"  Esta é a célula {string_info['cell_id']}")
-                        break
-        else:
-            print(f"  Offset 0x67 está fora do arquivo!")
-        
-        # Mostra as primeiras células e seus grupos
-        print(f"\nPrimeiras 10 células e seus grupos:")
-        for i in range(min(10, len(self.strings))):
-            s = self.strings[i]
-            print(f"  Célula {s['cell_id']}: offset={s['offset']}, grupo={s['group_id']}, texto='{s['text'][:30]}...'")
     
     def save(self):
         """Salva arquivo COM A MESMA ORDEM DO ORIGINAL: (COUNT, OFFSET)"""
@@ -474,9 +352,9 @@ class ZeusTextFile:
         
         try:
             # Backup
-            with open(backup_name, 'wb') as f:
-                f.write(self.data)
-            print(f"\nBackup criado: {backup_name}")
+            #with open(backup_name, 'wb') as f:
+                #f.write(self.data)
+            #print(f"\nBackup criado: {backup_name}")
             
             # Novo arquivo
             with open(self.filename, 'wb') as f:
@@ -767,7 +645,7 @@ def extrair_celulas_para_traducao():
     # Ordena por cell_id
     untranslated_blocks.sort(key=lambda x: x[0])
     
-    # Limita ao máximo
+    # Limita ao máximo (agora 300)
     selected_blocks = untranslated_blocks[:MAX]
     
     # Prepara texto para tradução
@@ -801,31 +679,137 @@ def extrair_celulas_para_traducao():
     
     return selected_blocks
 
-def focus_browser():
-    """Tenta dar foco ao navegador aberto"""
-    sistema = platform.system()
+def pesquisar_celulas_por_palavra():
+    """Pesquisa células por palavra no original ou na tradução"""
+    if not os.path.exists(BASE):
+        messagebox.showinfo("Info", "Execute 'Extrair TODAS as células' primeiro.")
+        return None
     
     try:
-        if sistema == "Windows":
-            subprocess.run(["powershell", "-Command", 
-                "$wshell = New-Object -ComObject wscript.shell; "
-                "$wshell.AppActivate('Chrome') -or $wshell.AppActivate('Firefox') -or $wshell.AppActivate('Microsoft Edge')"])
-        elif sistema == "Darwin":
-            subprocess.run(["osascript", "-e", 
-                'tell application "System Events" to set frontmost of the first process whose frontmost is false and (name is "Google Chrome" or name is "Safari" or name is "Firefox") to true'])
-        elif sistema == "Linux":
-            subprocess.run(["wmctrl", "-a", "Chrome"], capture_output=True)
-            subprocess.run(["wmctrl", "-a", "Firefox"], capture_output=True)
-    except Exception as e:
-        print(f"Erro ao focar navegador: {e}")
+        with open(BASE, "r", encoding="utf-8") as f:
+            content = f.read()
+    except FileNotFoundError:
+        messagebox.showinfo("Info", "Execute 'Extrair TODAS as células' primeiro.")
+        return None
+    
+    # Janela de diálogo para pedir a palavra
+    class PesquisaDialog(tk.Toplevel):
+        def __init__(self, parent):
+            super().__init__(parent)
+            self.title("Pesquisar Células")
+            self.geometry("400x150")
+            self.result = None
+            
+            tk.Label(self, text="Digite a palavra para pesquisar:", font=("Arial", 10)).pack(pady=10)
+            
+            self.entry = tk.Entry(self, width=40)
+            self.entry.pack(pady=5)
+            self.entry.focus()
+            
+            tk.Label(self, text="A pesquisa procurará no ORIGINAL e na TRADUÇÃO", font=("Arial", 9), fg="gray").pack()
+            
+            btn_frame = tk.Frame(self)
+            btn_frame.pack(pady=10)
+            
+            tk.Button(btn_frame, text="Pesquisar", command=self.pesquisar, bg="#4CAF50", fg="white", width=10).pack(side=tk.LEFT, padx=5)
+            tk.Button(btn_frame, text="Cancelar", command=self.destroy, bg="#f44336", fg="white", width=10).pack(side=tk.LEFT, padx=5)
+        
+        def pesquisar(self):
+            palavra = self.entry.get().strip().lower()
+            if palavra:
+                self.result = palavra
+                self.destroy()
+    
+    # Mostra diálogo de pesquisa
+    dialog = PesquisaDialog(root)
+    root.wait_window(dialog)
+    
+    palavra = dialog.result
+    if not palavra:
+        return None
+    
+    print("\n" + "="*60)
+    print(f"PESQUISANDO POR PALAVRA: '{palavra}'")
+    print("="*60)
+    
+    # Divide o conteúdo em blocos por célula
+    blocks = content.split("\n\n")
+    
+    # Encontra todos os blocos que começam com OFFSET:
+    cell_blocks = []
+    for block in blocks:
+        if block.strip().startswith("OFFSET:"):
+            cell_blocks.append(block.strip())
+    
+    # Pesquisa nos blocos
+    matching_blocks = []
+    
+    for block in cell_blocks:
+        lines = block.split('\n')
+        
+        # Extrai cell_id
+        cell_id = None
+        for line in lines:
+            if line.startswith("CELULA:"):
+                parts = line.split()
+                for part in parts:
+                    if part.isdigit():
+                        cell_id = int(part)
+                        break
+                break
+        
+        if cell_id is None:
+            continue
+        
+        # Verifica se a palavra está em qualquer linha
+        found = False
+        for line in lines:
+            if palavra in line.lower():
+                found = True
+                break
+        
+        if found:
+            matching_blocks.append((cell_id, block))
+    
+    print(f"Total de células: {len(cell_blocks)}")
+    print(f"Células encontradas: {len(matching_blocks)}")
+    
+    # Prepara texto para exibição
+    output_text = ""
+    for cell_id, block in matching_blocks:
+        output_text += block + "\n\n"
+    
+    # Atualiza a interface
+    text_extrair.delete("1.0", tk.END)
+    if matching_blocks:
+        text_extrair.insert(tk.END,
+            f"ZEUS TRANSLATOR - PESQUISA POR: '{palavra}'\n"
+            "===============================================\n"
+            f"Total de células no arquivo: {len(cell_blocks)}\n"
+            f"Células encontradas: {len(matching_blocks)}\n"
+            f"\nResultados da pesquisa:\n\n"
+        )
+        text_extrair.insert(tk.END, output_text)
+        
+        # Copia para área de transferência
+        pyperclip.copy(output_text)
+        messagebox.showinfo("Pesquisa Concluída", 
+                          f"Encontradas {len(matching_blocks)} células contendo '{palavra}'.\n\n"
+                          f"Resultados copiados para área de transferência.")
+    else:
+        text_extrair.insert(tk.END,
+            f"ZEUS TRANSLATOR - PESQUISA POR: '{palavra}'\n"
+            "===============================================\n"
+            f"Total de células no arquivo: {len(cell_blocks)}\n"
+            f"Células encontradas: 0\n"
+            f"\nNenhuma célula encontrada contendo '{palavra}'.\n"
+        )
+        messagebox.showinfo("Pesquisa Concluída", 
+                          f"Nenhuma célula encontrada contendo '{palavra}'.")
+    
+    return matching_blocks
 
 # ---------------- MESCLAGEM ---------------- #
-
-def remover_acentos(texto):
-    """Remove acentuação"""
-    texto_normalizado = unicodedata.normalize('NFKD', texto)
-    texto_sem_acentos = ''.join(c for c in texto_normalizado if not unicodedata.combining(c))
-    return texto_sem_acentos.upper()
 
 def mesclar_traducao_completa():
     """Mescla traduções no arquivo de texto E atualiza o arquivo binário COM VALIDAÇÃO"""
@@ -1236,19 +1220,6 @@ def save_and_update(applied, content, updates_for_binary, validation_errors):
     # Desabilita o botão de colar
     btn_colar_trad.config(state=tk.DISABLED)
 
-def copiar_e_focar_navegador():
-    """Extrai células NÃO TRADUZIDAS e copia para área de transferência"""
-    blocks = extrair_celulas_para_traducao()
-    
-    if not blocks:
-        return
-    
-    texto_para_traduzir = text_extrair.get("1.0", tk.END).strip()
-    if texto_para_traduzir:
-        pyperclip.copy(texto_para_traduzir)
-        focus_browser()
-        btn_colar_trad.config(state=tk.NORMAL)
-
 def colar_traducao():
     """Cola tradução da área de transferência"""
     try:
@@ -1304,12 +1275,12 @@ btn_extrair_lote = tk.Button(btn_frame, text="Extrair para traduzir",
                            command=extrair_celulas_para_traducao, width=20)
 btn_extrair_lote.pack(side=tk.LEFT, padx=5)
 
-btn_copiar_focar = tk.Button(btn_frame, text="Copiar & Focar Navegador", 
-                           command=copiar_e_focar_navegador, bg="#10a37f", fg="white", width=20)
-btn_copiar_focar.pack(side=tk.LEFT, padx=5)
+btn_pesquisar = tk.Button(btn_frame, text="Pesquisar por palavra", 
+                         command=pesquisar_celulas_por_palavra, bg="#4285f4", fg="white", width=20)
+btn_pesquisar.pack(side=tk.LEFT, padx=5)
 
 btn_colar_trad = tk.Button(btn_frame, text="Colar Tradução", command=colar_traducao,
-                          bg="#4285f4", fg="white", width=15, state=tk.DISABLED)
+                          bg="#ff9800", fg="white", width=15, state=tk.DISABLED)
 btn_colar_trad.pack(side=tk.LEFT, padx=5)
 
 # Labels informativas
@@ -1318,7 +1289,7 @@ label_info = tk.Label(frame_top, text="Extrair TODAS → Extrair para traduzir �
 label_info.pack(pady=5)
 
 # Área de texto da esquerda (extração)
-label_extrair = tk.Label(frame_left, text="CÉLULAS PARA TRADUZIR:")
+label_extrair = tk.Label(frame_left, text="CÉLULAS PARA TRADUZIR / RESULTADOS DA PESQUISA:")
 label_extrair.pack(anchor=tk.W)
 
 text_extrair = scrolledtext.ScrolledText(frame_left, wrap=tk.WORD, height=28)
@@ -1341,7 +1312,7 @@ btn_mesclar.pack(fill=tk.X)
 
 # Status bar
 status_var = tk.StringVar()
-status_var.set("MODO: Extração completa | Detecção inteligente de células traduzidas")
+status_var.set("MODO: Extração completa | Detecção inteligente de células traduzidas | MAX=300 células")
 status_bar = tk.Label(root, textvariable=status_var, bd=1, relief=tk.SUNKEN, anchor=tk.W, fg="green")
 status_bar.pack(side=tk.BOTTOM, fill=tk.X)
 

@@ -77,7 +77,7 @@ OFFSET: 0x00001FDB
 CELULA: 12  GRUPO: N/A
 ORIGINAL [14 chars]: Honorable Self
 TRADUÇÃO:
-Torres do inspetor
+Honorable Self
 
 OFFSET: 0x00001FEA
 CELULA: 13  GRUPO: N/A
@@ -557,7 +557,7 @@ OFFSET: 0x000025AD
 CELULA: 92  GRUPO: N/A
 ORIGINAL [32 chars]: Lacquerware makers need lacquer.
 TRADUÇÃO:
-Artesãos de laca precisam de laca.
+Oficinas de Lacados precisam de laca.
 
 OFFSET: 0x000025CE
 CELULA: 93  GRUPO: N/A
@@ -617,7 +617,7 @@ OFFSET: 0x000026E3
 CELULA: 102  GRUPO: N/A
 ORIGINAL [37 chars]: Lacquerware makers have been removed.
 TRADUÇÃO:
-Os artesãos de laca foram removidos.
+As Oficinas de Lacados foram removidas.
 
 OFFSET: 0x00002709
 CELULA: 103  GRUPO: N/A
@@ -3689,7 +3689,7 @@ OFFSET: 0x00005B7C
 CELULA: 614  GRUPO: N/A
 ORIGINAL [20 chars]: Build a Weaponsmith.
 TRADUÇÃO:
-Construa uma forja de armas.
+Construa um Armeiro.
 
 OFFSET: 0x00005B91
 CELULA: 615  GRUPO: N/A
@@ -3749,7 +3749,7 @@ OFFSET: 0x00005CD0
 CELULA: 624  GRUPO: N/A
 ORIGINAL [55 chars]: Lacquerware makers can't produce wares without lacquer.
 TRADUÇÃO:
-Artesãos de laca não podem produzir bens sem laca.
+As Oficinas de Lacados não podem produzir lacados sem laca.
 
 OFFSET: 0x00005D08
 CELULA: 625  GRUPO: N/A
@@ -3809,7 +3809,7 @@ OFFSET: 0x00005E72
 CELULA: 634  GRUPO: N/A
 ORIGINAL [24 chars]: Build a tea curing shed.
 TRADUÇÃO:
-Construa um galpão de secagem de chá.
+Construa um galpão de cura de chá.
 
 OFFSET: 0x00005E8B
 CELULA: 635  GRUPO: N/A
@@ -3857,7 +3857,7 @@ OFFSET: 0x00005F90
 CELULA: 642  GRUPO: N/A
 ORIGINAL [22 chars]: Build a silkworm shed.
 TRADUÇÃO:
-Construa um galpão de bichos-da-seda.
+Construa um criadouro de Bichos-da-seda.
 
 OFFSET: 0x00005FA7
 CELULA: 643  GRUPO: N/A
@@ -3899,7 +3899,7 @@ OFFSET: 0x000060A1
 CELULA: 649  GRUPO: N/A
 ORIGINAL [41 chars]: Build a theatre pavilion for your actors.
 TRADUÇÃO:
-Construa um pavilhão teatral para seus atores.
+Construa um pavilhão de Teatro para seus atores.
 
 OFFSET: 0x000060CB
 CELULA: 650  GRUPO: N/A
@@ -3959,7 +3959,7 @@ OFFSET: 0x0000624E
 CELULA: 659  GRUPO: N/A
 ORIGINAL [30 chars]: Must build clay pits on grass.
 TRADUÇÃO:
-As jazidas de argila devem ser construídas sobre a grama.
+As minas de argila devem ser construídas sobre a grama.
 
 OFFSET: 0x0000626D
 CELULA: 660  GRUPO: N/A
@@ -6029,7 +6029,7 @@ OFFSET: 0x00007652
 CELULA: 1004  GRUPO: 19
 ORIGINAL [13 chars]: Hunter's Tent
 TRADUÇÃO:
-Tenda do caçador
+Tenda de Caça
 
 OFFSET: 0x00007660
 CELULA: 1005  GRUPO: 19
@@ -6041,7 +6041,7 @@ OFFSET: 0x0000766E
 CELULA: 1006  GRUPO: 19
 ORIGINAL [8 chars]: Clay Pit
 TRADUÇÃO:
-Barreiro de argila
+Mina de argila
 
 OFFSET: 0x00007677
 CELULA: 1007  GRUPO: 19
@@ -6059,7 +6059,7 @@ OFFSET: 0x0000768C
 CELULA: 1009  GRUPO: 19
 ORIGINAL [12 chars]: Logging Shed
 TRADUÇÃO:
-Barracão de lenha
+Galpão de Extração de Madeira
 
 OFFSET: 0x00007699
 CELULA: 1010  GRUPO: 19
@@ -6083,7 +6083,7 @@ OFFSET: 0x000076C3
 CELULA: 1013  GRUPO: 19
 ORIGINAL [16 chars]: Bronzeware Maker
 TRADUÇÃO:
-Oficina de bronze
+Oficina de Artefatos de Bronze
 
 OFFSET: 0x000076D4
 CELULA: 1014  GRUPO: 19
@@ -6095,13 +6095,13 @@ OFFSET: 0x000076D9
 CELULA: 1015  GRUPO: 19
 ORIGINAL [17 chars]: Lacquerware Maker
 TRADUÇÃO:
-Fabricante de Artefatos de Laca
+Oficina de Lacados
 
 OFFSET: 0x000076EB
 CELULA: 1016  GRUPO: 19
 ORIGINAL [11 chars]: Paper Maker
 TRADUÇÃO:
-Fábrica de papel
+Oficina de papel
 
 OFFSET: 0x000076F7
 CELULA: 1017  GRUPO: 19
@@ -6215,7 +6215,7 @@ OFFSET: 0x000077E6
 CELULA: 1035  GRUPO: 19
 ORIGINAL [15 chars]: Bronzeware Shop
 TRADUÇÃO:
-Loja de bronze
+Loja de peças de bronze
 
 OFFSET: 0x000077F6
 CELULA: 1036  GRUPO: 19
@@ -6239,7 +6239,7 @@ OFFSET: 0x00007818
 CELULA: 1039  GRUPO: 19
 ORIGINAL [16 chars]: Lacquerware Shop
 TRADUÇÃO:
-Loja de laca
+Loja de Lacados
 
 OFFSET: 0x00007829
 CELULA: 1040  GRUPO: 19
@@ -6281,7 +6281,7 @@ OFFSET: 0x00007860
 CELULA: 1046  GRUPO: 19
 ORIGINAL [16 chars]: Theatre Pavilion
 TRADUÇÃO:
-Pavilhão teatral
+Pavilhão de Teatro
 
 OFFSET: 0x00007871
 CELULA: 1047  GRUPO: 19
@@ -6581,7 +6581,7 @@ OFFSET: 0x00007AFA
 CELULA: 1096  GRUPO: N/A
 ORIGINAL [10 chars]: Tax Office
 TRADUÇÃO:
-Escritório de impostos
+Posto Fiscal
 
 OFFSET: 0x00007B05
 CELULA: 1097  GRUPO: N/A
@@ -6641,7 +6641,7 @@ OFFSET: 0x00007B5B
 CELULA: 1106  GRUPO: N/A
 ORIGINAL [11 chars]: Weaponsmith
 TRADUÇÃO:
-Ferreiro de armas
+Armeiro
 
 OFFSET: 0x00007B67
 CELULA: 1107  GRUPO: N/A
@@ -7073,7 +7073,7 @@ OFFSET: 0x00007E6B
 CELULA: 1178  GRUPO: N/A
 ORIGINAL [17 chars]: Herbalist's Stall
 TRADUÇÃO:
-Barraca do herborista
+Barraca do herbalista
 
 OFFSET: 0x00007E7D
 CELULA: 1179  GRUPO: N/A
@@ -7103,7 +7103,7 @@ OFFSET: 0x00007EBB
 CELULA: 1183  GRUPO: N/A
 ORIGINAL [14 chars]: Acrobat School
 TRADUÇÃO:
-Escola de acrobatas
+Escola de Acrobatas
 
 OFFSET: 0x00007ECA
 CELULA: 1184  GRUPO: N/A
@@ -7139,13 +7139,13 @@ OFFSET: 0x00007F14
 CELULA: 1189  GRUPO: N/A
 ORIGINAL [15 chars]: Buddhist Pagoda
 TRADUÇÃO:
-Pagode budista
+Pagoda budista
 
 OFFSET: 0x00007F24
 CELULA: 1190  GRUPO: N/A
 ORIGINAL [17 chars]: Confucian Academy
 TRADUÇÃO:
-Academia confucionista
+Academia Confuciana
 
 OFFSET: 0x00007F36
 CELULA: 1191  GRUPO: N/A
@@ -7187,7 +7187,7 @@ OFFSET: 0x00007F8B
 CELULA: 1197  GRUPO: N/A
 ORIGINAL [11 chars]: Weaponsmith
 TRADUÇÃO:
-Ferreiro de armas
+Armeiro
 
 OFFSET: 0x00007F97
 CELULA: 1198  GRUPO: N/A
@@ -7229,7 +7229,7 @@ OFFSET: 0x00007FE6
 CELULA: 1204  GRUPO: N/A
 ORIGINAL [14 chars]: Laborers' Camp
 TRADUÇÃO:
-Acampamento de trabalhadores
+Campos de Trabalho
 
 OFFSET: 0x00007FF5
 CELULA: 1205  GRUPO: N/A
@@ -7265,7 +7265,7 @@ OFFSET: 0x00008049
 CELULA: 1210  GRUPO: N/A
 ORIGINAL [13 chars]: Silkworm Shed
 TRADUÇÃO:
-Galpão de bichos-da-seda
+Criadouro de Bichos-da-seda
 
 OFFSET: 0x00008057
 CELULA: 1211  GRUPO: N/A
@@ -14333,7 +14333,7 @@ OFFSET: 0x0000C8E8
 CELULA: 2388  GRUPO: 56
 ORIGINAL [14 chars]: Hunters' tents
 TRADUÇÃO:
-Tendas de Caçadores
+Tendas de Caça
 
 OFFSET: 0x0000C8F7
 CELULA: 2389  GRUPO: 56
@@ -17069,7 +17069,7 @@ OFFSET: 0x0000ED6B
 CELULA: 2844  GRUPO: 61
 ORIGINAL [9 chars]: Herbalist
 TRADUÇÃO:
-Herborista
+Herbalista
 
 OFFSET: 0x0000ED75
 CELULA: 2845  GRUPO: 61
@@ -17165,7 +17165,7 @@ OFFSET: 0x0000EDFA
 CELULA: 2860  GRUPO: 61
 ORIGINAL [12 chars]: Trading Junk
 TRADUÇÃO:
-Junca Mercante
+Junco Mercante
 
 OFFSET: 0x0000EE07
 CELULA: 2861  GRUPO: 61
@@ -17399,13 +17399,13 @@ OFFSET: 0x0000EFE8
 CELULA: 2899  GRUPO: 61
 ORIGINAL [12 chars]: Iron Smelter
 TRADUÇÃO:
-Fundidor de Ferro
+Fundição de Ferro
 
 OFFSET: 0x0000EFF5
 CELULA: 2900  GRUPO: 61
 ORIGINAL [14 chars]: Bronze Smelter
 TRADUÇÃO:
-Fundidor de Bronze
+Fundição de bronze
 
 OFFSET: 0x0000F004
 CELULA: 2901  GRUPO: 61
@@ -17459,13 +17459,13 @@ OFFSET: 0x0000F059
 CELULA: 2909  GRUPO: 61
 ORIGINAL [16 chars]: Bronzeware Buyer
 TRADUÇÃO:
-Comprador de Artefatos de Bronze
+Comprador de Peças de Bronze
 
 OFFSET: 0x0000F06A
 CELULA: 2910  GRUPO: 61
 ORIGINAL [17 chars]: Lacquerware Buyer
 TRADUÇÃO:
-Comprador de Artefatos Laqueados
+Comprador de Lacados
 
 OFFSET: 0x0000F07C
 CELULA: 2911  GRUPO: 61
@@ -17777,25 +17777,25 @@ OFFSET: 0x0000F433
 CELULA: 2962  GRUPO: 65
 ORIGINAL [30 chars]: No herbalist has visited here.
 TRADUÇÃO:
-Nenhum herborista visitou este local.
+Nenhum herbalista visitou este local.
 
 OFFSET: 0x0000F452
 CELULA: 2963  GRUPO: 64
 ORIGINAL [37 chars]: Herbalist has not been by in a while.
 TRADUÇÃO:
-O herborista não passa por aqui há algum tempo.
+O herbalista não passa por aqui há algum tempo.
 
 OFFSET: 0x0000F478
 CELULA: 2964  GRUPO: 64
 ORIGINAL [22 chars]: Herbalist has been by.
 TRADUÇÃO:
-O herborista passou por aqui.
+O herbalista passou por aqui.
 
 OFFSET: 0x0000F48F
 CELULA: 2965  GRUPO: 64
 ORIGINAL [31 chars]: Herbalist has been by recently.
 TRADUÇÃO:
-O herborista passou por aqui recentemente.
+O herbalista passou por aqui recentemente.
 
 OFFSET: 0x0000F4AF
 CELULA: 2966  GRUPO: 64
@@ -18377,19 +18377,19 @@ OFFSET: 0x0000FF2B
 CELULA: 3062  GRUPO: 66
 ORIGINAL [17 chars]: Lacquerware Maker
 TRADUÇÃO:
-Fabricante de Artefatos de Laca
+Oficina de Lacados
 
 OFFSET: 0x0000FF3D
 CELULA: 3063  GRUPO: 66
 ORIGINAL [6 chars]: Weaver
 TRADUÇÃO:
-Tecelão
+Tecelagem
 
 OFFSET: 0x0000FF44
 CELULA: 3064  GRUPO: 66
 ORIGINAL [16 chars]: Bronzeware Maker
 TRADUÇÃO:
-Fabricante de Artefatos de Bronze
+Oficina de Artefatos de Bronze
 
 OFFSET: 0x0000FF55
 CELULA: 3065  GRUPO: 66
@@ -18401,13 +18401,13 @@ OFFSET: 0x0000FF5A
 CELULA: 3066  GRUPO: 66
 ORIGINAL [11 chars]: Paper Maker
 TRADUÇÃO:
-Fabricante de Papel
+Oficina de papel
 
 OFFSET: 0x0000FF66
 CELULA: 3067  GRUPO: 66
 ORIGINAL [20 chars]: Jade Carver's Studio
 TRADUÇÃO:
-Ateliê do Escultor de Jade
+Ateliê de entalhe em jade
 
 OFFSET: 0x0000FF7B
 CELULA: 3068  GRUPO: 66
@@ -18449,7 +18449,7 @@ OFFSET: 0x0000FFC2
 CELULA: 3074  GRUPO: 66
 ORIGINAL [14 chars]: Acrobat School
 TRADUÇÃO:
-Escola de Acrobacia
+Escola de Acrobatas
 
 OFFSET: 0x0000FFD1
 CELULA: 3075  GRUPO: 66
@@ -18485,13 +18485,13 @@ OFFSET: 0x0001001B
 CELULA: 3080  GRUPO: 66
 ORIGINAL [15 chars]: Buddhist Pagoda
 TRADUÇÃO:
-Pagode Budista
+Pagoda Budista
 
 OFFSET: 0x0001002B
 CELULA: 3081  GRUPO: 66
 ORIGINAL [17 chars]: Confucian Academy
 TRADUÇÃO:
-Academia Confucionista
+Academia Confuciana
 
 OFFSET: 0x0001003D
 CELULA: 3082  GRUPO: 66
@@ -18503,13 +18503,13 @@ OFFSET: 0x00010042
 CELULA: 3083  GRUPO: 66
 ORIGINAL [17 chars]: Herbalist's Stall
 TRADUÇÃO:
-Barraca do Herborista
+Barraca do Herbalista
 
 OFFSET: 0x00010054
 CELULA: 3084  GRUPO: 66
 ORIGINAL [22 chars]: Acupuncturist's Clinic
 TRADUÇÃO:
-Clínica do Acupunturista
+Clínica de Acupuntura
 
 OFFSET: 0x0001006B
 CELULA: 3085  GRUPO: 66
@@ -18605,7 +18605,7 @@ OFFSET: 0x0001013C
 CELULA: 3100  GRUPO: 66
 ORIGINAL [10 chars]: Tax Office
 TRADUÇÃO:
-Casa de Impostos
+Posto Fiscal
 
 OFFSET: 0x00010147
 CELULA: 3101  GRUPO: 66
@@ -18677,7 +18677,7 @@ OFFSET: 0x000101C1
 CELULA: 3112  GRUPO: 66
 ORIGINAL [16 chars]: Theatre Pavilion
 TRADUÇÃO:
-Pavilhão Teatral
+Pavilhão de Teatro
 
 OFFSET: 0x000101D2
 CELULA: 3113  GRUPO: 66
@@ -20927,7 +20927,7 @@ OFFSET: 0x00012DA0
 CELULA: 3487  GRUPO: 77
 ORIGINAL [48 chars]: The actor is on his way to the theatre pavilion.
 TRADUÇÃO:
-O ator está a caminho do pavilhão do teatro.
+O ator está a caminho do pavilhão de teatro.
 
 OFFSET: 0x00012DD1
 CELULA: 3488  GRUPO: 77
@@ -20993,7 +20993,7 @@ OFFSET: 0x00013069
 CELULA: 3498  GRUPO: 78
 ORIGINAL [14 chars]: Acrobat School
 TRADUÇÃO:
-Escola de Acrobacia
+Escola de Acrobatas
 
 OFFSET: 0x00013078
 CELULA: 3499  GRUPO: 78
@@ -21017,13 +21017,13 @@ OFFSET: 0x00013118
 CELULA: 3502  GRUPO: 78
 ORIGINAL [82 chars]: This acrobat school is training enough acrobats to provide constant entertainment.
 TRADUÇÃO:
-Esta escola de acrobacia está treinando acrobatas suficientes para fornecer entretenimento constante.
+Esta escola de acrobatas está treinando acrobatas suficientes para fornecer entretenimento constante.
 
 OFFSET: 0x0001316B
 CELULA: 3503  GRUPO: 78
 ORIGINAL [99 chars]: Their human pyramid is missing a few people, but this acrobat school is still a lively place to be.
 TRADUÇÃO:
-A pirâmide humana deles está faltando algumas pessoas, mas esta escola de acrobacia ainda é um lugar animado.
+A pirâmide humana deles está faltando algumas pessoas, mas esta escola de acrobatas ainda é um lugar animado.
 
 OFFSET: 0x000131CF
 CELULA: 3504  GRUPO: 78
@@ -21035,13 +21035,13 @@ OFFSET: 0x00013203
 CELULA: 3505  GRUPO: 78
 ORIGINAL [105 chars]: Most of the students at this acrobat school have decided to become tax collectors and herbalists instead.
 TRADUÇÃO:
-A maioria dos alunos desta escola de acrobacia decidiu se tornar cobradores de impostos e herbalistas.
+A maioria dos alunos desta escola de acrobatas decidiu se tornar cobradores de impostos e herbalistas.
 
 OFFSET: 0x0001326D
 CELULA: 3506  GRUPO: 78
 ORIGINAL [76 chars]: One crazy guy with his legs around his neck does not an acrobat school make!
 TRADUÇÃO:
-Um sujeito maluco com as pernas em volta do pescoço não faz uma escola de acrobacia!
+Um sujeito maluco com as pernas em volta do pescoço não faz uma escola de acrobatas!
 
 OFFSET: 0x000132BA
 CELULA: 3507  GRUPO: 78
@@ -21053,7 +21053,7 @@ OFFSET: 0x000132F2
 CELULA: 3508  GRUPO: 78
 ORIGINAL [83 chars]: The acrobat school is on fire! They regret offering that fire-breathing course now!
 TRADUÇÃO:
-A escola de acrobacia está em chamas! Agora eles se arrependem de ter oferecido aquele curso de cuspir fogo!
+A escola de acrobatas está em chamas! Agora eles se arrependem de ter oferecido aquele curso de cuspir fogo!
 
 OFFSET: 0x00013346
 CELULA: 3509  GRUPO: 78
@@ -21227,7 +21227,7 @@ OFFSET: 0x00013929
 CELULA: 3537  GRUPO: 81
 ORIGINAL [16 chars]: Theatre Pavilion
 TRADUÇÃO:
-Pavilhão do Teatro
+Pavilhão de Teatro
 
 OFFSET: 0x0001393A
 CELULA: 3538  GRUPO: 81
@@ -21239,37 +21239,37 @@ OFFSET: 0x0001399A
 CELULA: 3539  GRUPO: 81
 ORIGINAL [64 chars]: This theatre pavilion has employees, but no entertainers at all!
 TRADUÇÃO:
-Este pavilhão do teatro possui funcionários, mas nenhum artista!
+Este pavilhão de teatro possui funcionários, mas nenhum artista!
 
 OFFSET: 0x000139DB
 CELULA: 3540  GRUPO: 81
 ORIGINAL [67 chars]: This theatre pavilion is currently entertaining the elite families.
 TRADUÇÃO:
-Este pavilhão do teatro está atualmente entretendo as famílias da elite.
+Este pavilhão de teatro está atualmente entretendo as famílias da elite.
 
 OFFSET: 0x00013A1F
 CELULA: 3541  GRUPO: 81
 ORIGINAL [84 chars]: This theatre pavilion has no employees, so the performers are refusing to work here.
 TRADUÇÃO:
-Este pavilhão do teatro não possui funcionários, por isso os artistas se recusam a trabalhar aqui.
+Este pavilhão de teatro não possui funcionários, por isso os artistas se recusam a trabalhar aqui.
 
 OFFSET: 0x00013A74
 CELULA: 3542  GRUPO: 81
 ORIGINAL [58 chars]: This theatre pavilion is not currently showing any dramas.
 TRADUÇÃO:
-Este pavilhão do teatro não está exibindo nenhum drama no momento.
+Este pavilhão de teatro não está exibindo nenhum drama no momento.
 
 OFFSET: 0x00013AAF
 CELULA: 3543  GRUPO: 81
 ORIGINAL [66 chars]: This theatre pavilion has no acrobats to perform for the audience.
 TRADUÇÃO:
-Este pavilhão do teatro não possui acrobatas para se apresentar ao público.
+Este pavilhão de teatro não possui acrobatas para se apresentar ao público.
 
 OFFSET: 0x00013AF2
 CELULA: 3544  GRUPO: 81
 ORIGINAL [64 chars]: This theatre pavilion has no musicians to play for the audience.
 TRADUÇÃO:
-Este pavilhão do teatro não possui músicos para tocar para o público.
+Este pavilhão de teatro não possui músicos para tocar para o público.
 
 OFFSET: 0x00013B33
 CELULA: 3545  GRUPO: 81
@@ -21329,7 +21329,7 @@ OFFSET: 0x00013C2C
 CELULA: 3554  GRUPO: N/A
 ORIGINAL [188 chars]: Fire at the theatre pavilion! The performers have said that the show will not go on until the fire is out! With no shows, the theatre pavilion cannot provide entertainment to the nobility.
 TRADUÇÃO:
-Incêndio no pavilhão do teatro! Os artistas disseram que o espetáculo não continuará até que o fogo seja apagado! Sem apresentações, o pavilhão do teatro não pode oferecer entretenimento à nobreza.
+Incêndio no pavilhão de teatro! Os artistas disseram que o espetáculo não continuará até que o fogo seja apagado! Sem apresentações, o pavilhão de teatro não pode oferecer entretenimento à nobreza.
 
 OFFSET: 0x00013CE9
 CELULA: 3555  GRUPO: 82
@@ -22721,7 +22721,7 @@ OFFSET: 0x00017006
 CELULA: 3786  GRUPO: 97
 ORIGINAL [19 chars]: lacquerware vessels
 TRADUÇÃO:
-vasilhas de laca
+lacados
 
 OFFSET: 0x0001701A
 CELULA: 3787  GRUPO: 97
@@ -23333,13 +23333,13 @@ OFFSET: 0x000186EA
 CELULA: 3888  GRUPO: 104
 ORIGINAL [10 chars]: Tax Office
 TRADUÇÃO:
-Escritório de Impostos
+Posto Fiscal
 
 OFFSET: 0x000186F5
 CELULA: 3889  GRUPO: 104
 ORIGINAL [71 chars]: The tax office sends out officials to collect taxes for the government.
 TRADUÇÃO:
-O escritório de impostos envia oficiais para arrecadar tributos para o governo.
+O Posto Fiscal envia oficiais para arrecadar tributos para o governo.
 
 OFFSET: 0x0001873D
 CELULA: 3890  GRUPO: 104
@@ -23375,7 +23375,7 @@ OFFSET: 0x000188FB
 CELULA: 3895  GRUPO: 104
 ORIGINAL [117 chars]: This tax office needs more employees! The strings of cash in the coffers are dwindling, and the ledgers are outdated.
 TRADUÇÃO:
-Este escritório de impostos precisa de mais funcionários! Os fios de moedas nos cofres estão diminuindo, e os livros de registros estão desatualizados.
+Este Posto Fiscal precisa de mais funcionários! Os fios de moedas nos cofres estão diminuindo, e os livros de registros estão desatualizados.
 
 OFFSET: 0x00018971
 CELULA: 3896  GRUPO: 104
@@ -23405,25 +23405,25 @@ OFFSET: 0x00018AA9
 CELULA: 3900  GRUPO: 104
 ORIGINAL [38 chars]: Confucius has blessed this tax office!
 TRADUÇÃO:
-Confúcio abençoou este escritório de impostos!
+Confúcio abençoou este Posto Fiscal!
 
 OFFSET: 0x00018AD0
 CELULA: 3901  GRUPO: N/A
 ORIGINAL [115 chars]: This tax office has shut down because there are no bureaucrats at the Administrative city to count the tax revenue.
 TRADUÇÃO:
-Este escritório de impostos foi fechado porque não há burocratas na Cidade Administrativa para contabilizar a arrecadação.
+Este Posto Fiscal foi fechado porque não há burocratas na Cidade Administrativa para contabilizar a arrecadação.
 
 OFFSET: 0x00018B44
 CELULA: 3902  GRUPO: N/A
 ORIGINAL [58 chars]: No taxes can be collected when the tax office has no wood!
 TRADUÇÃO:
-Nenhum imposto pode ser arrecadado quando o escritório de impostos não possui madeira!
+Nenhum imposto pode ser arrecadado quando o Posto Fiscal não possui madeira!
 
 OFFSET: 0x00018B7F
 CELULA: 3903  GRUPO: N/A
 ORIGINAL [59 chars]: No taxes can be collected when the tax office has no paper!
 TRADUÇÃO:
-Nenhum imposto pode ser arrecadado quando o escritório de impostos não possui papel!
+Nenhum imposto pode ser arrecadado quando o Posto Fiscal não possui papel!
 
 OFFSET: 0x00018BBB
 CELULA: 3904  GRUPO: N/A
@@ -24437,13 +24437,13 @@ OFFSET: 0x0001A8AD
 CELULA: 4072  GRUPO: 120
 ORIGINAL [17 chars]: Lacquerware Maker
 TRADUÇÃO:
-Fabricante de Artefatos de Laca
+Oficina de Lacados
 
 OFFSET: 0x0001A8BF
 CELULA: 4073  GRUPO: 120
 ORIGINAL [91 chars]: The lacquerware maker produces beautiful lacquered containers from carved wood and lacquer.
 TRADUÇÃO:
-A oficina produz belos recipientes laqueados a partir de madeira entalhada e laca.
+A Oficina de Lacados produz belos recipientes laqueados a partir de madeira entalhada e laca.
 
 OFFSET: 0x0001A91B
 CELULA: 4074  GRUPO: 120
@@ -24461,7 +24461,7 @@ OFFSET: 0x0001A933
 CELULA: 4076  GRUPO: 120
 ORIGINAL [65 chars]: You have deemed lacquerware production a luxury we cannot afford.
 TRADUÇÃO:
-Você considerou a produção de artefatos de laca um luxo que não podemos sustentar.
+Você considerou a produção de Lacados um luxo que não podemos sustentar.
 
 OFFSET: 0x0001A975
 CELULA: 4077  GRUPO: 120
@@ -24473,37 +24473,37 @@ OFFSET: 0x0001A9CF
 CELULA: 4078  GRUPO: 120
 ORIGINAL [74 chars]: This lacquerware maker has all the workers it needs to make wares quickly.
 TRADUÇÃO:
-Esta oficina de laca tem todos os trabalhadores necessários para produzir peças rapidamente.
+Esta Oficina de Lacados tem todos os trabalhadores necessários para produzir lacados rapidamente.
 
 OFFSET: 0x0001AA1A
 CELULA: 4079  GRUPO: 120
 ORIGINAL [114 chars]: This lacquerware maker needs a few more workers. It is taking a little longer than it should to produce the wares.
 TRADUÇÃO:
-Esta oficina precisa de alguns trabalhadores a mais. Está levando um pouco mais de tempo do que deveria para produzir as peças.
+Esta Oficina de Lacados precisa de alguns trabalhadores a mais. Está levando um pouco mais de tempo do que deveria para produzir os lacados.
 
 OFFSET: 0x0001AA8D
 CELULA: 4080  GRUPO: 120
 ORIGINAL [128 chars]: This lacquerware maker is understaffed. The workers are complaining about the conditions, and lacquerware production has slowed.
 TRADUÇÃO:
-Esta oficina está com falta de pessoal. Os trabalhadores reclamam das condições, e a produção de artefatos de laca diminuiu.
+Esta Oficina de Lacados está com falta de pessoal. Os trabalhadores reclamam das condições, e a produção de Lacados diminuiu.
 
 OFFSET: 0x0001AB0E
 CELULA: 4081  GRUPO: 120
 ORIGINAL [116 chars]: This lacquerware maker needs several more workers. It is taking some time for the workers here to produce the wares.
 TRADUÇÃO:
-Esta oficina precisa de vários trabalhadores a mais. Os artesãos daqui levam bastante tempo para produzir as peças.
+Esta Oficina de Lacados precisa de vários trabalhadores a mais. Está levando bastante tempo para produzir os lacados.
 
 OFFSET: 0x0001AB83
 CELULA: 4082  GRUPO: 120
 ORIGINAL [90 chars]: This lacquerware maker needs many more workers. It is barely turning out any wares at all.
 TRADUÇÃO:
-Esta oficina precisa de muitos mais trabalhadores. Quase não está produzindo nenhuma peça.
+Esta Oficina de Lacados precisa de muitos mais trabalhadores. Quase não está produzindo lacados.
 
 OFFSET: 0x0001ABDE
 CELULA: 4083  GRUPO: N/A
 ORIGINAL [81 chars]: This lacquerware maker needs both lacquer and wood in order to produce its wares.
 TRADUÇÃO:
-Esta oficina precisa tanto de laca quanto de madeira para produzir suas peças.
+Esta Oficina de Lacados precisa tanto de laca quanto de madeira para produzir os lacados.
 
 OFFSET: 0x0001AC30
 CELULA: 4084  GRUPO: N/A
@@ -24605,7 +24605,7 @@ OFFSET: 0x0001AF31
 CELULA: 4100  GRUPO: 122
 ORIGINAL [11 chars]: Paper Maker
 TRADUÇÃO:
-Oficina de Papel
+Oficina de papel
 
 OFFSET: 0x0001AF3D
 CELULA: 4101  GRUPO: 122
@@ -24767,7 +24767,7 @@ OFFSET: 0x0001B5C9
 CELULA: 4127  GRUPO: 124
 ORIGINAL [6 chars]: Weaver
 TRADUÇÃO:
-Tecelão
+Tecelagem
 
 OFFSET: 0x0001B5D0
 CELULA: 4128  GRUPO: 124
@@ -24869,7 +24869,7 @@ OFFSET: 0x0001B96C
 CELULA: 4144  GRUPO: 125
 ORIGINAL [37 chars]: You have shut down bronzeware making.
 TRADUÇÃO:
-Você encerrou a produção de artefatos de bronze.
+Você encerrou a produção de peças de bronze.
 
 OFFSET: 0x0001B992
 CELULA: 4145  GRUPO: 125
@@ -28301,13 +28301,13 @@ OFFSET: 0x0001EC26
 CELULA: 4716  GRUPO: 166
 ORIGINAL [16 chars]: Lacquer Refinery
 TRADUÇÃO:
-Oficina de Laca
+Refinaria de Laca
 
 OFFSET: 0x0001EC37
 CELULA: 4717  GRUPO: 166
 ORIGINAL [69 chars]: Tenders from the lacquer refinery collect lacquer sap from the trees.
 TRADUÇÃO:
-Trabalhadores da oficina de laca coletam a seiva de laca das árvores.
+Trabalhadores da refinaria de laca coletam a seiva de laca das árvores.
 
 OFFSET: 0x0001EC7D
 CELULA: 4718  GRUPO: 164
@@ -28319,25 +28319,25 @@ OFFSET: 0x0001ECE6
 CELULA: 4719  GRUPO: 164
 ORIGINAL [86 chars]: No one works at this lacquer refinery. Any lacquer trees in the city are growing wild.
 TRADUÇÃO:
-Ninguém trabalha nesta oficina de laca. As árvores de laca da cidade crescem sem cuidados.
+Ninguém trabalha nesta refinaria de laca. As árvores de laca da cidade crescem sem cuidados.
 
 OFFSET: 0x0001ED3D
 CELULA: 4720  GRUPO: 164
 ORIGINAL [128 chars]: This lacquer refinery has as many tenders and harvesters as it needs. Lacquer trees are well-pruned, and sap is collected often.
 TRADUÇÃO:
-Esta oficina de laca possui trabalhadores e coletores suficientes. As árvores de laca são bem podadas e a seiva é coletada com frequência.
+Esta refinaria de laca possui trabalhadores e coletores suficientes. As árvores de laca são bem podadas e a seiva é coletada com frequência.
 
 OFFSET: 0x0001EDBE
 CELULA: 4721  GRUPO: 164
 ORIGINAL [90 chars]: This lacquer refinery needs more tenders. Sap is not harvested as quickly as it should be.
 TRADUÇÃO:
-Esta oficina de laca precisa de mais trabalhadores. A seiva não está sendo coletada na velocidade adequada.
+Esta refinaria de laca precisa de mais trabalhadores. A seiva não está sendo coletada na velocidade adequada.
 
 OFFSET: 0x0001EE19
 CELULA: 4722  GRUPO: 164
 ORIGINAL [153 chars]: Not many women enjoy working at this lacquer refinery. Some of the lacquer trees are not being cared for properly, and lacquer sap collection has slowed.
 TRADUÇÃO:
-Poucas mulheres gostam de trabalhar nesta oficina de laca. Algumas árvores não estão sendo cuidadas adequadamente, e a coleta da seiva de laca diminuiu.
+Poucas mulheres gostam de trabalhar nesta refinaria de laca. Algumas árvores não estão sendo cuidadas adequadamente, e a coleta da seiva de laca diminuiu.
 
 OFFSET: 0x0001EEB3
 CELULA: 4723  GRUPO: 164
@@ -28349,7 +28349,7 @@ OFFSET: 0x0001EF41
 CELULA: 4724  GRUPO: 156
 ORIGINAL [146 chars]: The small staff at this lacquer refinery collects the sap as quickly as it can, but it's taking a very long time to get an entire cask of lacquer.
 TRADUÇÃO:
-A pequena equipe desta oficina de laca coleta a seiva o mais rápido possível, mas leva muito tempo para encher um barril inteiro de laca.
+A pequena equipe desta refinaria de laca coleta a seiva o mais rápido possível, mas leva muito tempo para encher um barril inteiro de laca.
 
 OFFSET: 0x0001EFD4
 CELULA: 4725  GRUPO: 156
@@ -28367,7 +28367,7 @@ OFFSET: 0x0001F03E
 CELULA: 4727  GRUPO: 156
 ORIGINAL [61 chars]: There are no lacquer trees for this lacquer refinery to tend.
 TRADUÇÃO:
-Não há árvores de laca para esta oficina cuidar.
+Não há árvores de laca para esta refinaria cuidar.
 
 OFFSET: 0x0001F07C
 CELULA: 4728  GRUPO: N/A
@@ -29243,7 +29243,7 @@ OFFSET: 0x000201A3
 CELULA: 4873  GRUPO: 177
 ORIGINAL [82 chars]: Without laborers, this monument will never get built.  Build some laborers' camps.
 TRADUÇÃO:
-Sem trabalhadores, este monumento jamais será construído.  Construa alguns acampamentos de trabalhadores.
+Sem trabalhadores, este monumento jamais será construído.  Construa alguns Campos de Trabalho.
 
 OFFSET: 0x000201F6
 CELULA: 4874  GRUPO: 177
@@ -29267,7 +29267,7 @@ OFFSET: 0x000202F4
 CELULA: 4877  GRUPO: 176
 ORIGINAL [124 chars]: Laborers haven't shown up for work on this monument. Perhaps a visit to the laborers' camp would reveal what the problem is.
 TRADUÇÃO:
-Os trabalhadores não compareceram para trabalhar neste monumento. Talvez uma visita ao acampamento de trabalhadores revele qual é o problema.
+Os trabalhadores não compareceram para trabalhar neste monumento. Talvez uma visita aos Campos de Trabalho revele qual é o problema.
 
 OFFSET: 0x00020371
 CELULA: 4878  GRUPO: 176
@@ -29597,13 +29597,13 @@ OFFSET: 0x00020E57
 CELULA: 4932  GRUPO: N/A
 ORIGINAL [28 chars]: [amount] lacquerware vessel.
 TRADUÇÃO:
-[amount] recipiente de laca.
+[amount] lacado.
 
 OFFSET: 0x00020E74
 CELULA: 4933  GRUPO: N/A
 ORIGINAL [29 chars]: [amount] lacquerware vessels.
 TRADUÇÃO:
-[amount] recipientes de laca.
+[amount] lacados.
 
 OFFSET: 0x00020E92
 CELULA: 4934  GRUPO: N/A
@@ -29747,7 +29747,7 @@ OFFSET: 0x00021790
 CELULA: 4957  GRUPO: 178
 ORIGINAL [15 chars]: Tea Curing Shed
 TRADUÇÃO:
-Galpão de Cura do Chá
+Galpão de cura do Chá
 
 OFFSET: 0x000217A0
 CELULA: 4958  GRUPO: 178
@@ -34200,7 +34200,7 @@ OFFSET: 0x00026E25
 CELULA: 5702  GRUPO: 220
 ORIGINAL [58 chars]: Be careful with those crates, that lacquerware is fragile!
 TRADUÇÃO:
-Tenha cuidado com essas caixas, essa louça laqueada é frágil!
+Tenha cuidado com essas caixas, esses lacados são frágeis!
 
 OFFSET: 0x00026E60
 CELULA: 5703  GRUPO: 221
@@ -39834,7 +39834,7 @@ OFFSET: 0x0002CB40
 CELULA: 6641  GRUPO: 301
 ORIGINAL [14 chars]: Laborers' Camp
 TRADUÇÃO:
-Acampamento de Trabalhadores
+Campos de Trabalho
 
 OFFSET: 0x0002CB4F
 CELULA: 6642  GRUPO: 301
@@ -39858,7 +39858,7 @@ OFFSET: 0x0002CC45
 CELULA: 6645  GRUPO: 299
 ORIGINAL [99 chars]: This laborers' camp has several teams of laborers and will be able to build your monuments on time.
 TRADUÇÃO:
-Este acampamento de trabalhadores possui várias equipes e conseguirá construir seus monumentos dentro do prazo.
+Este Campo de Trabalho possui várias equipes e conseguirá construir seus monumentos dentro do prazo.
 
 OFFSET: 0x0002CCA9
 CELULA: 6646  GRUPO: 299
@@ -39876,7 +39876,7 @@ OFFSET: 0x0002CD85
 CELULA: 6648  GRUPO: 299
 ORIGINAL [132 chars]: This laborers' camp has only a few workers.  If you want the monument to finish before your death, you should provide more laborers.
 TRADUÇÃO:
-Este acampamento de trabalhadores possui poucos operários. Se deseja que o monumento seja concluído antes de sua morte, deverá fornecer mais trabalhadores.
+Este Campos de Trabalho possui poucos operários. Se deseja que o monumento seja concluído antes de sua morte, deverá fornecer mais trabalhadores.
 
 OFFSET: 0x0002CE0A
 CELULA: 6649  GRUPO: 297
@@ -39888,13 +39888,13 @@ OFFSET: 0x0002CE95
 CELULA: 6650  GRUPO: 297
 ORIGINAL [126 chars]: This laborers' camp is empty and will not help the completion of any of your majestic, albeit seemingly unimportant monuments.
 TRADUÇÃO:
-Este acampamento de trabalhadores está vazio e não ajudará na conclusão de nenhum de seus monumentos majestosos, ainda que aparentemente pouco importantes.
+Este Campos de Trabalho está vazio e não ajudará na conclusão de nenhum de seus monumentos majestosos, ainda que aparentemente pouco importantes.
 
 OFFSET: 0x0002CF14
 CELULA: 6651  GRUPO: N/A
 ORIGINAL [58 chars]: Never let a convicted arsonist work at the laborers' camp!
 TRADUÇÃO:
-Nunca permita que um incendiário condenado trabalhe no acampamento de trabalhadores!
+Nunca permita que um incendiário condenado trabalhe nos Campos de Trabalho!
 
 OFFSET: 0x0002CF4F
 CELULA: 6652  GRUPO: N/A
@@ -42630,7 +42630,7 @@ OFFSET: 0x00031327
 CELULA: 7107  GRUPO: 346
 ORIGINAL [15 chars]: Buddhist Pagoda
 TRADUÇÃO:
-Pagode Budista
+Pagoda Budista
 
 OFFSET: 0x00031337
 CELULA: 7108  GRUPO: 346
@@ -42654,7 +42654,7 @@ OFFSET: 0x000313F5
 CELULA: 7111  GRUPO: 346
 ORIGINAL [70 chars]: The Buddhist pagoda is full of monks pondering their assigned gongans.
 TRADUÇÃO:
-O pagode budista está cheio de monges refletindo sobre seus gongans designados.
+O pagoda budista está cheio de monges refletindo sobre seus gongans designados.
 
 OFFSET: 0x0003143C
 CELULA: 7112  GRUPO: 346
@@ -42672,7 +42672,7 @@ OFFSET: 0x000314FB
 CELULA: 7114  GRUPO: 346
 ORIGINAL [83 chars]: Many monks have left to raise a family, since this Buddhist pagoda is so unpopular.
 TRADUÇÃO:
-Muitos monges partiram para formar família, pois este pagode budista é pouco frequentado.
+Muitos monges partiram para formar família, pois esta pagoda budista é pouco frequentado.
 
 OFFSET: 0x0003154F
 CELULA: 7115  GRUPO: 346
@@ -42690,7 +42690,7 @@ OFFSET: 0x000315EF
 CELULA: 7117  GRUPO: 346
 ORIGINAL [66 chars]: Buddhist pagodas are notorious for burning down and being rebuilt.
 TRADUÇÃO:
-Pagodes budistas são conhecidos por queimarem e serem reconstruídos.
+Pagodas budistas são conhecidos por queimarem e serem reconstruídos.
 
 OFFSET: 0x00031632
 CELULA: 7118  GRUPO: 346
@@ -42708,7 +42708,7 @@ OFFSET: 0x00031640
 CELULA: 7120  GRUPO: 347
 ORIGINAL [17 chars]: Confucian Academy
 TRADUÇÃO:
-Academia Confucionista
+Academia Confuciana
 
 OFFSET: 0x00031652
 CELULA: 7121  GRUPO: 347
@@ -42732,13 +42732,13 @@ OFFSET: 0x00031701
 CELULA: 7124  GRUPO: 347
 ORIGINAL [60 chars]: The classes at this Confucian academy are completely filled.
 TRADUÇÃO:
-As aulas desta academia confucionista estão completamente lotadas.
+As aulas desta academia Confuciana estão completamente lotadas.
 
 OFFSET: 0x0003173E
 CELULA: 7125  GRUPO: 347
 ORIGINAL [65 chars]: Many noble families have sons studying at this Confucian academy.
 TRADUÇÃO:
-Muitas famílias nobres têm filhos estudando nesta academia confucionista.
+Muitas famílias nobres têm filhos estudando nesta academia Confuciana.
 
 OFFSET: 0x00031780
 CELULA: 7126  GRUPO: 347
@@ -42768,7 +42768,7 @@ OFFSET: 0x000318E1
 CELULA: 7130  GRUPO: 347
 ORIGINAL [63 chars]: All the books and scrolls at the Confucian academy are burning!
 TRADUÇÃO:
-Todos os livros e pergaminhos da academia confucionista estão em chamas!
+Todos os livros e pergaminhos da academia Confuciana estão em chamas!
 
 OFFSET: 0x00031921
 CELULA: 7131  GRUPO: 347
@@ -42780,31 +42780,31 @@ OFFSET: 0x00031928
 CELULA: 7132  GRUPO: 347
 ORIGINAL [44 chars]: Guan Di has blessed this Confucian academy! 
 TRADUÇÃO:
-Guan Di abençoou esta academia confucionista!
+Guan Di abençoou esta academia Confuciana!
 
 OFFSET: 0x00031955
 CELULA: 7133  GRUPO: N/A
 ORIGINAL [69 chars]: No examinations can be given while the Confucian academy has no wood!
 TRADUÇÃO:
-Nenhum exame pode ser aplicado enquanto a academia confucionista não tiver madeira!
+Nenhum exame pode ser aplicado enquanto a academia Confuciana não tiver madeira!
 
 OFFSET: 0x0003199B
 CELULA: 7134  GRUPO: N/A
 ORIGINAL [70 chars]: No examinations can be given while the Confucian academy has no paper!
 TRADUÇÃO:
-Nenhum exame pode ser aplicado enquanto a academia confucionista não tiver papel!
+Nenhum exame pode ser aplicado enquanto a academia Confuciana não tiver papel!
 
 OFFSET: 0x000319E2
 CELULA: 7135  GRUPO: 348
 ORIGINAL [8 chars]: Clay Pit
 TRADUÇÃO:
-Poço de Argila
+Mina de argila
 
 OFFSET: 0x000319EB
 CELULA: 7136  GRUPO: 348
 ORIGINAL [53 chars]: Underground clay deposits are dug up at the clay pit.
 TRADUÇÃO:
-Depósitos subterrâneos de argila são escavados no poço de argila.
+Depósitos subterrâneos de argila são escavados nas minas de argila.
 
 OFFSET: 0x00031A21
 CELULA: 7137  GRUPO: 348
@@ -42834,19 +42834,19 @@ OFFSET: 0x00031ABF
 CELULA: 7141  GRUPO: 348
 ORIGINAL [91 chars]: Globs of clay are flying everywhere, as the men hoist up block after block at the clay pit.
 TRADUÇÃO:
-Pedaços de argila voam por toda parte enquanto os homens içam bloco após bloco no poço de argila.
+Pedaços de argila voam por toda parte enquanto os homens içam bloco após bloco na mina de argila.
 
 OFFSET: 0x00031B1B
 CELULA: 7142  GRUPO: 348
 ORIGINAL [92 chars]: Accidents have claimed a few workers here at the clay pit, but production has barely slowed.
 TRADUÇÃO:
-Acidentes vitimaram alguns trabalhadores neste poço de argila, mas a produção mal diminuiu.
+Acidentes vitimaram alguns trabalhadores nesta mina de argila, mas a produção mal diminuiu.
 
 OFFSET: 0x00031B78
 CELULA: 7143  GRUPO: 348
 ORIGINAL [85 chars]: This clay pit needs more strong men to dig, else the clay supply will slowly dwindle.
 TRADUÇÃO:
-Este poço de argila precisa de mais homens fortes para escavar, ou o suprimento diminuirá aos poucos.
+Esta mina de argila precisa de mais homens fortes para escavar, ou o suprimento diminuirá aos poucos.
 
 OFFSET: 0x00031BCE
 CELULA: 7144  GRUPO: 348
@@ -42864,7 +42864,7 @@ OFFSET: 0x00031C64
 CELULA: 7146  GRUPO: 348
 ORIGINAL [32 chars]: Nu Wa has blessed this clay pit!
 TRADUÇÃO:
-Nu Wa abençoou este poço de argila!
+Nu Wa abençoou esta mina de argila!
 
 OFFSET: 0x00031C85
 CELULA: 7147  GRUPO: 349
@@ -43194,7 +43194,7 @@ OFFSET: 0x00032915
 CELULA: 7201  GRUPO: 353
 ORIGINAL [16 chars]: Iron Weaponsmith
 TRADUÇÃO:
-Ferreiro de Armas de Ferro
+Armeiro de Ferro
 
 OFFSET: 0x00032926
 CELULA: 7202  GRUPO: 353
@@ -43278,7 +43278,7 @@ OFFSET: 0x00032C67
 CELULA: 7215  GRUPO: 354
 ORIGINAL [17 chars]: Steel Weaponsmith
 TRADUÇÃO:
-Ferreiro de Armas de Aço
+Armeiro de Aço
 
 OFFSET: 0x00032C79
 CELULA: 7216  GRUPO: 354
