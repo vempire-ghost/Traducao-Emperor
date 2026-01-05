@@ -12365,13 +12365,13 @@ OFFSET: 0x0000B0A9
 CELULA: 2060  GRUPO: 49
 ORIGINAL [18 chars]: Employed Workforce
 TRADUÇÃO:
-Força de trabalho empregada
+População Empregada
 
 OFFSET: 0x0000B0BC
 CELULA: 2061  GRUPO: 49
 ORIGINAL [10 chars]: Unemployed
 TRADUÇÃO:
-Desempregados
+Desemprego
 
 OFFSET: 0x0000B0C7
 CELULA: 2062  GRUPO: 49
