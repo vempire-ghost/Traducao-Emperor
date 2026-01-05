@@ -12389,7 +12389,7 @@ OFFSET: 0x0000B0DD
 CELULA: 2064  GRUPO: 49
 ORIGINAL [28 chars]: Projected payroll this year:
 TRADUÇÃO:
-Salarios projetados para este ano:
+Custo salarial estimado do ano:
 
 OFFSET: 0x0000B0FA
 CELULA: 2065  GRUPO: 49
@@ -15359,7 +15359,7 @@ OFFSET: 0x0000D224
 CELULA: 2559  GRUPO: 59
 ORIGINAL [15 chars]: Net in/out flow
 TRADUÇÃO:
-Fluxo Líquido
+Lucro / Prejuízo
 
 OFFSET: 0x0000D234
 CELULA: 2560  GRUPO: 59
@@ -15395,7 +15395,7 @@ OFFSET: 0x0000D28A
 CELULA: 2565  GRUPO: 59
 ORIGINAL [26 chars]: Coins minted/money printed
 TRADUÇÃO:
-Moedas cunhadas/moeda emitida
+Moedas cunhadas / emitidas
 
 OFFSET: 0x0000D2A5
 CELULA: 2566  GRUPO: 59
