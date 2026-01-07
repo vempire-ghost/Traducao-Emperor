@@ -15503,7 +15503,7 @@ OFFSET: 0x0000D360
 CELULA: 2583  GRUPO: 60
 ORIGINAL [14 chars]: Workers needed
 TRADUÇÃO:
-Trabalhadores necessários
+Vagas
 
 OFFSET: 0x0000D36F
 CELULA: 2584  GRUPO: 60
