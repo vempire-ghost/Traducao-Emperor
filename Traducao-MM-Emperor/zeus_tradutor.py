@@ -754,9 +754,9 @@ class ZeusTextFile:
         
         try:
             # Backup do original
-            with open(backup_name, 'wb') as f:
-                f.write(self.data)
-            print(f"\n✓ Backup criado: {backup_name}")
+            #with open(backup_name, 'wb') as f:
+                #f.write(self.data)
+            #print(f"\n✓ Backup criado: {backup_name}")
             
             # Novo arquivo
             with open(self.filename, 'wb') as f:
@@ -1105,7 +1105,7 @@ def extrair_celulas_para_traducao():
     # Ordena por cell_id
     untranslated_blocks.sort(key=lambda x: x[0])
     
-    # Limita ao máximo
+    # Limita ao máximo (agora 300)
     selected_blocks = untranslated_blocks[:MAX]
     
     # Prepara texto para tradução
@@ -1139,23 +1139,135 @@ def extrair_celulas_para_traducao():
     
     return selected_blocks
 
-def focus_browser():
-    """Tenta dar foco ao navegador aberto"""
-    sistema = platform.system()
+def pesquisar_celulas_por_palavra():
+    """Pesquisa células por palavra no original ou na tradução"""
+    if not os.path.exists(BASE):
+        messagebox.showinfo("Info", "Execute 'Extrair TODAS as células' primeiro.")
+        return None
     
     try:
-        if sistema == "Windows":
-            subprocess.run(["powershell", "-Command", 
-                "$wshell = New-Object -ComObject wscript.shell; "
-                "$wshell.AppActivate('Chrome') -or $wshell.AppActivate('Firefox') -or $wshell.AppActivate('Microsoft Edge')"])
-        elif sistema == "Darwin":
-            subprocess.run(["osascript", "-e", 
-                'tell application "System Events" to set frontmost of the first process whose frontmost is false and (name is "Google Chrome" or name is "Safari" or name is "Firefox") to true'])
-        elif sistema == "Linux":
-            subprocess.run(["wmctrl", "-a", "Chrome"], capture_output=True)
-            subprocess.run(["wmctrl", "-a", "Firefox"], capture_output=True)
-    except Exception as e:
-        print(f"Erro ao focar navegador: {e}")
+        with open(BASE, "r", encoding="utf-8") as f:
+            content = f.read()
+    except FileNotFoundError:
+        messagebox.showinfo("Info", "Execute 'Extrair TODAS as células' primeiro.")
+        return None
+    
+    # Janela de diálogo para pedir a palavra
+    class PesquisaDialog(tk.Toplevel):
+        def __init__(self, parent):
+            super().__init__(parent)
+            self.title("Pesquisar Células")
+            self.geometry("400x150")
+            self.result = None
+            
+            tk.Label(self, text="Digite a palavra para pesquisar:", font=("Arial", 10)).pack(pady=10)
+            
+            self.entry = tk.Entry(self, width=40)
+            self.entry.pack(pady=5)
+            self.entry.focus()
+            
+            tk.Label(self, text="A pesquisa procurará no ORIGINAL e na TRADUÇÃO", font=("Arial", 9), fg="gray").pack()
+            
+            btn_frame = tk.Frame(self)
+            btn_frame.pack(pady=10)
+            
+            tk.Button(btn_frame, text="Pesquisar", command=self.pesquisar, bg="#4CAF50", fg="white", width=10).pack(side=tk.LEFT, padx=5)
+            tk.Button(btn_frame, text="Cancelar", command=self.destroy, bg="#f44336", fg="white", width=10).pack(side=tk.LEFT, padx=5)
+        
+        def pesquisar(self):
+            palavra = self.entry.get().strip().lower()
+            if palavra:
+                self.result = palavra
+                self.destroy()
+    
+    # Mostra diálogo de pesquisa
+    dialog = PesquisaDialog(root)
+    root.wait_window(dialog)
+    
+    palavra = dialog.result
+    if not palavra:
+        return None
+    
+    print("\n" + "="*60)
+    print(f"PESQUISANDO POR PALAVRA: '{palavra}'")
+    print("="*60)
+    
+    # Divide o conteúdo em blocos por célula
+    blocks = content.split("\n\n")
+    
+    # Encontra todos os blocos que começam com OFFSET:
+    cell_blocks = []
+    for block in blocks:
+        if block.strip().startswith("OFFSET:"):
+            cell_blocks.append(block.strip())
+    
+    # Pesquisa nos blocos
+    matching_blocks = []
+    
+    for block in cell_blocks:
+        lines = block.split('\n')
+        
+        # Extrai cell_id
+        cell_id = None
+        for line in lines:
+            if line.startswith("CELULA:"):
+                parts = line.split()
+                for part in parts:
+                    if part.isdigit():
+                        cell_id = int(part)
+                        break
+                break
+        
+        if cell_id is None:
+            continue
+        
+        # Verifica se a palavra está em qualquer linha
+        found = False
+        for line in lines:
+            if palavra in line.lower():
+                found = True
+                break
+        
+        if found:
+            matching_blocks.append((cell_id, block))
+    
+    print(f"Total de células: {len(cell_blocks)}")
+    print(f"Células encontradas: {len(matching_blocks)}")
+    
+    # Prepara texto para exibição
+    output_text = ""
+    for cell_id, block in matching_blocks:
+        output_text += block + "\n\n"
+    
+    # Atualiza a interface
+    text_extrair.delete("1.0", tk.END)
+    if matching_blocks:
+        text_extrair.insert(tk.END,
+            f"ZEUS TRANSLATOR - PESQUISA POR: '{palavra}'\n"
+            "===============================================\n"
+            f"Total de células no arquivo: {len(cell_blocks)}\n"
+            f"Células encontradas: {len(matching_blocks)}\n"
+            f"\nResultados da pesquisa:\n\n"
+        )
+        text_extrair.insert(tk.END, output_text)
+        
+        # Copia para área de transferência
+        pyperclip.copy(output_text)
+        messagebox.showinfo("Pesquisa Concluída", 
+                          f"Encontradas {len(matching_blocks)} células contendo '{palavra}'.\n\n"
+                          f"Resultados copiados para área de transferência.")
+    else:
+        text_extrair.insert(tk.END,
+            f"ZEUS TRANSLATOR - PESQUISA POR: '{palavra}'\n"
+            "===============================================\n"
+            f"Total de células no arquivo: {len(cell_blocks)}\n"
+            f"Células encontradas: 0\n"
+            f"\nNenhuma célula encontrada contendo '{palavra}'.\n"
+        )
+        messagebox.showinfo("Pesquisa Concluída", 
+                          f"Nenhuma célula encontrada contendo '{palavra}'.")
+    
+    return matching_blocks
 
 # ---------------- MESCLAGEM ---------------- #
 
@@ -1574,19 +1686,6 @@ def save_and_update(applied, content, updates_for_binary, validation_errors):
     # Desabilita o botão de colar
     btn_colar_trad.config(state=tk.DISABLED)
 
-def copiar_e_focar_navegador():
-    """Extrai células NÃO TRADUZIDAS e copia para área de transferência"""
-    blocks = extrair_celulas_para_traducao()
-    
-    if not blocks:
-        return
-    
-    texto_para_traduzir = text_extrair.get("1.0", tk.END).strip()
-    if texto_para_traduzir:
-        pyperclip.copy(texto_para_traduzir)
-        focus_browser()
-        btn_colar_trad.config(state=tk.NORMAL)
-
 def colar_traducao():
     """Cola tradução da área de transferência"""
     try:
@@ -1642,12 +1741,12 @@ btn_extrair_lote = tk.Button(btn_frame, text="Extrair para traduzir",
                            command=extrair_celulas_para_traducao, width=20)
 btn_extrair_lote.pack(side=tk.LEFT, padx=5)
 
-btn_copiar_focar = tk.Button(btn_frame, text="Copiar & Focar Navegador", 
-                           command=copiar_e_focar_navegador, bg="#10a37f", fg="white", width=20)
-btn_copiar_focar.pack(side=tk.LEFT, padx=5)
+btn_pesquisar = tk.Button(btn_frame, text="Pesquisar por palavra", 
+                         command=pesquisar_celulas_por_palavra, bg="#4285f4", fg="white", width=20)
+btn_pesquisar.pack(side=tk.LEFT, padx=5)
 
 btn_colar_trad = tk.Button(btn_frame, text="Colar Tradução", command=colar_traducao,
-                          bg="#4285f4", fg="white", width=15, state=tk.DISABLED)
+                          bg="#ff9800", fg="white", width=15, state=tk.DISABLED)
 btn_colar_trad.pack(side=tk.LEFT, padx=5)
 
 # Labels informativas
@@ -1656,7 +1755,7 @@ label_info = tk.Label(frame_top, text="Extrair TODAS → Extrair para traduzir �
 label_info.pack(pady=5)
 
 # Área de texto da esquerda (extração)
-label_extrair = tk.Label(frame_left, text="CÉLULAS PARA TRADUZIR:")
+label_extrair = tk.Label(frame_left, text="CÉLULAS PARA TRADUZIR / RESULTADOS DA PESQUISA:")
 label_extrair.pack(anchor=tk.W)
 
 text_extrair = scrolledtext.ScrolledText(frame_left, wrap=tk.WORD, height=28)
@@ -1679,7 +1778,7 @@ btn_mesclar.pack(fill=tk.X)
 
 # Status bar
 status_var = tk.StringVar()
-status_var.set("MODO: Extração completa | Detecção inteligente de células traduzidas")
+status_var.set("MODO: Extração completa | Detecção inteligente de células traduzidas | MAX=300 células")
 status_bar = tk.Label(root, textvariable=status_var, bd=1, relief=tk.SUNKEN, anchor=tk.W, fg="green")
 status_bar.pack(side=tk.BOTTOM, fill=tk.X)
 
