@@ -1245,7 +1245,7 @@ def colar_traducao():
 # ---------------- UI ---------------- #
 
 root = tk.Tk()
-root.title("Zeus Translator Helper - EXTRATOR COMPLETO")
+root.title("Emperor Translator Helper - EXTRATOR COMPLETO")
 root.geometry("1200x700")
 
 # Frame para botões superiores
