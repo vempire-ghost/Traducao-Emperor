@@ -581,7 +581,7 @@ OFFSET: 0x000025FE
 CELULA: 96  GRUPO: N/A
 ORIGINAL [23 chars]: Paper makers need hemp.
 TRADUÇÃO:
-Fabricantes de papel precisam de cânhamo.
+Fábrica de papel precisam de cânhamo.
 
 OFFSET: 0x00002616
 CELULA: 97  GRUPO: N/A
@@ -641,7 +641,7 @@ OFFSET: 0x00002772
 CELULA: 106  GRUPO: N/A
 ORIGINAL [31 chars]: Paper makers have been removed.
 TRADUÇÃO:
-Os fabricantes de papel foram removidos.
+As Fábricas de papel foram removidas.
 
 OFFSET: 0x00002792
 CELULA: 107  GRUPO: N/A
@@ -3683,7 +3683,7 @@ OFFSET: 0x00005B66
 CELULA: 613  GRUPO: N/A
 ORIGINAL [21 chars]: Build a logging shed.
 TRADUÇÃO:
-Construa um galpão de lenhadores.
+Construa um lenheiro.
 
 OFFSET: 0x00005B7C
 CELULA: 614  GRUPO: N/A
@@ -4271,13 +4271,13 @@ OFFSET: 0x00006AA2
 CELULA: 711  GRUPO: N/A
 ORIGINAL [40 chars]: You may only have one mint in your city.
 TRADUÇÃO:
-Você pode ter apenas uma casa da moeda em sua cidade.
+Você pode ter apenas uma casa de cunhagem em sua cidade.
 
 OFFSET: 0x00006ACB
 CELULA: 712  GRUPO: N/A
 ORIGINAL [49 chars]: You may only have one money printer in your city.
 TRADUÇÃO:
-Você pode ter apenas uma impressora de dinheiro em sua cidade.
+Você pode ter apenas uma casa de impressão de dinheiro em sua cidade.
 
 OFFSET: 0x00006AFD
 CELULA: 713  GRUPO: N/A
@@ -5273,7 +5273,7 @@ OFFSET: 0x0000718F
 CELULA: 878  GRUPO: 21
 ORIGINAL [11 chars]: Carved jade
 TRADUÇÃO:
-Jade entalhado
+Jade lapidado
 
 OFFSET: 0x0000719B
 CELULA: 879  GRUPO: 21
@@ -5417,13 +5417,13 @@ OFFSET: 0x000071F8
 CELULA: 902  GRUPO: 21
 ORIGINAL [10 chars]: Bland food
 TRADUÇÃO:
-Comida sem tempero
+Comida insípida
 
 OFFSET: 0x00007203
 CELULA: 903  GRUPO: 21
 ORIGINAL [10 chars]: Plain food
 TRADUÇÃO:
-Comida simples
+Comida trivial
 
 OFFSET: 0x0000720E
 CELULA: 904  GRUPO: 21
@@ -5855,19 +5855,19 @@ OFFSET: 0x000074EA
 CELULA: 975  GRUPO: 27
 ORIGINAL [3 chars]: Hut
 TRADUÇÃO:
-Cabana
+Choça
 
 OFFSET: 0x000074EE
 CELULA: 976  GRUPO: 27
 ORIGINAL [13 chars]: Plain Cottage
 TRADUÇÃO:
-Casa simples
+Choupana simples
 
 OFFSET: 0x000074FC
 CELULA: 977  GRUPO: 27
 ORIGINAL [18 chars]: Attractive Cottage
 TRADUÇÃO:
-Casa atraente
+Choupana confortavel
 
 OFFSET: 0x0000750F
 CELULA: 978  GRUPO: 27
@@ -5885,13 +5885,13 @@ OFFSET: 0x00007532
 CELULA: 980  GRUPO: 27
 ORIGINAL [16 chars]: Ornate Apartment
 TRADUÇÃO:
-Apartamento ornamentado
+Vivenda ornamentada
 
 OFFSET: 0x00007543
 CELULA: 981  GRUPO: 19
 ORIGINAL [19 chars]: Luxurious Apartment
 TRADUÇÃO:
-Apartamento luxuoso
+Vivenda luxuosa
 
 OFFSET: 0x00007557
 CELULA: 982  GRUPO: 19
@@ -5915,25 +5915,25 @@ OFFSET: 0x00007588
 CELULA: 985  GRUPO: 19
 ORIGINAL [15 chars]: Lavish Siheyuan
 TRADUÇÃO:
-Siheyuan luxuoso
+Siheyuan suntuoso
 
 OFFSET: 0x00007598
 CELULA: 986  GRUPO: 19
 ORIGINAL [15 chars]: Humble Compound
 TRADUÇÃO:
-Complexo humilde
+Mansão humilde
 
 OFFSET: 0x000075A8
 CELULA: 987  GRUPO: 19
 ORIGINAL [19 chars]: Impressive Compound
 TRADUÇÃO:
-Complexo impressionante
+Mansão Imponente
 
 OFFSET: 0x000075BC
 CELULA: 988  GRUPO: 19
 ORIGINAL [17 chars]: Heavenly Compound
 TRADUÇÃO:
-Complexo celestial
+Mansão Celestial
 
 OFFSET: 0x000075CE
 CELULA: 989  GRUPO: 19
@@ -6059,7 +6059,7 @@ OFFSET: 0x0000768C
 CELULA: 1009  GRUPO: 19
 ORIGINAL [12 chars]: Logging Shed
 TRADUÇÃO:
-Galpão de Extração de Madeira
+Lenheiro
 
 OFFSET: 0x00007699
 CELULA: 1010  GRUPO: 19
@@ -6101,13 +6101,13 @@ OFFSET: 0x000076EB
 CELULA: 1016  GRUPO: 19
 ORIGINAL [11 chars]: Paper Maker
 TRADUÇÃO:
-Oficina de papel
+Fábrica de papel
 
 OFFSET: 0x000076F7
 CELULA: 1017  GRUPO: 19
 ORIGINAL [20 chars]: Jade Carver's Studio
 TRADUÇÃO:
-Ateliê de entalhe em jade
+Oficina de Lapidação de Jade
 
 OFFSET: 0x0000770C
 CELULA: 1018  GRUPO: 19
@@ -6119,13 +6119,13 @@ OFFSET: 0x00007713
 CELULA: 1019  GRUPO: 19
 ORIGINAL [4 chars]: Mint
 TRADUÇÃO:
-Casa da moeda
+Casa de cunhagem
 
 OFFSET: 0x00007718
 CELULA: 1020  GRUPO: 19
 ORIGINAL [13 chars]: Money Printer
 TRADUÇÃO:
-Impressora de dinheiro
+Casa de Impressão de dinheiro
 
 OFFSET: 0x00007726
 CELULA: 1021  GRUPO: 19
@@ -7451,19 +7451,19 @@ OFFSET: 0x00008224
 CELULA: 1241  GRUPO: 28
 ORIGINAL [3 chars]: hut
 TRADUÇÃO:
-cabana
+choça
 
 OFFSET: 0x00008228
 CELULA: 1242  GRUPO: 28
 ORIGINAL [13 chars]: plain cottage
 TRADUÇÃO:
-casa simples
+choupana simples
 
 OFFSET: 0x00008236
 CELULA: 1243  GRUPO: 28
 ORIGINAL [18 chars]: attractive cottage
 TRADUÇÃO:
-casa atraente
+choupana confortavel
 
 OFFSET: 0x00008249
 CELULA: 1244  GRUPO: 28
@@ -7481,13 +7481,13 @@ OFFSET: 0x0000826C
 CELULA: 1246  GRUPO: 28
 ORIGINAL [16 chars]: ornate apartment
 TRADUÇÃO:
-apartamento ornamentado
+vivenda ornamentada
 
 OFFSET: 0x0000827D
 CELULA: 1247  GRUPO: 28
 ORIGINAL [19 chars]: luxurious apartment
 TRADUÇÃO:
-apartamento luxuoso
+vivenda luxuosa
 
 OFFSET: 0x00008291
 CELULA: 1248  GRUPO: 28
@@ -7517,19 +7517,19 @@ OFFSET: 0x000082D2
 CELULA: 1252  GRUPO: 28
 ORIGINAL [15 chars]: humble compound
 TRADUÇÃO:
-complexo humilde
+mansão humilde
 
 OFFSET: 0x000082E2
 CELULA: 1253  GRUPO: 28
 ORIGINAL [19 chars]: impressive compound
 TRADUÇÃO:
-complexo impressionante
+mansão imponente
 
 OFFSET: 0x000082F6
 CELULA: 1254  GRUPO: 28
 ORIGINAL [17 chars]: heavenly compound
 TRADUÇÃO:
-complexo celestial
+mansão celestial
 
 OFFSET: 0x00008308
 CELULA: 1255  GRUPO: 28
@@ -7541,19 +7541,19 @@ OFFSET: 0x00008311
 CELULA: 1256  GRUPO: 28
 ORIGINAL [4 chars]: huts
 TRADUÇÃO:
-cabanas
+choças
 
 OFFSET: 0x00008316
 CELULA: 1257  GRUPO: 28
 ORIGINAL [14 chars]: plain cottages
 TRADUÇÃO:
-casas simples
+choupanas simples
 
 OFFSET: 0x00008325
 CELULA: 1258  GRUPO: 28
 ORIGINAL [19 chars]: attractive cottages
 TRADUÇÃO:
-casas atraentes
+choupanas confortaveis
 
 OFFSET: 0x00008339
 CELULA: 1259  GRUPO: 28
@@ -7571,13 +7571,13 @@ OFFSET: 0x0000835E
 CELULA: 1261  GRUPO: 28
 ORIGINAL [17 chars]: ornate apartments
 TRADUÇÃO:
-apartamentos ornamentados
+vivendas ornamentadas
 
 OFFSET: 0x00008370
 CELULA: 1262  GRUPO: 28
 ORIGINAL [20 chars]: luxurious apartments
 TRADUÇÃO:
-apartamentos luxuosos
+vivendas luxuosas
 
 OFFSET: 0x00008385
 CELULA: 1263  GRUPO: 28
@@ -7607,19 +7607,19 @@ OFFSET: 0x000083C9
 CELULA: 1267  GRUPO: 28
 ORIGINAL [16 chars]: humble compounds
 TRADUÇÃO:
-complexos humildes
+mansões humildes
 
 OFFSET: 0x000083DA
 CELULA: 1268  GRUPO: 28
 ORIGINAL [20 chars]: impressive compounds
 TRADUÇÃO:
-complexos impressionantes
+mansões imponentes
 
 OFFSET: 0x000083EF
 CELULA: 1269  GRUPO: 28
 ORIGINAL [18 chars]: heavenly compounds
 TRADUÇÃO:
-complexos celestiais
+mansões celestiais
 
 OFFSET: 0x00008402
 CELULA: 1270  GRUPO: 28
@@ -7631,19 +7631,19 @@ OFFSET: 0x0000840B
 CELULA: 1271  GRUPO: 28
 ORIGINAL [5 chars]: huts:
 TRADUÇÃO:
-cabanas:
+choças:
 
 OFFSET: 0x00008411
 CELULA: 1272  GRUPO: 28
 ORIGINAL [15 chars]: plain cottages:
 TRADUÇÃO:
-casas simples:
+choupanas simples:
 
 OFFSET: 0x00008421
 CELULA: 1273  GRUPO: 28
 ORIGINAL [20 chars]: attractive cottages:
 TRADUÇÃO:
-casas atraentes:
+choupanas confortaveis:
 
 OFFSET: 0x00008436
 CELULA: 1274  GRUPO: 28
@@ -7661,13 +7661,13 @@ OFFSET: 0x0000845D
 CELULA: 1276  GRUPO: 28
 ORIGINAL [18 chars]: ornate apartments:
 TRADUÇÃO:
-apartamentos ornamentados:
+vivendas ornamentadas:
 
 OFFSET: 0x00008470
 CELULA: 1277  GRUPO: 28
 ORIGINAL [21 chars]: luxurious apartments:
 TRADUÇÃO:
-apartamentos luxuosos:
+vivendas luxuosas:
 
 OFFSET: 0x00008486
 CELULA: 1278  GRUPO: 28
@@ -7697,19 +7697,19 @@ OFFSET: 0x000084CE
 CELULA: 1282  GRUPO: 28
 ORIGINAL [17 chars]: humble compounds:
 TRADUÇÃO:
-complexos humildes:
+mansões humildes:
 
 OFFSET: 0x000084E0
 CELULA: 1283  GRUPO: 28
 ORIGINAL [21 chars]: impressive compounds:
 TRADUÇÃO:
-complexos impressionantes:
+mansões imponentes:
 
 OFFSET: 0x000084F6
 CELULA: 1284  GRUPO: 28
 ORIGINAL [19 chars]: heavenly compounds:
 TRADUÇÃO:
-complexos celestiais:
+mansões celestiais:
 
 OFFSET: 0x0000850A
 CELULA: 1285  GRUPO: 29
@@ -14405,31 +14405,31 @@ OFFSET: 0x0000C98E
 CELULA: 2400  GRUPO: 56
 ORIGINAL [5 chars]: Bland
 TRADUÇÃO:
-Insosso
+Insípida
 
 OFFSET: 0x0000C994
 CELULA: 2401  GRUPO: 56
 ORIGINAL [5 chars]: Plain
 TRADUÇÃO:
-Simples
+Trivial
 
 OFFSET: 0x0000C99A
 CELULA: 2402  GRUPO: 56
 ORIGINAL [10 chars]: Appetizing
 TRADUÇÃO:
-Apetitoso
+Apetitosa
 
 OFFSET: 0x0000C9A5
 CELULA: 2403  GRUPO: 56
 ORIGINAL [5 chars]: Tasty
 TRADUÇÃO:
-Saboroso
+Saborosa
 
 OFFSET: 0x0000C9AB
 CELULA: 2404  GRUPO: 56
 ORIGINAL [9 chars]: Delicious
 TRADUÇÃO:
-Delicioso
+Deliciosa
 
 OFFSET: 0x0000C9B5
 CELULA: 2405  GRUPO: 56
@@ -18365,13 +18365,13 @@ OFFSET: 0x0000FF18
 CELULA: 3060  GRUPO: 66
 ORIGINAL [4 chars]: Mint
 TRADUÇÃO:
-Casa da Moeda
+Casa de Cunhagem
 
 OFFSET: 0x0000FF1D
 CELULA: 3061  GRUPO: 66
 ORIGINAL [13 chars]: Money Printer
 TRADUÇÃO:
-Impressora de Dinheiro
+Casa de Impressão de Dinheiro
 
 OFFSET: 0x0000FF2B
 CELULA: 3062  GRUPO: 66
@@ -18401,13 +18401,13 @@ OFFSET: 0x0000FF5A
 CELULA: 3066  GRUPO: 66
 ORIGINAL [11 chars]: Paper Maker
 TRADUÇÃO:
-Oficina de papel
+Fábrica de papel
 
 OFFSET: 0x0000FF66
 CELULA: 3067  GRUPO: 66
 ORIGINAL [20 chars]: Jade Carver's Studio
 TRADUÇÃO:
-Ateliê de entalhe em jade
+Oficina de Lapidação de Jade
 
 OFFSET: 0x0000FF7B
 CELULA: 3068  GRUPO: 66
@@ -20051,7 +20051,7 @@ OFFSET: 0x00011699
 CELULA: 3341  GRUPO: 68
 ORIGINAL [181 chars]: Bamboo is a quick growing plant native to Asia. It can be used for timber, though it doesn't produce as much as trees. Place a Logging Shed nearby in order to harvest this resource.
 TRADUÇÃO:
-O bambu é uma planta de crescimento rápido, nativa da Ásia. Pode ser usado como madeira, embora não produza tanto quanto as árvores. Construa um Depósito de Lenhador próximo para coletar este recurso.
+O bambu é uma planta de crescimento rápido, nativa da Ásia. Pode ser usado como madeira, embora não produza tanto quanto as árvores. Construa um Lenheiro próximo para coletar este recurso.
 
 OFFSET: 0x0001174F
 CELULA: 3342  GRUPO: 68
@@ -20207,7 +20207,7 @@ OFFSET: 0x00011D4D
 CELULA: 3367  GRUPO: 68
 ORIGINAL [124 chars]: You may be able to harvest timber from this wooded area by building a Logging Shed, or you can clear the land if you choose.
 TRADUÇÃO:
-Você pode extrair madeira desta área arborizada construindo um Galpão de Extração de Madeira, ou pode limpar o terreno, se preferir.
+Você pode extrair madeira desta área arborizada construindo um Lenheiro, ou pode limpar o terreno, se preferir.
 
 OFFSET: 0x00011DCA
 CELULA: 3368  GRUPO: 68
@@ -24281,13 +24281,13 @@ OFFSET: 0x0001A1E1
 CELULA: 4046  GRUPO: 118
 ORIGINAL [4 chars]: Mint
 TRADUÇÃO:
-Casa da Moeda
+Casa de Cunhagem
 
 OFFSET: 0x0001A1E6
 CELULA: 4047  GRUPO: 118
 ORIGINAL [82 chars]: Miners collect copper ore so it can be converted into strings of cash at the mint.
 TRADUÇÃO:
-Os mineradores coletam minério de cobre para que ele seja convertido em cordões de moedas na Casa da Moeda.
+Os mineradores coletam minério de cobre para que ele seja convertido em cordões de moedas na Casa de Cunhagem.
 
 OFFSET: 0x0001A239
 CELULA: 4048  GRUPO: 118
@@ -24311,25 +24311,25 @@ OFFSET: 0x0001A29F
 CELULA: 4051  GRUPO: 118
 ORIGINAL [94 chars]: All is quiet at the mint. With no employees, copper ore cannot be turned into strings of cash.
 TRADUÇÃO:
-Tudo está quieto na Casa da Moeda. Sem trabalhadores, o minério de cobre não pode ser transformado em cordões de moedas.
+Tudo está quieto na Casa de Cunhagem. Sem trabalhadores, o minério de cobre não pode ser transformado em cordões de moedas.
 
 OFFSET: 0x0001A2FE
 CELULA: 4052  GRUPO: 118
 ORIGINAL [88 chars]: The mint is full of workers melting down copper ore, and strings of cash are everywhere.
 TRADUÇÃO:
-A Casa da Moeda está cheia de trabalhadores derretendo minério de cobre, e há cordões de moedas por toda parte.
+A Casa de Cunhagem está cheia de trabalhadores derretendo minério de cobre, e há cordões de moedas por toda parte.
 
 OFFSET: 0x0001A357
 CELULA: 4053  GRUPO: 118
 ORIGINAL [79 chars]: The mint could use a few more employees. Minting of new coins has slowed a bit.
 TRADUÇÃO:
-A Casa da Moeda poderia usar alguns trabalhadores a mais. A cunhagem de novas moedas diminuiu um pouco.
+A Casa de Cunhagem poderia usar alguns trabalhadores a mais. A cunhagem de novas moedas diminuiu um pouco.
 
 OFFSET: 0x0001A3A7
 CELULA: 4054  GRUPO: 118
 ORIGINAL [102 chars]: Trade is still lively due to the coins being minted, but not if the mint continues to be understaffed.
 TRADUÇÃO:
-O comércio ainda é ativo graças às moedas cunhadas, mas não será se a Casa da Moeda continuar com falta de pessoal.
+O comércio ainda é ativo graças às moedas cunhadas, mas não será se a Casa de Cunhagem continuar com falta de pessoal.
 
 OFFSET: 0x0001A40E
 CELULA: 4055  GRUPO: 118
@@ -24347,7 +24347,7 @@ OFFSET: 0x0001A4C7
 CELULA: 4057  GRUPO: 118
 ORIGINAL [74 chars]: Workers at the mint are waiting for miners to return with more copper ore.
 TRADUÇÃO:
-Os trabalhadores da Casa da Moeda aguardam o retorno dos mineradores com mais minério de cobre.
+Os trabalhadores da Casa de Cunhagem aguardam o retorno dos mineradores com mais minério de cobre.
 
 OFFSET: 0x0001A512
 CELULA: 4058  GRUPO: 118
@@ -24365,19 +24365,19 @@ OFFSET: 0x0001A53A
 CELULA: 4060  GRUPO: N/A
 ORIGINAL [117 chars]: The mint has stopped making coins because there are no bureaucrats at the Administrative city to oversee the process.
 TRADUÇÃO:
-A Casa da Moeda parou de produzir moedas porque não há burocratas na Cidade Administrativa para supervisionar o processo.
+A Casa de Cunhagem parou de produzir moedas porque não há burocratas na Cidade Administrativa para supervisionar o processo.
 
 OFFSET: 0x0001A5B0
 CELULA: 4061  GRUPO: 119
 ORIGINAL [12 chars]: Logging Shed
 TRADUÇÃO:
-Galpão de Extração de Madeira
+Lenheiro
 
 OFFSET: 0x0001A5BD
 CELULA: 4062  GRUPO: 119
 ORIGINAL [93 chars]: The logging shed sends loggers out to cut down trees and then processes the logs into planks.
 TRADUÇÃO:
-O galpão envia lenhadores para derrubar árvores e depois processa as toras em tábuas.
+O Lenheiro envia lenhadores para derrubar árvores e depois processa as toras em tábuas.
 
 OFFSET: 0x0001A61B
 CELULA: 4063  GRUPO: 119
@@ -24413,25 +24413,25 @@ OFFSET: 0x0001A716
 CELULA: 4068  GRUPO: 119
 ORIGINAL [125 chars]: This logging shed is short a logger or two. The loggers are working their hardest, but timber production has slowed a little.
 TRADUÇÃO:
-Este galpão de extração está com falta de um ou dois lenhadores. Eles trabalham ao máximo, mas a produção de madeira diminuiu um pouco.
+Este Lenheiro está com falta de um ou dois lenhadores. Eles trabalham ao máximo, mas a produção de madeira diminuiu um pouco.
 
 OFFSET: 0x0001A794
 CELULA: 4069  GRUPO: 119
 ORIGINAL [82 chars]: This logging shed is understaffed. The loggers are cutting down trees very slowly.
 TRADUÇÃO:
-Este galpão está com falta de pessoal. Os lenhadores estão derrubando árvores muito lentamente.
+Este Lenheiro está com falta de pessoal. Os lenhadores estão derrubando árvores muito lentamente.
 
 OFFSET: 0x0001A7E7
 CELULA: 4070  GRUPO: 119
 ORIGINAL [78 chars]: Not nearly enough loggers work at this logging shed. Productivity is way down.
 TRADUÇÃO:
-Há poucos lenhadores trabalhando neste galpão. A produtividade está muito baixa.
+Há poucos lenhadores trabalhando neste Lenheiro. A produtividade está muito baixa.
 
 OFFSET: 0x0001A836
 CELULA: 4071  GRUPO: 119
 ORIGINAL [118 chars]: This logging shed needs many more loggers to operate efficiently. It will still produce timber, but at a snail's pace.
 TRADUÇÃO:
-Este galpão precisa de muitos mais lenhadores para operar com eficiência. Ainda produzirá madeira, mas a passo de caracol.
+Este Lenheiro precisa de muitos mais lenhadores para operar com eficiência. Ainda produzirá madeira, mas a passo de caracol.
 
 OFFSET: 0x0001A8AD
 CELULA: 4072  GRUPO: 120
@@ -24605,13 +24605,13 @@ OFFSET: 0x0001AF31
 CELULA: 4100  GRUPO: 122
 ORIGINAL [11 chars]: Paper Maker
 TRADUÇÃO:
-Oficina de papel
+Fábrica de papel
 
 OFFSET: 0x0001AF3D
 CELULA: 4101  GRUPO: 122
 ORIGINAL [69 chars]: The paper maker processes hemp into a wonderful new writing material.
 TRADUÇÃO:
-A oficina de papel processa o cânhamo em um novo e excelente material de escrita.
+A fábrica de papel processa o cânhamo em um novo e excelente material de escrita.
 
 OFFSET: 0x0001AF83
 CELULA: 4102  GRUPO: 122
@@ -24635,43 +24635,43 @@ OFFSET: 0x0001AFE9
 CELULA: 4105  GRUPO: 122
 ORIGINAL [78 chars]: Without artisans to prepare the fibers, this paper maker can produce no paper.
 TRADUÇÃO:
-Sem artesãos para preparar as fibras, esta oficina não pode produzir papel.
+Sem artesãos para preparar as fibras, esta fábrica não pode produzir papel.
 
 OFFSET: 0x0001B038
 CELULA: 4106  GRUPO: 122
 ORIGINAL [75 chars]: This paper maker is fully staffed and producing paper as quickly as it can.
 TRADUÇÃO:
-Esta oficina de papel está totalmente equipada e produz papel o mais rápido possível.
+Esta fábrica de papel está totalmente equipada e produz papel o mais rápido possível.
 
 OFFSET: 0x0001B084
 CELULA: 4107  GRUPO: 122
 ORIGINAL [114 chars]: This paper maker needs a couple more artisans. It is still producing paper, but not quite as quickly as it could. 
 TRADUÇÃO:
-Esta oficina de papel precisa de mais alguns artesãos. Ainda produz papel, mas não tão rápido quanto poderia.
+Esta fábrica de papel precisa de mais alguns artesãos. Ainda produz papel, mas não tão rápido quanto poderia.
 
 OFFSET: 0x0001B0F7
 CELULA: 4108  GRUPO: 122
 ORIGINAL [85 chars]: This paper maker doesn't have all the artisans it needs. Paper production has slowed.
 TRADUÇÃO:
-Esta oficina de papel não tem todos os artesãos necessários. A produção de papel diminuiu.
+Esta fábrica de papel não tem todos os artesãos necessários. A produção de papel diminuiu.
 
 OFFSET: 0x0001B14D
 CELULA: 4109  GRUPO: 122
 ORIGINAL [83 chars]: With only a few artisans, this paper maker isn't producing very much paper at all. 
 TRADUÇÃO:
-Com poucos artesãos, esta oficina quase não produz papel.
+Com poucos artesãos, esta fábrica quase não produz papel.
 
 OFFSET: 0x0001B1A1
 CELULA: 4110  GRUPO: 122
 ORIGINAL [98 chars]: This paper maker barely has artisans at all. It is taking quite some time for it to produce paper.
 TRADUÇÃO:
-Esta oficina quase não tem artesãos. Está levando muito tempo para produzir papel.
+Esta fábrica quase não tem artesãos. Está levando muito tempo para produzir papel.
 
 OFFSET: 0x0001B204
 CELULA: 4111  GRUPO: 122
 ORIGINAL [60 chars]: This paper maker needs hemp before it can produce any paper.
 TRADUÇÃO:
-Esta oficina de papel precisa de cânhamo antes de poder produzir papel.
+Esta fábrica de papel precisa de cânhamo antes de poder produzir papel.
 
 OFFSET: 0x0001B241
 CELULA: 4112  GRUPO: 122
@@ -25175,7 +25175,7 @@ OFFSET: 0x0001BFF4
 CELULA: 4195  GRUPO: N/A
 ORIGINAL [75 chars]: Unless more [food_quality] food is delivered, this house will soon devolve.
 TRADUÇÃO:
-A menos que mais comida de [food_quality] seja entregue, esta casa irá regredir em breve.
+A menos que mais comida [food_quality] seja entregue, esta casa irá regredir em breve.
 
 OFFSET: 0x0001C040
 CELULA: 4196  GRUPO: N/A
@@ -25283,7 +25283,7 @@ OFFSET: 0x0001C4D9
 CELULA: 4213  GRUPO: N/A
 ORIGINAL [82 chars]: The residents of this house need [food_quality] food before the house can improve.
 TRADUÇÃO:
-Os moradores desta casa precisam de comida de [food_quality] antes que a casa possa melhorar.
+Os moradores desta casa precisam de comida [food_quality] antes que a casa possa melhorar.
 
 OFFSET: 0x0001C52C
 CELULA: 4214  GRUPO: N/A
@@ -33714,7 +33714,7 @@ OFFSET: 0x000254C5
 CELULA: 5621  GRUPO: 207
 ORIGINAL [69 chars]: I'd be raking in much more money if the taxman had not beat me to it.
 TRADUÇÃO:
-Eu estaria ganhando muito mais dinheiro se o cobrador de impostos não tivesse chegado antes de mim.
+Eu estaria ganhando muito mais dinheiro se o coletor de impostos não tivesse chegado antes de mim.
 
 OFFSET: 0x0002550B
 CELULA: 5622  GRUPO: 207
@@ -42468,13 +42468,13 @@ OFFSET: 0x00030CB4
 CELULA: 7080  GRUPO: 344
 ORIGINAL [20 chars]: Jade Carver's Studio
 TRADUÇÃO:
-Oficina do Escultor de Jade
+Oficina de Lapidação de Jade
 
 OFFSET: 0x00030CC9
 CELULA: 7081  GRUPO: 344
 ORIGINAL [71 chars]: Jade carvers produce delicately carved works of art from slabs of jade.
 TRADUÇÃO:
-Escultores de jade produzem delicadas obras de arte a partir de blocos de jade.
+Lapidadores de jade produzem delicadas obras de arte a partir de blocos de jade.
 
 OFFSET: 0x00030D11
 CELULA: 7082  GRUPO: 344
@@ -42492,49 +42492,49 @@ OFFSET: 0x00030D29
 CELULA: 7084  GRUPO: 344
 ORIGINAL [71 chars]: Luxury goods are a waste of labor, and jade carving has been curtailed.
 TRADUÇÃO:
-Bens de luxo são um desperdício de mão de obra, e a escultura em jade foi reduzida.
+Bens de luxo são um desperdício de mão de obra, e a lapidação de jade foi reduzida.
 
 OFFSET: 0x00030D71
 CELULA: 7085  GRUPO: 344
 ORIGINAL [100 chars]: The carving knives are dull and the jade lies untouched, since there are no artisans at this studio.
 TRADUÇÃO:
-As facas de escultura estão cegas e o jade permanece intocado, pois não há artesãos nesta oficina.
+As facas dos lapidadores estão cegas e o jade permanece intocado, pois não há artesãos nesta oficina.
 
 OFFSET: 0x00030DD6
 CELULA: 7086  GRUPO: 344
 ORIGINAL [97 chars]: This jade carver's studio has all the artisans it needs to carve the jade as quickly as possible.
 TRADUÇÃO:
-Esta oficina de escultura em jade possui todos os artesãos necessários para trabalhar o jade com máxima rapidez.
+Esta oficina de lapidação de jade possui todos os artesãos necessários para trabalhar o jade com máxima rapidez.
 
 OFFSET: 0x00030E38
 CELULA: 7087  GRUPO: 344
 ORIGINAL [115 chars]: This jade carver's studio needs a few more artisans. It is taking a little longer than it should to carve the jade.
 TRADUÇÃO:
-Esta oficina de escultura em jade precisa de mais alguns artesãos. O trabalho está levando um pouco mais de tempo do que deveria.
+Esta oficina de lapidação de jade precisa de mais alguns artesãos. O trabalho está levando um pouco mais de tempo do que deveria.
 
 OFFSET: 0x00030EAC
 CELULA: 7088  GRUPO: 344
 ORIGINAL [122 chars]: This jade carver's studio is understaffed. The artisans are complaining about the conditions, and jade carving has slowed.
 TRADUÇÃO:
-Esta oficina de escultura em jade está com poucos artesãos. Eles reclamam das condições, e a produção diminuiu.
+Esta oficina de lapidação de jade está com poucos artesãos. Eles reclamam das condições, e a produção diminuiu.
 
 OFFSET: 0x00030F27
 CELULA: 7089  GRUPO: 344
 ORIGINAL [118 chars]: This jade carver's studio needs several more artisans. It is taking some time for the artisans here to carve the jade.
 TRADUÇÃO:
-Esta oficina de escultura em jade precisa de muitos mais artesãos. O trabalho está avançando lentamente.
+Esta oficina de lapidação de jade precisa de muitos mais artesãos. O trabalho está avançando lentamente.
 
 OFFSET: 0x00030F9E
 CELULA: 7090  GRUPO: 344
 ORIGINAL [89 chars]: This jade carver's studio needs many more artisans. It is barely carving any jade at all.
 TRADUÇÃO:
-Esta oficina de escultura em jade precisa de muitos mais artesãos. Quase nenhum jade está sendo trabalhado.
+Esta oficina de lapidação de jade precisa de muitos mais artesãos. Quase nenhum jade está sendo trabalhado.
 
 OFFSET: 0x00030FF8
 CELULA: 7091  GRUPO: 344
 ORIGINAL [45 chars]: Without jade, the carvers have nothing to do.
 TRADUÇÃO:
-Sem jade, os escultores não têm trabalho algum.
+Sem jade, os lapidadores não têm trabalho algum.
 
 OFFSET: 0x00031026
 CELULA: 7092  GRUPO: 344
@@ -42546,7 +42546,7 @@ OFFSET: 0x00031033
 CELULA: 7093  GRUPO: 344
 ORIGINAL [48 chars]: Xi Wang Mu has blessed the jade carver's studio!
 TRADUÇÃO:
-Xi Wang Mu abençoou a oficina de escultura em jade!
+Xi Wang Mu abençoou a oficina de lapidação de jade!
 
 OFFSET: 0x00031064
 CELULA: 7094  GRUPO: 345
@@ -43110,7 +43110,7 @@ OFFSET: 0x00032571
 CELULA: 7187  GRUPO: 352
 ORIGINAL [13 chars]: Money Printer
 TRADUÇÃO:
-Impressora de Dinheiro
+Casa de Impressão de Dinheiro
 
 OFFSET: 0x0003257F
 CELULA: 7188  GRUPO: 352
@@ -43140,13 +43140,13 @@ OFFSET: 0x00032647
 CELULA: 7192  GRUPO: 352
 ORIGINAL [75 chars]: Only the rustling of paper in the breeze can be heard at the money printer.
 TRADUÇÃO:
-Apenas o farfalhar do papel ao vento pode ser ouvido na impressora de dinheiro.
+Apenas o farfalhar do papel ao vento pode ser ouvido na casa de impressão de dinheiro.
 
 OFFSET: 0x00032693
 CELULA: 7193  GRUPO: 352
 ORIGINAL [97 chars]: The money printer is bustling with men operating the presses, and stacks of money are everywhere.
 TRADUÇÃO:
-A impressora de dinheiro fervilha de homens operando as prensas, e pilhas de dinheiro estão por toda parte.
+A casa de impressão de dinheiro fervilha de homens operando as prensas, e pilhas de dinheiro estão por toda parte.
 
 OFFSET: 0x000326F5
 CELULA: 7194  GRUPO: 352
@@ -43158,7 +43158,7 @@ OFFSET: 0x0003274C
 CELULA: 7195  GRUPO: 352
 ORIGINAL [112 chars]: Trade is still lively due to the money being printed, but not if the money printer continues to be understaffed.
 TRADUÇÃO:
-O comércio ainda é ativo graças ao dinheiro impresso, mas não será assim se a impressora continuar com poucos trabalhadores.
+O comércio ainda é ativo graças ao dinheiro impresso, mas não será assim se a casa de impressão de dinheiro continuar com poucos trabalhadores.
 
 OFFSET: 0x000327BD
 CELULA: 7196  GRUPO: 352
@@ -43176,7 +43176,7 @@ OFFSET: 0x00032859
 CELULA: 7198  GRUPO: 352
 ORIGINAL [60 chars]: The money printer needs paper before it can print any money.
 TRADUÇÃO:
-A impressora de dinheiro precisa de papel antes de poder imprimir qualquer valor.
+A casa de impressão de dinheiro precisa de papel antes de poder imprimir qualquer valor.
 
 OFFSET: 0x00032896
 CELULA: 7199  GRUPO: 352
@@ -43188,7 +43188,7 @@ OFFSET: 0x000328A4
 CELULA: 7200  GRUPO: 352
 ORIGINAL [112 chars]: The money printer has shut down because there are no bureaucrats at the Administrative city to oversee printing.
 TRADUÇÃO:
-A impressora de dinheiro foi desligada porque não há burocratas na Cidade Administrativa para supervisionar a impressão.
+A casa de impressão de dinheiro foi desligada porque não há burocratas na Cidade Administrativa para supervisionar a impressão.
 
 OFFSET: 0x00032915
 CELULA: 7201  GRUPO: 353

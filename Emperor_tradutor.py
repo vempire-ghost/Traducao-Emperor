@@ -440,7 +440,7 @@ def criar_arquivo_base_se_nao_existir():
     """Cria o arquivo BASE se ele não existir"""
     if not os.path.exists(BASE):
         with open(BASE, "w", encoding="utf-8") as f:
-            f.write(f"# Arquivo de tradução Zeus Text\n")
+            f.write(f"# Arquivo de tradução Emperor Text\n")
             f.write(f"# Criado em: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
             f.write(f"# Formato:\n")
             f.write(f"# OFFSET: 0xXXXXXXX\n")
@@ -527,7 +527,7 @@ def extrair_todas_as_celulas():
             # Atualiza a interface
             text_extrair.delete("1.0", tk.END)
             text_extrair.insert(tk.END,
-                "ZEUS TRANSLATOR - TODAS AS CÉLULAS\n"
+                "EMPEROR TRANSLATOR - TODAS AS CÉLULAS\n"
                 "==================================\n"
                 f"Arquivo: {BIN_FILE}\n"
                 f"Total de células no binário: {total_cells}\n"
@@ -552,7 +552,7 @@ def extrair_todas_as_celulas():
         # Atualiza a interface mesmo se não houver novas células
         text_extrair.delete("1.0", tk.END)
         text_extrair.insert(tk.END,
-            "ZEUS TRANSLATOR - TODAS AS CÉLULAS\n"
+            "EMPEROR TRANSLATOR - TODAS AS CÉLULAS\n"
             "==================================\n"
             f"Arquivo: {BIN_FILE}\n"
             f"Total de células no binário: {total_cells}\n"
@@ -656,7 +656,7 @@ def extrair_celulas_para_traducao():
     # Atualiza a interface
     text_extrair.delete("1.0", tk.END)
     text_extrair.insert(tk.END,
-        "ZEUS TRANSLATOR - CÉLULAS PARA TRADUZIR\n"
+        "EMPEROR TRANSLATOR - CÉLULAS PARA TRADUZIR\n"
         "=======================================\n"
         f"Total de células no arquivo: {len(cell_blocks)}\n"
         f"Células traduzidas: {translated_count}\n"
@@ -783,7 +783,7 @@ def pesquisar_celulas_por_palavra():
     text_extrair.delete("1.0", tk.END)
     if matching_blocks:
         text_extrair.insert(tk.END,
-            f"ZEUS TRANSLATOR - PESQUISA POR: '{palavra}'\n"
+            f"EMPEROR TRANSLATOR - PESQUISA POR: '{palavra}'\n"
             "===============================================\n"
             f"Total de células no arquivo: {len(cell_blocks)}\n"
             f"Células encontradas: {len(matching_blocks)}\n"
@@ -798,7 +798,7 @@ def pesquisar_celulas_por_palavra():
                           f"Resultados copiados para área de transferência.")
     else:
         text_extrair.insert(tk.END,
-            f"ZEUS TRANSLATOR - PESQUISA POR: '{palavra}'\n"
+            f"EMPEROR TRANSLATOR - PESQUISA POR: '{palavra}'\n"
             "===============================================\n"
             f"Total de células no arquivo: {len(cell_blocks)}\n"
             f"Células encontradas: 0\n"
